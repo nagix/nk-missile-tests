@@ -1,0 +1,756 @@
+/* Import Roboto Font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto/roboto-regular-webfont.eot');
+    src: url('roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto/roboto-regular-webfont.woff') format('woff'),
+         url('roboto/roboto-regular-webfont.ttf') format('truetype'),
+         url('roboto/roboto-regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto/roboto-bold-webfont.eot');
+    src: url('roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto/roboto-bold-webfont.woff') format('woff'),
+         url('roboto/roboto-bold-webfont.ttf') format('truetype'),
+         url('roboto/roboto-bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto/roboto-bolditalic-webfont.eot');
+    src: url('roboto/roboto-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto/roboto-bolditalic-webfont.woff') format('woff'),
+         url('roboto/roboto-bolditalic-webfont.ttf') format('truetype'),
+         url('roboto/roboto-bolditalic-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto/roboto-italic-webfont.eot');
+    src: url('roboto/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto/roboto-italic-webfont.woff') format('woff'),
+         url('roboto/roboto-italic-webfont.ttf') format('truetype'),
+         url('roboto/roboto-italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}	
+
+/*Import Ropa Sans Font, do we need other font file types??*/
+@font-face {
+    font-family: 'RopaSans';
+    src: url('ropasans/RopaSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RopaSans';
+    src: url('ropasans/RopaSans-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+/* Main Styles */
+body { color:#000000; font-family:'Roboto'; font-size:14px; height:768px; min-width: 1280px; min-height: 860px; overflow: hidden;}
+a { color:#ffffff; text-decoration:none; text-transform:uppercase; }
+a:hover { color:#8eb423; }
+h1 { font-family:'RopaSans'; font-weight:normal; }
+h2 { font-family:'RopaSans'; font-weight:normal; }
+li { list-style-type:none; }
+
+#wrapper {
+    display:block;
+    float:left;
+ /*   min-width:1280px;*/
+}
+
+#visualization{
+    position: fixed;
+}
+
+#dataviz { 				
+	background-color: 	#000000;
+	margin: 			0px;
+	overflow-y: 		hidden;
+	overflow-x:         auto;
+}
+#overlay_2d{
+	-webkit-perspective:		800;
+	position:					absolute;
+	margin: 					0px;
+	width:						100%;
+	height:						100%;
+	pointer-events:				none;
+}		
+
+.marker {
+	position:				absolute;
+	display:				inline-block;
+	background-color: 		rgba(0,0,0,.66);	
+	color:					#ffffff;
+	font-size:				4pt;
+    font-family: 			'RopaSans';
+	-moz-user-select:		-moz-none;
+	-khtml-user-select:		none;
+	-webkit-user-select:	none;
+	margin: 				0px;
+	border:					0px;
+    border-spacing:         0px;
+	padding:				0px;
+	overflow: 				hidden;		
+	cursor:					pointer;
+}	
+
+.marker td {
+    padding:                0px;
+}
+
+.test {
+    white-space:            nowrap;
+}
+
+
+.detail {
+    display:                block;
+	color:					#aaaaaa;
+    font-size:              12pt;
+    white-space:            nowrap;
+}
+
+.description {
+    display:                block;
+    color:                  #aaaaaa;
+    font-size:              10pt;
+    max-width:              400px;
+}
+
+.detail .key, .description .key {
+    color:                  #FFA90B;
+}
+
+#loading{
+    background-color: #111;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -380px;
+    color: white;
+    padding: 16px 30px;
+    width: 700px;
+    height: 45px;
+    line-height: 11px;
+}
+
+
+/*Styles by Pitch*/
+.clear {
+    clear:both;
+}
+
+/*Remove all text selection (except for Text Input)*/
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select:   none;
+	-khtml-user-select:    none;
+	-moz-user-select:      none;
+	-ms-user-select:       none;
+	user-select:           none;
+}
+input[type='text'] {
+	-webkit-touch-callout: default;
+	-webkit-user-select:   auto;
+	-khtml-user-select:    auto;
+	-moz-user-select:      text;
+	-ms-user-select:       text;
+	user-select:           text;
+
+}
+/*
+Elements to control the title and test selector
+*/
+.overlayTests {
+    z-index: 10001; /* selected test has z-index:10000*/
+}
+.pointer {
+    pointer-events: auto;
+}
+.noPointer {
+    pointer-events: none;
+}
+
+#glContainer {
+    z-index:1;
+    pointer-events:none;
+}
+#glContainer canvas {
+    z-index:1;
+    pointer-events:none;
+}
+
+#hudHeader {
+    position: 				absolute;
+/*    width: 					95%; */
+    left: 					30px;
+    top: 					20px;
+    color: 					#fff;
+    font-family: 			'RopaSans';
+    display:                none;
+    background: rgba(0,0,0,0.4);
+}
+#hudHeader h1 {
+    font-size: 				32px;
+    font-family: 			'RopaSans';
+    margin: 				0 0 0px 0;
+    display:                block;
+    float:                  left;
+}
+#hudHeader h1 .subtitle {
+    font-size: 14px;
+    color: #ddd;
+    
+}
+#hudButtons {
+    display: none;
+    position: absolute;
+    top: 20px;    
+
+    width: 489px;
+}
+#hudButtons .testTextInput {
+    float:                  right;
+    font-size: 				17px;
+    width: 					300px;
+    margin-right: 			5px;
+	font-family: 			'RopaSans';
+	text-transform:          uppercase;
+}
+#hudButtons .testsBtn {
+    float: right;
+    background: 			#333333;
+    padding: 				3px 10px 2px;
+    color: 					white;
+    border: 				0;
+    font-size: 				18px;
+	font-family: 			'RopaSans';
+	cursor: 				pointer;
+	margin-right: 			0px;
+	opacity:                0.9;
+}
+#hudButtons .testsBtn:hover {
+    opacity: 1;
+}
+#hudButtons .aboutBtn {
+	display:				block;
+	clear:					both;
+	margin-right: 			0px;
+	width: 					76px;
+
+}
+#hudButtons .zoomBtn {
+    margin-right:           5px;
+    width:                  30px;
+    font-weight:            bold;
+    height:                 24px;
+    margin-top:             2px;
+}
+
+#hudButtons .zoomOutBtn {
+    font-size:              17px;
+}
+.ui-autocomplete {
+    position: absolute;
+}
+.ui-autocomplete .ui-menu-item {
+    border-top:             1px solid #656565;
+    margin-left:            -39px;
+    padding-left:           4px;
+    font-family:            'RopaSans';
+    font-size:              18px;
+    color:                  white;
+    background:             #333;
+    width:                  301px;
+}
+.ui-autocomplete .ui-menu-item .ui-state-active {
+    background:             white;
+    color:                  black;
+    width:                  301px;
+    display:                block;
+    margin-left:            -4px;
+    padding-left:           4px;
+}
+
+/*
+Bar graph on left
+*/
+#barGraph {
+    position: absolute;
+    /*bottom:10px;*/
+    left:-7px;
+    opacity: 0.9;
+}
+#barGraph .success.er-scud, #barGraph .failure.er-scud, #barGraph .unknownBar.er-scud {
+	fill: 					#1A62A5;
+}
+#barGraph .success.hwasong-12, #barGraph .failure.hwasong-12, #barGraph .unknownBar.hwasong-12 {
+	fill: 					#6C6C6C;
+}
+#barGraph .success.hwasong-14, #barGraph .failure.hwasong-14, #barGraph .unknownBar.hwasong-14 {
+	fill:					#AEB21A;
+}
+#barGraph .success.kn-02, #barGraph .failure.kn-02, #barGraph .unknownBar.kn-02 {
+	fill: 					#B68982;
+}
+#barGraph .success.musudan, #barGraph .failure.musudan, #barGraph .unknownBar.musudan {
+	fill: 					#9FBAE3;
+}
+#barGraph .success.nodong, #barGraph .failure.nodong, #barGraph .unknownBar.nodong {
+	fill:					#FD690F;
+}
+#barGraph .success.polaris-1, #barGraph .failure.polaris-1, #barGraph .unknownBar.polaris-1 {
+    fill:                   #FEAE65;
+}
+#barGraph .success.polaris-2, #barGraph .failure.polaris-2, #barGraph .unknownBar.polaris-2 {
+    fill:                   #DA5CB6;
+}
+#barGraph .success.scud-b, #barGraph .failure.scud-b, #barGraph .unknownBar.scud-b {
+    fill:                   #279221;
+}
+#barGraph .success.scud-c, #barGraph .failure.scud-c, #barGraph .unknownBar.scud-c {
+    fill:                   #89DC78;
+}
+#barGraph .success.scud-c-marv, #barGraph .failure.scud-c-marv, #barGraph .unknownBar.scud-c-marv {
+    fill:                   #BBBBBB;
+}
+#barGraph .success.taepodong-1, #barGraph .failure.taepodong-1, #barGraph .unknownBar.taepodong-1 {
+    fill:                   #CA0F1E;
+}
+#barGraph .success.unha, #barGraph .failure.unha, #barGraph .unknownBar.unha {
+    fill:                   #814EAF;
+}
+#barGraph .success.unha-3, #barGraph .failure.unha-3, #barGraph .unknownBar.unha-3 {
+    fill:                   #B89FCB;
+}
+#barGraph .success.unknown, #barGraph .failure.unknown, #barGraph .unknownBar.unknown {
+    fill:                   #78433B;
+}
+#barGraph .successLabel text,#barGraph .failureLabel text,#barGraph .unknownLabel text {
+	fill: 					white;
+    font-family:			Roboto;
+}
+#barGraph .totalLabel {
+    fill: 					white;
+    font-family:			Roboto;
+    font-size: 				23px;
+}
+#barGraph .failureLabel {
+    font-family: 			Roboto;
+    font-size: 				14px;
+    fill: 					#FFA90B;
+}
+#barGraph .successLabel {
+    font-family: 			Roboto;
+    font-size: 				14px;
+    fill: 					#44B2D4;
+}
+#barGraph .unknownLabel {
+    font-family:            Roboto;
+    font-size:              14px;
+    fill:                   #DDDDDD;
+}
+#barGraph .barGraphLabelBG {
+    fill: rgba(0,0,0,0.8);
+}
+/* histogram and timeline at bottom */
+#history {
+    position: 				absolute;
+    bottom: 				0;
+    left: 					386px;
+    background-color: 		rgba(43,43,43,0.9);
+    display: 				none;
+}
+#history ul {
+    list-style-type:        none;
+    margin:                 10px 28px;
+    padding:                0;
+    padding-bottom:         15px;
+    padding-top:            22px;
+    color:                  white;
+    font-size:              12px;
+    font-family:            'Roboto';
+    width:                  630px;
+    background:             url('images/timelineBG.png') 10px 0 no-repeat; /*to be resized!*/
+}
+#history ul li {
+    width:                  42px;
+    float:                  left;
+    text-align:             center;
+    margin-top:             -30px;
+    padding-top:            30px;
+    cursor:                 pointer;
+}
+#history .timeline #handle {
+    cursor:                 pointer;
+    width:                  36px;
+    height:                 36px;
+    background:             url('images/yearHandle.png') 0px 0 no-repeat;
+    position:               absolute;
+    bottom:                 20px;
+    left:                   622px;    
+}
+#history .graph {
+    display: none;
+}
+#history .close {
+    width: 8px;
+    height: 8px;
+    background: url('images/close.png') 0 0 no-repeat;
+    margin-right: 8px;
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+    pointer-events:auto;
+}
+
+#history .labels {
+    margin-right: 35px;
+}
+#history .labels .change {
+    font-family: RopaSans;
+    font-size: 23px;
+    color: white;
+    margin-left: 31px;
+    float: left;
+    margin-top: 10px;
+}
+#history .labels .successes {
+    float: right;
+    font-family: Roboto;
+    font-size: 14px;
+    color:#70B4CB;
+    margin-top: 10px;
+}
+#history .labels .failures {
+    float: right;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #FFA90B;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#history .labels .unknowns {
+    float: right;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #DDDDDD;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#histogram path {
+    fill: none;
+    stroke-width: 2px;
+}
+#histogram .outcome.failure {
+    fill:         #FFA90B;
+}
+#histogram .outcome.success {
+    fill:         #44B2D4;
+}
+#histogram .outcome.unknown {
+    fill:         #DDDDDD;
+}
+#histogram .tick {
+    fill:           none;
+    stroke:         #959595;
+}
+#histogram .tickLbl {
+    fill: #fff;
+    font-size: 10px;
+    font-family: Roboto;
+}
+#histogram .plusMinus {
+    font-size: 16px;
+    fill: #fff;
+}
+#histogram ellipse.year {
+    fill: #fff;
+}
+#histogram text.yearLabel {
+    fill: #fff;
+}
+
+/* ioutcome buttons (bottom right)*/
+#outcomeBtns {
+    width:                  98px;
+    position:               absolute;
+    bottom:                 0px;
+    color:                  white;
+    display:                none;
+}
+#outcomeBtns>div>.label {
+    float:              left;
+    width:              98px;
+    height:             25px;
+    text-align:         center;
+    text-transform:     uppercase;
+    font-family:        'Roboto';
+    font-size:          18px;
+    background:         #262626;
+    vertical-align:     middle;
+    padding-top:        3px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+#outcomeBtns>div>.label:hover {
+    opacity: 1;
+}
+#outcomeBtns .success .label {
+    color:              #44B2D4;
+}
+#outcomeBtns .success .label.inactive {
+    color:              #22596A;
+}
+#outcomeBtns .failure .label {
+    color:              #FFA90B;
+}
+#outcomeBtns .failure .label.inactive {
+    color:              #7F5405;
+}
+#outcomeBtns .unknown .label {
+    color:              #DDDDDD;
+}
+#outcomeBtns .unknown .label.inactive {
+    color:              #6E6E6E;
+}
+#outcomeBtns .success {
+    margin-bottom:      5px;
+}
+#outcomeBtns .failure {
+    margin-bottom:      5px;
+}
+
+#missileTypeBtns {
+    width:                  130px;
+    position:               absolute;
+    bottom:                 17px;
+    color:                  white;
+    display:                none;
+}
+#missileTypeBtns>div>.box {
+    float:                  left;
+    width:                  28px;
+    text-align:             center;
+    height:                 28px;
+}
+#missileTypeBtns>div>.label {
+    float:                  left;
+    width:                  98px;
+    height:                 22px;
+    text-transform:         uppercase;
+    font-family:            'Roboto';
+    font-size:              13px;
+    vertical-align:         middle;
+    padding-top:            6px;
+}
+#missileTypeBtns .check {
+    width: 16px;
+    height: 16px;
+    background: url('images/missileIcons.png') 0 0 no-repeat;
+    margin: 6px auto;
+    cursor: pointer;
+    opacity: 0.9;
+}
+#missileTypeBtns .check:hover {
+    opacity: 1;
+}
+#missileTypeBtns .er-scud .check {
+    background-position: 0px 0px;
+}
+#missileTypeBtns .er-scud .check.inactive {
+    background-position: 0px -16px;
+}
+#missileTypeBtns .hwasong-12 .check {
+    background-position: -16px 0px;
+}
+#missileTypeBtns .hwasong-12 .check.inactive {
+    background-position: -16px -16px;
+}
+#missileTypeBtns .hwasong-14 .check {
+    background-position: -32px 0px;
+}
+#missileTypeBtns .hwasong-14 .check.inactive {
+    background-position: -32px -16px;
+}
+#missileTypeBtns .kn-02 .check {
+    background-position: -48px 0px;
+}
+#missileTypeBtns .kn-02 .check.inactive {
+    background-position: -48px -16px;
+}
+#missileTypeBtns .musudan .check {
+    background-position: -64px 0px;
+}
+#missileTypeBtns .musudan .check.inactive {
+    background-position: -64px -16px;
+}
+#missileTypeBtns .nodong .check {
+    background-position: -80px 0px;
+}
+#missileTypeBtns .nodong .check.inactive {
+    background-position: -80px -16px;
+}
+#missileTypeBtns .polaris-1 .check {
+    background-position: -96px 0px;
+}
+#missileTypeBtns .polaris-1 .check.inactive {
+    background-position: -96px -16px;
+}
+#missileTypeBtns .polaris-2 .check {
+    background-position: -112px 0px;
+}
+#missileTypeBtns .polaris-2 .check.inactive {
+    background-position: -112px -16px;
+}
+#missileTypeBtns .scud-b .check {
+    background-position: -128px 0px;
+}
+#missileTypeBtns .scud-b .check.inactive {
+    background-position: -128px -16px;
+}
+#missileTypeBtns .scud-c .check {
+    background-position: -144px 0px;
+}
+#missileTypeBtns .scud-c .check.inactive {
+    background-position: -144px -16px;
+}
+#missileTypeBtns .scud-c-marv .check {
+    background-position: -160px 0px;
+}
+#missileTypeBtns .scud-c-marv .check.inactive {
+    background-position: -160px -16px;
+}
+#missileTypeBtns .taepodong-1 .check {
+    background-position: -176px 0px;
+}
+#missileTypeBtns .taepodong-1 .check.inactive {
+    background-position: -176px -16px;
+}
+#missileTypeBtns .unha .check {
+    background-position: -192px 0px;
+}
+#missileTypeBtns .unha .check.inactive {
+    background-position: -192px -16px;
+}
+#missileTypeBtns .unha-3 .check {
+    background-position: -208px 0px;
+}
+#missileTypeBtns .unha-3 .check.inactive {
+    background-position: -208px -16px;
+}
+#missileTypeBtns .unknown .check {
+    background-position: -224px 0px;
+}
+#missileTypeBtns .unknown .check.inactive {
+    background-position: -224px -16px;
+}
+
+#graphIcon {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    bottom: 10px;
+    left: 1255px;
+    cursor: pointer;
+    background: url('images/graphIcon.png') 0 0 no-repeat;
+    display: none;
+    opacity: 0.9;
+}
+#graphIcon:hover {
+    opacity: 1;
+}
+
+#aboutContainer {
+    display: none;
+    position: absolute;
+    top: 95px;
+    width: 350px;
+    right: 28px;
+    color: white;
+}
+#aboutBox {
+    width: 288px;
+    padding: 20px 30px;
+    background: #323232;
+}
+#aboutBox .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: RopaSans;
+    font-size: 20px;
+}
+#aboutContainer .arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #323232;
+    margin-left: 293px;
+}
+#aboutBox .text {
+    font-family: Roboto;
+    font-size: 15px;
+}
+#aboutBox a {
+    text-transform: none;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #FFA90B;
+}
+#aboutBox a:hover {
+    text-decoration: underline;
+}
+
+
+/* Small size */
+/*
+@media all and (max-width: 1395px) {
+    #importExportBtns {
+        width: 187px;
+    }
+    #importExportBtns>div>div {
+        width: 23px;
+    }
+    #importExportBtns .imex>div {
+        background: transparent;
+    }
+    #importExportBtns .imex .label {
+        background: #262626;
+    }
+    #importExportBtns .typeLabels div {
+        font-size: 12px;
+        -webkit-transform:rotate(323deg);
+        -moz-transform:rotate(323deg);
+        -o-transform:rotate(323deg);
+        -ms-transform:rotate(323deg);
+        margin-top: -2px;
+    }
+    
+    #importExportBtns .typeLabels .mil {
+        margin-left: 8px;
+    }
+    #importExportBtns .typeLabels .civ {
+        margin-left: 2px;
+    }
+    #importExportBtns .typeLabels .ammo {
+        margin-left: -1px;
+    }
+}*/

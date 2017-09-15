@@ -1,0 +1,26 @@
+{
+	"facilities": {
+		"tonghae": {"name": "Tonghae Satellite Launching Ground", "lat": 40.8499966, "lon": 129.666664},
+		"chihari": {"name": "Chihari Missile Base", "lat": 38.62333, "lon": 126.6847},
+		"unknown": {"name": "Unknown", "lat": 39.200159, "lon": 125.673256},
+		"kittaeryong": {"name": "Kittaeryong Missile Base", "lat": 38.99083, "lon": 127.6236},
+		"sohae": {"name": "Sohae Satellite Launching Station", "lat": 39.6596, "lon": 124.7057},
+		"wonsan": {"name": "Wonsan Kalma International Airport", "lat": 39.1677, "lon": 127.4817},
+		"sunchon": {"name": "Sunchon Airbase", "lat": 39.412594, "lon": 125.89031},
+		"north-wonsan": {"name": "North Wonsan", "lat": 39.40167, "lon": 127.5369},
+		"hwangju": {"name": "Hwangju", "lat": 38.686834, "lon": 125.702005},
+		"kaesong": {"name": "Kaesong", "lat": 37.9382, "lon": 126.5878},
+		"nampo": {"name": "Nampo", "lat": 38.7523, "lon": 125.3247},
+		"sinpo": {"name": "Sinpo Shipyard", "lat": 40.0368, "lon": 128.1839},
+		"panghyon-ab": {"name": "Panghyon Airbase", "lat": 39.927472, "lon": 125.207889},
+		"kusong": {"name": "Kusong Testing Ground", "lat": 40.01325, "lon": 125.22302},
+		"pukchang": {"name": "Pukchang Airfield", "lat": 39.504417, "lon": 125.964333},
+		"north-kusong": {"name": "North Kusong Testing Ground", "lat": 40.0659, "lon": 125.2099},
+		"lake-yonpung": {"name": "Lake Yonpung", "lat": 39.618283, "lon": 125.8035851},
+		"panghyon": {"name": "Panghyon", "lat": 39.872153, "lon": 125.269192},
+		"mupyong-ni": {"name": "Mupyong-ni Arms Plant", "lat": 40.611208, "lon": 126.425743},
+		"masikryong": {"name": "Masikryong", "lat": 39.065962, "lon": 127.250257},
+		"pyongyang": {"name": "Pyongyang International Airport", "lat": 39.200159, "lon": 125.673256},
+		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
+	}
+}

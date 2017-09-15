@@ -1,0 +1,17 @@
+{
+	"er-scud": {"name": "ER Scud", "type": "MRBM"},
+	"hwasong-12": {"name": "Hwasong-12", "type": "IRBM"},
+	"hwasong-14": {"name": "Hwasong-14", "type": "ICBM"},
+	"kn-02": {"name": "KN-02", "type": "SRBM"},
+	"musudan": {"name": "Musudan", "type": "IRBM"},
+	"nodong": {"name": "Nodong", "type": "MRBM"},
+	"polaris-1": {"name": "Polaris-1", "type": "SLBM"},
+	"polaris-2": {"name": "Polaris-2", "type": "MRBM"},
+	"scud-b": {"name": "Scud-B", "type": "SRBM"},
+	"scud-c": {"name": "Scud-C", "type": "SRBM"},
+	"scud-c-marv": {"name": "Scud-C MaRV", "type": "SRBM"},
+	"taepodong-1": {"name": "Taepodong-1", "type": "SLV"},
+	"unha": {"name": "Unha", "type": "SLV"},
+	"unha-3": {"name": "Unha-3", "type": "SLV"},
+	"unknown": {"name": "Unknown", "type": "Unknown"}
+}
