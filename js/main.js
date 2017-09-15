@@ -269,12 +269,19 @@ function initScene() {
     //	-----------------------------------------------------------------------------
     //	Event listeners
 	document.addEventListener( 'mousemove', onDocumentMouseMove, true );
+	document.addEventListener( 'touchmove', onDocumentMouseMove, true );
 	document.addEventListener( 'windowResize', onDocumentResize, false );
 
 	//masterContainer.addEventListener( 'mousedown', onDocumentMouseDown, true );	
 	//masterContainer.addEventListener( 'mouseup', onDocumentMouseUp, false );	
-	document.addEventListener( 'mousedown', onDocumentMouseDown, true );	
+	document.addEventListener( 'mousedown', onDocumentMouseDown, true );
+	document.addEventListener( 'touchstart', onDocumentMouseDown, true );	
 	document.addEventListener( 'mouseup', onDocumentMouseUp, false );	
+	document.addEventListener( 'touchend', onDocumentMouseUp, false );
+	document.addEventListener( 'touchcancel', onDocumentMouseUp, false );
+	document.addEventListener( 'gesturestart', onGestureStart, true );
+	document.addEventListener( 'gesturechange', onGestureChange, true );
+	document.addEventListener( 'gestureend', onGestureEnd, false );
 	
 	masterContainer.addEventListener( 'click', onClick, true );	
 	masterContainer.addEventListener( 'mousewheel', onMouseWheel, false );

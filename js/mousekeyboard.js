@@ -1,7 +1,9 @@
 var mouseX = 0, mouseY = 0, pmouseX = 0, pmouseY = 0;
 var pressX = 0, pressY = 0;
+var scale = 0, pscale = 0;
 
 var dragging = false;						
+var scaling = false;
 
 var rotateX = 0, rotateY = 0;
 var rotateVX = 0, rotateVY = 0;
@@ -17,10 +19,15 @@ function onDocumentMouseMove( event ) {
 	pmouseX = mouseX;
 	pmouseY = mouseY;
 
-	mouseX = event.clientX - window.innerWidth * 0.5;
-	mouseY = event.clientY - window.innerHeight * 0.5;
+	if (event instanceof MouseEvent) {
+		mouseX = event.clientX - window.innerWidth * 0.5;
+		mouseY = event.clientY - window.innerHeight * 0.5;
+	} else {
+		mouseX = event.touches[0].clientX - window.innerWidth * 0.5;
+		mouseY = event.touches[0].clientY - window.innerHeight * 0.5;
+	}
 
-	if(dragging){
+	if(dragging && !('ontouchend' in document && event instanceof TouchEvent && event.touches.length > 1)){
 		if(keyboard.pressed("shift") == false){
 			rotateVY += (mouseX - pmouseX) / 2 * Math.PI / 180 * 0.1;
   			rotateVX += (mouseY - pmouseY) / 2 * Math.PI / 180 * 0.1;	
@@ -36,11 +43,24 @@ function onDocumentMouseDown( event ) {
     if(event.target.className.indexOf('noMapDrag') !== -1) {
         return;
     }
+
+    if (event instanceof MouseEvent) {
+		mouseX = event.clientX - window.innerWidth * 0.5;
+		mouseY = event.clientY - window.innerHeight * 0.5;
+	} else {
+		mouseX = event.touches[0].clientX - window.innerWidth * 0.5;
+		mouseY = event.touches[0].clientY - window.innerHeight * 0.5;
+	}
+
     dragging = true;			   
     pressX = mouseX;
     pressY = mouseY;   	
     rotateTargetX = undefined;
     rotateTargetX = undefined;
+
+    if ('ontouchend' in document && event instanceof TouchEvent && event.touches.length > 1) {
+		event.preventDefault();
+	}
 }	
 
 function onDocumentMouseUp( event ){
@@ -78,4 +98,21 @@ function onMouseWheel( event ){
 }	
 
 function onDocumentResize(e){
+}
+
+function onGestureChange(event) {
+	pscale = scale;
+	scale = event.scale;
+	if (scaling) {
+		handleMWheel(Math.log(event.scale/pscale)*10);
+	}
+}
+
+function onGestureStart(event) {
+	scaling = true;
+	scale = event.scale;
+}
+
+function onGestureEnd(event) {
+	scaling = false;
 }

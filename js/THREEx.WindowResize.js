@@ -29,10 +29,6 @@ THREEx.WindowResize	= function(renderer, camera, dimension){
 	var callback	= function(){
 		// fetch target renderer size
 		var rendererSize = dimension();
-	    var minWidth = 1280;
-	    if(rendererSize.width < minWidth) {
-	       rendererSize.width = minWidth;
-	    }
 		// notify the renderer of the size change
 		renderer.setSize( rendererSize.width, rendererSize.height );
 		// update the camera
