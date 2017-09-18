@@ -195,8 +195,8 @@
 	    "facility": "tonghae",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 40,
-	    "distance": 450,
-	    "bearing": 73,
+	    "distance": 500,
+	    "bearing": 92,
 	    "outcome": "failure",
 	    "description": "This test failed 42 seconds into launch. Its debris impacted somewhere west of Japan though it was on a trajectory to overfly it. North Korea kicked off the end of the missile test moratorium with a test that looks almost identical to the test that led to negotiating it in the first place (this probably was not a coincidence). Furthermore, the test occurred on the 4th of July (in the US). North Korea did the same thing in 2009 with a series of tests and in 2017 with its first ICBM test."
 	}, {
@@ -206,8 +206,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 500,
-	    "bearing": 55,
+	    "distance": 420,
+	    "bearing": 54,
 	    "outcome": "success",
 	    "description": ""
 	}, {
@@ -217,8 +217,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 600,
-	    "bearing": 56,
+	    "distance": 400,
+	    "bearing": 53,
 	    "outcome": "success",
 	    "description": ""
 	}, {
@@ -228,8 +228,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 400,
-	    "bearing": 57,
+	    "distance": 440,
+	    "bearing": 52,
 	    "outcome": "success",
 	    "description": ""
 	}, {
@@ -239,8 +239,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 450,
-	    "bearing": 58,
+	    "distance": 440,
+	    "bearing": 50,
 	    "outcome": "success",
 	    "description": ""
 	}, {
@@ -250,8 +250,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 600,
-	    "bearing": 59,
+	    "distance": 420,
+	    "bearing": 51,
 	    "outcome": "success",
 	    "description": ""
 	}, {
@@ -261,8 +261,8 @@
 	    "facility": "kittaeryong",
 	    "landing": "Sea of Japan or East Sea",
 	    "apogee": 150,
-	    "distance": 500,
-	    "bearing": 60,
+	    "distance": 400,
+	    "bearing": 49,
 	    "outcome": "success",
 	    "description": "There is a considerable amount of disagreement concerning the types and numbers of missiles launched on July 5, 2006. Russia, for instance, claims they tracked 10 missile launches. This database only records 7 missiles launched that day. The types of missiles listed here is also debated. The Nodongs could very well have actually been Scuds and vice versa."
 	}],
