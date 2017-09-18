@@ -8,6 +8,7 @@
 	"polaris-1": {"name": "Polaris-1", "type": "SLBM"},
 	"polaris-2": {"name": "Polaris-2", "type": "MRBM"},
 	"scud-b": {"name": "Scud-B", "type": "SRBM"},
+	"scud-b-marv": {"name": "Scud-B MaRV", "type": "SRBM"},
 	"scud-c": {"name": "Scud-C", "type": "SRBM"},
 	"scud-c-marv": {"name": "Scud-C MaRV", "type": "SRBM"},
 	"taepodong-1": {"name": "Taepodong-1", "type": "SLV"},

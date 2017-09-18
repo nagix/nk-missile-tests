@@ -324,6 +324,9 @@ Bar graph on left
 #barGraph .success.scud-b, #barGraph .failure.scud-b, #barGraph .unknownBar.scud-b {
     fill:                   #279221;
 }
+#barGraph .success.scud-b-marv, #barGraph .failure.scud-b-marv, #barGraph .unknownBar.scud-b-marv {
+    fill:                   #D2D479;
+}
 #barGraph .success.scud-c, #barGraph .failure.scud-c, #barGraph .unknownBar.scud-c {
     fill:                   #89DC78;
 }
@@ -625,41 +628,47 @@ Bar graph on left
 #missileTypeBtns .scud-b .check.inactive {
     background-position: -128px -16px;
 }
-#missileTypeBtns .scud-c .check {
+#missileTypeBtns .scud-b-marv .check {
     background-position: -144px 0px;
 }
-#missileTypeBtns .scud-c .check.inactive {
+#missileTypeBtns .scud-b-marv .check.inactive {
     background-position: -144px -16px;
 }
-#missileTypeBtns .scud-c-marv .check {
+#missileTypeBtns .scud-c .check {
     background-position: -160px 0px;
 }
-#missileTypeBtns .scud-c-marv .check.inactive {
+#missileTypeBtns .scud-c .check.inactive {
     background-position: -160px -16px;
 }
-#missileTypeBtns .taepodong-1 .check {
+#missileTypeBtns .scud-c-marv .check {
     background-position: -176px 0px;
 }
-#missileTypeBtns .taepodong-1 .check.inactive {
+#missileTypeBtns .scud-c-marv .check.inactive {
     background-position: -176px -16px;
 }
-#missileTypeBtns .unha .check {
+#missileTypeBtns .taepodong-1 .check {
     background-position: -192px 0px;
 }
-#missileTypeBtns .unha .check.inactive {
+#missileTypeBtns .taepodong-1 .check.inactive {
     background-position: -192px -16px;
 }
-#missileTypeBtns .unha-3 .check {
+#missileTypeBtns .unha .check {
     background-position: -208px 0px;
 }
-#missileTypeBtns .unha-3 .check.inactive {
+#missileTypeBtns .unha .check.inactive {
     background-position: -208px -16px;
 }
-#missileTypeBtns .unknown .check {
+#missileTypeBtns .unha-3 .check {
     background-position: -224px 0px;
 }
-#missileTypeBtns .unknown .check.inactive {
+#missileTypeBtns .unha-3 .check.inactive {
     background-position: -224px -16px;
+}
+#missileTypeBtns .unknown .check {
+    background-position: -240px 0px;
+}
+#missileTypeBtns .unknown .check.inactive {
+    background-position: -240px -16px;
 }
 
 #graphIcon {

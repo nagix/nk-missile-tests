@@ -63,6 +63,7 @@ var missileColors = {
 	'polaris-1': 0xFEAE65,
 	'polaris-2': 0xDA5CB6,
 	'scud-b': 0x279221,
+	'scud-b-marv': 0xD2D479,
 	'scud-c': 0x89DC78,
 	'scud-c-marv': 0xBBBBBB,
 	'taepodong-1': 0xCA0F1E,
@@ -120,7 +121,7 @@ function start( e ){
 
 var Selection = function(){
 	this.selectedYear = '2010';
-	this.selectedTest = '2017-08-28 HWASONG-12';
+	this.selectedTest = '2017-09-14 HWASONG-12';
 
 	this.outcomeCategories = new Object();
 	for( var i in outcomeLookup ){
@@ -250,7 +251,7 @@ function initScene() {
 
 	selectionData = new Selection();
 
-	selectVisualization( timeBins, '2017', ['2017-08-28 HWASONG-12'], Object.keys(outcomeLookup), Object.keys(missileLookup) );					
+	selectVisualization( timeBins, '2017', ['2017-09-14 HWASONG-12'], Object.keys(outcomeLookup), Object.keys(missileLookup) );					
 
 
     //	-----------------------------------------------------------------------------
