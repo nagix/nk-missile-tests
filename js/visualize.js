@@ -166,8 +166,12 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 	var linesGeo = new THREE.Geometry();
 	var lineColors = [];
 
-	var particlesGeo = new THREE.Geometry();
-	var particleColors = [];			
+	var particlesGeo = new THREE.BufferGeometry();
+	var particlePositions = [];
+	var particleSizes = [];
+	var particleColors = [];
+
+	particlesGeo.vertices = [];
 
 	//	go through the data from year, and find all relevant geometries
 	for( i in bin ){
@@ -214,7 +218,10 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 					particle.path = points;
 					particlesGeo.vertices.push( particle );	
 					particle.size = particleSize;
-					particleColors.push( particleColor );						
+
+					particlePositions.push( particle.x, particle.y, particle.z );
+					particleSizes.push( particleSize );
+					particleColors.push( particleColor.r, particleColor.g, particleColor.b );
 				}
 			}			
 
@@ -250,24 +257,20 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 			linewidth: 1 } ) 
 	);
 
-	splineOutline.renderDepth = false;
 
-
-	attributes = {
-		size: {	type: 'f', value: [] },
-		customColor: { type: 'c', value: [] }
-	};
+	particlesGeo.addAttribute('position', new THREE.BufferAttribute(new Float32Array(particlePositions), 3));
+	particlesGeo.addAttribute('size', new THREE.BufferAttribute(new Float32Array(particleSizes), 1));
+	particlesGeo.addAttribute('customColor', new THREE.BufferAttribute(new Float32Array(particleColors), 3));
 
 	uniforms = {
 		amplitude: { type: "f", value: 1.0 },
 		color:     { type: "c", value: new THREE.Color( 0xffffff ) },
-		texture:   { type: "t", value: THREE.ImageUtils.loadTexture( "images/particleA.png" ) },
+		texture:   { type: "t", value: new THREE.TextureLoader().load( "images/particleA.png" ) },
 	};
 
 	var shaderMaterial = new THREE.ShaderMaterial( {
 
 		uniforms: 		uniforms,
-		attributes:     attributes,
 		vertexShader:   document.getElementById( 'vertexshader' ).textContent,
 		fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
 
@@ -280,27 +283,14 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 
 
 
-	var particleGraphic = THREE.ImageUtils.loadTexture("images/map_mask.png");
-	var particleMat = new THREE.PointCloudMaterial( { map: particleGraphic, color: 0xffffff, size: 60, 
-														blending: THREE.NormalBlending, transparent:true, 
-														depthWrite: false, vertexColors: true,
-														sizeAttenuation: true } );
-	particlesGeo.colors = particleColors;
-	var pSystem = new THREE.PointCloud( particlesGeo, shaderMaterial );
+	var pSystem = new THREE.Points( particlesGeo, shaderMaterial );
 	pSystem.dynamic = true;
 	splineOutline.add( pSystem );
 
-	var vertices = pSystem.geometry.vertices;
-	var values_size = attributes.size.value;
-	var values_color = attributes.customColor.value;
-
-	for( var v = 0; v < vertices.length; v++ ) {		
-		values_size[ v ] = pSystem.geometry.vertices[v].size;
-		values_color[ v ] = particleColors[v];
-	}
-
 	pSystem.update = function(){	
 		// var time = Date.now()									
+		var positionArray = this.geometry.attributes.position.array;
+		var index = 0;
 		for( var i in this.geometry.vertices ){						
 			var particle = this.geometry.vertices[i];
 			var path = particle.path;
@@ -323,8 +313,12 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 
 			particle.copy( currentPoint );
 			particle.lerp( nextPoint, particle.lerpN );			
+
+			positionArray[index++] = particle.x;
+			positionArray[index++] = particle.y;
+			positionArray[index++] = particle.z;
 		}
-		this.geometry.verticesNeedUpdate = true;
+		this.geometry.attributes.position.needsUpdate = true;
 	};		
 
 	//	return this info as part of the mesh package, we'll use this in selectvisualization

@@ -49,7 +49,7 @@ function wrap(value, min, rangeSize) {
 	return value % rangeSize;
 }
 
-THREE.Curve.Utils.createLineGeometry = function( points ) {
+function createLineGeometry( points ) {
 	var geometry = new THREE.Geometry();
 	for( var i = 0; i < points.length; i ++ ) {
 		geometry.vertices.push( points[i] );
@@ -106,7 +106,7 @@ function map(v, i1, i2, o1, o2) {
    return o1 + (o2 - o1) * (v - i1) / (i2 - i1);
  }
 
- function numberWithCommas(x) {
+function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
