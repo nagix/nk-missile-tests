@@ -197,7 +197,7 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 			var particleColor = lastColor.clone();		
 			var points = set.lineGeometry.vertices;
 			var particleCount = 1;
-			var particleSize = set.lineGeometry.size;		
+			var particleSize = set.lineGeometry.size * dpr;
 			if (set === selectedTest) {
 				particleCount *= 4;
 				particleSize *= 2;

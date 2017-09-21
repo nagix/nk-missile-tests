@@ -77,7 +77,7 @@ function makeConnectionLineGeometry( facility, landing, apogee ){
 	//	create a line geometry out of these
 	var curveGeometry = THREE.Curve.Utils.createLineGeometry( points );
 
-	curveGeometry.size = 30;
+	curveGeometry.size = 15;
 
 	return curveGeometry;
 }
