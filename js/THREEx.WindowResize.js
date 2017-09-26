@@ -6,7 +6,7 @@
 // **Step 1**: Start updating renderer and camera
 //
 // ```var windowResize = THREEx.WindowResize(aRenderer, aCamera)```
-//    
+//
 // **Step 2**: Start updating renderer and camera
 //
 // ```windowResize.stop()```
@@ -19,7 +19,7 @@ var THREEx	= THREEx 		|| {};
 
 /**
  * Update renderer and camera when the window is resized
- * 
+ *
  * @param {Object} renderer the renderer to update
  * @param {Object} Camera the camera to update
  * @param {Function} dimension callback for renderer size

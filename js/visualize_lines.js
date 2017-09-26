@@ -5,32 +5,32 @@ function makeConnectionLineGeometry( facility, landing, apogee ){
 	if( facility.center === undefined || landing.center == undefined )
 		return undefined;
 
-	var distance = landing.center.clone().sub(facility.center).length();		
+	var distance = landing.center.clone().sub(facility.center).length();
 
 	//	how high we want to shoot the curve upwards
 	var midHeight = globeRadius * apogee / 6378.137;
 	var midLength = globeRadius + midHeight;
-	var anchorHeight = globeRadius * apogee / 6378.137 * 0.6666;
-	var anchorLength = globeRadius + anchorHeight;
+//	var anchorHeight = globeRadius * apogee / 6378.137 * 0.6666;
+//	var anchorLength = globeRadius + anchorHeight;
 
 	//	start of the line
 	var start = facility.center;
 
 	//	end of the line
 	var end = landing.center;
-	
+
 	//	midpoint for the curve
-	var mid = start.clone().lerp(end,0.5);		
+	var mid = start.clone().lerp(end,0.5);
 	mid.normalize();
-	mid.multiplyScalar( midLength );			
+	mid.multiplyScalar( midLength );
 
 	//	the normal from start to end
 	var normal = (new THREE.Vector3()).subVectors(start, end);
 	normal.normalize();
 
-	/*				     
+	/*
 				The curve looks like this:
-				
+
 				midStartAnchor---- mid ----- midEndAnchor
 			  /											  \
 			 /											   \
@@ -44,23 +44,23 @@ function makeConnectionLineGeometry( facility, landing, apogee ){
 //	var distanceOneSixth = distance * 0.1666;
 
 	var startAnchor = start;
-	var midStartAnchor = mid.clone().add( normal.clone().multiplyScalar( distanceOneThird ) );					
+	var midStartAnchor = mid.clone().add( normal.clone().multiplyScalar( distanceOneThird ) );
 	var midEndAnchor = mid.clone().add( normal.clone().multiplyScalar( -distanceOneThird ) );
 	var endAnchor = end;
 //	var startAnchor = start.clone().lerp(end,0.1666).normalize().multiplyScalar(anchorLength);
-//	var midStartAnchor = mid.clone().add( normal.clone().multiplyScalar( distanceOneSixth ) );					
+//	var midStartAnchor = mid.clone().add( normal.clone().multiplyScalar( distanceOneSixth ) );
 //	var midEndAnchor = mid.clone().add( normal.clone().multiplyScalar( -distanceOneSixth ) );
 //	var endAnchor = start.clone().lerp(end,0.8333).normalize().multiplyScalar(anchorLength);
 
 	//	now make a bezier curve out of the above like so in the diagram
-	var splineCurveA = new THREE.CubicBezierCurve3( start, startAnchor, midStartAnchor, mid);											
+	var splineCurveA = new THREE.CubicBezierCurve3( start, startAnchor, midStartAnchor, mid);
 	// splineCurveA.updateArcLengths();
 
 	var splineCurveB = new THREE.CubicBezierCurve3( mid, midEndAnchor, endAnchor, end);
 	// splineCurveB.updateArcLengths();
 
 	//	how many vertices do we want on this guy? this is for *each* side
-	var vertexCountDesired = Math.floor( (distance + midHeight) * 0.3 + 3 );	
+	var vertexCountDesired = Math.floor( (distance + midHeight) * 0.3 + 3 );
 
 	//	collect the vertices
 	var points = splineCurveA.getPoints( vertexCountDesired );

@@ -12,7 +12,7 @@ function landingLatLon(lat, lon, bearing, distance) {
 		Math.cos(delta) - Math.sin(phi1) * Math.sin(phi2));
 	var L2 = (L1 + dL + 3 * Math.PI) % (2 * Math.PI) - Math.PI;
 
-	return {'lat': phi2 * 180 / Math.PI, 'lon': L2  * 180 / Math.PI};
+	return {'lat': phi2 * 180 / Math.PI, 'lon': L2 * 180 / Math.PI};
 }
 
 // For best precision
@@ -68,20 +68,20 @@ function vincenty(lat, lon, bearing, distance) {
 	));
 	var L2 = L + L1;
 
-	return {'lat': phi2 * 180 / Math.PI, 'lon': L2  * 180 / Math.PI};
+	return {'lat': phi2 * 180 / Math.PI, 'lon': L2 * 180 / Math.PI};
 }
 
-function buildDataVizGeometries( linearData ){	
+function buildDataVizGeometries( linearData ){
 
-	var sphereRad = 1;				
+	var sphereRad = 1;
 	var rad = 100;
 	var loadLayer = document.getElementById('loading');
 
 	for( var i in linearData ){
-		var yearBin = linearData[i].data;		
+		var yearBin = linearData[i].data;
 
 		var year = linearData[i].t;
-		selectableYears.push(year);	
+		selectableYears.push(year);
 
 		var count = 0;
 		console.log('Building data for ...' + year);
@@ -93,10 +93,10 @@ function buildDataVizGeometries( linearData ){
 
 			var facilityName = set.facility;
 			facility = facilityData[facilityName];
-			
+
 			//	we couldn't find the facility, it wasn't in our list...
 			if( facility === undefined )
-				continue;			
+				continue;
 
 			var distance = set.distance;
 			if (isNaN(distance)) {
@@ -105,7 +105,7 @@ function buildDataVizGeometries( linearData ){
 
 			var apogee = set.apogee;
 			if (apogee === 'unknown' && distance > 0) {
-				// minimum energy trajectory  
+				// minimum energy trajectory
 				apogee = -0.000013 * distance * distance + 0.26 * distance;
 			}
 			if (isNaN(apogee)) {
@@ -113,15 +113,15 @@ function buildDataVizGeometries( linearData ){
 			}
 
 			var landing = landingLatLon(facility.lat, facility.lon, set.bearing, distance);
-		    var lon = landing.lon - 90;
-		    var lat = landing.lat;
-	        var phi = Math.PI/2 - lat * Math.PI / 180;
-	        var theta = 2 * Math.PI - lon * Math.PI / 180 + Math.PI * 0.055;
+			var lon = landing.lon - 90;
+			var lat = landing.lat;
+			var phi = Math.PI/2 - lat * Math.PI / 180;
+			var theta = 2 * Math.PI - lon * Math.PI / 180 + Math.PI * 0.055;
 
 			var lcenter = new THREE.Vector3();
-	        lcenter.x = Math.sin(phi) * Math.cos(theta) * rad;
-	        lcenter.y = Math.cos(phi) * rad;
-	        lcenter.z = Math.sin(phi) * Math.sin(theta) * rad;
+			lcenter.x = Math.sin(phi) * Math.cos(theta) * rad;
+			lcenter.y = Math.cos(phi) * rad;
+			lcenter.z = Math.sin(phi) * Math.sin(theta) * rad;
 
 			set.landingLocation = {
 				name: set.landing,
@@ -135,15 +135,15 @@ function buildDataVizGeometries( linearData ){
 			}
 
 			//	visualize this event
-			set.lineGeometry = makeConnectionLineGeometry( facility, set.landingLocation, apogee );		
+			set.lineGeometry = makeConnectionLineGeometry( facility, set.landingLocation, apogee );
 
 			testData[set.testName] = set;
 
 		}
 
-	}			
+	}
 
-	loadLayer.style.display = 'none';	
+	loadLayer.style.display = 'none';
 }
 
 function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileCategories ){
@@ -153,15 +153,15 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 	}
 
 	//	pick out the year first from the data
-    for (var indexFromYear = 0; indexFromYear < selectableYears.length - 1; indexFromYear++) {
-        if (selectableYears[indexFromYear] == year) {
-            break;
-        }
-    }
+	for (var indexFromYear = 0; indexFromYear < selectableYears.length - 1; indexFromYear++) {
+		if (selectableYears[indexFromYear] == year) {
+			break;
+		}
+	}
 
 	var affectedTest = [];
 
-	var bin = linearData[indexFromYear].data;	
+	var bin = linearData[indexFromYear].data;
 
 	var linesGeo = new THREE.Geometry();
 	var lineColors = [];
@@ -177,8 +177,8 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 	for( i in bin ){
 		var set = bin[i];
 
-		var relevantOutcomeCategory = $.inArray(set.outcome, outcomeCategories) >= 0;		
-		var relevantMissileCategory = $.inArray(set.missile, missileCategories) >= 0;		
+		var relevantOutcomeCategory = $.inArray(set.outcome, outcomeCategories) >= 0;
+		var relevantMissileCategory = $.inArray(set.missile, missileCategories) >= 0;
 
 		if( relevantOutcomeCategory && relevantMissileCategory ){
 			//	we may not have line geometry... (?)
@@ -190,7 +190,7 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 			var lastColor;
 			//	grab the colors from the vertices
 			for( s in set.lineGeometry.vertices ){
-				var v = set.lineGeometry.vertices[s];		
+				var v = set.lineGeometry.vertices[s];
 				lineColors.push(lineColor);
 				lastColor = lineColor;
 			}
@@ -198,7 +198,7 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 			//	merge it all together
 			linesGeo.merge(set.lineGeometry);
 
-			var particleColor = lastColor.clone();		
+			var particleColor = lastColor.clone();
 			var points = set.lineGeometry.vertices;
 			var particleCount = 1;
 			var particleSize = set.lineGeometry.size * dpr;
@@ -208,7 +208,7 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 			}
 			for( var rIndex=0; rIndex<points.length-1; rIndex++ ){
 				for ( var s=0; s < particleCount; s++ ) {
-					var point = points[rIndex];						
+					var point = points[rIndex];
 					var particle = point.clone();
 					particle.moveIndex = rIndex;
 					particle.nextIndex = rIndex+1;
@@ -216,21 +216,21 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 						particle.nextIndex = 0;
 					particle.lerpN = 0;
 					particle.path = points;
-					particlesGeo.vertices.push( particle );	
+					particlesGeo.vertices.push( particle );
 					particle.size = particleSize;
 
 					particlePositions.push( particle.x, particle.y, particle.z );
 					particleSizes.push( particleSize );
 					particleColors.push( particleColor.r, particleColor.g, particleColor.b );
 				}
-			}			
+			}
 
 			affectedTest.push(set.testName);
 
-			if( set.outcome === 'success' ){				
+			if( set.outcome === 'success' ){
 				summary.success[set.missile]++;
-				summary.success.total++;				
-			}		
+				summary.success.total++;
+			}
 			else if( set.outcome === 'failure' ){
 				summary.failure[set.missile]++;
 				summary.failure.total++;
@@ -240,21 +240,21 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 				summary.unknown.total++;
 			}
 
-			summary.total++;	
+			summary.total++;
 
-		}		
+		}
 	}
 
 	// console.log(selectedTest);
 
-	linesGeo.colors = lineColors;	
+	linesGeo.colors = lineColors;
 
 	//	make a final mesh out of this composite
-	var splineOutline = new THREE.Line( linesGeo, new THREE.LineBasicMaterial( 
-		{ 	color: 0xffffff, opacity: 1.0, blending: 
-			THREE.AdditiveBlending, transparent:true, 
-			depthWrite: false, vertexColors: true, 
-			linewidth: 1 } ) 
+	var splineOutline = new THREE.Line( linesGeo, new THREE.LineBasicMaterial(
+		{ 	color: 0xffffff, opacity: 1.0, blending:
+			THREE.AdditiveBlending, transparent:true,
+			depthWrite: false, vertexColors: true,
+			linewidth: 1 } )
 	);
 
 
@@ -270,13 +270,13 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 
 	var shaderMaterial = new THREE.ShaderMaterial( {
 
-		uniforms: 		uniforms,
-		vertexShader:   document.getElementById( 'vertexshader' ).textContent,
-		fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
+		uniforms:		uniforms,
+		vertexShader:	document.getElementById( 'vertexshader' ).textContent,
+		fragmentShader:	document.getElementById( 'fragmentshader' ).textContent,
 
-		blending: 		THREE.AdditiveBlending,
-		depthTest: 		true,
-		depthWrite: 	false,
+		blending:		THREE.AdditiveBlending,
+		depthTest:		true,
+		depthWrite:		false,
 		transparent:	true,
 		// sizeAttenuation: true,
 	});
@@ -287,15 +287,15 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 	pSystem.dynamic = true;
 	splineOutline.add( pSystem );
 
-	pSystem.update = function(){	
-		// var time = Date.now()									
+	pSystem.update = function(){
+		// var time = Date.now();
 		var positionArray = this.geometry.attributes.position.array;
 		var index = 0;
-		for( var i in this.geometry.vertices ){						
+		for( var i in this.geometry.vertices ){
 			var particle = this.geometry.vertices[i];
 			var path = particle.path;
 			var moveLength = path.length;
-			
+
 			particle.lerpN += 0.05;
 			if(particle.lerpN > 1){
 				particle.lerpN = 0;
@@ -309,33 +309,33 @@ function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileC
 
 			var currentPoint = path[particle.moveIndex];
 			var nextPoint = path[particle.nextIndex];
-			
+
 
 			particle.copy( currentPoint );
-			particle.lerp( nextPoint, particle.lerpN );			
+			particle.lerp( nextPoint, particle.lerpN );
 
 			positionArray[index++] = particle.x;
 			positionArray[index++] = particle.y;
 			positionArray[index++] = particle.z;
 		}
 		this.geometry.attributes.position.needsUpdate = true;
-	};		
+	};
 
 	//	return this info as part of the mesh package, we'll use this in selectvisualization
 	splineOutline.affectedTests = affectedTest;
 
 
-	return splineOutline;	
+	return splineOutline;
 }
 
 function selectVisualization( linearData, year, tests, outcomeCategories, missileCategories ){
 	//	we're only doing one test for now so...
 	var cName = tests[0].toUpperCase();
-	
+
 	$("#hudButtons .testTextInput").val(cName);
 	previouslySelectedTest = selectedTest;
 	selectedTest = testData[tests[0].toUpperCase()];
-    
+
 	summary = {
 		success: {
 			total: 0
@@ -371,11 +371,11 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 
 	//	build the mesh
 	console.time('getVisualizedMesh');
-	var mesh = getVisualizedMesh( timeBins, year, tests, outcomeCategories, missileCategories );				
+	var mesh = getVisualizedMesh( timeBins, year, tests, outcomeCategories, missileCategories );
 	console.timeEnd('getVisualizedMesh');
 
 	//	add it to scene graph
-	visualizationMesh.add( mesh );	
+	visualizationMesh.add( mesh );
 
 	for( var i in mesh.affectedTests ){
 		var testName = mesh.affectedTests[i];
@@ -387,31 +387,31 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 		if( selectedTest ){
 			rotateTargetX = ((selectedTest.landingLocation.lat + facilityData[selectedTest.facility].lat) / 2 - 0) * Math.PI / 180;
 			var targetY0 = -((selectedTest.landingLocation.lon + facilityData[selectedTest.facility].lon) / 2 - 9) * Math.PI / 180;
-            var piCounter = 0;
+			var piCounter = 0;
 			while(true) {
-                var targetY0Neg = targetY0 - Math.PI * 2 * piCounter;
-                var targetY0Pos = targetY0 + Math.PI * 2 * piCounter;
-                if(Math.abs(targetY0Neg - rotating.rotation.y) < Math.PI) {
-                    rotateTargetY = targetY0Neg;
-                    break;
-                } else if(Math.abs(targetY0Pos - rotating.rotation.y) < Math.PI) {
-                    rotateTargetY = targetY0Pos;
-                    break;
-                }
-                piCounter++;
-                rotateTargetY = wrap(targetY0, -Math.PI, Math.PI);
+				var targetY0Neg = targetY0 - Math.PI * 2 * piCounter;
+				var targetY0Pos = targetY0 + Math.PI * 2 * piCounter;
+				if(Math.abs(targetY0Neg - rotating.rotation.y) < Math.PI) {
+					rotateTargetY = targetY0Neg;
+					break;
+				} else if(Math.abs(targetY0Pos - rotating.rotation.y) < Math.PI) {
+					rotateTargetY = targetY0Pos;
+					break;
+				}
+				piCounter++;
+				rotateTargetY = wrap(targetY0, -Math.PI, Math.PI);
 			}
-            // console.log(rotateTargetY);
-            //lines commented below source of rotation error
-			//is there a more reliable way to ensure we don't rotate around the globe too much? 
+			// console.log(rotateTargetY);
+			//lines commented below source of rotation error
+			//is there a more reliable way to ensure we don't rotate around the globe too much?
 			/*
 			if( Math.abs(rotateTargetY - rotating.rotation.y) > Math.PI )
-				rotateTargetY += Math.PI;		
+				rotateTargetY += Math.PI;
 			*/
 			rotateVX *= 0.6;
-			rotateVY *= 0.6;		
-		}	
+			rotateVY *= 0.6;
+		}
 	}
-    
-    d3Graphs.initGraphs();
+
+	d3Graphs.initGraphs();
 }
