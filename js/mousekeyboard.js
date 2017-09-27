@@ -40,7 +40,7 @@ function onDocumentMouseMove( event ) {
 }
 
 function onDocumentMouseDown( event ) {
-	if(event.target.className.indexOf('noMapDrag') !== -1) {
+	if(typeof event.target.className === 'string' && event.target.className.indexOf('noMapDrag') !== -1) {
 		return;
 	}
 

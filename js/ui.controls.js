@@ -461,11 +461,11 @@ var d3Graphs = {
 		}
 		var max = 19;
 		var yScale = d3.scaleLinear().domain([0,max]).range([0,this.barGraphHeight - this.barGraphBottomPadding - this.barGraphTopPadding]);
-		var successRects = this.barGraphSVG.selectAll("rect.success").data(successArray);
+		var successRects = this.barGraphSVG.selectAll(".bar.success").data(successArray);
 		var midX = this.barGraphWidth / 3;
 		this.cumSuccessY = this.cumFailureY = this.cumUnknownY = 0;
 		successRects.enter().append('rect').attr('class', function(d) {
-			return 'success '+d.type;
+			return 'bar success '+d.type;
 		}).attr('x',midX - this.barWidth).attr('width',this.barWidth)
 		.merge(successRects)
 		.attr('y',function(d) {
@@ -473,9 +473,9 @@ var d3Graphs = {
 			d3Graphs.cumSuccessY += yScale(d.count);
 			return value;
 		}).attr('height',function(d) { return yScale(d.count); });
-		var failureRects = this.barGraphSVG.selectAll('rect.failure').data(failureArray);
+		var failureRects = this.barGraphSVG.selectAll('.bar.failure').data(failureArray);
 		failureRects.enter().append('rect').attr('class',function(d) {
-			return 'failure '+ d.type;
+			return 'bar failure '+ d.type;
 		}).attr('x',midX + 10).attr('width',this.barWidth)
 		.merge(failureRects)
 		.attr('y',function(d) {
@@ -483,9 +483,9 @@ var d3Graphs = {
 			d3Graphs.cumFailureY += yScale(d.count);
 			return value;
 		}).attr('height',function(d) { return yScale(d.count); });
-		var unknownRects = this.barGraphSVG.selectAll('rect.unknownBar').data(unknownArray);
+		var unknownRects = this.barGraphSVG.selectAll('.bar.unknownBar').data(unknownArray);
 		unknownRects.enter().append('rect').attr('class',function(d) {
-			return 'unknownBar '+ d.type;
+			return 'bar unknownBar '+ d.type;
 		}).attr('x',midX + 120).attr('width',this.barWidth)
 		.merge(unknownRects)
 		.attr('y',function(d) {
