@@ -373,6 +373,7 @@ var d3Graphs = {
 		outcomeRects.enter().append('rect').attr('class', function(d) {
 			return 'outcome ' + d.type; }).attr('x', this.histogramBarWidth / 4).attr('width',this.histogramBarWidth)
 		.merge(outcomeRects)
+		.transition()
 		.attr('y',function(d, i) {
 			if (i == 0) {
 				d3Graphs.cumOutcomeY = 0;
@@ -381,6 +382,7 @@ var d3Graphs = {
 			d3Graphs.cumOutcomeY += d3Graphs.histogramYScale(d.count);
 			return value;
 		}).attr('height',function(d) { return d3Graphs.histogramYScale(d.count); });
+		outcomeRects.exit().remove();
 
 		//active year labels
 		var yearOffset = $("#handle").css('left');
@@ -393,6 +395,7 @@ var d3Graphs = {
 
 		yearLabels.enter().append('text').attr('class','yearLabel').attr('text-anchor','middle')
 		.merge(yearLabels)
+		.transition()
 		.attr('x', this.histogramLeftPadding + this.histogramXScale(yearOffset) + this.histogramBarWidth * 3 / 4)
 		.attr('y',function(d, i) {
 			if (i == 0) {
@@ -420,6 +423,7 @@ var d3Graphs = {
 				return unknownsVisible ? 'visible' : 'hidden';
 			}
 		});
+		yearLabels.exit().remove();
 		yearLabels.moveToFront();
 
 	},
@@ -468,31 +472,37 @@ var d3Graphs = {
 			return 'bar success '+d.type;
 		}).attr('x',midX - this.barWidth).attr('width',this.barWidth)
 		.merge(successRects)
+		.transition()
 		.attr('y',function(d) {
 			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumSuccessY - yScale(d.count) ;
 			d3Graphs.cumSuccessY += yScale(d.count);
 			return value;
 		}).attr('height',function(d) { return yScale(d.count); });
+		successRects.exit().remove();
 		var failureRects = this.barGraphSVG.selectAll('.bar.failure').data(failureArray);
 		failureRects.enter().append('rect').attr('class',function(d) {
 			return 'bar failure '+ d.type;
 		}).attr('x',midX + 10).attr('width',this.barWidth)
 		.merge(failureRects)
+		.transition()
 		.attr('y',function(d) {
 			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumFailureY - yScale(d.count);
 			d3Graphs.cumFailureY += yScale(d.count);
 			return value;
 		}).attr('height',function(d) { return yScale(d.count); });
+		failureRects.exit().remove();
 		var unknownRects = this.barGraphSVG.selectAll('.bar.unknownBar').data(unknownArray);
 		unknownRects.enter().append('rect').attr('class',function(d) {
 			return 'bar unknownBar '+ d.type;
 		}).attr('x',midX + 120).attr('width',this.barWidth)
 		.merge(unknownRects)
+		.transition()
 		.attr('y',function(d) {
 			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownY - yScale(d.count);
 			d3Graphs.cumUnknownY += yScale(d.count);
 			return value;
 		}).attr('height',function(d) { return yScale(d.count); });
+		unknownRects.exit().remove();
 		//bar graph labels
 		this.cumSuccessLblY = 0;
 		this.cumFailureLblY = 0;
@@ -500,214 +510,158 @@ var d3Graphs = {
 		this.previousSuccessLabelTranslateY = 0;
 		this.previousFailureLabelTranslateY = 0;
 		this.previousUnknownLabelTranslateY = 0;
-		var paddingFromBottomOfGraph = 00;
-		var heightPerLabel = 25;
 		var fontSizeInterpolater = d3.interpolateRound(10,28);
 		var smallLabelSize = 22;
 		var mediumLabelSize = 40;
 		//success labels
-		var successLabelBGs = this.barGraphSVG.selectAll("rect.barGraphLabelBG").data(successArray);
-		successLabelBGs = successLabelBGs.enter().append('rect').attr('class',function(d) {
-			return 'barGraphLabelBG ' + d.type; }).merge(successLabelBGs);
-		var successLabels = this.barGraphSVG.selectAll("g.successLabel").data(successArray);
-		successLabels = successLabels.enter().append("g").attr('class',function(d) {
-			return 'successLabel '+d.type;
-		})
-		.merge(successLabels)
-		.attr('transform',function(d) {
-			var translate = 'translate('+(d3Graphs.barGraphWidth / 3 - 25)+",";
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumSuccessLblY - yScale(d.count)/2;
-			d3Graphs.cumSuccessLblY += yScale(d.count);
-			translate += value+")";
-			this.previousSuccessLabelTranslateY = value;
-			return translate;
-		}).attr('display',function(d) {
-			if(d.count == 0) { return 'none';}
-			return null;
-		});
-		successLabels.selectAll("*").remove();
-		var successLabelArray = successLabels._groups[0];
-		var successLabelBGArray = successLabelBGs._groups[0];
-		for(var i = 0; i < successLabelArray.length; i++) {
-			var successLabelE = successLabelArray[i];
-			var successLabel = d3.select(successLabelE);
-			var data = successArray[i];
-			successLabel.data(data);
-			var pieceHeight = yScale(data.count);
-			var labelHeight = -1;
-			var labelBGYPos = -1;
-			var labelWidth = -1;
-			var successLabelBG = d3.select(successLabelBGArray[i]);
-			if(pieceHeight < smallLabelSize) {
-				//just add number
-				//console.log("small label");
-				var numericLabel = successLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','end').attr('alignment-baseline','central')
-				.attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = - labelHeight / 2;
-				var numericLabelEle = numericLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength();
-			} else {
-				//number and type
-				//console.log('medium label');
-				var numericLabel = successLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','end').attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				var textLabel = successLabel.append('text').text(function(d) {
-					return missileLookup[d.type].name.toUpperCase();
-				}).attr('text-anchor','end').attr('y',15).attr('class',function(d) { return 'success '+d.type});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = -labelHeight;
-				labelHeight += 16;
-				var numericLabelEle = numericLabel._groups[0][0];
-				var textLabelEle = textLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength() > textLabelEle.getComputedTextLength() ? numericLabelEle.getComputedTextLength() : textLabelEle.getComputedTextLength();
-			}
-			if(labelHeight != -1 && labelBGYPos != -1 && labelWidth != -1) {
-				successLabelBG.attr('x',-labelWidth).attr('y',labelBGYPos).attr('width',labelWidth).attr('height',labelHeight)
-					.attr('transform',successLabel.attr('transform'));
-			}
-		}
+		var successLabels = this.barGraphSVG.selectAll('g.successLabel').data(successArray);
+		var newSuccessLabels = successLabels.enter().append('g')
+			.attr('class', function(d) {
+				return 'successLabel ' + d.type;
+			});
+		newSuccessLabels.append('rect')
+			.attr('class', function(d) { return 'barGraphLabelBG ' + d.type; });
+		newSuccessLabels.append('text')
+			.attr('class', 'numericLabel')
+			.attr('text-anchor', 'end');
+		newSuccessLabels.append('text')
+			.attr('class', function(d) { return 'textLabel success ' + d.type; })
+			.attr('text-anchor', 'end')
+			.attr('y', 15);
+		successLabels = newSuccessLabels.merge(successLabels);
+		successLabels.transition()
+			.attr('transform', function(d) {
+				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 - 25) + ',';
+				var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumSuccessLblY - yScale(d.count) / 2;
+				d3Graphs.cumSuccessLblY += yScale(d.count);
+				translate += value + ')';
+				this.previousSuccessLabelTranslateY = value;
+				return translate;
+			});
+		successLabels
+			.attr('display', function(d) {
+				if (d.count == 0) { return 'none';}
+				return null;
+			});
+		successLabels.exit().remove();
+		successLabels.selectAll('.numericLabel').transition()
+			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.attr('font-size', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+			});
+		successLabels.selectAll('.textLabel')
+			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
+		successLabels.selectAll('.barGraphLabelBG').transition()
+			.attr('width', function(d) {
+				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
+			})
+			.attr('height', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+			})
+			.attr('x', function(d) {
+				return -d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
+			})
+			.attr('y', function(d) {
+				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+			});
 		//failure labels
-		var failureLabelBGs = this.barGraphSVG.selectAll("rect.barGraphLabelBG.failureBG").data(failureArray);
-		failureLabelBGs = failureLabelBGs.enter().append('rect').attr('class',function(d) {
-			return 'barGraphLabelBG failureBG ' + d.type; }).merge(failureLabelBGs);
-		var failureLabels = this.barGraphSVG.selectAll("g.failureLabel").data(failureArray);
-		failureLabels = failureLabels.enter().append("g").attr('class',function(d) {
-			return 'failureLabel '+d.type;
-		}).merge(failureLabels)
-		.attr('transform',function(d) {
-			var translate = 'translate('+(d3Graphs.barGraphWidth / 3 + 35)+",";
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumFailureLblY - yScale(d.count)/2;
-			d3Graphs.cumFailureLblY += yScale(d.count);
-			translate += value+")";
-			this.previousFailureLabelTranslateY = value;
-			return translate;
-		}).attr('display',function(d) {
-			if(d.count == 0) { return 'none';}
-			return null;
-		});
-		failureLabels.selectAll("*").remove();
-		var failureLabelArray = failureLabels._groups[0];
-		var failureLabelBGArray = failureLabelBGs._groups[0];
-		for(var i = 0; i < failureLabelArray.length; i++) {
-			var failureLabelE = failureLabelArray[i];
-			var failureLabel = d3.select(failureLabelE);
-			var data = failureArray[i];
-			failureLabel.data(data);
-			var pieceHeight = yScale(data.count);
-			var labelHeight = -1;
-			var labelBGYPos = -1;
-			var labelWidth = -1;
-			var failureLabelBG = d3.select(failureLabelBGArray[i]);
-			if(pieceHeight < smallLabelSize) {
-				//just add number
-				//console.log("small label");
-				var numericLabel = failureLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','start').attr('alignment-baseline','central')
-				.attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = - labelHeight / 2;
-				var numericLabelEle = numericLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength();
-			} else {
-				//number and type
-				var numericLabel = failureLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','start').attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				var textLabel = failureLabel.append('text').text(function(d) {
-					return missileLookup[d.type].name.toUpperCase();
-				}).attr('text-anchor','start').attr('y',15).attr('class',function(d) { return 'failure '+d.type});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = -labelHeight;
-				labelHeight += 16;
-				var numericLabelEle = numericLabel._groups[0][0];
-				var textLabelEle = textLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength() > textLabelEle.getComputedTextLength() ? numericLabelEle.getComputedTextLength() : textLabelEle.getComputedTextLength();
-			}
-			if(labelHeight != -1 && labelBGYPos != -1 && labelWidth != -1) {
-				failureLabelBG.attr('x',0).attr('y',labelBGYPos).attr('width',labelWidth).attr('height',labelHeight)
-					.attr('transform',failureLabel.attr('transform'));
-			}
-		}
+		var failureLabels = this.barGraphSVG.selectAll('g.failureLabel').data(failureArray);
+		var newFailureLabels = failureLabels.enter().append('g')
+			.attr('class', function(d) {
+				return 'failureLabel ' + d.type;
+			});
+		newFailureLabels.append('rect')
+			.attr('class', function(d) { return 'barGraphLabelBG failureBG ' + d.type; })
+			.attr('x', 0);
+		newFailureLabels.append('text')
+			.attr('class', 'numericLabel')
+			.attr('text-anchor', 'start');
+		newFailureLabels.append('text')
+			.attr('class', function(d) { return 'textLabel failure ' + d.type; })
+			.attr('text-anchor', 'start')
+			.attr('y', 15);
+		failureLabels = newFailureLabels.merge(failureLabels);
+		failureLabels.transition()
+			.attr('transform', function(d) {
+				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 35) + ',';
+				var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumFailureLblY - yScale(d.count) / 2;
+				d3Graphs.cumFailureLblY += yScale(d.count);
+				translate += value + ')';
+				this.previousFailureLabelTranslateY = value;
+				return translate;
+			});
+		failureLabels
+			.attr('display', function(d) {
+				if (d.count == 0) { return 'none';}
+				return null;
+			});
+		failureLabels.exit().remove();
+		failureLabels.selectAll('.numericLabel').transition()
+			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.attr('font-size', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+			});
+		failureLabels.selectAll('.textLabel')
+			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
+		failureLabels.selectAll('.barGraphLabelBG').transition()
+			.attr('width', function(d) {
+				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
+			})
+			.attr('height', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+			})
+			.attr('y', function(d) {
+				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+			});
 		//unknown labels
-		var unknownLabelBGs = this.barGraphSVG.selectAll("rect.barGraphLabelBG.unknownBG").data(unknownArray);
-		unknownLabelBGs = unknownLabelBGs.enter().append('rect').attr('class',function(d) {
-			return 'barGraphLabelBG unknownBG ' + d.type; }).merge(unknownLabelBGs);
-		var unknownLabels = this.barGraphSVG.selectAll("g.unknownLabel").data(unknownArray);
-		unknownLabels = unknownLabels.enter().append("g").attr('class',function(d) {
-			return 'unknownLabel '+d.type;
-		}).merge(unknownLabels)
-		.attr('transform',function(d) {
-			var translate = 'translate('+(d3Graphs.barGraphWidth / 3 + 145)+",";
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownLblY - yScale(d.count)/2;
-			d3Graphs.cumUnknownLblY += yScale(d.count);
-			translate += value+")";
-			this.previousUnknownLabelTranslateY = value;
-			return translate;
-		}).attr('display',function(d) {
-			if(d.count == 0) { return 'none';}
-			return null;
-		});
-		unknownLabels.selectAll("*").remove();
-		var unknownLabelArray = unknownLabels._groups[0];
-		var unknownLabelBGArray = unknownLabelBGs._groups[0];
-		for(var i = 0; i < unknownLabelArray.length; i++) {
-			var unknownLabelE = unknownLabelArray[i];
-			var unknownLabel = d3.select(unknownLabelE);
-			var data = unknownArray[i];
-			unknownLabel.data(data);
-			var pieceHeight = yScale(data.count);
-			var labelHeight = -1;
-			var labelBGYPos = -1;
-			var labelWidth = -1;
-			var unknownLabelBG = d3.select(unknownLabelBGArray[i]);
-			if(pieceHeight < smallLabelSize) {
-				//just add number
-				//console.log("small label");
-				var numericLabel = unknownLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','start').attr('alignment-baseline','central')
-				.attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = - labelHeight / 2;
-				var numericLabelEle = numericLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength();
-			} else {
-				//number and type
-				var numericLabel = unknownLabel.append('text').text(function(d) {
-					return d.count;
-				}).attr('text-anchor','start').attr('font-size',function(d) {
-					return fontSizeInterpolater((d.count-minMissileCount)/(maxMissileCount - minMissileCount));
-				});
-				var textLabel = unknownLabel.append('text').text(function(d) {
-					return missileLookup[d.type].name.toUpperCase();
-				}).attr('text-anchor','start').attr('y',15).attr('class',function(d) { return 'unknown '+d.type});
-				labelHeight = fontSizeInterpolater((data.count-minMissileCount)/(maxMissileCount-minMissileCount));
-				labelBGYPos = -labelHeight;
-				labelHeight += 16;
-				var numericLabelEle = numericLabel._groups[0][0];
-				var textLabelEle = textLabel._groups[0][0];
-				labelWidth = numericLabelEle.getComputedTextLength() > textLabelEle.getComputedTextLength() ? numericLabelEle.getComputedTextLength() : textLabelEle.getComputedTextLength();
-			}
-			if(labelHeight != -1 && labelBGYPos != -1 && labelWidth != -1) {
-				unknownLabelBG.attr('x',0).attr('y',labelBGYPos).attr('width',labelWidth).attr('height',labelHeight)
-					.attr('transform',unknownLabel.attr('transform'));
-			}
-		}
+		var unknownLabels = this.barGraphSVG.selectAll('g.unknownLabel').data(unknownArray);
+		var newUnknownLabels = unknownLabels.enter().append('g')
+			.attr('class', function(d) {
+				return 'unknownLabel ' + d.type;
+			});
+		newUnknownLabels.append('rect')
+			.attr('class', function(d) { return 'barGraphLabelBG unknownBG ' + d.type; })
+			.attr('x', 0);
+		newUnknownLabels.append('text')
+			.attr('class', 'numericLabel')
+			.attr('text-anchor', 'start');
+		newUnknownLabels.append('text')
+			.attr('class', function(d) { return 'textLabel unknown ' + d.type; })
+			.attr('text-anchor', 'start')
+			.attr('y', 15);
+		unknownLabels = newUnknownLabels.merge(unknownLabels);
+		unknownLabels.transition()
+			.attr('transform', function(d) {
+				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 145) + ',';
+				var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownLblY - yScale(d.count) / 2;
+				d3Graphs.cumUnknownLblY += yScale(d.count);
+				translate += value + ')';
+				this.previousUnknownLabelTranslateY = value;
+				return translate;
+			});
+		unknownLabels
+			.attr('display', function(d) {
+				if(d.count == 0) { return 'none';}
+				return null;
+			});
+		unknownLabels.exit().remove();
+		unknownLabels.selectAll('.numericLabel').transition()
+			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.attr('font-size', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+			});
+		unknownLabels.selectAll('.textLabel')
+			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
+		unknownLabels.selectAll('.barGraphLabelBG').transition()
+			.attr('width', function(d) {
+				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
+			})
+			.attr('height', function(d) {
+				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+			})
+			.attr('y', function(d) {
+				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+			});
 		//over all numeric total outcome labels
 		var successsesVisible = !$("#outcomeBtns .success .label").hasClass('inactive');
 		var failuresVisible = !$("#outcomeBtns .failure .label").hasClass('inactive');
