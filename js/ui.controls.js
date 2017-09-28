@@ -309,8 +309,10 @@ var d3Graphs = {
 	},
 	drawHistogram:function() {
 		if(this.histogramSVG == null) {
-			this.histogramSVG = d3.select('#history .container').append('svg');
-			this.histogramSVG.attr('id','histogram').attr('width',this.histogramWidth).attr('height',this.histogramHeight);
+			this.histogramSVG = d3.select('#history .container').append('svg')
+				.attr('id', 'histogram')
+				.attr('width', this.histogramWidth)
+				.attr('height', this.histogramHeight);
 		}
 		this.setHistogramData();
 
@@ -319,42 +321,48 @@ var d3Graphs = {
 		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, this.histogramWidth - this.histogramLeftPadding - this.histogramRightPadding]);
 
 		var tickData = this.histogramYScale.ticks(5);
+
 		//tick lines
 		var ticks = this.histogramSVG.selectAll('line.tick').data(tickData);
-		ticks.enter().append('svg:line').attr('class','tick')
-		.merge(ticks)
-		.attr('y1',function(d) {
-			return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
-		}).attr('y2', function(d) {
-			return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
-		}).attr('x1',this.histogramLeftPadding).attr('x2',this.histogramWidth - this.histogramRightPadding)
-		.attr('stroke-dasharray',function(d) {
-			if(d == 0) {
-				return null;
-			}
-			return '3,1';
-		}).attr('stroke-width',function(d) {
-			if(d == 0) {
-				return 2;
-			}
-			return 1;
-		});
+		ticks.enter().append('svg:line')
+			.attr('class', 'tick')
+			.merge(ticks)
+			.attr('x1', this.histogramLeftPadding)
+			.attr('y1', function(d) {
+				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
+			})
+			.attr('x2', this.histogramWidth - this.histogramRightPadding)
+			.attr('y2', function(d) {
+				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
+			})
+			.attr('stroke-dasharray', function(d) { return d == 0 ? null : '3,1'; })
+			.attr('stroke-width', function(d) { return d == 0 ? 2 : 1; });
+		ticks.exit().remove();
+
 		//tick labels
 		var tickLabels = this.histogramSVG.selectAll("text.tickLblLeft").data(tickData);
-		tickLabels.enter().append('svg:text').attr('class','tickLbl tickLblLeft').attr('text-anchor','end')
-		.merge(tickLabels)
-		.attr('x', d3Graphs.histogramLeftPadding-3).attr('y',function(d) {
-			return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
-		}).text(function(d) { return Math.abs(d); });
-		var tickLabelsRight = this.histogramSVG.selectAll("text.tickLblRight").data(tickData);
-		tickLabelsRight.enter().append('svg:text').attr('class','tickLbl tickLblRight')
-		.merge(tickLabelsRight)
-		.attr('x', d3Graphs.histogramWidth - d3Graphs.histogramRightPadding+3).attr('y',function(d) {
-			return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
-		}).text(function(d) { return Math.abs(d); });
-		ticks.exit().remove();
+		tickLabels.enter().append('svg:text')
+			.attr('class', 'tickLbl tickLblLeft')
+			.attr('text-anchor', 'end')
+			.merge(tickLabels)
+			.attr('x', d3Graphs.histogramLeftPadding - 3)
+			.attr('y', function(d) {
+				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
+			})
+			.text(function(d) { return d; });
 		tickLabels.exit().remove();
+
+		var tickLabelsRight = this.histogramSVG.selectAll("text.tickLblRight").data(tickData);
+		tickLabelsRight.enter().append('svg:text')
+			.attr('class', 'tickLbl tickLblRight')
+			.merge(tickLabelsRight)
+			.attr('x', d3Graphs.histogramWidth - d3Graphs.histogramRightPadding + 3)
+			.attr('y', function(d) {
+				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
+			})
+			.text(function(d) { return d; });
 		tickLabelsRight.exit().remove();
+
 		//lines
 		var successesVisible = !$("#outcomeBtns .success .label").hasClass('inactive');
 		var failuresVisible = !$("#outcomeBtns .failure .label").hasClass('inactive');
@@ -365,23 +373,27 @@ var d3Graphs = {
 
 
 		var outcomeBars = this.histogramSVG.selectAll("g.outcome").data(d3Graphs.histogramOutcomeArray);
-		outcomeBars = outcomeBars.enter().append('g').attr('class', 'outcome').attr('transform', function(d, i) {
-			return 'translate(' + (d3Graphs.histogramXScale(i) + d3Graphs.histogramLeftPadding) + ',' + d3Graphs.histogramVertPadding + ')';
-		}).merge(outcomeBars);
+		outcomeBars = outcomeBars.enter().append('g')
+			.attr('class', 'outcome')
+			.attr('transform', function(d, i) {
+				return 'translate(' + (d3Graphs.histogramXScale(i) + d3Graphs.histogramLeftPadding) + ',' + d3Graphs.histogramVertPadding + ')';
+			})
+			.merge(outcomeBars);
 
 		var outcomeRects = outcomeBars.selectAll("rect.outcome").data(function(d) { return d; });
-		outcomeRects.enter().append('rect').attr('class', function(d) {
-			return 'outcome ' + d.type; }).attr('x', this.histogramBarWidth / 4).attr('width',this.histogramBarWidth)
-		.merge(outcomeRects)
-		.transition()
-		.attr('y',function(d, i) {
-			if (i == 0) {
-				d3Graphs.cumOutcomeY = 0;
-			}
-			var value = d3Graphs.histogramHeight - d3Graphs.histogramVertPadding * 2 - d3Graphs.cumOutcomeY - d3Graphs.histogramYScale(d.count);
-			d3Graphs.cumOutcomeY += d3Graphs.histogramYScale(d.count);
-			return value;
-		}).attr('height',function(d) { return d3Graphs.histogramYScale(d.count); });
+		outcomeRects.enter().append('rect')
+			.attr('class', function(d) { return 'outcome ' + d.type; })
+			.attr('x', this.histogramBarWidth / 4)
+			.attr('width', this.histogramBarWidth)
+			.merge(outcomeRects).transition()
+			.attr('y', function(d, i) {
+				if (i == 0) {
+					d3Graphs.cumOutcomeY = 0;
+				}
+				d3Graphs.cumOutcomeY += d3Graphs.histogramYScale(d.count);
+				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding * 2 - d3Graphs.cumOutcomeY;
+			})
+			.attr('height', function(d) { return d3Graphs.histogramYScale(d.count); });
 		outcomeRects.exit().remove();
 
 		//active year labels
@@ -392,43 +404,50 @@ var d3Graphs = {
 		var activeYearOutcome = this.histogramOutcomeArray[yearOffset];
 
 		var yearLabels = this.histogramSVG.selectAll("text.yearLabel").data(activeYearOutcome);
-
-		yearLabels.enter().append('text').attr('class','yearLabel').attr('text-anchor','middle')
-		.merge(yearLabels)
-		.transition()
-		.attr('x', this.histogramLeftPadding + this.histogramXScale(yearOffset) + this.histogramBarWidth * 3 / 4)
-		.attr('y',function(d, i) {
-			if (i == 0) {
-				d3Graphs.cumOutcomeY = 0;
-			}
-			var height = d3Graphs.histogramYScale(d.count);
-			var value = d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.cumOutcomeY - height / 2 + 5;
-			d3Graphs.cumOutcomeY += height;
-			if (height < 10) {
-				value += d.type === 'success' ? -7 - height / 2 : 7 + height / 2;
-			}
-			return value;
-		}).text(function(d) {
-			 return d.count;
-
-		}).attr('visibility', function(d) {
-			if(d.count == 0) {
-				return 'hidden';
-			}
-			if(d.type == 'success') {
-				return successesVisible ? 'visible' : 'hidden';
-			} else if(d.type == 'failure') {
-				return failuresVisible ? 'visible' : 'hidden';
-			} else {
-				return unknownsVisible ? 'visible' : 'hidden';
-			}
-		});
+		yearLabels.enter().append('text')
+			.attr('class', 'yearLabel')
+			.attr('text-anchor', 'middle')
+			.merge(yearLabels).transition()
+			.attr('x', this.histogramLeftPadding + this.histogramXScale(yearOffset) + this.histogramBarWidth * 3 / 4)
+			.attr('y', function(d, i) {
+				if (i == 0) {
+					d3Graphs.cumOutcomeY = 0;
+				}
+				var height = d3Graphs.histogramYScale(d.count);
+				d3Graphs.cumOutcomeY += height;
+				var value = d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.cumOutcomeY;
+				if (height >= 10) {
+					value += height / 2 + 5;
+				} else if (d.type === 'success') {
+					value -= 2;
+				} else {
+					value += height + 12;
+				}
+				return value;
+			})
+			.text(function(d) { return d.count; })
+			.attr('visibility', function(d) {
+				if (d.count == 0) {
+					return 'hidden';
+				}
+				if (d.type === 'success') {
+					return successesVisible ? 'visible' : 'hidden';
+				} else if (d.type === 'failure') {
+					return failuresVisible ? 'visible' : 'hidden';
+				} else {
+					return unknownsVisible ? 'visible' : 'hidden';
+				}
+			});
 		yearLabels.exit().remove();
 		yearLabels.moveToFront();
 
 	},
 	drawBarGraph: function() {
-		this.barGraphSVG.attr('id','barGraph').attr('width',d3Graphs.barGraphWidth).attr('height',d3Graphs.barGraphHeight).attr('class','overlayTests noPointer');
+		this.barGraphSVG
+			.attr('id', 'barGraph')
+			.attr('width', d3Graphs.barGraphWidth)
+			.attr('height', d3Graphs.barGraphHeight)
+			.attr('class', 'overlayTests noPointer');
 		var successArray = [];
 		var failureArray = [];
 		var unknownArray = [];
@@ -465,44 +484,48 @@ var d3Graphs = {
 		}
 		var max = 19;
 		var yScale = d3.scaleLinear().domain([0,max]).range([0,this.barGraphHeight - this.barGraphBottomPadding - this.barGraphTopPadding]);
-		var successRects = this.barGraphSVG.selectAll(".bar.success").data(successArray);
 		var midX = this.barGraphWidth / 3;
 		this.cumSuccessY = this.cumFailureY = this.cumUnknownY = 0;
-		successRects.enter().append('rect').attr('class', function(d) {
-			return 'bar success '+d.type;
-		}).attr('x',midX - this.barWidth).attr('width',this.barWidth)
-		.merge(successRects)
-		.transition()
-		.attr('y',function(d) {
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumSuccessY - yScale(d.count) ;
-			d3Graphs.cumSuccessY += yScale(d.count);
-			return value;
-		}).attr('height',function(d) { return yScale(d.count); });
+
+		var successRects = this.barGraphSVG.selectAll(".bar.success").data(successArray);
+		successRects.enter().append('rect')
+			.attr('class', function(d) { return 'bar success ' + d.type; })
+			.attr('x', midX - this.barWidth)
+			.attr('width', this.barWidth)
+			.merge(successRects).transition()
+			.attr('y', function(d) {
+				d3Graphs.cumSuccessY += yScale(d.count);
+				return value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumSuccessY;
+			})
+			.attr('height', function(d) { return yScale(d.count); });
 		successRects.exit().remove();
+
 		var failureRects = this.barGraphSVG.selectAll('.bar.failure').data(failureArray);
-		failureRects.enter().append('rect').attr('class',function(d) {
-			return 'bar failure '+ d.type;
-		}).attr('x',midX + 10).attr('width',this.barWidth)
-		.merge(failureRects)
-		.transition()
-		.attr('y',function(d) {
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumFailureY - yScale(d.count);
-			d3Graphs.cumFailureY += yScale(d.count);
-			return value;
-		}).attr('height',function(d) { return yScale(d.count); });
+		failureRects.enter().append('rect')
+			.attr('class', function(d) { return 'bar failure ' + d.type; })
+			.attr('x', midX + 10)
+			.attr('width', this.barWidth)
+			.merge(failureRects).transition()
+			.attr('y', function(d) {
+				d3Graphs.cumFailureY += yScale(d.count);
+				return value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumFailureY;
+			})
+			.attr('height', function(d) { return yScale(d.count); });
 		failureRects.exit().remove();
+
 		var unknownRects = this.barGraphSVG.selectAll('.bar.unknownBar').data(unknownArray);
-		unknownRects.enter().append('rect').attr('class',function(d) {
-			return 'bar unknownBar '+ d.type;
-		}).attr('x',midX + 120).attr('width',this.barWidth)
-		.merge(unknownRects)
-		.transition()
-		.attr('y',function(d) {
-			var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownY - yScale(d.count);
-			d3Graphs.cumUnknownY += yScale(d.count);
-			return value;
-		}).attr('height',function(d) { return yScale(d.count); });
+		unknownRects.enter().append('rect')
+			.attr('class', function(d) { return 'bar unknownBar ' + d.type; })
+			.attr('x', midX + 120)
+			.attr('width', this.barWidth)
+			.merge(unknownRects).transition()
+			.attr('y', function(d) {
+				d3Graphs.cumUnknownY += yScale(d.count);
+				return d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownY;
+			})
+			.attr('height', function(d) { return yScale(d.count); });
 		unknownRects.exit().remove();
+
 		//bar graph labels
 		this.cumSuccessLblY = 0;
 		this.cumFailureLblY = 0;
@@ -513,12 +536,11 @@ var d3Graphs = {
 		var fontSizeInterpolater = d3.interpolateRound(10,28);
 		var smallLabelSize = 22;
 		var mediumLabelSize = 40;
+
 		//success labels
 		var successLabels = this.barGraphSVG.selectAll('g.successLabel').data(successArray);
 		var newSuccessLabels = successLabels.enter().append('g')
-			.attr('class', function(d) {
-				return 'successLabel ' + d.type;
-			});
+			.attr('class', function(d) { return 'successLabel ' + d.type; });
 		newSuccessLabels.append('rect')
 			.attr('class', function(d) { return 'barGraphLabelBG ' + d.type; });
 		newSuccessLabels.append('text')
@@ -528,7 +550,8 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel success ' + d.type; })
 			.attr('text-anchor', 'end')
 			.attr('y', 15);
-		successLabels = newSuccessLabels.merge(successLabels);
+		successLabels = newSuccessLabels.merge(successLabels)
+			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
 		successLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 - 25) + ',';
@@ -537,11 +560,6 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousSuccessLabelTranslateY = value;
 				return translate;
-			});
-		successLabels
-			.attr('display', function(d) {
-				if (d.count == 0) { return 'none';}
-				return null;
 			});
 		successLabels.exit().remove();
 		successLabels.selectAll('.numericLabel').transition()
@@ -564,12 +582,11 @@ var d3Graphs = {
 			.attr('y', function(d) {
 				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
 			});
+
 		//failure labels
 		var failureLabels = this.barGraphSVG.selectAll('g.failureLabel').data(failureArray);
 		var newFailureLabels = failureLabels.enter().append('g')
-			.attr('class', function(d) {
-				return 'failureLabel ' + d.type;
-			});
+			.attr('class', function(d) { return 'failureLabel ' + d.type; });
 		newFailureLabels.append('rect')
 			.attr('class', function(d) { return 'barGraphLabelBG failureBG ' + d.type; })
 			.attr('x', 0);
@@ -580,7 +597,8 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel failure ' + d.type; })
 			.attr('text-anchor', 'start')
 			.attr('y', 15);
-		failureLabels = newFailureLabels.merge(failureLabels);
+		failureLabels = newFailureLabels.merge(failureLabels)
+			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
 		failureLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 35) + ',';
@@ -589,11 +607,6 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousFailureLabelTranslateY = value;
 				return translate;
-			});
-		failureLabels
-			.attr('display', function(d) {
-				if (d.count == 0) { return 'none';}
-				return null;
 			});
 		failureLabels.exit().remove();
 		failureLabels.selectAll('.numericLabel').transition()
@@ -613,12 +626,11 @@ var d3Graphs = {
 			.attr('y', function(d) {
 				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
 			});
+
 		//unknown labels
 		var unknownLabels = this.barGraphSVG.selectAll('g.unknownLabel').data(unknownArray);
 		var newUnknownLabels = unknownLabels.enter().append('g')
-			.attr('class', function(d) {
-				return 'unknownLabel ' + d.type;
-			});
+			.attr('class', function(d) { return 'unknownLabel ' + d.type; });
 		newUnknownLabels.append('rect')
 			.attr('class', function(d) { return 'barGraphLabelBG unknownBG ' + d.type; })
 			.attr('x', 0);
@@ -629,7 +641,8 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel unknown ' + d.type; })
 			.attr('text-anchor', 'start')
 			.attr('y', 15);
-		unknownLabels = newUnknownLabels.merge(unknownLabels);
+		unknownLabels = newUnknownLabels.merge(unknownLabels)
+			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
 		unknownLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 145) + ',';
@@ -638,11 +651,6 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousUnknownLabelTranslateY = value;
 				return translate;
-			});
-		unknownLabels
-			.attr('display', function(d) {
-				if(d.count == 0) { return 'none';}
-				return null;
 			});
 		unknownLabels.exit().remove();
 		unknownLabels.selectAll('.numericLabel').transition()
@@ -662,43 +670,73 @@ var d3Graphs = {
 			.attr('y', function(d) {
 				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
 			});
+
 		//over all numeric total outcome labels
 		var successsesVisible = !$("#outcomeBtns .success .label").hasClass('inactive');
 		var failuresVisible = !$("#outcomeBtns .failure .label").hasClass('inactive');
 		var unknownVisible = !$("#outcomeBtns .unknown .label").hasClass('inactive');
+
+		//success total label at bottom
 		var successTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.successTotalLabel').data([1]);
-		successTotalLabel.enter().append('text').attr('x',midX).attr('text-anchor','end')
-			.attr('class','totalLabel successTotalLabel').attr('y',this.barGraphHeight- this.barGraphBottomPadding + 25)
+		successTotalLabel.enter().append('text')
+			.attr('class', 'totalLabel successTotalLabel')
+			.attr('text-anchor', 'end')
+			.attr('x', midX)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(successTotalLabel)
-			.text(successTotal).attr('visibility',successsesVisible ? "visible":"hidden");
+			.text(successTotal)
+			.attr('visibility', successsesVisible ? "visible" : "hidden");
+
+		//failure total label at bottom
 		var failureTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.failureTotalLabel').data([1]);
-		failureTotalLabel.enter().append('text').attr('x',midX+10)
-			.attr('class','totalLabel failureTotalLabel').attr('y', this.barGraphHeight - this.barGraphBottomPadding+25)
+		failureTotalLabel.enter().append('text')
+			.attr('class', 'totalLabel failureTotalLabel')
+			.attr('x', midX + 10)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(failureTotalLabel)
-			.text(failureTotal).attr('visibility',failuresVisible ? "visible":"hidden");
+			.text(failureTotal)
+			.attr('visibility', failuresVisible ? "visible" : "hidden");
+
+		//unknown total label at bottom
 		var unknownTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.unknownTotalLabel').data([1]);
-		unknownTotalLabel.enter().append('text').attr('x',midX+120)
-			.attr('class','totalLabel unknownTotalLabel').attr('y', this.barGraphHeight - this.barGraphBottomPadding+25)
+		unknownTotalLabel.enter().append('text')
+			.attr('class', 'totalLabel unknownTotalLabel')
+			.attr('x', midX + 120)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(unknownTotalLabel)
-			.text(unknownTotal).attr('visibility',unknownVisible ? "visible":"hidden");
+			.text(unknownTotal)
+			.attr('visibility', unknownVisible ? "visible" : "hidden");
+
 		//success label at bottom
 		var successLabel = this.barGraphSVG.selectAll('text.successLabel').data([1]);
-		successLabel.enter().append('text').attr('x',midX).attr('text-anchor','end').text('SUCCESS')
-			.attr('class','successLabel').attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
+		successLabel.enter().append('text')
+			.attr('class', 'successLabel')
+			.attr('text-anchor', 'end')
+			.text('SUCCESS')
+			.attr('x', midX)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(successLabel)
-			.attr('visibility',successsesVisible ? "visible":"hidden");
+			.attr('visibility', successsesVisible ? "visible" : "hidden");
+
 		//failure label at bottom
 		var failureLabel = this.barGraphSVG.selectAll('text.failureLabel').data([1]);
-		failureLabel.enter().append('text').attr('x',midX+10).text('FAILURE')
-			.attr('class','failureLabel').attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
+		failureLabel.enter().append('text')
+			.attr('class', 'failureLabel')
+			.text('FAILURE')
+			.attr('x', midX + 10)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(failureLabel)
-			.attr('visibility',failuresVisible ? "visible":"hidden");
+			.attr('visibility', failuresVisible ? "visible" : "hidden");
+
 		//unknown label at bottom
 		var unknownLabel = this.barGraphSVG.selectAll('text.unknownLabel').data([1]);
-		unknownLabel.enter().append('text').attr('x',midX+95).text('UNKNOWN')
-			.attr('class','unknownLabel').attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
+		unknownLabel.enter().append('text')
+			.attr('class', 'unknownLabel')
+			.text('UNKNOWN')
+			.attr('x', midX + 95)
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(unknownLabel)
-			.attr('visibility',unknownVisible ? "visible":"hidden");
+			.attr('visibility', unknownVisible ? "visible" : "hidden");
 	},
 	dragHandleStart: function(event) {
 		console.log('start');
