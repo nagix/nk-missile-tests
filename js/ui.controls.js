@@ -425,17 +425,17 @@ var d3Graphs = {
 				}
 				return value;
 			})
-			.text(function(d) { return d.count; })
-			.attr('visibility', function(d) {
+			.text(function(d) { return d.count || this.textContent; })
+			.attr('opacity', function(d) {
 				if (d.count == 0) {
-					return 'hidden';
+					return 0;
 				}
 				if (d.type === 'success') {
-					return successesVisible ? 'visible' : 'hidden';
+					return successesVisible ? 1 : 0;
 				} else if (d.type === 'failure') {
-					return failuresVisible ? 'visible' : 'hidden';
+					return failuresVisible ? 1 : 0;
 				} else {
-					return unknownsVisible ? 'visible' : 'hidden';
+					return unknownsVisible ? 1 : 0;
 				}
 			});
 		yearLabels.exit().remove();
@@ -533,7 +533,7 @@ var d3Graphs = {
 		this.previousSuccessLabelTranslateY = 0;
 		this.previousFailureLabelTranslateY = 0;
 		this.previousUnknownLabelTranslateY = 0;
-		var fontSizeInterpolater = d3.interpolateRound(10,28);
+		var fontSizeInterpolater = d3.interpolateRound(12,28);
 		var smallLabelSize = 22;
 		var mediumLabelSize = 40;
 
@@ -550,8 +550,7 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel success ' + d.type; })
 			.attr('text-anchor', 'end')
 			.attr('y', 15);
-		successLabels = newSuccessLabels.merge(successLabels)
-			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
+		successLabels = newSuccessLabels.merge(successLabels);
 		successLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 - 25) + ',';
@@ -560,10 +559,11 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousSuccessLabelTranslateY = value;
 				return translate;
-			});
+			})
+			.attr('opacity', function(d) { return d.count > 0 ? 1 : 0; });
 		successLabels.exit().remove();
 		successLabels.selectAll('.numericLabel').transition()
-			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
 				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
 			});
@@ -597,8 +597,7 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel failure ' + d.type; })
 			.attr('text-anchor', 'start')
 			.attr('y', 15);
-		failureLabels = newFailureLabels.merge(failureLabels)
-			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
+		failureLabels = newFailureLabels.merge(failureLabels);
 		failureLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 35) + ',';
@@ -607,10 +606,11 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousFailureLabelTranslateY = value;
 				return translate;
-			});
+			})
+			.attr('opacity', function(d) { return d.count > 0 ? 1 : 0; });
 		failureLabels.exit().remove();
 		failureLabels.selectAll('.numericLabel').transition()
-			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
 				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
 			});
@@ -641,8 +641,7 @@ var d3Graphs = {
 			.attr('class', function(d) { return 'textLabel unknown ' + d.type; })
 			.attr('text-anchor', 'start')
 			.attr('y', 15);
-		unknownLabels = newUnknownLabels.merge(unknownLabels)
-			.attr('display', function(d) { return d.count == 0 ? 'none' : null; });
+		unknownLabels = newUnknownLabels.merge(unknownLabels);
 		unknownLabels.transition()
 			.attr('transform', function(d) {
 				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 145) + ',';
@@ -651,10 +650,11 @@ var d3Graphs = {
 				translate += value + ')';
 				this.previousUnknownLabelTranslateY = value;
 				return translate;
-			});
+			})
+			.attr('opacity', function(d) { return d.count > 0 ? 1 : 0; });
 		unknownLabels.exit().remove();
 		unknownLabels.selectAll('.numericLabel').transition()
-			.text(function(d) { return this.parentNode.__data__.count || ''; })
+			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
 				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
 			});
@@ -683,9 +683,9 @@ var d3Graphs = {
 			.attr('text-anchor', 'end')
 			.attr('x', midX)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
-			.merge(successTotalLabel)
-			.text(successTotal)
-			.attr('visibility', successsesVisible ? "visible" : "hidden");
+			.merge(successTotalLabel).transition()
+			.text(successsesVisible ? successTotal : function() { return this.textContent; })
+			.attr('opacity', successsesVisible ? 1 : 0);
 
 		//failure total label at bottom
 		var failureTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.failureTotalLabel').data([1]);
@@ -693,9 +693,9 @@ var d3Graphs = {
 			.attr('class', 'totalLabel failureTotalLabel')
 			.attr('x', midX + 10)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
-			.merge(failureTotalLabel)
-			.text(failureTotal)
-			.attr('visibility', failuresVisible ? "visible" : "hidden");
+			.merge(failureTotalLabel).transition()
+			.text(failuresVisible ? failureTotal : function() { return this.textContent; })
+			.attr('opacity', failuresVisible ? 1 : 0);
 
 		//unknown total label at bottom
 		var unknownTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.unknownTotalLabel').data([1]);
@@ -703,9 +703,9 @@ var d3Graphs = {
 			.attr('class', 'totalLabel unknownTotalLabel')
 			.attr('x', midX + 120)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
-			.merge(unknownTotalLabel)
-			.text(unknownTotal)
-			.attr('visibility', unknownVisible ? "visible" : "hidden");
+			.merge(unknownTotalLabel).transition()
+			.text(unknownVisible ? unknownTotal : function() { return this.textContent; })
+			.attr('opacity', unknownVisible ? 1 : 0);
 
 		//success label at bottom
 		var successLabel = this.barGraphSVG.selectAll('text.successLabel').data([1]);
@@ -715,8 +715,8 @@ var d3Graphs = {
 			.text('SUCCESS')
 			.attr('x', midX)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
-			.merge(successLabel)
-			.attr('visibility', successsesVisible ? "visible" : "hidden");
+			.merge(successLabel).transition()
+			.attr('opacity', successsesVisible ? 1 : 0);
 
 		//failure label at bottom
 		var failureLabel = this.barGraphSVG.selectAll('text.failureLabel').data([1]);
@@ -725,8 +725,8 @@ var d3Graphs = {
 			.text('FAILURE')
 			.attr('x', midX + 10)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
-			.merge(failureLabel)
-			.attr('visibility', failuresVisible ? "visible" : "hidden");
+			.merge(failureLabel).transition()
+			.attr('opacity', failuresVisible ? 1 : 0);
 
 		//unknown label at bottom
 		var unknownLabel = this.barGraphSVG.selectAll('text.unknownLabel').data([1]);
@@ -735,8 +735,8 @@ var d3Graphs = {
 			.text('UNKNOWN')
 			.attr('x', midX + 95)
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
-			.merge(unknownLabel)
-			.attr('visibility', unknownVisible ? "visible" : "hidden");
+			.merge(unknownLabel).transition()
+			.attr('opacity', unknownVisible ? 1 : 0);
 	},
 	dragHandleStart: function(event) {
 		console.log('start');
