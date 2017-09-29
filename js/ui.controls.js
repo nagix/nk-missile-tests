@@ -395,6 +395,8 @@ var d3Graphs = {
 			})
 			.attr('height', function(d) { return d3Graphs.histogramYScale(d.count); });
 		outcomeRects.exit().remove();
+		outcomeBars.exit().remove();
+		outcomeBars.moveToFront();
 
 		//active year labels
 		var yearOffset = $("#handle").css('left');
