@@ -146,12 +146,7 @@ function buildDataVizGeometries( linearData ){
 	loadLayer.style.display = 'none';
 }
 
-function getVisualizedMesh( linearData, year, tests, outcomeCategories, missileCategories ){
-	//	for comparison purposes, all caps the test names
-	for( var i in tests ){
-		tests[i] = tests[i].toUpperCase();
-	}
-
+function getVisualizedMesh( linearData, year, outcomeCategories, missileCategories ){
 	//	pick out the year first from the data
 	for (var indexFromYear = 0; indexFromYear < selectableYears.length - 1; indexFromYear++) {
 		if (selectableYears[indexFromYear] == year) {
@@ -371,7 +366,7 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 
 	//	build the mesh
 	console.time('getVisualizedMesh');
-	var mesh = getVisualizedMesh( timeBins, year, tests, outcomeCategories, missileCategories );
+	var mesh = getVisualizedMesh( timeBins, year, outcomeCategories, missileCategories );
 	console.timeEnd('getVisualizedMesh');
 
 	//	add it to scene graph

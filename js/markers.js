@@ -35,7 +35,7 @@ function attachMarkerToTest( testName ){
 	marker.onLeft = test.markerOnLeft;
 	marker.selected = false;
 	marker.hover = false;
-	if( testName === selectedTest.testName.toUpperCase() )
+	if( selectedTest && testName === selectedTest.testName.toUpperCase() )
 		marker.selected = true;
 
 	marker.setPosition = function(x,y,z){
@@ -68,12 +68,7 @@ function attachMarkerToTest( testName ){
 	marker.jquery = $(marker);
 	marker.setSize = function( s ){
 		this.style.fontSize = s + 'pt';
-		if(s < 20) {
-			this.style.padding = "0px";
-		} else {
-			this.style.padding = "10px";
-		}
-		this.style.marginTop = (- s * 0.7 - (s == 20 ? 13 : 0)) + 'px';
+		this.style.marginTop = (- s * 0.7 - (this.selected ? 13 : 0)) + 'px';
 		this.style.marginLeft = (1 + s * 0.35) + 'px';
 		this.style.marginRight = (1 + s * 0.35) + 'px';
 	};
@@ -132,14 +127,11 @@ function attachMarkerToTest( testName ){
 	};
 
 	if( marker.selected ) {
-		marker.style.backgroundColor = 'rgba(0,0,0,.66)';
-		marker.style.borderSpacing = '3px';
+		marker.classList.add('selected');
 		detailLayer.innerHTML = detailText;
 		descriptionLayer.innerHTML = descriptionText;
 	}
 	else{
-		marker.style.backgroundColor = 'transparent';
-		marker.style.borderSpacing = '0px';
 		marker.addEventListener( 'mouseover', markerOver, false );
 		marker.addEventListener( 'mouseout', markerOut, false );
 	}
@@ -147,9 +139,12 @@ function attachMarkerToTest( testName ){
 
 	var markerSelect = function(e){
 		var selection = selectionData;
-		selectVisualization( timeBins, selection.selectedYear, [this.testName], selection.getOutcomeCategories(), selection.getMissileCategories() );
+		selectVisualization( timeBins, selection.selectedYear, [this.testName || ''], selection.getOutcomeCategories(), selection.getMissileCategories() );
 	};
-	marker.addEventListener('click', markerSelect, true);
+	if ( marker.selected )
+		marker.jquery.find('.close').click(markerSelect);
+	else
+		marker.addEventListener('click', markerSelect, true);
 
 	markers.push( marker );
 }

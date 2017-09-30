@@ -94,7 +94,7 @@ li { list-style-type:none; }
 .marker {
 	position: absolute;
 	display: inline-block;
-	background-color: rgba(0,0,0,.66);
+	background-color: transparent;
 	color: #ffffff;
 	font-size: 4pt;
 	font-family: 'RopaSans';
@@ -109,8 +109,31 @@ li { list-style-type:none; }
 	cursor: pointer;
 }
 
+.marker.selected {
+	background-color: rgba(0,0,0,.66);
+	border-spacing: 3px;
+	padding: 10px;
+	cursor: auto;
+}
+
 .marker td {
 	padding: 0px;
+}
+
+.marker .close {
+	width: 8px;
+	height: 8px;
+	background: url('images/close.png') 0 0 no-repeat;
+	margin-right: 0px;
+	margin-top: 0px;
+	float: right;
+	cursor: pointer;
+	pointer-events: auto;
+	display: none;
+}
+
+.marker.selected .close {
+	display: block;
 }
 
 .test {

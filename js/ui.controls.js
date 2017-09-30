@@ -177,7 +177,7 @@ var d3Graphs = {
 			if (!filterChanged) {
 				return;
 			}
-			test = selectedTest.testName;
+			test = selectedTest ? selectedTest.testName : '';
 		}
 
 		// year
