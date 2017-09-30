@@ -39,13 +39,18 @@ function attachMarkerToTest( testName ){
 		marker.selected = true;
 
 	marker.setPosition = function(x,y,z){
-		this.style.left = x - (this.onLeft ? this.jquery.outerWidth(true) : 0) + 'px';
-		this.style.top = y + 'px';
-		this.style.zIndex = z;
-		if (x < window.innerWidth / 2) {
+		this._width = this.jquery.outerWidth(true);
+		this._x = x - (this.onLeft ? this._width : 0);
+		this._y = y;
+		this._dy = this._dy * 0.95 || 0;
+		this._z = z;
+	};
 
-		}
-	}
+	marker.updatePosition = function(){
+		this.style.left = this._x + 'px';
+		this.style.top = this._y + this._dy + 'px';
+		this.style.zIndex = this._z;
+	};
 
 	marker.setVisible = function( vis ){
 		if( ! vis )
@@ -53,7 +58,7 @@ function attachMarkerToTest( testName ){
 		else{
 			this.style.display = 'inline';
 		}
-	}
+	};
 	var testLayer = marker.querySelector( '#testText');
 	marker.testLayer = testLayer;
 	var detailLayer = marker.querySelector( '#detailText' );
@@ -71,7 +76,7 @@ function attachMarkerToTest( testName ){
 		this.style.marginTop = (- s * 0.7 - (s == 20 ? 13 : 0)) + 'px';
 		this.style.marginLeft = (1 + s * 0.35) + 'px';
 		this.style.marginRight = (1 + s * 0.35) + 'px';
-	}
+	};
 
 	marker.update = function(){
 		var matrix = rotating.matrixWorld;
@@ -95,7 +100,7 @@ function attachMarkerToTest( testName ){
 			zIndex = 10000;
 
 		this.setPosition( screenPos.x, screenPos.y, zIndex );
-	}
+	};
 
 	var nameLayer = marker.querySelector( '#testText' );
 
@@ -119,12 +124,12 @@ function attachMarkerToTest( testName ){
 	var markerOver = function(e){
 		this.style.color = '#FFA90B';
 		this.hover = true;
-	}
+	};
 
 	var markerOut = function(e){
 		this.style.color = '#FFFFFF';
 		this.hover = false;
-	}
+	};
 
 	if( marker.selected ) {
 		marker.style.backgroundColor = 'rgba(0,0,0,.66)';
@@ -163,4 +168,37 @@ function removeMarkerFromTest( testName ){
 	var container = document.getElementById( 'visualization' );
 	container.removeChild( test.marker );
 	test.marker = undefined;
+}
+
+function updateMarkers () {
+	var height = camera.scale.z * 3 + 9;
+
+	for (var i in markers) {
+		var marker = markers[i];
+		marker.update();
+	}
+
+	// eliminate overlap
+	for (var r = 0; r < 8; r++) {
+		for (var i = 0; i < markers.length; i++) {
+			var marker1 = markers[i];
+			for (var j = i + 1; j < markers.length; j++) {
+				var marker2 = markers[j];
+				var y1 = marker1._y + marker1._dy;
+				var y2 = marker2._y + marker2._dy;
+				if (!marker1.selected && !marker2.selected &&
+					marker1._x < marker2._x + marker2._width && marker2._x < marker1._x + marker1._width &&
+					y1 < y2 + height && y2 < y1 + height) {
+					var overlap = y1 <= y2 ? y1 + height - y2 : y1 - y2 - height;
+					marker1._dy -= overlap / 2;
+					marker2._dy += overlap / 2;
+				}
+			}
+		}
+	}
+
+	for (var i in markers) {
+		var marker = markers[i];
+		marker.updatePosition();
+	}
 }

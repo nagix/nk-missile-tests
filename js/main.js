@@ -361,11 +361,7 @@ function animate() {
 		}
 	});
 
-	for( var i in markers ){
-		var marker = markers[i];
-		marker.update();
-	}
-
+	updateMarkers();
 }
 
 function render() {
