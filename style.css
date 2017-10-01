@@ -123,7 +123,7 @@ li { list-style-type:none; }
 .marker .close {
 	width: 8px;
 	height: 8px;
-	background: url('images/close.png') 0 0 no-repeat;
+	background: url('images/close.svg') 0 0 no-repeat;
 	margin-right: 0px;
 	margin-top: 0px;
 	float: right;
@@ -413,7 +413,7 @@ Bar graph on left
 	font-size: 12px;
 	font-family: 'Roboto';
 	width: 630px;
-	background: url('images/timelineBG.png') 10px 0 no-repeat; /*to be resized!*/
+	background: url('images/timelineBG.svg') 10px 0 no-repeat;
 }
 #history ul li {
 	width: 42px;
@@ -438,7 +438,7 @@ Bar graph on left
 #history .close {
 	width: 8px;
 	height: 8px;
-	background: url('images/close.png') 0 0 no-repeat;
+	background: url('images/close.svg') 0 0 no-repeat;
 	margin-right: 8px;
 	margin-top: 5px;
 	float: right;
@@ -616,7 +616,7 @@ Bar graph on left
 	bottom: 10px;
 	left: 1255px;
 	cursor: pointer;
-	background: url('images/graphIcon.png') 0 0 no-repeat;
+	background: url('images/graphIcon.svg') 0 0 no-repeat;
 	display: none;
 	opacity: 0.9;
 }
