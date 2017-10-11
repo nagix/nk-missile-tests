@@ -40,16 +40,26 @@ function attachMarkerToTest( testName ){
 
 	marker.setPosition = function(x,y,z){
 		this._width = this.jquery.outerWidth(true);
-		this._x = x - (this.onLeft ? this._width : 0);
+		this._x = x;
 		this._y = y;
 		this._dy = this._dy * 0.95 || 0;
 		this._z = z;
+
+		this.labelLeft = x + (this.onLeft ? -(this._width + 48) : 48);
+		this.labelRight = this.labelLeft + this._width;
 	};
 
 	marker.updatePosition = function(){
-		this.style.left = this._x + 'px';
-		this.style.top = this._y + this._dy + 'px';
+		this.style.left = this.labelLeft + 'px';
+		this.style.top = this._y + this._dy - (this.selected ? 27 : camera.scale.z * 2 + 4) + 'px';
 		this.style.zIndex = this._z;
+
+		var positionArray = this.line.geometry.attributes.position.array;
+		positionArray[0] = this._x;
+		positionArray[1] = this._y;
+		positionArray[3] = this._x + (this.onLeft ? -48 : 48);
+		positionArray[4] = this._y + this._dy;
+		this.line.geometry.attributes.position.needsUpdate = true;
 	};
 
 	marker.setVisible = function( vis ){
@@ -68,9 +78,6 @@ function attachMarkerToTest( testName ){
 	marker.jquery = $(marker);
 	marker.setSize = function( s ){
 		this.style.fontSize = s + 'pt';
-		this.style.marginTop = (- s * 0.7 - (this.selected ? 13 : 0)) + 'px';
-		this.style.marginLeft = (1 + s * 0.35) + 'px';
-		this.style.marginRight = (1 + s * 0.35) + 'px';
 	};
 
 	marker.update = function(){
@@ -118,11 +125,13 @@ function attachMarkerToTest( testName ){
 
 	var markerOver = function(e){
 		this.style.color = '#FFA90B';
+		this.line.material.color = new THREE.Color(0xFFA90B);
 		this.hover = true;
 	};
 
 	var markerOut = function(e){
 		this.style.color = '#FFFFFF';
+		this.line.material.color = new THREE.Color(0xDDDDDD);
 		this.hover = false;
 	};
 
@@ -146,6 +155,13 @@ function attachMarkerToTest( testName ){
 	else
 		marker.addEventListener('click', markerSelect, true);
 
+	var lineGeo = new THREE.BufferGeometry();
+	lineGeo.addAttribute('position', new THREE.BufferAttribute(new Float32Array([0,0,0,0,0,0]), 3));
+	var line = new THREE.Line(lineGeo, new THREE.LineBasicMaterial({ color: 0xDDDDDD }));
+	line.frustumCulled = false;
+	scene2d.add(line);
+	marker.line = line;
+
 	markers.push( marker );
 }
 
@@ -161,12 +177,13 @@ function removeMarkerFromTest( testName ){
 	if( index >= 0 )
 		markers.splice( index, 1 );
 	var container = document.getElementById( 'visualization' );
+	scene2d.remove(test.marker.line);
 	container.removeChild( test.marker );
 	test.marker = undefined;
 }
 
 function updateMarkers () {
-	var height = camera.scale.z * 3 + 9;
+	var height = camera.scale.z * 4 + 8;
 
 	for (var i in markers) {
 		var marker = markers[i];
@@ -181,9 +198,15 @@ function updateMarkers () {
 				var marker2 = markers[j];
 				var y1 = marker1._y + marker1._dy;
 				var y2 = marker2._y + marker2._dy;
-				if (!marker1.selected && !marker2.selected &&
-					marker1._x < marker2._x + marker2._width && marker2._x < marker1._x + marker1._width &&
+				if (marker1.labelLeft < marker2.labelRight && marker2.labelLeft < marker1.labelRight &&
 					y1 < y2 + height && y2 < y1 + height) {
+					if (marker1._y < marker2._y && y1 > y2 || marker1._y > marker2._y && y1 < y2) {
+						var dy = marker1._dy;
+						marker1._dy = marker2._dy;
+						marker2._dy = dy;
+						y1 = marker1._y + marker1._dy;
+						y2 = marker2._y + marker2._dy;
+					}
 					var overlap = y1 <= y2 ? y1 + height - y2 : y1 - y2 - height;
 					marker1._dy -= overlap / 2;
 					marker2._dy += overlap / 2;

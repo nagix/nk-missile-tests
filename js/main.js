@@ -11,6 +11,7 @@ var latlonFile = 'data/facility_lat_lon.json';
 var missileFile = 'data/missile.json';
 
 var camera, scene, renderer;
+var camera2s, scene2d;
 
 var sphere;
 var rotating;
@@ -146,6 +147,8 @@ function initScene() {
 	scene = new THREE.Scene();
 	scene.matrixAutoUpdate = false;
 	// scene.fog = new THREE.FogExp2( 0xBBBBBB, 0.00003 );
+
+	scene2d = new THREE.Scene();
 
 	scene.add( new THREE.AmbientLight( 0x505050 ) );
 
@@ -288,7 +291,12 @@ function initScene() {
 	camera.lookAt(scene.position);
 	scene.add( camera );
 
-	var windowResize = THREEx.WindowResize(renderer, camera);
+	camera2d = new THREE.OrthographicCamera(0, window.innerWidth, 0, window.innerHeight, 1, 20000);
+	camera2d.position.z = 400;
+	camera2d.position.y = 0;
+	camera.lookAt(scene2d.position);
+
+	var windowResize = THREEx.WindowResize(renderer, camera, camera2d);
 }
 
 
@@ -362,11 +370,16 @@ function animate() {
 	});
 
 	updateMarkers();
+	render2d();
 }
 
 function render() {
 	renderer.clear();
 	renderer.render( scene, camera );
+}
+
+function render2d() {
+	renderer.render( scene2d, camera2d );
 }
 
 function getHistoricalData() {
