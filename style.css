@@ -248,11 +248,14 @@ Elements to control the title and test selector
 
 	width: 489px;
 }
+#hudButtons>div {
+	float: right;
+}
 #hudButtons .testTextInput {
 	float: right;
 	font-size: 17px;
 	width: 300px;
-	margin-right: 5px;
+	margin: 0px 0px 4px 8px;
 	font-family: 'RopaSans';
 	text-transform: uppercase;
 }
@@ -265,25 +268,34 @@ Elements to control the title and test selector
 	font-size: 18px;
 	font-family: 'RopaSans';
 	cursor: pointer;
-	margin-right: 0px;
+	margin: 0px 0px 4px 8px;
 	opacity: 0.9;
 }
 #hudButtons .testsBtn:hover {
 	opacity: 1;
 }
+#hudButtons .searchBtn {
+	width: 76px;
+}
 #hudButtons .aboutBtn {
 	display: block;
 	clear: both;
-	margin-right: 0px;
 	width: 76px;
-
+}
+#hudButtons .tiltBtn {
+	width: 30px;
+	height: 24px;
+}
+#hudButtons .topViewBtn {
+	background: #333333 url('images/topview.svg') 7px 4px no-repeat;
+}
+#hudButtons .sideViewBtn {
+	background: #333333 url('images/sideview.svg') 7px 4px no-repeat;
 }
 #hudButtons .zoomBtn {
-	margin-right: 5px;
 	width: 30px;
 	font-weight: bold;
 	height: 24px;
-	margin-top: 2px;
 }
 
 #hudButtons .zoomOutBtn {

@@ -38,6 +38,7 @@ var d3Graphs = {
 	previousSuccessLabelTranslateY: -1,
 	previousFailureLabelTranslateY: -1,
 	previousUnknownLabelTranslateY: -1,
+	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
 
 
@@ -72,9 +73,31 @@ var d3Graphs = {
 		$("#hudButtons .aboutBtn").click(d3Graphs.toggleAboutBox);
 		$(document).on("click",".ui-autocomplete li",d3Graphs.menuItemClick);
 		$(window).resize(d3Graphs.windowResizeCB);
+		$(".tiltBtn").mousedown(d3Graphs.tiltBtnClick);
+		$(".tiltBtn").mouseup(d3Graphs.tiltBtnMouseup);
 		$(".zoomBtn").mousedown(d3Graphs.zoomBtnClick);
 		$(".zoomBtn").mouseup(d3Graphs.zoomBtnMouseup);
 
+	},
+	tiltBtnMouseup: function() {
+		clearInterval(d3Graphs.tiltBtnInterval);
+	},
+	tiltBtnClick:function() {
+		var delta;
+		if($(this).hasClass('sideViewBtn')) {
+			delta = 5;
+		} else {
+			delta = -5;
+		}
+		d3Graphs.doTilt(delta);
+		d3Graphs.tiltBtnInterval = setInterval(d3Graphs.doTilt, 50, delta);
+	},
+	doTilt:function(delta) {
+		tilt += delta * 0.01;
+		tilt = constrain(tilt, 0, Math.PI / 2);
+		camera.position.y = 300 * Math.sin(-tilt);
+		camera.position.z = 100 + 300 * Math.cos(-tilt);
+		camera.lookAt(new THREE.Vector3(0, 0, 100));
 	},
 	zoomBtnMouseup: function() {
 		clearInterval(d3Graphs.zoomBtnInterval);

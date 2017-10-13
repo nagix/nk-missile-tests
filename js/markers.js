@@ -63,10 +63,13 @@ function attachMarkerToTest( testName ){
 	};
 
 	marker.setVisible = function( vis ){
-		if( ! vis )
+		if( ! vis ) {
 			this.style.display = 'none';
+			this.line.visible = false;
+		}
 		else{
 			this.style.display = 'inline';
+			this.line.visible = true;
 		}
 	};
 	var testLayer = marker.querySelector( '#testText');

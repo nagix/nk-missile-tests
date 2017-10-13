@@ -11,7 +11,8 @@ Operation | Description
 Mouse drag or touch drag | Rotate the globe
 Mouse wheel rotation or pinch in/out | Zoom in/out
 Click or tap +/- buttons | Zoom in/out
-Shift key + Mouse drag | Translate the globe position
+Shift key + Mouse drag | Tilt up/down
+Click or tap the tilt buttons | Tilt up/down
 Click or tap a test label on the map | Select a test
 Enter a date or test name in the text field | Search for a test
 Click or tap ABOUT button | See the information on the database and references

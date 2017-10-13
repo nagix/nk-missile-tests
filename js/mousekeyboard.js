@@ -12,6 +12,8 @@ var rotateXMax = 90 * Math.PI/180;
 var rotateTargetX = undefined;
 var rotateTargetY = undefined;
 
+var tilt = 0;
+
 var keyboard = new THREEx.KeyboardState();
 
 function onDocumentMouseMove( event ) {
@@ -33,8 +35,11 @@ function onDocumentMouseMove( event ) {
 			rotateVX += (mouseY - pmouseY) / 2 * Math.PI / 180 * 0.1;
 		}
 		else{
-			camera.position.x -= (mouseX - pmouseX) * .1;
-			camera.position.y += (mouseY - pmouseY) * .1;
+			tilt -= (mouseY - pmouseY) * 0.01;
+			tilt = constrain(tilt, 0, Math.PI / 2);
+			camera.position.y = 300 * Math.sin(-tilt);
+			camera.position.z = 100 + 300 * Math.cos(-tilt);
+			camera.lookAt(new THREE.Vector3(0, 0, 100));
 		}
 	}
 }
