@@ -173,12 +173,16 @@ function initScene() {
 	// outlinedMapTexture.magFilter = THREE.NearestFilter;
 	// outlinedMapTexture.minFilter = THREE.NearestFilter;
 
-	var mapMaterial = new THREE.MeshBasicMaterial();
-	mapMaterial.map = outlinedMapTexture;
+	var mapMaterial = new THREE.MeshBasicMaterial({
+		map: outlinedMapTexture,
+		polygonOffset: true,
+		polygonOffsetFactor: 1,
+		polygonOffsetUnits: 1
+	});
 
 
 	//	-----------------------------------------------------------------------------
-	sphere = new THREE.Mesh( new THREE.SphereGeometry( 100, 40, 40 ), mapMaterial );
+	sphere = new THREE.Mesh( new THREE.SphereBufferGeometry( 100, 40, 40 ), mapMaterial );
 	sphere.doubleSided = false;
 	sphere.rotation.x = Math.PI;
 	sphere.rotation.y = -Math.PI/2;
@@ -187,29 +191,13 @@ function initScene() {
 	rotating.add( sphere );
 
 
-	var ringMaterial = new THREE.LineBasicMaterial({ color: Math.random() * 0xffffff, linewidth: 0.5 });
-	for (var i = 0; i < 20; i++) {
-		var ringGeo = new THREE.Geometry();
-		for (var j = 0; j <= 40; j++) {
-			var x = Math.sin(Math.PI * j / 20) * Math.cos(Math.PI * i / 20) * 100.4;
-			var y = Math.cos(Math.PI * j / 20) * 100.4;
-			var z = Math.sin(Math.PI * j / 20) * Math.sin(Math.PI * i / 20) * 100.4;
-			ringGeo.vertices.push(new THREE.Vector3(x, y, z));
-		}
-		var line = new THREE.Line(ringGeo, ringMaterial);
-		rotating.add(line);
-	}
-	for (var i = 1; i < 40; i++) {
-		var ringGeo = new THREE.Geometry();
-		for (var j = 0; j <= 40; j++) {
-			var x = Math.sin(Math.PI * j / 20) * Math.sin(Math.PI * i / 40) * 100.4;
-			var y = Math.cos(Math.PI * i / 40) * 100.4;
-			var z = Math.cos(Math.PI * j / 20) * Math.sin(Math.PI * i / 40) * 100.4;
-			ringGeo.vertices.push(new THREE.Vector3(x, y, z));
-		}
-		var line = new THREE.Line(ringGeo, ringMaterial);
-		rotating.add(line);
-	}
+	var wireframeGeo = new THREE.EdgesGeometry(sphere.geometry, 0.3);
+	var wireframeMaterial = new THREE.LineBasicMaterial({
+		color: Math.random() * 0xffffff,
+		linewidth: 0.5
+	});
+	var wireframe = new THREE.LineSegments(wireframeGeo, wireframeMaterial);
+	sphere.add(wireframe);
 
 	for( var i in timeBins ){
 		var bin = timeBins[i].data;
