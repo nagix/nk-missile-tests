@@ -13,6 +13,8 @@ var rotateTargetX = undefined;
 var rotateTargetY = undefined;
 
 var tilt = 0;
+var tiltTarget = undefined;
+var scaleTarget = undefined;
 
 var keyboard = new THREEx.KeyboardState();
 
@@ -62,6 +64,8 @@ function onDocumentMouseDown( event ) {
 	pressY = mouseY;
 	rotateTargetX = undefined;
 	rotateTargetX = undefined;
+	tiltTarget = undefined;
+	scaleTarget = undefined;
 
 	if ('ontouchend' in document && event instanceof TouchEvent && event.touches.length > 1) {
 		event.preventDefault();
@@ -83,6 +87,7 @@ function onKeyDown( event ){
 function handleMWheel( delta ) {
 	camera.scale.z += delta * 0.1;
 	camera.scale.z = constrain( camera.scale.z, 0.5, 5.0 );
+	scaleTarget = undefined;
 }
 
 function onMouseWheel( event ){

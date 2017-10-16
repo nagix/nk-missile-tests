@@ -116,7 +116,7 @@ function buildDataVizGeometries( linearData ){
 			var lon = landing.lon - 90;
 			var lat = landing.lat;
 			var phi = Math.PI/2 - lat * Math.PI / 180;
-			var theta = 2 * Math.PI - lon * Math.PI / 180 + Math.PI * 0.055;
+			var theta = 2 * Math.PI - (lon - 9.9) * Math.PI / 180;
 
 			var lcenter = new THREE.Vector3();
 			lcenter.x = Math.sin(phi) * Math.cos(theta) * rad;
@@ -380,8 +380,11 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 
 	if( previouslySelectedTest !== selectedTest ){
 		if( selectedTest ){
-			rotateTargetX = ((selectedTest.landingLocation.lat + facilityData[selectedTest.facility].lat) / 2 - 0) * Math.PI / 180;
-			var targetY0 = -((selectedTest.landingLocation.lon + facilityData[selectedTest.facility].lon) / 2 - 9) * Math.PI / 180;
+			var facility = facilityData[selectedTest.facility];
+			var landing = selectedTest.landingLocation;
+
+			rotateTargetX = (facility.lat + landing.lat) / 2 * Math.PI / 180;
+			var targetY0 = -((facility.lon + landing.lon) / 2 - 9.9) * Math.PI / 180;
 			var piCounter = 0;
 			while(true) {
 				var targetY0Neg = targetY0 - Math.PI * 2 * piCounter;
@@ -405,6 +408,8 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 			*/
 			rotateVX *= 0.6;
 			rotateVY *= 0.6;
+
+			scaleTarget = 90 / (landing.center.clone().sub(facility.center).length() + 30);
 		}
 	}
 

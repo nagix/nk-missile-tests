@@ -289,6 +289,7 @@ function initScene() {
 	camera.position.z = 400;
 	camera.position.y = 0;
 	camera.lookAt(scene.position);
+	camera.scale.z = 0.5;
 	scene.add( camera );
 
 	camera2d = new THREE.OrthographicCamera(0, window.innerWidth, 0, window.innerHeight, 1, 20000);
@@ -325,7 +326,7 @@ function animate() {
 		// rotateVX = move.x;
 		// rotateVy = move.y;
 
-		if( Math.abs(rotateTargetX - rotateX) < 0.1 && Math.abs(rotateTargetY - rotateY) < 0.1 ){
+		if( Math.abs(rotateTargetX - rotateX) < 0.02 && Math.abs(rotateTargetY - rotateY) < 0.02 ){
 			rotateTargetX = undefined;
 			rotateTargetY = undefined;
 		}
@@ -357,6 +358,25 @@ function animate() {
 
 	rotating.rotation.x = rotateX;
 	rotating.rotation.y = rotateY;
+
+	if (tiltTarget !== undefined) {
+		tilt += (tiltTarget - tilt) * 0.012;
+		camera.position.y = 300 * Math.sin(-tilt);
+		camera.position.z = 100 + 300 * Math.cos(-tilt);
+		camera.lookAt(new THREE.Vector3(0, 0, 100));
+
+		if (Math.abs(tiltTarget - tilt) < 0.05) {
+			tiltTarget = undefined;
+		}
+	}
+
+	if (scaleTarget !== undefined) {
+		camera.scale.z *= Math.pow(scaleTarget / camera.scale.z, 0.012);
+
+		if (Math.abs(Math.log(scaleTarget / camera.scale.z)) < 0.05) {
+			scaleTarget = undefined;
+		}
+	}
 
 	render();
 

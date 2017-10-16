@@ -98,6 +98,7 @@ var d3Graphs = {
 		camera.position.y = 300 * Math.sin(-tilt);
 		camera.position.z = 100 + 300 * Math.cos(-tilt);
 		camera.lookAt(new THREE.Vector3(0, 0, 100));
+		tiltTarget = undefined;
 	},
 	zoomBtnMouseup: function() {
 		clearInterval(d3Graphs.zoomBtnInterval);
@@ -115,6 +116,7 @@ var d3Graphs = {
 	doZoom:function(delta) {
 		camera.scale.z += delta * 0.1;
 		camera.scale.z = constrain( camera.scale.z, 0.5, 5.0 );
+		scaleTarget = undefined;
 	},
 	toggleAboutBox:function() {
 		$("#aboutContainer").toggle();
