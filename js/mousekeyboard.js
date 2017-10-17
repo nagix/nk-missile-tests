@@ -85,8 +85,9 @@ function onKeyDown( event ){
 }
 
 function handleMWheel( delta ) {
-	camera.scale.z += delta * 0.1;
-	camera.scale.z = constrain( camera.scale.z, 0.5, 5.0 );
+	camera.zoom += delta * 0.1;
+	camera.zoom = constrain( camera.zoom, 0.5, 5.0 );
+	camera.updateProjectionMatrix();
 	scaleTarget = undefined;
 }
 

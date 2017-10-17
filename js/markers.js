@@ -51,7 +51,7 @@ function attachMarkerToTest( testName ){
 
 	marker.updatePosition = function(){
 		this.style.left = this.labelLeft + 'px';
-		this.style.top = this._y + this._dy - (this.selected ? 27 : camera.scale.z * 2 + 4) + 'px';
+		this.style.top = this._y + this._dy - (this.selected ? 27 : camera.zoom * 2 + 4) + 'px';
 		this.style.zIndex = this._z;
 
 		var positionArray = this.line.geometry.attributes.position.array;
@@ -88,7 +88,7 @@ function attachMarkerToTest( testName ){
 		var abspos = test.landingLocation.center.clone().applyMatrix4(matrix);
 		var screenPos = screenXY(abspos);
 
-		var s = camera.scale.z * 3 + 5;
+		var s = camera.zoom * 3 + 5;
 
 		if( this.selected )
 			s = 20;
@@ -186,7 +186,7 @@ function removeMarkerFromTest( testName ){
 }
 
 function updateMarkers () {
-	var height = camera.scale.z * 4 + 8;
+	var height = camera.zoom * 4 + 8;
 
 	for (var i in markers) {
 		var marker = markers[i];

@@ -199,6 +199,17 @@ function initScene() {
 	var wireframe = new THREE.LineSegments(wireframeGeo, wireframeMaterial);
 	sphere.add(wireframe);
 
+	var atmosphereMaterial = new THREE.ShaderMaterial({
+		vertexShader: document.getElementById('vertexShaderAtmosphere').textContent,
+		fragmentShader: document.getElementById('fragmentShaderAtmosphere').textContent,
+		// atmosphere should provide light from behind the sphere, so only render the back side
+		side: THREE.BackSide
+	});
+
+	var atmosphere = new THREE.Mesh(sphere.geometry.clone(), atmosphereMaterial);
+	atmosphere.scale.x = atmosphere.scale.y = atmosphere.scale.z = 1.6;
+	rotating.add(atmosphere);
+
 	for( var i in timeBins ){
 		var bin = timeBins[i].data;
 		for( var s in bin ){
@@ -277,7 +288,7 @@ function initScene() {
 	camera.position.z = 400;
 	camera.position.y = 0;
 	camera.lookAt(scene.position);
-	camera.scale.z = 0.5;
+	camera.zoom = 0.5;
 	scene.add( camera );
 
 	camera2d = new THREE.OrthographicCamera(0, window.innerWidth, 0, window.innerHeight, 1, 20000);
@@ -359,9 +370,10 @@ function animate() {
 	}
 
 	if (scaleTarget !== undefined) {
-		camera.scale.z *= Math.pow(scaleTarget / camera.scale.z, 0.012);
+		camera.zoom *= Math.pow(scaleTarget / camera.zoom, 0.012);
+		camera.updateProjectionMatrix();
 
-		if (Math.abs(Math.log(scaleTarget / camera.scale.z)) < 0.05) {
+		if (Math.abs(Math.log(scaleTarget / camera.zoom)) < 0.05) {
 			scaleTarget = undefined;
 		}
 	}

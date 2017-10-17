@@ -83,6 +83,30 @@
 			}
 		</script>
 
+		<!-- Custom Shader Code for atmospheric glow -->
+		<script type="x-shader/x-vertex" id="vertexShaderAtmosphere">
+			varying vec3 vNormal;
+			varying vec3 vPosition;
+
+			void main() {
+				vNormal = normalize( normalMatrix * normal );
+				vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+				vPosition = normalize( vec3( mvPosition.x, mvPosition.y, mvPosition.z ) );
+				gl_Position = projectionMatrix * mvPosition;
+			}
+		</script>
+
+		<!-- fragment shader a.k.a. pixel shader -->
+		<script type="x-shader/x-vertex" id="fragmentShaderAtmosphere">
+			varying vec3 vNormal;
+			varying vec3 vPosition;
+
+			void main() {
+				float intensity = dot( vNormal, vPosition ) * 2.0 - 1.4;
+				gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 ) * intensity;
+			}
+		</script>
+
 		<script src="js/main.js" type="text/javascript"></script>
 
 		<script type="text/javascript">
