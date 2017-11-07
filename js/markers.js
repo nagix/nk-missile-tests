@@ -95,12 +95,9 @@ function attachMarkerToTest( testName ){
 
 		this.setSize( s );
 
-		// if( this.selected )
-			// this.setVisible( true )
-		// else
-			this.setVisible( abspos.z > 0 );
+		this.setVisible((new THREE.Vector3()).subVectors(camera.position, abspos).dot(abspos) > 0);
 
-		var zIndex = Math.floor( 1000 - abspos.z + s );
+		var zIndex = Math.floor( 1000 + abspos.z );
 		if( this.selected )
 			zIndex = 10000;
 
