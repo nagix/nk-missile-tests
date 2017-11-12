@@ -445,7 +445,7 @@
 	    "distance": "unknown",
 	    "bearing": 90,
 	    "outcome": "success",
-	    "description": "It is possible this was a Scud-C. The missiles travelled a relatively short distance however, so short that South Korea initially assumed these were a KN-02 test. They later revised their assessment of these missiles as being Scuds. The range of this test puts these missiles on par with the Scud-B, however, North Korea has not launched any of those in a long time. It is also possible North Korea purposely targeted the missile in such a way as to limit its range. The evidence and available information is not really clear."
+	    "description": "This missile type is extremely unclear. It is highly possible this and the other missiles launched during this test were anti-ship missiles or MLRS missiles. Both of these are too small and lack the range to be counted in this dataset which is why these are labeled as unconfirmed. The specific location is also dubious at best. We know North Korea likes to conduct MLRS tests here and the reports label the tests as occurring on the East Coast of North Korea."
 	}],
     "t": 2013
   }, {
