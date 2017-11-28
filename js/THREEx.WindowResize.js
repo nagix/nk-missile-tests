@@ -32,7 +32,8 @@ THREEx.WindowResize	= function(renderer, camera, camera2d, dimension){
 		// notify the renderer of the size change
 		renderer.setSize( rendererSize.width, rendererSize.height );
 		// update the camera
-		camera.aspect	= rendererSize.width / rendererSize.height;
+		camera.aspect = rendererSize.width / rendererSize.height;
+		camera.fov = 12 / Math.min(camera.aspect, 1);
 		camera.updateProjectionMatrix();
 		camera2d.right = rendererSize.width;
 		camera2d.bottom = rendererSize.height;

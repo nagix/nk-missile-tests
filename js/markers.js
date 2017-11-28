@@ -151,7 +151,7 @@ function attachMarkerToTest( testName ){
 		selectVisualization( timeBins, selection.selectedYear, [this.testName || ''], selection.getOutcomeCategories(), selection.getMissileCategories() );
 	};
 	if ( marker.selected )
-		marker.jquery.find('.close').click(markerSelect);
+		marker.jquery.find('.close').on('click', markerSelect);
 	else
 		marker.addEventListener('click', markerSelect, true);
 

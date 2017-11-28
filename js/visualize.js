@@ -81,7 +81,7 @@ function buildDataVizGeometries( linearData ){
 		var yearBin = linearData[i].data;
 
 		var year = linearData[i].t;
-		selectableYears.push(year);
+		yearIndexLookup[year] = i;
 
 		var count = 0;
 		console.log('Building data for ...' + year);
@@ -148,11 +148,7 @@ function buildDataVizGeometries( linearData ){
 
 function getVisualizedMesh( linearData, year, outcomeCategories, missileCategories ){
 	//	pick out the year first from the data
-	for (var indexFromYear = 0; indexFromYear < selectableYears.length - 1; indexFromYear++) {
-		if (selectableYears[indexFromYear] == year) {
-			break;
-		}
-	}
+	var indexFromYear = yearIndexLookup[year];
 
 	var affectedTest = [];
 

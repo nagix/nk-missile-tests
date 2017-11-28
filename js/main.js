@@ -32,7 +32,7 @@ var testData = new Object();
 //	contains a list of missile code to missile name for running lookups
 var missileLookup;
 
-var selectableYears = [];
+var yearIndexLookup = {};
 var selectableTests = [];
 var summary;
 
@@ -106,7 +106,7 @@ function start( e ){
 
 
 var Selection = function(){
-	this.selectedYear = '2010';
+	this.selectedYear = '2017';
 	this.selectedTest = '2017-09-14 HWASONG-12';
 
 	this.outcomeCategories = new Object();
@@ -284,7 +284,8 @@ function initScene() {
 
 	//	-----------------------------------------------------------------------------
 	//	Setup our camera
-	camera = new THREE.PerspectiveCamera( 12, window.innerWidth / window.innerHeight, 1, 20000 );
+	var aspect = window.innerWidth / window.innerHeight;
+	camera = new THREE.PerspectiveCamera(12 / Math.min(aspect, 1), aspect, 1, 20000);
 	camera.position.z = 400;
 	camera.position.y = 0;
 	camera.lookAt(scene.position);

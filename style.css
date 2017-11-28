@@ -435,6 +435,9 @@ Bar graph on left
 	padding-top: 30px;
 	cursor: pointer;
 }
+#history ul li.narrow {
+	display: none;
+}
 #history .timeline #handle {
 	cursor: pointer;
 	width: 36px;
@@ -713,3 +716,83 @@ Bar graph on left
 		margin-left: -1px;
 	}
 }*/
+
+@media (max-width: 415px) {
+	html,body {
+		position: fixed;
+	}
+	body {
+		height: 100%;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	h2 {
+		font-size: 13px;
+	}
+	#loading{
+		margin-left: -190px;
+		width: 320px;
+	}
+	#hudHeader {
+		left: 10px;
+		top: 10px;
+	}
+	#hudHeader h1 {
+		font-size: 20px;
+	}
+	#hudHeader h1 .subtitle {
+		font-size: 9px;
+	}
+	#barGraph {
+		display: none;
+	}
+	#history ul {
+		margin: 10px 24px;
+		padding: 0;
+		padding-bottom: 15px;
+		padding-top: 22px;
+		font-size: 10px;
+		width: 324px;
+		background: url('images/timelineBG_small.svg') 4px 0 no-repeat;
+	}
+	#history ul li {
+		width: 21px;
+		margin-top: -30px;
+		padding-top: 30px;
+		position: relative;
+		left: 4px;
+	}
+	#history ul li.wide {
+		display: none;
+	}
+	#history ul li.narrow {
+		display: block;
+	}
+	#history .timeline #handle {
+		cursor: pointer;
+		width: 36px;
+		height: 36px;
+		background: url('images/yearHandle.png') 0px 0 no-repeat;
+		bottom: 20px;
+		left: 318px;
+	}
+	#history .labels .change {
+		font-size: 16px;
+		margin-left: 31px;
+		margin-top: 10px;
+	}
+	#history .labels .successes {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	#history .labels .failures {
+		font-size: 10px;
+		margin-top: 10px;
+		margin-left: 6px;
+	}
+	#history .labels .unknowns {
+		font-size: 10px;
+		margin-top: 10px;
+		margin-left: 6px;
+	}
+}

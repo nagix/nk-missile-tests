@@ -10,18 +10,26 @@ d3.selection.prototype.moveToFront = function() {
 	});
 };
 
+function isDesktop() {
+	return window.innerWidth >= 415;
+}
+
+function size(sizeArray) {
+	return sizeArray[isDesktop() ? 0 : 1];
+}
+
 var d3Graphs = {
 	barGraphWidth: 420,
 	barGraphHeight: 800,
 	barWidth: 14,
 	barGraphTopPadding: 20,
 	barGraphBottomPadding: 50,
-	histogramWidth: 686,
+	histogramWidth: [686, 371],
 	histogramHeight: 160,
-	histogramBarWidth: 28,
-	histogramLeftPadding:28,
+	histogramBarWidth: [28, 14],
+	histogramLeftPadding: 28,
 	histogramRightPadding: 28,
-	histogramVertPadding:20,
+	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
 	histogramYScale: null,
@@ -31,15 +39,17 @@ var d3Graphs = {
 	cumSuccessLblY: 0,cumFailureLblY: 0,cumUnknownLblY: 0,
 	inited: false,
 	histogramOpen: false,
-	handleLeftOffset: 34,
-	handleInterval: 42,
+	handleLeftOffset: [34, 24],
+	handleInterval: [42, 21],
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
+	graphIconPadding: [20, -20],
 	previousSuccessLabelTranslateY: -1,
 	previousFailureLabelTranslateY: -1,
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
+	selectedYearIndex: 14,
 
 
 	setTest: function(test) {
@@ -55,23 +65,26 @@ var d3Graphs = {
 		if(this.inited) return;
 		this.inited = true;
 		d3Graphs.windowResize();
-		$("#hudHeader, #hudButtons").show();
+		$("#hudHeader").show();
+		if (isDesktop()) {
+			$("#hudButtons").show();
+			$("#outcomeBtns").show();
+			$("#missileTypeBtns").show();
+		}
 		$("#history").show();
 		$("#graphIcon").show();
-		$("#outcomeBtns").show();
-		$("#missileTypeBtns").show();
-		$("#graphIcon").click(d3Graphs.graphIconClick);
-		$("#history .close").click(d3Graphs.closeHistogram);
-		$("#history ul li").click(d3Graphs.clickTimeline);
-		$("#handle").draggable({axis: 'x',containment: "parent",grid:[this.handleInterval, this.handleInterval], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
-		$("#hudButtons .searchBtn").click(d3Graphs.updateViz);
-		$("#outcomeBtns>div>.label").click(d3Graphs.outcomeLabelClick);
-		$("#missileTypeBtns .check").click(d3Graphs.missileBtnClick);
+		$("#graphIcon").on('click', d3Graphs.graphIconClick);
+		$("#history .close").on('click', d3Graphs.closeHistogram);
+		$("#history ul li").on('click', d3Graphs.clickTimeline);
+		$("#handle").draggable({axis: 'x',containment: "parent",grid:[size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
+		$("#hudButtons .searchBtn").on('click', d3Graphs.updateViz);
+		$("#outcomeBtns>div>.label").on('click', d3Graphs.outcomeLabelClick);
+		$("#missileTypeBtns .check").on('click', d3Graphs.missileBtnClick);
 		$("#hudButtons .testTextInput").autocomplete({ source:selectableTests, autoFocus: true });
 		$("#hudButtons .testTextInput").keyup(d3Graphs.testKeyUp);
 		$("#hudButtons .testTextInput").focus(d3Graphs.testFocus);
-		$("#hudButtons .aboutBtn").click(d3Graphs.toggleAboutBox);
-		$(document).on("click",".ui-autocomplete li",d3Graphs.menuItemClick);
+		$("#hudButtons .aboutBtn").on('click', d3Graphs.toggleAboutBox);
+		$(document).on('click', '.ui-autocomplete li', d3Graphs.menuItemClick);
 		$(window).resize(d3Graphs.windowResizeCB);
 		$(".tiltBtn").mousedown(d3Graphs.tiltBtnClick);
 		$(".tiltBtn").mouseup(d3Graphs.tiltBtnMouseup);
@@ -124,19 +137,13 @@ var d3Graphs = {
 	},
 	clickTimeline:function() {
 		var year = $(this).html();
-		if(year < 10) {
+		if (year < 70) {
 			year = (year * 1) + 2000;
 		}
-		if(year < 100) {
-			year = (year * 1) + 1900
+		if (year < 100) {
+			year = (year * 1) + 1900;
 		}
-		for (var index = 0; index < selectableYears.length - 1; index++) {
-			if (selectableYears[index] == year) {
-				break;
-			}
-		}
-		var leftPos = d3Graphs.handleLeftOffset + d3Graphs.handleInterval * index;
-		$("#handle").css('left',leftPos+"px");
+		d3Graphs.setHandlePosition(yearIndexLookup[year]);
 		d3Graphs.updateViz(true);
 	},
 	windowResizeCB:function() {
@@ -146,7 +153,6 @@ var d3Graphs = {
 	windowResize: function() {
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
-		d3Graphs.positionHistory(windowWidth);
 		var minWidth = 1280;
 		var minHeight = 860;
 		var w = windowWidth < minWidth ? minWidth : windowWidth;
@@ -170,15 +176,24 @@ var d3Graphs = {
 		var hudPaddingRight = 30;
 		$("#hudHeader").width(w-hudHeaderLeft - hudPaddingRight);
 		*/
+		d3Graphs.drawHistogram();
+		d3Graphs.setHandlePosition(d3Graphs.selectedYearIndex);
+		$("#handle").draggable({axis: 'x', containment: "parent", grid:[size(d3Graphs.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle});
+		if (isDesktop()) {
+			$("#hudButtons").show();
+			$("#outcomeBtns").show();
+			$("#missileTypeBtns").show();
+		}
+		d3Graphs.positionHistory(windowWidth);
 	},
 	positionHistory: function(windowWidth) {
-		var graphIconPadding = 20;
+		var graphIconPadding = size(d3Graphs.graphIconPadding);
 		var historyWidth = $("#history").width();
 		var totalWidth = historyWidth + $("#graphIcon").width() + graphIconPadding;
 //		var windowWidth = $(window).width();
 		var historyLeftPos = (windowWidth - totalWidth) / 2.0;
 		var minLeftPos = 280;
-		if(historyLeftPos < minLeftPos) {
+		if(historyLeftPos < minLeftPos && isDesktop()) {
 			historyLeftPos = minLeftPos;
 		}
 		$("#history").css('left',historyLeftPos+"px");
@@ -207,20 +222,10 @@ var d3Graphs = {
 		}
 
 		// year
-		var yearOffset = $("#handle").css('left');
-		yearOffset = yearOffset.substr(0,yearOffset.length-2);
-		yearOffset -= d3Graphs.handleLeftOffset;
-		yearOffset /= d3Graphs.handleInterval;
-		var year = timeBins[yearOffset].t;
-		if (!filterChanged && year != testData[test].date.substr(0, 4)) {
-			year = +testData[test].date.substr(0, 4);
-			for (var index = 0; index < selectableYears.length - 1; index++) {
-				if (selectableYears[index] == year) {
-					break;
-				}
-			}
-			var leftPos = d3Graphs.handleLeftOffset + d3Graphs.handleInterval * index;
-			$("#handle").css('left',leftPos+"px");
+		var year = timeBins[d3Graphs.selectedYearIndex].t;
+		if (!filterChanged) {
+			year = testData[test].date.substr(0, 4);
+			d3Graphs.setHandlePosition(yearIndexLookup[year]);
 		}
 
 		// outcome
@@ -266,6 +271,11 @@ var d3Graphs = {
 		selectVisualization(timeBins, year, [test], outcomeArray, missileArray);
 	},
 	dropHandle:function() {
+		var yearOffset = $("#handle").css('left');
+		yearOffset = yearOffset.substr(0, yearOffset.length - 2);
+		yearOffset -= size(d3Graphs.handleLeftOffset);
+		yearOffset /= size(d3Graphs.handleInterval);
+		d3Graphs.selectedYearIndex = yearOffset;
 		$("#handle").css('top','');
 		d3Graphs.updateViz(true);
 	},
@@ -334,17 +344,20 @@ var d3Graphs = {
 		this.histogramAbsMax = absMax;
 	},
 	drawHistogram:function() {
+		var histogramWidth = size(this.histogramWidth);
+		var histogramBarWidth = size(this.histogramBarWidth);
 		if(this.histogramSVG == null) {
 			this.histogramSVG = d3.select('#history .container').append('svg')
-				.attr('id', 'histogram')
-				.attr('width', this.histogramWidth)
-				.attr('height', this.histogramHeight);
+				.attr('id', 'histogram');
 		}
+		this.histogramSVG
+			.attr('width', histogramWidth)
+			.attr('height', this.histogramHeight);
 		this.setHistogramData();
 
 		this.histogramYScale = d3.scaleLinear().domain([0, this.histogramAbsMax]).range([0, this.histogramHeight - this.histogramVertPadding*2]);
 		var maxX = summary.historical.length;
-		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, this.histogramWidth - this.histogramLeftPadding - this.histogramRightPadding]);
+		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, histogramWidth - this.histogramLeftPadding - this.histogramRightPadding]);
 
 		var tickData = this.histogramYScale.ticks(5);
 
@@ -357,7 +370,7 @@ var d3Graphs = {
 			.attr('y1', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
 			})
-			.attr('x2', this.histogramWidth - this.histogramRightPadding)
+			.attr('x2', histogramWidth - this.histogramRightPadding)
 			.attr('y2', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
 			})
@@ -382,7 +395,7 @@ var d3Graphs = {
 		tickLabelsRight.enter().append('svg:text')
 			.attr('class', 'tickLbl tickLblRight')
 			.merge(tickLabelsRight)
-			.attr('x', d3Graphs.histogramWidth - d3Graphs.histogramRightPadding + 3)
+			.attr('x', histogramWidth - d3Graphs.histogramRightPadding + 3)
 			.attr('y', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
 			})
@@ -401,17 +414,16 @@ var d3Graphs = {
 		var outcomeBars = this.histogramSVG.selectAll("g.outcome").data(d3Graphs.histogramOutcomeArray);
 		outcomeBars = outcomeBars.enter().append('g')
 			.attr('class', 'outcome')
+			.merge(outcomeBars)
 			.attr('transform', function(d, i) {
 				return 'translate(' + (d3Graphs.histogramXScale(i) + d3Graphs.histogramLeftPadding) + ',' + d3Graphs.histogramVertPadding + ')';
-			})
-			.merge(outcomeBars);
+			});
 
 		var outcomeRects = outcomeBars.selectAll("rect.outcome").data(function(d) { return d; });
 		outcomeRects.enter().append('rect')
 			.attr('class', function(d) { return 'outcome ' + d.type; })
-			.attr('x', this.histogramBarWidth / 4)
-			.attr('width', this.histogramBarWidth)
 			.merge(outcomeRects).transition()
+			.attr('x', histogramBarWidth / 4)
 			.attr('y', function(d, i) {
 				if (i == 0) {
 					d3Graphs.cumOutcomeY = 0;
@@ -419,24 +431,21 @@ var d3Graphs = {
 				d3Graphs.cumOutcomeY += d3Graphs.histogramYScale(d.count);
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding * 2 - d3Graphs.cumOutcomeY;
 			})
+			.attr('width', histogramBarWidth)
 			.attr('height', function(d) { return d3Graphs.histogramYScale(d.count); });
 		outcomeRects.exit().remove();
 		outcomeBars.exit().remove();
 		outcomeBars.moveToFront();
 
 		//active year labels
-		var yearOffset = $("#handle").css('left');
-		yearOffset = yearOffset.substr(0,yearOffset.length-2);
-		yearOffset -= d3Graphs.handleLeftOffset;
-		yearOffset /= d3Graphs.handleInterval;
-		var activeYearOutcome = this.histogramOutcomeArray[yearOffset];
+		var activeYearOutcome = this.histogramOutcomeArray[d3Graphs.selectedYearIndex];
 
 		var yearLabels = this.histogramSVG.selectAll("text.yearLabel").data(activeYearOutcome);
 		yearLabels.enter().append('text')
 			.attr('class', 'yearLabel')
 			.attr('text-anchor', 'middle')
 			.merge(yearLabels).transition()
-			.attr('x', this.histogramLeftPadding + this.histogramXScale(yearOffset) + this.histogramBarWidth * 3 / 4)
+			.attr('x', this.histogramLeftPadding + this.histogramXScale(this.selectedYearIndex) + histogramBarWidth * 3 / 4)
 			.attr('y', function(d, i) {
 				if (i == 0) {
 					d3Graphs.cumOutcomeY = 0;
@@ -469,6 +478,11 @@ var d3Graphs = {
 		yearLabels.exit().remove();
 		yearLabels.moveToFront();
 
+	},
+	setHandlePosition: function(index) {
+		var leftPos = size(d3Graphs.handleLeftOffset) + size(d3Graphs.handleInterval) * index;
+		$("#handle").css('left', leftPos + "px");
+		d3Graphs.selectedYearIndex = index;
 	},
 	drawBarGraph: function() {
 		this.barGraphSVG
