@@ -1275,6 +1275,16 @@
 	    "bearing": 72,
 	    "outcome": "success",
 	    "description": "This was the 4th time North Korea launched a projectile over the Japanese home islands and the 2nd time they launched a ballistic missile. This time the missile travelled about 3700 km, which is about the distance it would have to travel to hit Guam. The missile travelled an a similar trajectory as the August 28 test which suggests this flight path could become a regular testing corridor over Japan."
+    }, {
+	    "date": "2017-11-28",
+	    "missile": "hwasong-14",
+	    "facility": "pyongsong",
+	    "landing": "Sea of Japan or East Sea",
+	    "apogee": 4500,
+	    "distance": 960,
+	    "bearing": 76,
+	    "outcome": "success",
+	    "description": ""
     }],
     "t": 2017
   }]

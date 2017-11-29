@@ -21,6 +21,7 @@
 		"mupyong-ni": {"name": "Mupyong-ni Arms Plant", "lat": 40.611208, "lon": 126.425743},
 		"masikryong": {"name": "Masikryong", "lat": 39.065962, "lon": 127.250257},
 		"pyongyang": {"name": "Pyongyang International Airport", "lat": 39.200159, "lon": 125.673256},
-		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
+		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851},
+		"pyongsong": {"name": "Pyongsong", "lat": 39.252076, "lon": 125.864257}
 	}
 }

@@ -107,7 +107,7 @@ function start( e ){
 
 var Selection = function(){
 	this.selectedYear = '2017';
-	this.selectedTest = '2017-09-14 HWASONG-12';
+	this.selectedTest = '2017-11-28 HWASONG-14';
 
 	this.outcomeCategories = new Object();
 	for( var i in outcomeLookup ){
@@ -238,7 +238,7 @@ function initScene() {
 
 	selectionData = new Selection();
 
-	selectVisualization( timeBins, '2017', ['2017-09-14 HWASONG-12'], Object.keys(outcomeLookup), Object.keys(missileLookup) );
+	selectVisualization( timeBins, '2017', ['2017-11-28 HWASONG-14'], Object.keys(outcomeLookup), Object.keys(missileLookup) );
 
 
 	//	-----------------------------------------------------------------------------
