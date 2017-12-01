@@ -17,6 +17,11 @@ function attachMarkerToTest( testName ){
 	if( test === undefined )
 		return;
 
+	var datetime = test.date
+	if (test.time !== 'unknown') {
+		datetime += "&nbsp;" + test.time + "&nbsp;(UTC)";
+	}
+
 	var outcome = outcomeLookup[test.outcome];
 	var missile = missileLookup[test.missile];
 	var facilityName = facilityData[test.facility].name;
@@ -109,7 +114,7 @@ function attachMarkerToTest( testName ){
 	nameLayer.innerHTML = testName.replace(' ','&nbsp;');
 
 	var detailText = "";
-	detailText += "<span class=\"key\">Date:</span>&nbsp;" + test.date + "&nbsp;&nbsp;" +
+	detailText += "<span class=\"key\">Date:</span>&nbsp;" + datetime + "&nbsp;&nbsp;" +
 		"<span class=\"key\">Test Outcome:</span>&nbsp;" + outcome + "<br />" +
 		"<span class=\"key\">Missle Name:</span>&nbsp;" + missile.name + "&nbsp;&nbsp;" +
 		"<span class=\"key\">Missle Type:</span>&nbsp;" + missile.type + "<br />" +

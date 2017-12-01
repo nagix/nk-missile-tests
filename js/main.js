@@ -50,6 +50,7 @@ var missileColors = {
 	'er-scud' : 0x1A62A5,
 	'hwasong-12' : 0x6C6C6C,
 	'hwasong-14' : 0xAEB21A,
+	'hwasong-15' : 0x1DB2C4,
 	'kn-02': 0xB68982,
 	'musudan': 0x9FBAE3,
 	'nodong': 0xFD690F,
@@ -107,7 +108,7 @@ function start( e ){
 
 var Selection = function(){
 	this.selectedYear = '2017';
-	this.selectedTest = '2017-11-28 HWASONG-14';
+	this.selectedTest = '2017-11-28 HWASONG-15';
 
 	this.outcomeCategories = new Object();
 	for( var i in outcomeLookup ){
@@ -238,7 +239,7 @@ function initScene() {
 
 	selectionData = new Selection();
 
-	selectVisualization( timeBins, '2017', ['2017-11-28 HWASONG-14'], Object.keys(outcomeLookup), Object.keys(missileLookup) );
+	selectVisualization( timeBins, '2017', ['2017-11-28 HWASONG-15'], Object.keys(outcomeLookup), Object.keys(missileLookup) );
 
 
 	//	-----------------------------------------------------------------------------
