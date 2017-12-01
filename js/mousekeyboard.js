@@ -4,6 +4,7 @@ var scale = 0, pscale = 0;
 
 var dragging = false;
 var scaling = false;
+var touchEndTime = 0;
 
 var rotateX = 0, rotateY = 0;
 var rotateVX = 0, rotateVY = 0;
@@ -31,7 +32,7 @@ function onDocumentMouseMove( event ) {
 		mouseY = event.touches[0].clientY - window.innerHeight * 0.5;
 	}
 
-	if(dragging && !('ontouchend' in document && event instanceof TouchEvent && event.touches.length > 1)){
+	if(dragging && !('ontouchmove' in document && event instanceof TouchEvent && event.touches.length > 1)){
 		if(keyboard.pressed("shift") == false){
 			rotateVY += (mouseX - pmouseX) / 2 * Math.PI / 180 * 0.1;
 			rotateVX += (mouseY - pmouseY) / 2 * Math.PI / 180 * 0.1;
@@ -43,6 +44,11 @@ function onDocumentMouseMove( event ) {
 			camera.position.z = 100 + 300 * Math.cos(-tilt);
 			camera.lookAt(new THREE.Vector3(0, 0, 100));
 		}
+	}
+
+	// This prevents zooming by gesture
+	if (dragging && 'ontouchmove' in document && event instanceof TouchEvent) {
+		event.preventDefault();
 	}
 }
 
@@ -67,7 +73,8 @@ function onDocumentMouseDown( event ) {
 	tiltTarget = undefined;
 	scaleTarget = undefined;
 
-	if ('ontouchend' in document && event instanceof TouchEvent && event.touches.length > 1) {
+	// This prevents zooming by gesture
+	if ('ontouchstart' in document && event instanceof TouchEvent && event.touches.length > 1) {
 		event.preventDefault();
 	}
 }
@@ -77,6 +84,15 @@ function onDocumentMouseUp( event ){
 	d3Graphs.zoomBtnMouseup();
 	dragging = false;
 	histogramPressed = false;
+
+	// This prevents zooming by double-taps
+	if ('ontouchend' in document && event instanceof TouchEvent) {
+		var now = new Date().getTime();
+		if (now - touchEndTime < 500) {
+			event.preventDefault();
+		}
+		touchEndTime = now;
+	}
 }
 
 function onClick( event ){
