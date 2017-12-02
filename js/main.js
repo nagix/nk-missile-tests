@@ -268,9 +268,12 @@ function initScene() {
 	document.addEventListener( 'mouseup', onDocumentMouseUp, false );
 	document.addEventListener( 'touchend', onDocumentMouseUp, false );
 	document.addEventListener( 'touchcancel', onDocumentMouseUp, false );
-	document.addEventListener( 'gesturestart', onGestureStart, true );
-	document.addEventListener( 'gesturechange', onGestureChange, true );
-	document.addEventListener( 'gestureend', onGestureEnd, false );
+
+	var mc = new Hammer(document);
+	mc.get('pinch').set({ enable: true });
+	mc.get('pan').set({ threshold: 0, pointers: 3, direction: Hammer.DIRECTION_VERTICAL });
+	mc.on('pinchstart pinchmove', onDocumentPinch);
+	mc.on('panmove', onDocumentPan);
 
 	masterContainer.addEventListener( 'click', onClick, true );
 	masterContainer.addEventListener( 'mousewheel', onMouseWheel, false );
