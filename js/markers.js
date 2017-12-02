@@ -116,8 +116,8 @@ function attachMarkerToTest( testName ){
 	var detailText = "";
 	detailText += "<span class=\"key\">Date:</span>&nbsp;" + datetime + "&nbsp;&nbsp;" +
 		"<span class=\"key\">Test Outcome:</span>&nbsp;" + outcome + "<br />" +
-		"<span class=\"key\">Missle Name:</span>&nbsp;" + missile.name + "&nbsp;&nbsp;" +
-		"<span class=\"key\">Missle Type:</span>&nbsp;" + missile.type + "<br />" +
+		"<span class=\"key\">Missile Name:</span>&nbsp;" + missile.name + "&nbsp;&nbsp;" +
+		"<span class=\"key\">Missile Type:</span>&nbsp;" + missile.type + "<br />" +
 		"<span class=\"key\">Facility Name:</span>&nbsp;" + facilityName + "<br />" +
 		"<span class=\"key\">Landing Location:</span>&nbsp;" + test.landingLocation.name + "<br />" +
 		"<span class=\"key\">Apogee:</span>&nbsp;" + apogee + "&nbsp;&nbsp;" +
