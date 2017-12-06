@@ -80,7 +80,7 @@ function buildDataVizGeometries( linearData ){
 	for( var i in linearData ){
 		var yearBin = linearData[i].data;
 
-		var year = linearData[i].t;
+		var year = linearData[i].year;
 		yearIndexLookup[year] = i;
 
 		var count = 0;

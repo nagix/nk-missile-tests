@@ -73,7 +73,7 @@
 			"outcome": "failure",
 			"description": "First known test by North Korea of a missile with a range greater than or equal to 300 km and a payload of 500 kg or greater. The 1984 tests probably took place over the course of several months rather than on the same days as they are entered here. What we know though is that North Korea carried out at least 6 tests. We also know that the tests were carried out at Tonghae. We also know that 3 of the tests succeeded and that at least 3 failed. We do not know exactly which ones were failures and which ones were successes. We also do not know exactly when these tests took place except that it was between April and September of 1984. Readers should interpret the information about these first tests as our best estimates as to what occurred in a secret program within one of the most secret regimes in the world. Information on tests after 1993 is much more complete than information on the early years of this program. For more information on the foundations of North Korea's ballistic missile program, see \"A history of Ballistic Missile Development in the DPRK\" by Joseph Bermudez."
 		}],
-		"t": 1984
+		"year": 1984
 	}, {
 		"data": [{
 			"date": "1986-05",
@@ -87,7 +87,7 @@
 			"outcome": "unknown",
 			"description": "This entry comes from reports of the South Korea Defense Minister Lee Ki-Baek who stated that the DPRK had conducted a secret test of a \"long-range guided missile\". It is likely this would have been the Scud-B but it's also possible it was a Scud-C the North was developing or even some sort of artillery missile system. There are exceptionally limited reports about this test and it's almost as likely there never was one at all."
 		}],
-		"t": 1986
+		"year": 1986
 	}, {
 		"data": [{
 			"date": "1990-05",
@@ -112,7 +112,7 @@
 			"outcome": "success",
 			"description": "This was the first known test of the Scud-C by North Korea. The Scud-C, aka Hwasong-6, is believed to be the result of reverse engineering and then improving on the design of the Soviet R-17E (aka the Scud-B)."
 		}],
-		"t": 1990
+		"year": 1990
 	}, {
 		"data": [{
 			"date": "1991-07",
@@ -126,7 +126,7 @@
 			"outcome": "success",
 			"description": "Bermudez places this test as being launched from a DPRK produced TEL in the Kangwon-do Province. This location is a known missile base near the DMZ which could be the location. As far as sources indicate, this was the only missile flight test to occur in this location."
 		}],
-		"t": 1991
+		"year": 1991
 	}, {
 		"data": [{
 			"date": "1992-06",
@@ -140,7 +140,7 @@
 			"outcome": "failure",
 			"description": "Japanese military sources reported this test. There is little information on it and it is likely that the missile failed early in flight."
 		}],
-		"t": 1992
+		"year": 1992
 	}, {
 		"data": [{
 			"date": "1993-05-29",
@@ -189,7 +189,7 @@
 			"outcome": "success",
 			"description": "A lot about the May 29-30 test is unknown. Even the type and number of missiles tested is unclear. Given that a number of Pakistani and Iranian observers are believed to have been present for the test, it appears one purpose of this test was to attract foreign buyers and interest in North Korea's missiles. It is unclear which missile among these tests was the Nodong. It may have been the first of the 4, the last, or any of the ones in the middle. The tests began late on May 29 and continued overnight and into the following day as well. Also, this appears to be the first successful flight test of the Nodong."
 		}],
-		"t": 1993
+		"year": 1993
 	}, {
 		"data": [{
 			"date": "1998-08-31",
@@ -203,7 +203,7 @@
 			"outcome": "failure",
 			"description": "This is one of the most significant missile tests carried out by North Korea. The test was the first known test carried out during Kim Jong Il's reign, it was North Korea's first known attempt at a multi-stage rocket, and it was the first North Korean missile test to overfly Japan. Overflying Japan produced a significant diplomatic outcry. This rocket however managed to make it out over the Pacific Ocean before spectacularly exploding at some point during its third stage. Parts of it are believed to have travelled about 4000 km before splashing into the ocean. However, North Korea reported it had successfully inserted a satellite into orbit on September 14, a few days after the launch. Pictures of the satellite were distributed to foreign media and the satellite pictured looked almost identical to the first Chinese satellite put into orbit (which itself looked very similar to the US Telstar). Despite these pictures and subsequent information about the satellite, no one was able to detect the satellite in orbit. Despite the failure, this test had significant consequences. It led to negotiations between the US and North Korea that resulted in a missile testing moratorium that lasted until 2006. It also probably served as a jump start to the US's ballistic missile defense systems. The overflight of Japan caused significant enough diplomatic trouble that North Korea began construction of Sohae on the opposite shore of North Korea. Since finishing construction in 2012, DPRK satellite launch attempts have been out Sohae and have been on trajectories which do not overfly Japan."
 		}],
-		"t": 1998
+		"year": 1998
 	}, {
 		"data": [{
 			"date": "2006-07-05",
@@ -289,7 +289,7 @@
 			"outcome": "success",
 			"description": "There is a considerable amount of disagreement concerning the types and numbers of missiles launched on July 5, 2006. Russia, for instance, claims they tracked 10 missile launches. This database only records 7 missiles launched that day. The types of missiles listed here is also debated. The Nodongs could very well have actually been Scuds and vice versa."
 		}],
-		"t": 2006
+		"year": 2006
 	}, {
 		"data": [{
 			"date": "2009-04-05",
@@ -387,7 +387,7 @@
 			"outcome": "success",
 			"description": ""
 		}],
-		"t": 2009
+		"year": 2009
 	}, {
 		"data": [{
 			"date": "2012-04-13",
@@ -412,7 +412,7 @@
 			"outcome": "success",
 			"description": "This was the first successful satellite insertion carried out by North Korea. No transmissions from the satellite were detected and amateur observations showed the satellite was tumbling. It is assumed that the satellite was either a dummy or failed shortly after launch. Orbital information: Apogee: 581 km (361 mi). Perigee: 498 km (309 mi). Inclination: 97.4000 deg. Period: 95.40 min."
 		}],
-		"t": 2012
+		"year": 2012
 	}, {
 		"data": [{
 			"date": "2013-05-18",
@@ -486,7 +486,7 @@
 			"outcome": "success",
 			"description": "This missile type is extremely unclear. It is highly possible this and the other missiles launched during this test were anti-ship missiles or MLRS missiles. Both of these are too small and lack the range to be counted in this dataset which is why these are labeled as unconfirmed. The specific location is also dubious at best. We know North Korea likes to conduct MLRS tests here and the reports label the tests as occurring on the East Coast of North Korea."
 		}],
-		"t": 2013
+		"year": 2013
 	}, {
 		"data": [{
 			"date": "2014-02-27",
@@ -712,7 +712,7 @@
 			"outcome": "success",
 			"description": ""
 		}],
-		"t": 2014
+		"year": 2014
 	}, {
 		"data": [{
 			"date": "2015-02-08",
@@ -891,7 +891,7 @@
 			"outcome": "failure",
 			"description": "The missile appeared to have ejected successfully, however, it then exploded. North Korea appears to have doctored the footage to make it appear as though the test was a success."
 		}],
-		"t": 2015
+		"year": 2015
 	}, {
 		"data": [{
 			"date": "2016-02-07",
@@ -1171,7 +1171,7 @@
 			"outcome": "failure",
 			"description": "Similar to the previous test, this missile also exploded shortly after launch. The missile is presumed to have also been a Musudan but it is impossible to rule out the chance that this and/or the test just prior to it were tests of the KN-08 an ICBM, the Polaris-2, or some other new missile North Korea is developing. Satellite images of the airbase show two large scorch marks on the runway seeming to indicate explosions."
 		}],
-		"t": 2016
+		"year": 2016
 	}, {
 		"data": [{
 			"date": "2017-02-11",
@@ -1401,6 +1401,6 @@
 			"outcome": "success",
 			"description": "First test of North Korea's new missile, the Hwasong-15. The missile itself is noticeably larger than the Hwasong-14 and estimates for its range suggest it is capable of delivering a payload 13,000 km putting the entire United States within range. The test took place in a field next to the factory which it was rolled out of in images released by North Korea following the test."
 		}],
-		"t": 2017
+		"year": 2017
 	}]
 }

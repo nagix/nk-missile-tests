@@ -106,37 +106,38 @@ function start( e ){
 
 
 
-var Selection = function(){
-	this.selectedYear = '2017';
-	this.selectedTest = '2017-11-28 HWASONG-15';
+var Selection = function(selectedYear, selectedTest) {
+	this.selectedYear = selectedYear;
+	this.selectedTest = selectedTest;
 
 	this.outcomeCategories = new Object();
-	for( var i in outcomeLookup ){
+	for (var i in outcomeLookup) {
 		this.outcomeCategories[i] = true;
 	}
 	this.missileCategories = new Object();
-	for( var i in missileLookup ){
+	for (var i in missileLookup) {
 		this.missileCategories[i] = true;
 	}
 
-	this.getOutcomeCategories = function(){
+	this.getOutcomeCategories = function() {
 		var list = [];
-		for( var i in this.outcomeCategories ){
-			if( this.outcomeCategories[i] )
+		for (var i in this.outcomeCategories) {
+			if (this.outcomeCategories[i]) {
 				list.push(i);
+			}
 		}
 		return list;
 	}
 
-	this.getMissileCategories = function(){
+	this.getMissileCategories = function() {
 		var list = [];
-		for( var i in this.missileCategories ){
-			if( this.missileCategories[i] )
+		for (var i in this.missileCategories) {
+			if (this.missileCategories[i]) {
 				list.push(i);
+			}
 		}
 		return list;
 	}
-
 };
 
 //	-----------------------------------------------------------------------------
@@ -237,9 +238,15 @@ function initScene() {
 	visualizationMesh = new THREE.Object3D();
 	rotating.add(visualizationMesh);
 
-	selectionData = new Selection();
+	var latestBin = timeBins[timeBins.length - 1];
+	var selectedYear = latestBin.year;
 
-	selectVisualization( timeBins, '2017', ['2017-11-28 HWASONG-15'], Object.keys(outcomeLookup), Object.keys(missileLookup) );
+	var latestTest = latestBin.data[latestBin.data.length - 1];
+	var selectedTestName = latestTest.testName;
+
+	selectionData = new Selection(selectedYear, selectedTestName);
+
+	selectVisualization(timeBins, selectedYear, [selectedTestName], Object.keys(outcomeLookup), Object.keys(missileLookup));
 
 
 	//	-----------------------------------------------------------------------------

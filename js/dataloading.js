@@ -34,8 +34,8 @@ function loadContentData(callback){
 			maxValue = 0;
 			// console.log(timeBins);
 
-			startTime = timeBins[0].t;
-			endTime = timeBins[timeBins.length-1].t;
+			startTime = timeBins[0].year;
+			endTime = timeBins[timeBins.length - 1].year;
 			timeLength = endTime - startTime;
 
 			if(callback)

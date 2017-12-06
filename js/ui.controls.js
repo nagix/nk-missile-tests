@@ -222,7 +222,7 @@ var d3Graphs = {
 		}
 
 		// year
-		var year = timeBins[d3Graphs.selectedYearIndex].t;
+		var year = timeBins[d3Graphs.selectedYearIndex].year;
 		if (!filterChanged) {
 			year = testData[test].date.substr(0, 4);
 			d3Graphs.setHandlePosition(yearIndexLookup[year]);
