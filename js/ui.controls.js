@@ -21,6 +21,8 @@ function size(sizeArray) {
 var d3Graphs = {
 	barGraphWidth: 420,
 	barGraphHeight: 800,
+	barGraphMinHeight: 420,
+	barGraphMaxHeight: 800,
 	barWidth: 14,
 	barGraphTopPadding: 20,
 	barGraphBottomPadding: 50,
@@ -154,21 +156,19 @@ var d3Graphs = {
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 		var minWidth = 1280;
-		var minHeight = 860;
+		var minHeight = 480;
 		var w = windowWidth < minWidth ? minWidth : windowWidth;
 		var hudButtonWidth = 489;
-		$('#hudButtons').css('left',w - hudButtonWidth-20);
+		$('#hudButtons').css('left', w - hudButtonWidth - 20);
 		var missileButtonWidth = $("#missileTypeBtns").width();
-		$("#missileTypeBtns").css('left',w-missileButtonWidth);
+		$("#missileTypeBtns").css('left', w - missileButtonWidth);
 		var outcomeButtonWidth = $("#outcomeBtns").width();
-		$("#outcomeBtns").css('left',w-missileButtonWidth - outcomeButtonWidth - 10);
-		var barGraphHeight = 800;
+		$("#outcomeBtns").css('left', w - missileButtonWidth - outcomeButtonWidth - 10);
+		d3Graphs.barGraphHeight = Math.min(Math.max(windowHeight - 60, d3Graphs.barGraphMinHeight), d3Graphs.barGraphMaxHeight);
 		var barGraphBottomPadding = 10;
-		console.log(windowHeight+ " " + barGraphHeight + " " + barGraphBottomPadding);
-		var barGraphTopPos = (windowHeight < minHeight ? minHeight : windowHeight) - barGraphHeight - barGraphBottomPadding;
-		console.log(barGraphTopPos);
+		var barGraphTopPos = Math.max(windowHeight, minHeight) - d3Graphs.barGraphHeight - barGraphBottomPadding;
 
-		$("#barGraph").css('top',barGraphTopPos+'px');
+		$("#barGraph").css('top', barGraphTopPos + 'px');
 		/*
 		var hudHeaderLeft = $("#hudHeader").css('left');
 		hudHeaderLeft = hudHeaderLeft.substr(0,hudHeaderLeft.length-2);
@@ -176,14 +176,21 @@ var d3Graphs = {
 		var hudPaddingRight = 30;
 		$("#hudHeader").width(w-hudHeaderLeft - hudPaddingRight);
 		*/
-		d3Graphs.drawHistogram();
-		d3Graphs.setHandlePosition(d3Graphs.selectedYearIndex);
-		$("#handle").draggable({axis: 'x', containment: "parent", grid:[size(d3Graphs.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle});
 		if (isDesktop()) {
 			$("#hudButtons").show();
 			$("#outcomeBtns").show();
 			$("#missileTypeBtns").show();
 		}
+		d3Graphs.drawBarGraph();
+		d3Graphs.drawHistogram();
+		d3Graphs.setHandlePosition(d3Graphs.selectedYearIndex);
+		$("#handle").draggable({
+			axis: 'x',
+			containment: "parent",
+			grid:[size(d3Graphs.handleInterval), 0],
+			stop: d3Graphs.dropHandle,
+			drag: d3Graphs.dropHandle
+		});
 		d3Graphs.positionHistory(windowWidth);
 	},
 	positionHistory: function(windowWidth) {
@@ -411,7 +418,7 @@ var d3Graphs = {
 		$("#history .labels .unknowns").css('display', unknownsVisible ? 'block' : 'none');
 
 
-		var outcomeBars = this.histogramSVG.selectAll("g.outcome").data(d3Graphs.histogramOutcomeArray);
+		var outcomeBars = this.histogramSVG.selectAll("g.outcome").data(this.histogramOutcomeArray);
 		outcomeBars = outcomeBars.enter().append('g')
 			.attr('class', 'outcome')
 			.merge(outcomeBars)
@@ -438,7 +445,7 @@ var d3Graphs = {
 		outcomeBars.moveToFront();
 
 		//active year labels
-		var activeYearOutcome = this.histogramOutcomeArray[d3Graphs.selectedYearIndex];
+		var activeYearOutcome = this.histogramOutcomeArray[this.selectedYearIndex];
 
 		var yearLabels = this.histogramSVG.selectAll("text.yearLabel").data(activeYearOutcome);
 		yearLabels.enter().append('text')
@@ -502,23 +509,17 @@ var d3Graphs = {
 			var sCount = summary.success[code];
 			var fCount = summary.failure[code];
 			var uCount = summary.unknown[code];
-			if(sCount < minMissileCount) {
-				minMissileCount = sCount;
+			if (sCount > 0) {
+				minMissileCount = Math.min(minMissileCount, sCount);
+				maxMissileCount = Math.max(maxMissileCount, sCount);
 			}
-			if(sCount > maxMissileCount) {
-				maxMissileCount = sCount;
+			if (fCount > 0) {
+				minMissileCount = Math.min(minMissileCount, fCount);
+				maxMissileCount = Math.max(maxMissileCount, fCount);
 			}
-			if(fCount < minMissileCount) {
-				minMissileCount = fCount;
-			}
-			if(fCount > maxMissileCount) {
-				maxMissileCount = fCount;
-			}
-			if(uCount < minMissileCount) {
-				minMissileCount = uCount;
-			}
-			if(uCount > maxMissileCount) {
-				maxMissileCount = uCount;
+			if (uCount > 0) {
+				minMissileCount = Math.min(minMissileCount, uCount);
+				maxMissileCount = Math.max(maxMissileCount, uCount);
 			}
 			successArray.unshift({"type":code, "count": sCount});
 			failureArray.unshift({"type":code, "count": fCount});
@@ -575,7 +576,9 @@ var d3Graphs = {
 		this.previousSuccessLabelTranslateY = 0;
 		this.previousFailureLabelTranslateY = 0;
 		this.previousUnknownLabelTranslateY = 0;
-		var fontSizeInterpolater = d3.interpolateRound(12,28);
+		var fontSizeInterpolater = function(v, min, max) {
+			return d3.interpolateRound(14, 28)(min == max ? 1 : (v - min) / (max - min));
+		}
 		var smallLabelSize = 22;
 		var mediumLabelSize = 40;
 
@@ -591,7 +594,7 @@ var d3Graphs = {
 		newSuccessLabels.append('text')
 			.attr('class', function(d) { return 'textLabel success ' + d.type; })
 			.attr('text-anchor', 'end')
-			.attr('y', 15);
+			.attr('y', 14);
 		successLabels = newSuccessLabels.merge(successLabels);
 		successLabels.transition()
 			.attr('transform', function(d) {
@@ -607,7 +610,7 @@ var d3Graphs = {
 		successLabels.selectAll('.numericLabel').transition()
 			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 'px';
 			});
 		successLabels.selectAll('.textLabel')
 			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
@@ -616,13 +619,13 @@ var d3Graphs = {
 				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
 			})
 			.attr('height', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 15;
 			})
 			.attr('x', function(d) {
 				return -d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
 			})
 			.attr('y', function(d) {
-				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+				return -fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount);
 			});
 
 		//failure labels
@@ -638,7 +641,7 @@ var d3Graphs = {
 		newFailureLabels.append('text')
 			.attr('class', function(d) { return 'textLabel failure ' + d.type; })
 			.attr('text-anchor', 'start')
-			.attr('y', 15);
+			.attr('y', 14);
 		failureLabels = newFailureLabels.merge(failureLabels);
 		failureLabels.transition()
 			.attr('transform', function(d) {
@@ -654,7 +657,7 @@ var d3Graphs = {
 		failureLabels.selectAll('.numericLabel').transition()
 			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 'px';
 			});
 		failureLabels.selectAll('.textLabel')
 			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
@@ -663,10 +666,10 @@ var d3Graphs = {
 				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
 			})
 			.attr('height', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 15;
 			})
 			.attr('y', function(d) {
-				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+				return -fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount);
 			});
 
 		//unknown labels
@@ -682,7 +685,7 @@ var d3Graphs = {
 		newUnknownLabels.append('text')
 			.attr('class', function(d) { return 'textLabel unknown ' + d.type; })
 			.attr('text-anchor', 'start')
-			.attr('y', 15);
+			.attr('y', 14);
 		unknownLabels = newUnknownLabels.merge(unknownLabels);
 		unknownLabels.transition()
 			.attr('transform', function(d) {
@@ -698,7 +701,7 @@ var d3Graphs = {
 		unknownLabels.selectAll('.numericLabel').transition()
 			.text(function(d) { return this.parentNode.__data__.count || this.textContent; })
 			.attr('font-size', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 'px';
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 'px';
 			});
 		unknownLabels.selectAll('.textLabel')
 			.text(function(d) { return missileLookup[this.parentNode.__data__.type].name.toUpperCase(); });
@@ -707,10 +710,10 @@ var d3Graphs = {
 				return d3.select(this.parentNode).select('.textLabel').node().getComputedTextLength();
 			})
 			.attr('height', function(d) {
-				return fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount)) + 16;
+				return fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount) + 15;
 			})
 			.attr('y', function(d) {
-				return -fontSizeInterpolater((this.parentNode.__data__.count - minMissileCount) / (maxMissileCount - minMissileCount));
+				return -fontSizeInterpolater(this.parentNode.__data__.count, minMissileCount, maxMissileCount);
 			});
 
 		//over all numeric total outcome labels
@@ -724,8 +727,8 @@ var d3Graphs = {
 			.attr('class', 'totalLabel successTotalLabel')
 			.attr('text-anchor', 'end')
 			.attr('x', midX)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(successTotalLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.text(successsesVisible ? successTotal : function() { return this.textContent; })
 			.attr('opacity', successsesVisible ? 1 : 0);
 
@@ -734,8 +737,8 @@ var d3Graphs = {
 		failureTotalLabel.enter().append('text')
 			.attr('class', 'totalLabel failureTotalLabel')
 			.attr('x', midX + 10)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(failureTotalLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.text(failuresVisible ? failureTotal : function() { return this.textContent; })
 			.attr('opacity', failuresVisible ? 1 : 0);
 
@@ -744,8 +747,8 @@ var d3Graphs = {
 		unknownTotalLabel.enter().append('text')
 			.attr('class', 'totalLabel unknownTotalLabel')
 			.attr('x', midX + 120)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.merge(unknownTotalLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.text(unknownVisible ? unknownTotal : function() { return this.textContent; })
 			.attr('opacity', unknownVisible ? 1 : 0);
 
@@ -756,8 +759,8 @@ var d3Graphs = {
 			.attr('text-anchor', 'end')
 			.text('SUCCESS')
 			.attr('x', midX)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(successLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.attr('opacity', successsesVisible ? 1 : 0);
 
 		//failure label at bottom
@@ -766,8 +769,8 @@ var d3Graphs = {
 			.attr('class', 'failureLabel')
 			.text('FAILURE')
 			.attr('x', midX + 10)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(failureLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.attr('opacity', failuresVisible ? 1 : 0);
 
 		//unknown label at bottom
@@ -776,8 +779,8 @@ var d3Graphs = {
 			.attr('class', 'unknownLabel')
 			.text('UNKNOWN')
 			.attr('x', midX + 95)
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.merge(unknownLabel).transition()
+			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.attr('opacity', unknownVisible ? 1 : 0);
 	},
 	dragHandleStart: function(event) {

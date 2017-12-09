@@ -59,12 +59,33 @@
 }
 
 /* Main Styles */
-body { color:#000000; font-family:'Roboto'; font-size:14px; height:768px; min-width: 1280px; min-height: 860px; overflow: hidden;}
-a { color:#ffffff; text-decoration:none; text-transform:uppercase; }
-a:hover { color:#8eb423; }
-h1 { font-family:'RopaSans'; font-weight:normal; }
-h2 { font-family:'RopaSans'; font-weight:normal; }
-li { list-style-type:none; }
+body {
+	color: #000000;
+	font-family: 'Roboto';
+	font-size: 14px;
+	min-width: 1280px;
+	min-height: 480px;
+	overflow: hidden;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	color:#8eb423;
+}
+h1 {
+	font-family: 'RopaSans';
+	font-weight:normal;
+}
+h2 {
+	font-family: 'RopaSans';
+	font-weight:normal;
+}
+li {
+	list-style-type: none;
+}
 
 #wrapper {
 	display:block;
@@ -331,6 +352,9 @@ Bar graph on left
 	/*bottom:10px;*/
 	left:-7px;
 	opacity: 0.9;
+}
+#barGraph .textLabel {
+	font-size: 13px;
 }
 #barGraph .bar.er-scud, #missileTypeBtns .er-scud .check {
 	fill: #1A62A5;
@@ -725,7 +749,6 @@ Bar graph on left
 		position: fixed;
 	}
 	body {
-		height: 100%;
 		min-width: 100%;
 		min-height: 100%;
 	}
