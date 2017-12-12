@@ -10,18 +10,23 @@ d3.selection.prototype.moveToFront = function() {
 	});
 };
 
-function isDesktop() {
-	return window.innerWidth >= 415;
+function mediaType() {
+	if (screen.width < 640 && window.innerWidth < 640) {
+		return 'phone';
+	} else if (screen.width < 1280 && window.innerWidth < 1280) {
+		return 'tablet';
+	}
+	return 'pc';
 }
 
 function size(sizeArray) {
-	return sizeArray[isDesktop() ? 0 : 1];
+	return sizeArray[mediaType() !== 'phone' ? 0 : 1];
 }
-
+var counter = 0;
 var d3Graphs = {
 	barGraphWidth: 420,
 	barGraphHeight: 800,
-	barGraphMinHeight: 420,
+	barGraphMinHeight: 540,
 	barGraphMaxHeight: 800,
 	barWidth: 14,
 	barGraphTopPadding: 20,
@@ -68,7 +73,7 @@ var d3Graphs = {
 		this.inited = true;
 		d3Graphs.windowResize();
 		$("#hudHeader").show();
-		if (isDesktop()) {
+		if (mediaType() === 'pc') {
 			$("#hudButtons").show();
 			$("#outcomeBtns").show();
 			$("#missileTypeBtns").show();
@@ -156,7 +161,7 @@ var d3Graphs = {
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 		var minWidth = 1280;
-		var minHeight = 480;
+		var minHeight = 600;
 		var w = windowWidth < minWidth ? minWidth : windowWidth;
 		var hudButtonWidth = 489;
 		$('#hudButtons').css('left', w - hudButtonWidth - 20);
@@ -164,7 +169,9 @@ var d3Graphs = {
 		$("#missileTypeBtns").css('left', w - missileButtonWidth);
 		var outcomeButtonWidth = $("#outcomeBtns").width();
 		$("#outcomeBtns").css('left', w - missileButtonWidth - outcomeButtonWidth - 10);
-		d3Graphs.barGraphHeight = Math.min(Math.max(windowHeight - 60, d3Graphs.barGraphMinHeight), d3Graphs.barGraphMaxHeight);
+		d3Graphs.barGraphHeight = Math.min(
+			Math.max(windowHeight - 60, size([d3Graphs.barGraphMinHeight, 0])),
+			d3Graphs.barGraphMaxHeight);
 		var barGraphBottomPadding = 10;
 		var barGraphTopPos = Math.max(windowHeight, minHeight) - d3Graphs.barGraphHeight - barGraphBottomPadding;
 
@@ -176,7 +183,7 @@ var d3Graphs = {
 		var hudPaddingRight = 30;
 		$("#hudHeader").width(w-hudHeaderLeft - hudPaddingRight);
 		*/
-		if (isDesktop()) {
+		if (mediaType() === 'pc') {
 			$("#hudButtons").show();
 			$("#outcomeBtns").show();
 			$("#missileTypeBtns").show();
@@ -200,7 +207,7 @@ var d3Graphs = {
 //		var windowWidth = $(window).width();
 		var historyLeftPos = (windowWidth - totalWidth) / 2.0;
 		var minLeftPos = 280;
-		if(historyLeftPos < minLeftPos && isDesktop()) {
+		if (mediaType() === 'pc' && historyLeftPos < minLeftPos) {
 			historyLeftPos = minLeftPos;
 		}
 		$("#history").css('left',historyLeftPos+"px");

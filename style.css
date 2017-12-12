@@ -64,7 +64,7 @@ body {
 	font-family: 'Roboto';
 	font-size: 14px;
 	min-width: 1280px;
-	min-height: 480px;
+	min-height: 600px;
 	overflow: hidden;
 }
 a {
@@ -491,7 +491,7 @@ Bar graph on left
 #history .labels {
 	margin-right: 35px;
 }
-#history .labels .change {
+#history .labels .outcome {
 	font-family: RopaSans;
 	font-size: 23px;
 	color: white;
@@ -744,7 +744,7 @@ Bar graph on left
 	}
 }*/
 
-@media (max-width: 415px) {
+@media (max-device-width: 639px) and (max-width: 639px) {
 	html,body {
 		position: fixed;
 	}
@@ -783,8 +783,6 @@ Bar graph on left
 	}
 	#history ul li {
 		width: 21px;
-		margin-top: -30px;
-		padding-top: 30px;
 		position: relative;
 		left: 4px;
 	}
@@ -795,30 +793,34 @@ Bar graph on left
 		display: block;
 	}
 	#history .timeline #handle {
-		cursor: pointer;
-		width: 36px;
-		height: 36px;
 		background: url('images/yearHandle.png') 0px 0 no-repeat;
-		bottom: 20px;
 		left: 318px;
 	}
-	#history .labels .change {
+	#history .labels .outcome {
 		font-size: 16px;
-		margin-left: 31px;
-		margin-top: 10px;
 	}
 	#history .labels .successes {
 		font-size: 10px;
-		margin-top: 10px;
 	}
 	#history .labels .failures {
 		font-size: 10px;
-		margin-top: 10px;
 		margin-left: 6px;
 	}
 	#history .labels .unknowns {
 		font-size: 10px;
-		margin-top: 10px;
 		margin-left: 6px;
+	}
+}
+
+@media (max-device-width: 1279px) and (max-width: 1279px) {
+	html,body {
+		position: fixed;
+	}
+	body {
+		min-width: 100%;
+		min-height: 100%;
+	}
+	#barGraph {
+		display: none;
 	}
 }
