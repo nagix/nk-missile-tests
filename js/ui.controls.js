@@ -45,6 +45,7 @@ var d3Graphs = {
 	cumSuccessY: 0,cumFailureY: 0,cumUnknownY: 0,
 	cumSuccessLblY: 0,cumFailureLblY: 0,cumUnknownLblY: 0,
 	inited: false,
+	hudButtonsOpen: false,
 	histogramOpen: false,
 	handleLeftOffset: [34, 24],
 	handleInterval: [42, 21],
@@ -73,11 +74,9 @@ var d3Graphs = {
 		this.inited = true;
 		d3Graphs.windowResize();
 		$("#hudHeader").show();
-		if (mediaType() === 'pc') {
-			$("#hudButtons").show();
-			$("#outcomeBtns").show();
-			$("#missileTypeBtns").show();
-		}
+		$("#hudButtons").show();
+		$("#outcomeBtns").show();
+		$("#missileTypeBtns").show();
 		$("#history").show();
 		$("#graphIcon").show();
 		$("#graphIcon").on('click', d3Graphs.graphIconClick);
@@ -93,11 +92,11 @@ var d3Graphs = {
 		$("#hudButtons .aboutBtn").on('click', d3Graphs.toggleAboutBox);
 		$(document).on('click', '.ui-autocomplete li', d3Graphs.menuItemClick);
 		$(window).resize(d3Graphs.windowResizeCB);
-		$(".tiltBtn").mousedown(d3Graphs.tiltBtnClick);
-		$(".tiltBtn").mouseup(d3Graphs.tiltBtnMouseup);
-		$(".zoomBtn").mousedown(d3Graphs.zoomBtnClick);
-		$(".zoomBtn").mouseup(d3Graphs.zoomBtnMouseup);
-
+		$(".tiltBtn").on('mousedown touchstart', d3Graphs.tiltBtnClick);
+		$(".tiltBtn").on('mouseup touchend touchcancel', d3Graphs.tiltBtnMouseup);
+		$(".zoomBtn").on('mousedown touchstart', d3Graphs.zoomBtnClick);
+		$(".zoomBtn").on('mouseup touchend touchcancel', d3Graphs.zoomBtnMouseup);
+		$("#hudButtonHandle").on('click', d3Graphs.hudButtonHandleClick);
 	},
 	tiltBtnMouseup: function() {
 		clearInterval(d3Graphs.tiltBtnInterval);
@@ -162,13 +161,18 @@ var d3Graphs = {
 		var windowHeight = $(window).height();
 		var minWidth = 1280;
 		var minHeight = 600;
-		var w = windowWidth < minWidth ? minWidth : windowWidth;
-		var hudButtonWidth = 489;
-		$('#hudButtons').css('left', w - hudButtonWidth - 20);
-		var missileButtonWidth = $("#missileTypeBtns").width();
-		$("#missileTypeBtns").css('left', w - missileButtonWidth);
-		var outcomeButtonWidth = $("#outcomeBtns").width();
-		$("#outcomeBtns").css('left', w - missileButtonWidth - outcomeButtonWidth - 10);
+		if (mediaType() === 'pc') {
+			var w = windowWidth < minWidth ? minWidth : windowWidth;
+			var hudButtonWidth = 489;
+			$('#hudButtons').css('left', w - hudButtonWidth - 20);
+			var missileButtonWidth = $("#missileTypeBtns").width();
+			$("#missileTypeBtns").css('left', w - missileButtonWidth);
+			var outcomeButtonWidth = $("#outcomeBtns").width();
+			$("#outcomeBtns").css('left', w - missileButtonWidth - outcomeButtonWidth - 10);
+		} else {
+			$("#hudButtons").css('right', d3Graphs.hudButtonsOpen ?
+				0 : $("#hudButtonHandle").width() - $("#hudButtons").width() + 'px');
+		}
 		d3Graphs.barGraphHeight = Math.min(
 			Math.max(windowHeight - 60, size([d3Graphs.barGraphMinHeight, 0])),
 			d3Graphs.barGraphMaxHeight);
@@ -183,11 +187,6 @@ var d3Graphs = {
 		var hudPaddingRight = 30;
 		$("#hudHeader").width(w-hudHeaderLeft - hudPaddingRight);
 		*/
-		if (mediaType() === 'pc') {
-			$("#hudButtons").show();
-			$("#outcomeBtns").show();
-			$("#missileTypeBtns").show();
-		}
 		d3Graphs.drawBarGraph();
 		d3Graphs.drawHistogram();
 		d3Graphs.setHandlePosition(d3Graphs.selectedYearIndex);
@@ -218,10 +217,14 @@ var d3Graphs = {
 		setTimeout(function() { $('#hudButtons .testTextInput').select() },50);
 	},
 	menuItemClick:function(event) {
+		setTimeout(function() {
+			$('#hudButtons .testTextInput').blur();
+		}, 50);
 		d3Graphs.updateViz();
 	},
 	testKeyUp: function(event) {
 		if(event.keyCode == 13 /*ENTER */) {
+			$('#hudButtons .testTextInput').blur();
 			d3Graphs.updateViz();
 		}
 	},
@@ -310,6 +313,16 @@ var d3Graphs = {
 			check.addClass('inactive');
 		}
 		d3Graphs.updateViz(true);
+	},
+	hudButtonHandleClick: function() {
+		if (!d3Graphs.hudButtonsOpen) {
+			d3Graphs.hudButtonsOpen = true;
+			$("#hudButtons").animate({right: '0px'});
+		} else {
+			d3Graphs.hudButtonsOpen = false;
+			$("#hudButtons").animate({right: $("#hudButtonHandle").width() - $("#hudButtons").width() + 'px'});
+			$("#aboutContainer").hide();
+		}
 	},
 	graphIconClick: function() {
 		if(!d3Graphs.histogramOpen) {

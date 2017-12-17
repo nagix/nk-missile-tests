@@ -269,7 +269,7 @@ Elements to control the title and test selector
 
 	width: 489px;
 }
-#hudButtons>div {
+#hudButtons .hudButtonGroup {
 	float: right;
 }
 #hudButtons .testTextInput {
@@ -282,6 +282,7 @@ Elements to control the title and test selector
 }
 #hudButtons .testsBtn {
 	float: right;
+	height: 24px;
 	background: #333333;
 	padding: 3px 10px 2px;
 	color: white;
@@ -305,7 +306,6 @@ Elements to control the title and test selector
 }
 #hudButtons .tiltBtn {
 	width: 30px;
-	height: 24px;
 }
 #hudButtons .topViewBtn {
 	background: #333333 url('images/topview.svg') 7px 4px no-repeat;
@@ -316,7 +316,6 @@ Elements to control the title and test selector
 #hudButtons .zoomBtn {
 	width: 30px;
 	font-weight: bold;
-	height: 24px;
 }
 
 #hudButtons .zoomOutBtn {
@@ -324,6 +323,7 @@ Elements to control the title and test selector
 }
 .ui-autocomplete {
 	position: absolute;
+	z-index: 10001;
 }
 .ui-autocomplete .ui-menu-item {
 	border-top: 1px solid #656565;
@@ -669,9 +669,9 @@ Bar graph on left
 #aboutContainer {
 	display: none;
 	position: absolute;
-	top: 95px;
+	top: 80px;
 	width: 350px;
-	right: 28px;
+	right: 20px;
 	color: white;
 }
 #aboutBox {
@@ -710,41 +710,8 @@ Bar graph on left
 
 
 /* Small size */
-/*
-@media all and (max-width: 1395px) {
-	#importExportBtns {
-		width: 187px;
-	}
-	#importExportBtns>div>div {
-		width: 23px;
-	}
-	#importExportBtns .imex>div {
-		background: transparent;
-	}
-	#importExportBtns .imex .label {
-		background: #262626;
-	}
-	#importExportBtns .typeLabels div {
-		font-size: 12px;
-		-webkit-transform:rotate(323deg);
-		-moz-transform:rotate(323deg);
-		-o-transform:rotate(323deg);
-		-ms-transform:rotate(323deg);
-		margin-top: -2px;
-	}
 
-	#importExportBtns .typeLabels .mil {
-		margin-left: 8px;
-	}
-	#importExportBtns .typeLabels .civ {
-		margin-left: 2px;
-	}
-	#importExportBtns .typeLabels .ammo {
-		margin-left: -1px;
-	}
-}*/
-
-@media (max-device-width: 639px) and (max-width: 639px) {
+@media (max-device-width: 1279px) and (max-width: 1279px) {
 	html,body {
 		position: fixed;
 	}
@@ -752,6 +719,53 @@ Bar graph on left
 		min-width: 100%;
 		min-height: 100%;
 	}
+	#hudButtons {
+		position: absolute;
+		right: -380px;
+		top: 90px;
+		width: 400px;
+		background-color: rgba(43,43,43,0.9);
+		padding: 10px 0 6px 0;
+	}
+	#hudButtons .testTextInput {
+		width: 200px;
+		font-size: 16px;
+	}
+	#hudButtons .testsBtn {
+		-webkit-appearance: none;
+	}
+	.ui-autocomplete .ui-menu-item {
+		font-size: 16px;
+		width: 210px;
+	}
+	.ui-autocomplete .ui-menu-item .ui-state-active {
+		width: 210px;
+	}
+	#hudButtonHandle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('images/panelHandle.svg') 0 10px no-repeat;
+		width: 20px;
+		height: 72px;
+		cursor: pointer;
+	}
+	#outcomeBtns {
+		right: -98px;
+	}
+	#missileTypeBtns {
+		right: -130px;
+	}
+	#barGraph {
+		left: -420px;
+	}
+	#aboutContainer {
+		top: 170px;
+		right: 0;
+	}
+}
+
+@media (max-device-width: 639px) and (max-width: 639px) {
 	h2 {
 		font-size: 13px;
 	}
@@ -769,8 +783,8 @@ Bar graph on left
 	#hudHeader h1 .subtitle {
 		font-size: 9px;
 	}
-	#barGraph {
-		display: none;
+	#hudButtons {
+		top: 52px;
 	}
 	#history ul {
 		margin: 10px 24px;
@@ -810,17 +824,34 @@ Bar graph on left
 		font-size: 10px;
 		margin-left: 6px;
 	}
+	#aboutContainer {
+		top: 126px;
+		width: 320px;
+	}
+	#aboutBox {
+		width: 288px;
+		padding: 12px 16px;
+	}
+	#aboutContainer .arrowUp {
+		margin-left: 263px;
+	}
+	#aboutBox .title {
+		font-size: 16px;
+	}
+	#aboutBox .text {
+		font-size: 12px;
+	}
+	#aboutBox a {
+		font-size: 12px;
+	}
 }
 
-@media (max-device-width: 1279px) and (max-width: 1279px) {
-	html,body {
-		position: fixed;
+@media (max-device-width: 399px) and (max-width: 399px) {
+	#hudButtons {
+		right: -300px;
+		width: 320px;
 	}
-	body {
-		min-width: 100%;
-		min-height: 100%;
-	}
-	#barGraph {
+	.tiltBtn,.zoomBtn {
 		display: none;
 	}
 }
