@@ -1,0 +1,23 @@
+{
+	"_abouttitle": "Information about the data",
+	"_about": "This data visualization was produced by <a href=\"https://nagix.github.io/\" target=\"_blank\">Akihiko Kusanagi</a>. The data for this visualization are sourced from <a href=\"http://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/\" target=\"_blank\">the CNS North Korea Missile Test Database</a>, which is the first database to record flight tests of all missiles launched by North Korea capable of delivering a payload of at least 500 kilograms (1102.31 pounds) a distance of at least 300 kilometers (186.4 miles). The database captures advancements in North Korea's missile program by documenting all such tests since the first one occurred in April 1984, and will be routinely updated as events warrant.<br /><br />For more info and source code, please see the <a href=\"https://github.com/nagix/nk-missile-tests\" target=\"_blank\">GitHub repository</a>.",
+	"_subtitle": "An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2017",
+	"_title": "North Korea Missile Test Visualization",
+	"about": "About",
+	"apogee": "Apogee",
+	"date": "Date",
+	"description": "Description",
+	"distance-travelled": "Distance Travelled",
+	"facility-name": "Facility Name",
+	"failure": "Failure",
+	"landing-location": "Landing Location",
+	"missile-name": "Missile Name",
+	"missile-type": "Missile Type",
+	"na": "N/A",
+	"pacific-ocean": "Pacific Ocean",
+	"sea-of-japan": "Sea of Japan or East Sea",
+	"search": "Search",
+	"success": "Success",
+	"test-outcome": "Test Outcome",
+	"unknown": "Unknown"
+}

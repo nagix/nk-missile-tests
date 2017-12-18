@@ -6,9 +6,13 @@ var mapOutlineImage;
 var glContainer = document.getElementById( 'glContainer' );
 var dpr = window.devicePixelRatio ? window.devicePixelRatio : 1;
 
+var lang = getLang();
+var dict;
+
 //	contains a list of facility codes with their matching facility names
-var latlonFile = 'data/facility_lat_lon.json';
-var missileFile = 'data/missile.json';
+var facilityFile = 'data/facility.' + lang + '.json';
+var missileFile = 'data/missile.' + lang + '.json';
+var dictFile = 'data/dict.' + lang + '.json';
 
 var camera, scene, renderer;
 var camera2s, scene2d;
@@ -73,33 +77,59 @@ var previouslySelectedTest = null;
 //	contains info about what year, what tests, outcomes, missiles, etc that's being visualized
 var selectionData;
 
+function getLang() {
+	var lang = '';
+	var match = location.search.match(/lang=(.*?)(&|$)/);
+	//var match = location.href.match(/\/([a-z]{2})\/[^\/]*$/);
+	if (match) {
+		lang = decodeURIComponent(match[1]).substring(0, 2);
+	}
+	if (lang === 'ja' || lang === 'en') {
+		return lang;
+	}
+	lang = (window.navigator.languages && window.navigator.languages[0]) ||
+		window.navigator.language ||
+		window.navigator.userLanguage ||
+		window.navigator.browserLanguage;
+	return (lang && lang.substring(0, 2) === 'ja') ? 'ja' : 'en';
+}
+
+function loadLangCSS(lang) {
+	if (lang !== 'en') {
+		var tags = document.createDocumentFragment();
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'style.' + lang + '.css';
+		tags.appendChild(link);
+		document.getElementsByTagName('head')[0].appendChild(tags);
+	}
+}
+
 //	TODO
 //	use underscore and ".after" to load these in order
 //	don't look at me I'm ugly
-function start( e ){
+function start(e) {
 	//	detect for webgl and reject everything else
-	if ( ! Detector.webgl ) {
+	if (!Detector.webgl) {
 		Detector.addGetWebGLMessage();
-	}
-	else{
+	} else {
+		loadLangCSS(lang);
 		//	ensure the map images are loaded first!!
 		mapOutlineImage = new Image();
 		mapOutlineImage.src = 'images/map_outline.png';
-		mapOutlineImage.onload = function(){
-			loadWorldPins(
-				function(){
-					loadMissileData(
-						function(){
-							loadContentData(
-								function(){
-									initScene();
-									animate();
-								}
-							);
-						}
-					);
-				}
-			);
+		mapOutlineImage.onload = function() {
+			loadDictData(function() {
+				document.title = dict['_title'];
+				loadFacilityData(function() {
+					loadMissileData(function() {
+						loadTestData(function() {
+							initScene();
+							animate();
+						});
+					});
+				});
+			});
 		};
 	};
 }

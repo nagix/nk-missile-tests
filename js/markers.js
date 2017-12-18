@@ -19,14 +19,13 @@ function attachMarkerToTest( testName ){
 
 	var datetime = test.date
 	if (test.time !== 'unknown') {
-		datetime += "&nbsp;" + test.time + "&nbsp;(UTC)";
+		datetime += "&nbsp;" + test.time;
 	}
 
-	var outcome = outcomeLookup[test.outcome];
 	var missile = missileLookup[test.missile];
 	var facilityName = facilityData[test.facility].name;
-	var apogee = test.apogee === 'unknown' ? 'Unknown' : (test.apogee === 'na' ? 'N/A' : test.apogee + 'km');
-	var distance = test.distance === 'unknown' ? 'Unknown' : (test.distance === 'na' ? 'N/A' : test.distance + 'km');
+	var apogee = test.apogee === 'unknown' ? dict['unknown'] : (test.apogee === 'na' ? dict['na'] : test.apogee + 'km');
+	var distance = test.distance === 'unknown' ? dict['unknown'] : (test.distance === 'na' ? dict['na'] : test.distance + 'km');
 
 	var container = document.getElementById( 'visualization' );
 	var template = document.getElementById( 'marker_template' );
@@ -95,10 +94,9 @@ function attachMarkerToTest( testName ){
 
 		var s = camera.zoom * 3 + 5;
 
-		if( this.selected )
-			s = 20;
-
-		this.setSize( s );
+		if (!this.selected) {
+			this.setSize(s);
+		}
 
 		this.setVisible((new THREE.Vector3()).subVectors(camera.position, abspos).dot(abspos) > 0);
 
@@ -113,18 +111,18 @@ function attachMarkerToTest( testName ){
 
 	nameLayer.innerHTML = testName.replace(' ','&nbsp;');
 
-	var detailText = "";
-	detailText += "<span class=\"key\">Date:</span>&nbsp;" + datetime + "&nbsp;&nbsp;" +
-		"<span class=\"key\">Test Outcome:</span>&nbsp;" + outcome + "<br />" +
-		"<span class=\"key\">Missile Name:</span>&nbsp;" + missile.name + "&nbsp;&nbsp;" +
-		"<span class=\"key\">Missile Type:</span>&nbsp;" + missile.type + "<br />" +
-		"<span class=\"key\">Facility Name:</span>&nbsp;" + facilityName + "<br />" +
-		"<span class=\"key\">Landing Location:</span>&nbsp;" + test.landingLocation.name + "<br />" +
-		"<span class=\"key\">Apogee:</span>&nbsp;" + apogee + "&nbsp;&nbsp;" +
-		"<span class=\"key\">Distance Travelled:</span>&nbsp;" + distance;
+	var detailText = '';
+	detailText += '<span class="key">' + dict['date'] + ':</span>&nbsp;' + datetime + '&nbsp;&nbsp;' +
+		'<span class="key">' + dict['test-outcome'] + ':</span>&nbsp;' + dict[test.outcome] + '<br />' +
+		'<span class="key">' + dict['missile-name'] + ':</span>&nbsp;' + missile.name + '&nbsp;&nbsp;' +
+		'<span class="key">' + dict['missile-type'] + ':</span>&nbsp;' + missile.type + '<br />' +
+		'<span class="key">' + dict['facility-name'] + ':</span>&nbsp;' + facilityName + '<br />' +
+		'<span class="key">' + dict['landing-location'] + ':</span>&nbsp;' + dict[test.landingLocation.name] + '<br />' +
+		'<span class="key">' + dict['apogee'] + ':</span>&nbsp;' + apogee + '&nbsp;&nbsp;' +
+		'<span class="key">' + dict['distance-travelled'] + ':</span>&nbsp;' + distance;
 	marker.detailText = detailText;
 
-	var descriptionText = "<span class=\"key\">Description:</span>&nbsp;" + test.description;
+	var descriptionText = '<span class="key">' + dict['description'] + ':</span>&nbsp;' + test.description;
 	marker.descriptionText = descriptionText;
 
 
@@ -143,7 +141,9 @@ function attachMarkerToTest( testName ){
 	if( marker.selected ) {
 		marker.classList.add('selected');
 		detailLayer.innerHTML = detailText;
+		detailLayer.style.display = 'block';
 		descriptionLayer.innerHTML = descriptionText;
+		descriptionLayer.style.display = 'block';
 	}
 	else{
 		marker.addEventListener( 'mouseover', markerOver, false );

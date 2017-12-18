@@ -1,0 +1,19 @@
+{
+	"er-scud": {"name": "スカッドER", "type": "MRBM"},
+	"hwasong-12": {"name": "火星12号", "type": "IRBM"},
+	"hwasong-14": {"name": "火星14号", "type": "ICBM"},
+	"hwasong-15": {"name": "火星15号", "type": "ICBM"},
+	"kn-02": {"name": "KN-02", "type": "SRBM"},
+	"musudan": {"name": "ムスダン", "type": "IRBM"},
+	"nodong": {"name": "ノドン", "type": "MRBM"},
+	"polaris-1": {"name": "北極星1号", "type": "SLBM"},
+	"polaris-2": {"name": "北極星2号", "type": "MRBM"},
+	"scud-b": {"name": "スカッドB", "type": "SRBM"},
+	"scud-b-marv": {"name": "スカッドB MaRV", "type": "SRBM"},
+	"scud-c": {"name": "スカッドC", "type": "SRBM"},
+	"scud-c-marv": {"name": "スカッドC MaRV", "type": "SRBM"},
+	"taepodong-1": {"name": "テポドン1号", "type": "SLV"},
+	"unha": {"name": "銀河", "type": "SLV"},
+	"unha-3": {"name": "銀河3号", "type": "SLV"},
+	"unknown": {"name": "不明", "type": "不明"}
+}

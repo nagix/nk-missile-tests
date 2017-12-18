@@ -1,0 +1,65 @@
+.detail {
+	font-size: 11pt;
+	line-height: 135%;
+}
+.description {
+	font-size: 9pt;
+	line-height: 135%;
+}
+#hudHeader h1 {
+	font-size: 26px;
+	line-height: 135%;
+}
+#hudHeader h1 .subtitle {
+	font-size: 12px;
+	line-height: 135%;
+}
+#hudButtons .testsBtn {
+	font-size: 14px;
+}
+#hudButtons .testTextInput {
+	height: 20px;
+}
+#outcomeBtns .label {
+	font-size: 16px;
+}
+#missileTypeBtns .label {
+	font-size: 12px;
+}
+#aboutBox .title {
+	margin-bottom: 18px;
+	font-size: 18px;
+}
+#aboutBox .text {
+	font-size: 14px;
+}
+#aboutBox a {
+	font-size: 14px;
+}
+
+@media (max-device-width: 639px) and (max-width: 639px) {
+	.marker.selected {
+		font-size: 15pt;
+	}
+	#hudHeader h1 {
+		font-size: 18px;
+	}
+	#hudHeader h1 .subtitle {
+		font-size: 9px;
+	}
+	#hudButtons .testTextInput {
+		font-size: 14px;
+	}
+	.ui-autocomplete .ui-menu-item {
+		font-size: 14px;
+	}
+	#aboutBox .title {
+		font-size: 16px;
+	}
+	#aboutBox .text {
+		font-size: 12px;
+	}
+	#aboutBox a {
+		font-size: 12px;
+	}
+}

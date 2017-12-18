@@ -1,9 +1,9 @@
-function loadWorldPins( callback ){
+function loadFacilityData(callback) {
 	// We're going to ask a file for the JSON data.
 	xhr = new XMLHttpRequest();
 
 	// Where do we get the data?
-	xhr.open( 'GET', latlonFile, true );
+	xhr.open('GET', facilityFile, true);
 
 	// What do we do when we have it?
 	xhr.onreadystatechange = function() {
@@ -20,8 +20,8 @@ function loadWorldPins( callback ){
 	xhr.send( null );
 }
 
-function loadContentData(callback){
-	var filePath = "data/test.json";
+function loadTestData(callback) {
+	var filePath = 'data/test.' + lang + '.json';
 	filePath = encodeURI( filePath );
 	// console.log(filePath);
 
@@ -56,4 +56,16 @@ function loadMissileData( callback ){
 		}
 	};
 	cxhr.send( null );
+}
+
+function loadDictData(callback) {
+	cxhr = new XMLHttpRequest();
+	cxhr.open('GET', dictFile, true);
+	cxhr.onreadystatechange = function() {
+		if (cxhr.readyState === 4 && cxhr.status === 200) {
+			dict = JSON.parse(cxhr.responseText);
+			callback();
+		}
+	};
+	cxhr.send(null);
 }

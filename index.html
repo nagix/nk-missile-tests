@@ -3,7 +3,14 @@
 	<head>
 		<title>North Korea Missile Test Visualization</title>
 		<meta charset="utf-8">
+		<meta name="description" content="An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2017. This data visualization was produced by Akihiko Kusanagi. The data for this visualization are sourced from the CNS North Korea Missile Test Database.">
 		<meta name="viewport" content="user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@nagix">
+		<meta property="og:title" content="North Korea Missile Test Visualization">
+		<meta property="og:description" content="An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2017. This data visualization was produced by Akihiko Kusanagi. The data for this visualization are sourced from the CNS North Korea Missile Test Database.">
+		<meta property="og:url" content="https://nagix.github.io/nk-missile-tests/">
+		<meta property="og:image" content="https://nagix.github.io/nk-missile-tests/images/screenshot.jpg">
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 	</head>
@@ -123,7 +130,8 @@
 
 		<!-- All other hud can go here-->
 		<div id="hudHeader" class="overlayTests noPointer">
-			<h1 class="noPointer">North Korea Missile Test Visualization
+			<h1 class="noPointer">
+				<div class="title">North Korea Missile Test Visualization</div>
 				<div class="subtitle">An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2017</div>
 			</h1>
 		</div>
@@ -135,12 +143,12 @@
 			</div>
 			<input type="text" name="test" class="testTextInput pointer noMapDrag">
 			<div class="hudButtonGroup">
-				<input type="button" class="tiltBtn topViewBtn testsBtn pointer noMapDrag"><br/ >
+				<input type="button" class="tiltBtn topViewBtn testsBtn pointer noMapDrag"><br />
 				<input type="button" class="tiltBtn sideViewBtn testsBtn pointer noMapDrag">
 			</div>
 			<div class="hudButtonGroup">
-				<input type="button" value="+" class="zoomBtn zoomInBtn testsBtn pointer noMapDrag" style="float:none"><br/ >
-				<input type="button" value="—" class="zoomBtn zoomOutBtn testsBtn pointer noMapDrag" style="float:none">
+				<input type="button" value="+" class="zoomBtn zoomInBtn testsBtn pointer noMapDrag"><br />
+				<input type="button" value="—" class="zoomBtn zoomOutBtn testsBtn pointer noMapDrag">
 			</div>
 			<div id="hudButtonHandle" class="pointer noMapDrag"></div>
 		</div>
@@ -305,11 +313,7 @@
 			<div id="aboutBox">
 				<div class="title">Information about the data</div>
 				<div class="text">
-					This data visualization was produced by <a href="https://nagix.github.io/" target="_blank">Akihiko Kusanagi</a>. The data for this visualization are sourced from <a href="http://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/" target="_blank">the CNS North Korea Missile Test Database</a>, which is the first database to record flight tests of all missiles launched by North Korea capable of delivering a payload of at least 500 kilograms (1102.31 pounds) a distance of at least 300 kilometers (186.4 miles). The database captures advancements in North Korea's missile program by documenting all such tests since the first one occurred in April 1984, and will be routinely updated as events warrant.
-				</div>
-				<div class="text">
-					<br>
-					For more info and source code, please see the <a href="https://github.com/nagix/nk-missile-tests" target="_blank">GitHub repository</a>.
+					This data visualization was produced by <a href="https://nagix.github.io/" target="_blank">Akihiko Kusanagi</a>. The data for this visualization are sourced from <a href="http://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/" target="_blank">the CNS North Korea Missile Test Database</a>, which is the first database to record flight tests of all missiles launched by North Korea capable of delivering a payload of at least 500 kilograms (1102.31 pounds) a distance of at least 300 kilometers (186.4 miles). The database captures advancements in North Korea's missile program by documenting all such tests since the first one occurred in April 1984, and will be routinely updated as events warrant.<br /><br />For more info and source code, please see the <a href="https://github.com/nagix/nk-missile-tests" target="_blank">GitHub repository</a>.
 				</div>
 			</div>
 		</div>

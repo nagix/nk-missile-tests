@@ -131,6 +131,7 @@ li {
 }
 
 .marker.selected {
+	font-size: 20pt;
 	background-color: rgba(0,0,0,.66);
 	border-spacing: 3px;
 	padding: 10px;
@@ -163,35 +164,40 @@ li {
 
 
 .detail {
-	display: block;
+	display: none;
 	color: #aaaaaa;
 	font-size: 12pt;
 	white-space: nowrap;
 }
 
 .description {
-	display: block;
+	display: none;
 	color: #aaaaaa;
 	font-size: 10pt;
-	max-width: 400px;
+	width: 400px;
 }
 
 .detail .key, .description .key {
 	color: #FFA90B;
 }
 
-#loading{
+#loading {
 	background-color: #111;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	margin-top: -38px;
-	margin-left: -380px;
+	margin-top: -40px;
+	margin-left: -350px;
 	color: white;
-	padding: 16px 30px;
 	width: 700px;
-	height: 45px;
-	line-height: 11px;
+	height: 80px;
+}
+
+#loading h2 {
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
+	padding: 0 30px;
 }
 
 
@@ -292,6 +298,7 @@ Elements to control the title and test selector
 	cursor: pointer;
 	margin: 0px 0px 4px 8px;
 	opacity: 0.9;
+	-webkit-appearance: none;
 }
 #hudButtons .testsBtn:hover {
 	opacity: 1;
@@ -306,6 +313,7 @@ Elements to control the title and test selector
 }
 #hudButtons .tiltBtn {
 	width: 30px;
+	float: none;
 }
 #hudButtons .topViewBtn {
 	background: #333333 url('images/topview.svg') 7px 4px no-repeat;
@@ -316,6 +324,7 @@ Elements to control the title and test selector
 #hudButtons .zoomBtn {
 	width: 30px;
 	font-weight: bold;
+	float: none;
 }
 
 #hudButtons .zoomOutBtn {
@@ -721,25 +730,11 @@ Bar graph on left
 	}
 	#hudButtons {
 		position: absolute;
-		right: -380px;
+		right: -484px;
 		top: 90px;
-		width: 400px;
+		width: 504px;
 		background-color: rgba(43,43,43,0.9);
 		padding: 10px 0 6px 0;
-	}
-	#hudButtons .testTextInput {
-		width: 200px;
-		font-size: 16px;
-	}
-	#hudButtons .testsBtn {
-		-webkit-appearance: none;
-	}
-	.ui-autocomplete .ui-menu-item {
-		font-size: 16px;
-		width: 210px;
-	}
-	.ui-autocomplete .ui-menu-item .ui-state-active {
-		width: 210px;
 	}
 	#hudButtonHandle {
 		position: absolute;
@@ -766,12 +761,24 @@ Bar graph on left
 }
 
 @media (max-device-width: 639px) and (max-width: 639px) {
-	h2 {
-		font-size: 13px;
+	body {
+		font-size: 12px;
 	}
-	#loading{
-		margin-left: -190px;
-		width: 320px;
+	.detail {
+		font-size: 10pt;
+	}
+	.description {
+		width: 300px;
+	}
+	#loading {
+		margin-left: -50%;
+		width: 100%;
+	}
+	#loading h2 {
+		padding: 0 10px;
+	}
+	.marker.selected {
+		font-size: 16pt;
 	}
 	#hudHeader {
 		left: 10px;
@@ -781,10 +788,23 @@ Bar graph on left
 		font-size: 20px;
 	}
 	#hudHeader h1 .subtitle {
-		font-size: 9px;
+		font-size: 10px;
 	}
 	#hudButtons {
+		right: -380px;
 		top: 52px;
+		width: 400px;
+	}
+	#hudButtons .testTextInput {
+		width: 200px;
+		font-size: 16px;
+	}
+	.ui-autocomplete .ui-menu-item {
+		font-size: 16px;
+		width: 210px;
+	}
+	.ui-autocomplete .ui-menu-item .ui-state-active {
+		width: 210px;
 	}
 	#history ul {
 		margin: 10px 24px;
@@ -814,14 +834,14 @@ Bar graph on left
 		font-size: 16px;
 	}
 	#history .labels .successes {
-		font-size: 10px;
+		font-size: 11px;
 	}
 	#history .labels .failures {
-		font-size: 10px;
+		font-size: 11px;
 		margin-left: 6px;
 	}
 	#history .labels .unknowns {
-		font-size: 10px;
+		font-size: 11px;
 		margin-left: 6px;
 	}
 	#aboutContainer {

@@ -1,0 +1,23 @@
+{
+	"_abouttitle": "データについての情報",
+	"_about": "このデータビジュアライゼーションは <a href=\"https://nagix.github.io/\" target=\"_blank\">草薙昭彦</a> により作成されました。このビジュアライゼーションのデータは <a href=\"http://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/\" target=\"_blank\">The CNS North Korea Missile Test Database</a> を元にしています。これは北朝鮮が発射した搭載重量500kg (1102.31ポンド) 以上、射程300km (186.4マイル) 以上のすべてのミサイルの実験を記録している初めてのデータベースです。このデータベースは1984年4月から始まる全ての実験を文書化することで、北朝鮮のミサイル計画の進展を記録しており、新たな事象が確認されれば定期的に更新が行われます。<br /><br />より詳しい情報やソースコードはこちらの <a href=\"https://github.com/nagix/nk-missile-tests\" target=\"_blank\">GitHub リポジトリ</a> をご覧ください。",
+	"_subtitle": "1984年から2017年にかけて北朝鮮により発射された全てのミサイルの飛行実験に関するインタラクティブ・ビジュアライゼーション",
+	"_title": "北朝鮮ミサイル実験ビジュアライゼーション",
+	"about": "詳細",
+	"apogee": "最高高度",
+	"date": "日時",
+	"description": "説明",
+	"distance-travelled": "飛行距離",
+	"facility-name": "発射施設名",
+	"failure": "失敗",
+	"landing-location": "着弾場所",
+	"missile-name": "ミサイル名称",
+	"missile-type": "ミサイル種別",
+	"na": "該当なし",
+	"pacific-ocean": "太平洋",
+	"sea-of-japan": "日本海",
+	"search": "検索",
+	"success": "成功",
+	"test-outcome": "実験結果",
+	"unknown": "不明"
+}

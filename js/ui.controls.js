@@ -72,6 +72,22 @@ var d3Graphs = {
 	showHud: function() {
 		if(this.inited) return;
 		this.inited = true;
+		$("#hudHeader .title").text(dict['_title']);
+		$("#hudHeader .subtitle").text(dict['_subtitle']);
+		$("#hudButtons .searchBtn").val(dict['search'].toUpperCase());
+		$("#hudButtons .aboutBtn").val(dict['about'].toUpperCase());
+		$("#history .graph .labels .outcome").text(dict['test-outcome'].toUpperCase());
+		$("#history .graph .labels .successes").text(dict['success'].toUpperCase());
+		$("#history .graph .labels .failures").text(dict['failure'].toUpperCase());
+		$("#history .graph .labels .unknowns").text(dict['unknown'].toUpperCase());
+		$("#outcomeBtns .success .label").text(dict['success']);
+		$("#outcomeBtns .failure .label").text(dict['failure']);
+		$("#outcomeBtns .unknown .label").text(dict['unknown']);
+		for (var i in missileLookup) {
+			$("#missileTypeBtns ." + i + " .label").text(missileLookup[i].name);
+		}
+		$("#aboutBox .title").text(dict['_abouttitle']);
+		$("#aboutBox .text").html(dict['_about']);
 		d3Graphs.windowResize();
 		$("#hudHeader").show();
 		$("#hudButtons").show();
@@ -777,7 +793,7 @@ var d3Graphs = {
 		successLabel.enter().append('text')
 			.attr('class', 'successLabel')
 			.attr('text-anchor', 'end')
-			.text('SUCCESS')
+			.text(dict['success'].toUpperCase())
 			.attr('x', midX)
 			.merge(successLabel).transition()
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
@@ -787,7 +803,7 @@ var d3Graphs = {
 		var failureLabel = this.barGraphSVG.selectAll('text.failureLabel').data([1]);
 		failureLabel.enter().append('text')
 			.attr('class', 'failureLabel')
-			.text('FAILURE')
+			.text(dict['failure'].toUpperCase())
 			.attr('x', midX + 10)
 			.merge(failureLabel).transition()
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
@@ -797,8 +813,8 @@ var d3Graphs = {
 		var unknownLabel = this.barGraphSVG.selectAll('text.unknownLabel').data([1]);
 		unknownLabel.enter().append('text')
 			.attr('class', 'unknownLabel')
-			.text('UNKNOWN')
-			.attr('x', midX + 95)
+			.text(dict['unknown'].toUpperCase())
+			.attr('x', function(d) { return midX + 127 - this.getComputedTextLength() / 2; })
 			.merge(unknownLabel).transition()
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.attr('opacity', unknownVisible ? 1 : 0);
