@@ -637,15 +637,6 @@ Bar graph on left
 	vertical-align: middle;
 	padding-top: 6px;
 }
-#missileTypeBtns #checkbutton circle {
-	stroke: none;
-}
-#missileTypeBtns #checkbutton path {
-	fill: none;
-	stroke-width: 2.5;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
 #missileTypeBtns .check {
 	margin: 6px auto;
 	cursor: pointer;
