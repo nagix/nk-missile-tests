@@ -2,6 +2,8 @@
 
 An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2017.
 
+![Screenshot](https://nagix.github.io/nk-missile-tests/images/screenshot.jpg)
+
 See a [Live Demo](https://nagix.github.io/nk-missile-tests).
 
 ## Usage
