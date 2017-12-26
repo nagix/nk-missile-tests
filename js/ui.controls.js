@@ -26,11 +26,11 @@ var counter = 0;
 var d3Graphs = {
 	barGraphWidth: 420,
 	barGraphHeight: 800,
-	barGraphMinHeight: 540,
-	barGraphMaxHeight: 800,
+	barGraphMinHeight: 530,
+	barGraphMaxHeight: 790,
 	barWidth: 14,
-	barGraphTopPadding: 20,
-	barGraphBottomPadding: 50,
+	barGraphTopPadding: 0,
+	barGraphBottomPadding: 75,
 	histogramWidth: [686, 371],
 	histogramHeight: 160,
 	histogramBarWidth: [28, 14],
@@ -178,24 +178,24 @@ var d3Graphs = {
 		var minWidth = 1280;
 		var minHeight = 600;
 		if (mediaType() === 'pc') {
-			var w = windowWidth < minWidth ? minWidth : windowWidth;
+			var w = Math.max(windowWidth, minWidth);
+			var h = Math.max(windowHeight, minHeight);
 			var hudButtonWidth = 489;
 			$('#hudButtons').css('left', w - hudButtonWidth - 20);
+			var outcomeButtonHeight = $("#outcomeBtns").height();
+			$("#outcomeBtns").css('top', h - outcomeButtonHeight - 15);
 			var missileButtonWidth = $("#missileTypeBtns").width();
+			var missileButtonHeight = $("#missileTypeBtns").height();
 			$("#missileTypeBtns").css('left', w - missileButtonWidth);
-			var outcomeButtonWidth = $("#outcomeBtns").width();
-			$("#outcomeBtns").css('left', w - missileButtonWidth - outcomeButtonWidth - 10);
+			$("#missileTypeBtns").css('top', h - missileButtonHeight - 17);
+			d3Graphs.barGraphHeight = Math.min(
+				d3Graphs.barGraphMinHeight + Math.max(windowHeight - minHeight, 0),
+				d3Graphs.barGraphMaxHeight);
+			$("#barGraph").css('top', h - d3Graphs.barGraphHeight);
 		} else {
 			$("#hudButtons").css('right', d3Graphs.hudButtonsOpen ?
 				0 : $("#hudButtonHandle").width() - $("#hudButtons").width() + 'px');
 		}
-		d3Graphs.barGraphHeight = Math.min(
-			Math.max(windowHeight - 60, size([d3Graphs.barGraphMinHeight, 0])),
-			d3Graphs.barGraphMaxHeight);
-		var barGraphBottomPadding = 10;
-		var barGraphTopPos = Math.max(windowHeight, minHeight) - d3Graphs.barGraphHeight - barGraphBottomPadding;
-
-		$("#barGraph").css('top', barGraphTopPos + 'px');
 		/*
 		var hudHeaderLeft = $("#hudHeader").css('left');
 		hudHeaderLeft = hudHeaderLeft.substr(0,hudHeaderLeft.length-2);
@@ -221,7 +221,7 @@ var d3Graphs = {
 		var totalWidth = historyWidth + $("#graphIcon").width() + graphIconPadding;
 //		var windowWidth = $(window).width();
 		var historyLeftPos = (windowWidth - totalWidth) / 2.0;
-		var minLeftPos = 280;
+		var minLeftPos = 370;
 		if (mediaType() === 'pc' && historyLeftPos < minLeftPos) {
 			historyLeftPos = minLeftPos;
 		}
@@ -595,7 +595,7 @@ var d3Graphs = {
 		var unknownRects = this.barGraphSVG.selectAll('.bar.unknownBar').data(unknownArray);
 		unknownRects.enter().append('rect')
 			.attr('class', function(d) { return 'bar unknownBar ' + d.type; })
-			.attr('x', midX + 120)
+			.attr('x', midX + 112)
 			.attr('width', this.barWidth)
 			.merge(unknownRects).transition()
 			.attr('y', function(d) {
@@ -725,7 +725,7 @@ var d3Graphs = {
 		unknownLabels = newUnknownLabels.merge(unknownLabels);
 		unknownLabels.transition()
 			.attr('transform', function(d) {
-				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 145) + ',';
+				var translate = 'translate(' + (d3Graphs.barGraphWidth / 3 + 137) + ',';
 				var value = d3Graphs.barGraphHeight - d3Graphs.barGraphBottomPadding - d3Graphs.cumUnknownLblY - yScale(d.count) / 2;
 				d3Graphs.cumUnknownLblY += yScale(d.count);
 				translate += value + ')';
@@ -782,41 +782,10 @@ var d3Graphs = {
 		var unknownTotalLabel = this.barGraphSVG.selectAll('text.totalLabel.unknownTotalLabel').data([1]);
 		unknownTotalLabel.enter().append('text')
 			.attr('class', 'totalLabel unknownTotalLabel')
-			.attr('x', midX + 120)
+			.attr('x', midX + 112)
 			.merge(unknownTotalLabel).transition()
 			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 25)
 			.text(unknownVisible ? unknownTotal : function() { return this.textContent; })
-			.attr('opacity', unknownVisible ? 1 : 0);
-
-		//success label at bottom
-		var successLabel = this.barGraphSVG.selectAll('text.successLabel').data([1]);
-		successLabel.enter().append('text')
-			.attr('class', 'successLabel')
-			.attr('text-anchor', 'end')
-			.text(dict['success'].toUpperCase())
-			.attr('x', midX)
-			.merge(successLabel).transition()
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
-			.attr('opacity', successsesVisible ? 1 : 0);
-
-		//failure label at bottom
-		var failureLabel = this.barGraphSVG.selectAll('text.failureLabel').data([1]);
-		failureLabel.enter().append('text')
-			.attr('class', 'failureLabel')
-			.text(dict['failure'].toUpperCase())
-			.attr('x', midX + 10)
-			.merge(failureLabel).transition()
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
-			.attr('opacity', failuresVisible ? 1 : 0);
-
-		//unknown label at bottom
-		var unknownLabel = this.barGraphSVG.selectAll('text.unknownLabel').data([1]);
-		unknownLabel.enter().append('text')
-			.attr('class', 'unknownLabel')
-			.text(dict['unknown'].toUpperCase())
-			.attr('x', function(d) { return midX + 127 - this.getComputedTextLength() / 2; })
-			.merge(unknownLabel).transition()
-			.attr('y', this.barGraphHeight - this.barGraphBottomPadding + 45)
 			.attr('opacity', unknownVisible ? 1 : 0);
 	},
 	dragHandleStart: function(event) {

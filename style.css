@@ -564,13 +564,24 @@ Bar graph on left
 	fill: #fff;
 }
 
-/* ioutcome buttons (bottom right)*/
+/* outcome buttons (bottom left)*/
 #outcomeBtns {
-	width: 98px;
+	width: 302px;
 	position: absolute;
-	bottom: 0px;
+	left: 38px;
 	color: white;
 	display: none;
+}
+#outcomeBtns .success {
+	float: left;
+}
+#outcomeBtns .failure {
+	float: left;
+	margin-left: 4px;
+}
+#outcomeBtns .unknown {
+	float: left;
+	margin-left: 4px;
 }
 #outcomeBtns .label {
 	float: left;
@@ -607,17 +618,11 @@ Bar graph on left
 #outcomeBtns .unknown .label.inactive {
 	color: #6E6E6E;
 }
-#outcomeBtns .success {
-	margin-bottom: 5px;
-}
-#outcomeBtns .failure {
-	margin-bottom: 5px;
-}
 
+/* missile type buttons (bottom right)*/
 #missileTypeBtns {
 	width: 130px;
 	position: absolute;
-	bottom: 17px;
 	color: white;
 	display: none;
 }
@@ -737,7 +742,7 @@ Bar graph on left
 		cursor: pointer;
 	}
 	#outcomeBtns {
-		right: -98px;
+		left: -340px;
 	}
 	#missileTypeBtns {
 		right: -130px;
