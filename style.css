@@ -626,30 +626,34 @@ Bar graph on left
 	color: white;
 	display: none;
 }
+#missileTypeBtns>div {
+	cursor: pointer;
+	background: #262626;
+	opacity: 0.9;
+	margin-bottom: 4px;
+}
+#missileTypeBtns>div:hover {
+	opacity: 1;
+}
 #missileTypeBtns .box {
 	float: left;
 	width: 28px;
 	text-align: center;
-	height: 28px;
+	height: 24px;
 }
 #missileTypeBtns .label {
 	float: left;
 	width: 98px;
-	height: 22px;
+	height: 18px;
 	text-transform: uppercase;
 	font-family: 'Roboto';
 	font-size: 13px;
 	vertical-align: middle;
-	padding-top: 6px;
+	padding-top: 4px;
 }
 #missileTypeBtns .check {
-	margin: 6px auto;
-	cursor: pointer;
+	margin: 4px 6px auto;
 	stroke: black;
-	opacity: 0.9;
-}
-#missileTypeBtns .check:hover {
-	opacity: 1;
 }
 #missileTypeBtns .check.inactive {
 	fill-opacity: 0.5;

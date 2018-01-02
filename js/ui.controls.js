@@ -101,7 +101,7 @@ var d3Graphs = {
 		$("#handle").draggable({axis: 'x',containment: "parent",grid:[size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
 		$("#hudButtons .searchBtn").on('click', d3Graphs.updateViz);
 		$("#outcomeBtns>div>.label").on('click', d3Graphs.outcomeLabelClick);
-		$("#missileTypeBtns .check").on('click', d3Graphs.missileBtnClick);
+		$("#missileTypeBtns>div").on('click', d3Graphs.missileBtnClick);
 		$("#hudButtons .testTextInput").autocomplete({ source:selectableTests, autoFocus: true });
 		$("#hudButtons .testTextInput").keyup(d3Graphs.testKeyUp);
 		$("#hudButtons .testTextInput").focus(d3Graphs.testFocus);
@@ -186,8 +186,8 @@ var d3Graphs = {
 			$("#outcomeBtns").css('top', h - outcomeButtonHeight - 15);
 			var missileButtonWidth = $("#missileTypeBtns").width();
 			var missileButtonHeight = $("#missileTypeBtns").height();
-			$("#missileTypeBtns").css('left', w - missileButtonWidth);
-			$("#missileTypeBtns").css('top', h - missileButtonHeight - 17);
+			$("#missileTypeBtns").css('left', w - missileButtonWidth - 20);
+			$("#missileTypeBtns").css('top', h - missileButtonHeight - 15);
 			d3Graphs.barGraphHeight = Math.min(
 				d3Graphs.barGraphMinHeight + Math.max(windowHeight - minHeight, 0),
 				d3Graphs.barGraphMaxHeight);
@@ -221,7 +221,7 @@ var d3Graphs = {
 		var totalWidth = historyWidth + $("#graphIcon").width() + graphIconPadding;
 //		var windowWidth = $(window).width();
 		var historyLeftPos = (windowWidth - totalWidth) / 2.0;
-		var minLeftPos = 370;
+		var minLeftPos = 360;
 		if (mediaType() === 'pc' && historyLeftPos < minLeftPos) {
 			historyLeftPos = minLeftPos;
 		}
@@ -322,7 +322,7 @@ var d3Graphs = {
 		d3Graphs.updateViz(true);
 	},
 	missileBtnClick:function() {
-		var check = $(this);
+		var check = $(this).find('.check');
 		if(check.hasClass('inactive')) {
 			check.removeClass('inactive');
 		} else {
