@@ -626,13 +626,16 @@ Bar graph on left
 	color: white;
 	display: none;
 }
-#missileTypeBtns>div {
+#missileTypeBtns .missileTypeBtnGroup {
+	float: right;
+}
+#missileTypeBtns>div>div {
 	cursor: pointer;
 	background: #262626;
 	opacity: 0.9;
 	margin-bottom: 4px;
 }
-#missileTypeBtns>div:hover {
+#missileTypeBtns>div>div:hover {
 	opacity: 1;
 }
 #missileTypeBtns .box {
@@ -729,7 +732,6 @@ Bar graph on left
 		min-height: 100%;
 	}
 	#hudButtons {
-		position: absolute;
 		right: -484px;
 		top: 90px;
 		width: 504px;
@@ -740,7 +742,7 @@ Bar graph on left
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: url('images/panelHandle.svg') 0 10px no-repeat;
+		background: url('images/panelHandle.svg') left center no-repeat;
 		width: 20px;
 		height: 72px;
 		cursor: pointer;
@@ -750,6 +752,22 @@ Bar graph on left
 	}
 	#missileTypeBtns {
 		right: -130px;
+		top: 180px;
+		width: 150px;
+		background-color: rgba(43,43,43,0.9);
+		padding: 10px 0 6px 0;
+	}
+	#missileTypeBtns>div>div {
+		background: none;
+	}
+	#missileTypeBtnHandle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('images/panelHandle.svg') left center no-repeat;
+		width: 20px;
+		height: 492px;
+		cursor: pointer;
 	}
 	#barGraph {
 		left: -420px;
@@ -844,6 +862,16 @@ Bar graph on left
 		font-size: 11px;
 		margin-left: 6px;
 	}
+	#missileTypeBtns {
+		top: 138px;
+		padding: 6px 0 4px 0;
+	}
+	#missileTypeBtns>div>div {
+		margin-bottom: 0px;
+	}
+	#missileTypeBtnHandle {
+		height: 418px;
+	}
 	#aboutContainer {
 		top: 126px;
 		width: 320px;
@@ -873,5 +901,17 @@ Bar graph on left
 	}
 	.tiltBtn,.zoomBtn {
 		display: none;
+	}
+	#missileTypeBtns .box {
+		height: 20px;
+	}
+	#missileTypeBtns .label {
+		padding-top: 2px;
+	}
+	#missileTypeBtns .check {
+		margin: 2px 6px auto;
+	}
+	#missileTypeBtnHandle {
+		height: 350px;
 	}
 }

@@ -49,6 +49,7 @@ var d3Graphs = {
 	histogramOpen: false,
 	handleLeftOffset: [34, 24],
 	handleInterval: [42, 21],
+	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
 	graphIconPadding: [20, -20],
@@ -101,7 +102,7 @@ var d3Graphs = {
 		$("#handle").draggable({axis: 'x',containment: "parent",grid:[size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
 		$("#hudButtons .searchBtn").on('click', d3Graphs.updateViz);
 		$("#outcomeBtns>div>.label").on('click', d3Graphs.outcomeLabelClick);
-		$("#missileTypeBtns>div").on('click', d3Graphs.missileBtnClick);
+		$("#missileTypeBtns>div>div").on('click', d3Graphs.missileBtnClick);
 		$("#hudButtons .testTextInput").autocomplete({ source:selectableTests, autoFocus: true });
 		$("#hudButtons .testTextInput").keyup(d3Graphs.testKeyUp);
 		$("#hudButtons .testTextInput").focus(d3Graphs.testFocus);
@@ -113,6 +114,7 @@ var d3Graphs = {
 		$(".zoomBtn").on('mousedown touchstart', d3Graphs.zoomBtnClick);
 		$(".zoomBtn").on('mouseup touchend touchcancel', d3Graphs.zoomBtnMouseup);
 		$("#hudButtonHandle").on('click', d3Graphs.hudButtonHandleClick);
+		$("#missileTypeBtnHandle").on('click', d3Graphs.missileTypeBtnHandleClick);
 	},
 	tiltBtnMouseup: function() {
 		clearInterval(d3Graphs.tiltBtnInterval);
@@ -282,7 +284,7 @@ var d3Graphs = {
 
 		//missile
 		var missileArray = [];
-		var missileBtns = $("#missileTypeBtns>div");
+		var missileBtns = $("#missileTypeBtns>div>div");
 		for(var i = 0; i < missileBtns.length; i++) {
 			var btn = $(missileBtns[i]);
 			var missileKey = btn.attr('class');
@@ -338,6 +340,15 @@ var d3Graphs = {
 			d3Graphs.hudButtonsOpen = false;
 			$("#hudButtons").animate({right: $("#hudButtonHandle").width() - $("#hudButtons").width() + 'px'});
 			$("#aboutContainer").hide();
+		}
+	},
+	missileTypeBtnHandleClick: function() {
+		if (!d3Graphs.missileTypeBtnsOpen) {
+			d3Graphs.missileTypeBtnsOpen = true;
+			$("#missileTypeBtns").animate({right: '0px'});
+		} else {
+			d3Graphs.missileTypeBtnsOpen = false;
+			$("#missileTypeBtns").animate({right: $("#missileTypeBtnHandle").width() - $("#missileTypeBtns").width() + 'px'});
 		}
 	},
 	graphIconClick: function() {
