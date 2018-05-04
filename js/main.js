@@ -292,16 +292,26 @@ function initScene() {
 	glContainer.appendChild( renderer.domElement );
 
 
+	// Detect passive event support
+	var passive = false;
+	var options = Object.defineProperty({}, 'passive', {
+		get: function() {
+			passive = true;
+		}
+	});
+	document.addEventListener('testPassiveEventSupport', function() {}, options);
+	document.removeEventListener('testPassiveEventSupport', function() {}, options);
+
 	//	-----------------------------------------------------------------------------
 	//	Event listeners
 	document.addEventListener( 'mousemove', onDocumentMouseMove, true );
-	document.addEventListener( 'touchmove', onDocumentMouseMove, true );
+	document.addEventListener( 'touchmove', onDocumentMouseMove, passive ? { capture: true, passive: false } : true );
 	document.addEventListener( 'windowResize', onDocumentResize, false );
 
 	//masterContainer.addEventListener( 'mousedown', onDocumentMouseDown, true );
 	//masterContainer.addEventListener( 'mouseup', onDocumentMouseUp, false );
 	document.addEventListener( 'mousedown', onDocumentMouseDown, true );
-	document.addEventListener( 'touchstart', onDocumentMouseDown, true );
+	document.addEventListener( 'touchstart', onDocumentMouseDown, passive ? { capture: true, passive: false } : true );
 	document.addEventListener( 'mouseup', onDocumentMouseUp, false );
 	document.addEventListener( 'touchend', onDocumentMouseUp, false );
 	document.addEventListener( 'touchcancel', onDocumentMouseUp, false );
