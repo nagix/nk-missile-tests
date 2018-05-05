@@ -574,13 +574,16 @@ Bar graph on left
 }
 #outcomeBtns .success {
 	float: left;
+	width: 98px;
 }
 #outcomeBtns .failure {
 	float: left;
+	width: 98px;
 	margin-left: 4px;
 }
 #outcomeBtns .unknown {
 	float: left;
+	width: 98px;
 	margin-left: 4px;
 }
 #outcomeBtns .label {
