@@ -51,23 +51,24 @@ var outcomeLookup = {
 
 //	A list of missile colors
 var missileColors = {
-	'er-scud' : 0x1A62A5,
-	'hwasong-12' : 0x6C6C6C,
-	'hwasong-14' : 0xAEB21A,
-	'hwasong-15' : 0x1DB2C4,
+	'er-scud' : 0x1F77B4,
+	'hwasong-12' : 0x7F7F7F,
+	'hwasong-14' : 0xBCBD22,
+	'hwasong-15' : 0x17BECF,
 	'kn-02': 0xB68982,
-	'musudan': 0x9FBAE3,
-	'nodong': 0xFD690F,
-	'polaris-1': 0xFEAE65,
-	'polaris-2': 0xDA5CB6,
-	'scud-b': 0x279221,
-	'scud-b-marv': 0xD2D479,
-	'scud-c': 0x89DC78,
-	'scud-c-marv': 0xBBBBBB,
-	'taepodong-1': 0xCA0F1E,
-	'unha': 0x814EAF,
-	'unha-3': 0xB89FCB,
-	'unknown': 0x78433B
+	'kn-23': 0x9EDAE5,
+	'musudan': 0xAEC7E8,
+	'nodong': 0xFF7F0E,
+	'polaris-1': 0xFFBB78,
+	'polaris-2': 0xE377C2,
+	'scud-b': 0x2CA02C,
+	'scud-b-marv': 0xDBDB8D,
+	'scud-c': 0x98DF8A,
+	'scud-c-marv': 0xC7C7C7,
+	'taepodong-1': 0xD62728,
+	'unha': 0x9467BD,
+	'unha-3': 0xC5B0D5,
+	'unknown': 0x8C564B
 };
 
 //	the currently selected test

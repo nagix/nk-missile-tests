@@ -366,55 +366,58 @@ Bar graph on left
 	font-size: 13px;
 }
 #barGraph .bar.er-scud, #missileTypeBtns .er-scud .check {
-	fill: #1A62A5;
+	fill: #1F77B4;
 }
 #barGraph .bar.hwasong-12, #missileTypeBtns .hwasong-12 .check {
-	fill: #6C6C6C;
+	fill: #7F7F7F;
 }
 #barGraph .bar.hwasong-14, #missileTypeBtns .hwasong-14 .check {
-	fill: #AEB21A;
+	fill: #BCBD22;
 }
 #barGraph .bar.hwasong-15, #missileTypeBtns .hwasong-15 .check {
-	fill: #1DB2C4;
+	fill: #17BECF;
 }
 #barGraph .bar.kn-02, #missileTypeBtns .kn-02 .check {
 	fill: #B68982;
 }
+#barGraph .bar.kn-23, #missileTypeBtns .kn-23 .check {
+	fill: #9EDAE5;
+}
 #barGraph .bar.musudan, #missileTypeBtns .musudan .check {
-	fill: #9FBAE3;
+	fill: #AEC7E8;
 }
 #barGraph .bar.nodong, #missileTypeBtns .nodong .check {
-	fill: #FD690F;
+	fill: #FF7F0E;
 }
 #barGraph .bar.polaris-1, #missileTypeBtns .polaris-1 .check {
-	fill: #FEAE65;
+	fill: #FFBB78;
 }
 #barGraph .bar.polaris-2, #missileTypeBtns .polaris-2 .check {
-	fill: #DA5CB6;
+	fill: #E377C2;
 }
 #barGraph .bar.scud-b, #missileTypeBtns .scud-b .check {
-	fill: #279221;
+	fill: #2CA02C;
 }
 #barGraph .bar.scud-b-marv, #missileTypeBtns .scud-b-marv .check {
-	fill: #D2D479;
+	fill: #DBDB8D;
 }
 #barGraph .bar.scud-c, #missileTypeBtns .scud-c .check {
-	fill: #89DC78;
+	fill: #98DF8A;
 }
 #barGraph .bar.scud-c-marv, #missileTypeBtns .scud-c-marv .check {
-	fill: #BBBBBB;
+	fill: #C7C7C7;
 }
 #barGraph .bar.taepodong-1, #missileTypeBtns .taepodong-1 .check {
-	fill: #CA0F1E;
+	fill: #D62728;
 }
 #barGraph .bar.unha, #missileTypeBtns .unha .check {
-	fill: #814EAF;
+	fill: #9467BD;
 }
 #barGraph .bar.unha-3, #missileTypeBtns .unha-3 .check {
-	fill: #B89FCB;
+	fill: #C5B0D5;
 }
 #barGraph .bar.unknown, #missileTypeBtns .unknown .check {
-	fill: #78433B;
+	fill: #8C564B;
 }
 #barGraph .successLabel text,#barGraph .failureLabel text,#barGraph .unknownLabel text {
 	fill: white;
@@ -453,18 +456,18 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 28px;
+	margin: 10px 23px;
 	padding: 0;
 	padding-bottom: 15px;
 	padding-top: 22px;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 630px;
+	width: 640px;
 	background: url('images/timelineBG.svg') 10px 0 no-repeat;
 }
 #history ul li {
-	width: 42px;
+	width: 40px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
@@ -473,6 +476,10 @@ Bar graph on left
 }
 #history ul li.narrow {
 	display: none;
+}
+#history ul li span {
+	margin-left: -5px;
+	margin-right: -5px;
 }
 #history .timeline #handle {
 	cursor: pointer;
@@ -828,18 +835,18 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 24px;
+		margin: 10px 23px;
 		padding: 0;
 		padding-bottom: 15px;
 		padding-top: 22px;
 		font-size: 10px;
-		width: 324px;
-		background: url('images/timelineBG_small.svg') 4px 0 no-repeat;
+		width: 320px;
+		background: url('images/timelineBG_small.svg') 1px 0 no-repeat;
 	}
 	#history ul li {
-		width: 21px;
+		width: 20px;
 		position: relative;
-		left: 4px;
+		left: 1px;
 	}
 	#history ul li.wide {
 		display: none;

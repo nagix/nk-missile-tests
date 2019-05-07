@@ -31,11 +31,11 @@ var d3Graphs = {
 	barWidth: 14,
 	barGraphTopPadding: 0,
 	barGraphBottomPadding: 75,
-	histogramWidth: [686, 371],
+	histogramWidth: [686, 366],
 	histogramHeight: 160,
 	histogramBarWidth: [28, 14],
-	histogramLeftPadding: 28,
-	histogramRightPadding: 28,
+	histogramLeftPadding: 23,
+	histogramRightPadding: 23,
 	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
@@ -47,8 +47,8 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [34, 24],
-	handleInterval: [42, 21],
+	handleLeftOffset: [28, 20],
+	handleInterval: [40, 20],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
@@ -58,7 +58,7 @@ var d3Graphs = {
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
-	selectedYearIndex: 14,
+	selectedYearIndex: 15,
 
 
 	setTest: function(test) {
@@ -160,7 +160,7 @@ var d3Graphs = {
 		$("#aboutContainer").toggle();
 	},
 	clickTimeline:function() {
-		var year = $(this).html();
+		var year = $(this).text();
 		if (year < 70) {
 			year = (year * 1) + 2000;
 		}
