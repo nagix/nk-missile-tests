@@ -1405,14 +1405,38 @@
 	}, {
 		"data": [{
 			"date": "2019-05-04",
-			"time": "unknown",
+			"time": "01:54 (UTC)",
 			"missile": "kn-23",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
-			"distance": "unknown",
-			"bearing": 90,
+			"distance": 200,
+			"bearing": 65,
 			"outcome": "success",
+			"description": "After 522 days since the previous missile test, North Korea carried out a test of a new solid fuel missile. Though the test does not violate North Korea's self-imposed missile testing moratorium, it does suggest it may be unwinding. The new missile was first publicly seen at a April 2017 parade and looks similar to an Iskander missile. The test was accompanied with several MLRS missile launches which created significant confusion in the immediate aftermath as to the number and types of missiles tested (the accompanying MLRS launches are too small for this dataset and are excluded). The range of the new missile is still unknown as is its name. This database records it as the KN-23, though this may later be revised after a new name is adopted."
+		}, {
+			"date": "2019-05-09",
+			"time": "unknown",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kusong",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": 420,
+			"bearing": 89,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2019-05-09",
+			"time": "unknown",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kusong",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": 270,
+			"bearing": 91,
+			"outcome": "unknown",
 			"description": ""
 		}],
 		"year": 2019

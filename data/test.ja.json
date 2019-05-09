@@ -1407,14 +1407,38 @@
 	}, {
 		"data": [{
 			"date": "2019-05-04",
-			"time": "unknown",
+			"time": "10:54 (JST)",
 			"missile": "kn-23",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
-			"distance": "unknown",
-			"bearing": 90,
+			"distance": 200,
+			"bearing": 65,
 			"outcome": "success",
+			"description": "前回の実験から522日が経過し、北朝鮮は新型固体燃料ミサイルの実験を実施した。この実験は、北朝鮮が自らに課したミサイル実験凍結を破るものではないが、逆戻りの兆候を窺わせる。新型ミサイルが初めて姿を現したのは2017年4月のパレードで、外見はイスカンデルミサイルによく似ている。実験は何発かのMLRSミサイル発射と同時に行われたため、使用されたミサイルの数と型式に関して直後に大きな混乱があった(同時に行われたMLRSの発射は本データベースに記録するには小さすぎるため除外)。新型ミサイルの射程、名称共々未だ不明である。本データベースではKN-23として記録しているが、新たな名称が採用された場合には改訂される可能性がある。"
+		}, {
+			"date": "2019-05-09",
+			"time": "unknown",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kusong",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": 420,
+			"bearing": 89,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2019-05-09",
+			"time": "unknown",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kusong",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": 270,
+			"bearing": 91,
+			"outcome": "unknown",
 			"description": ""
 		}],
 		"year": 2019
