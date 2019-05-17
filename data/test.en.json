@@ -1406,6 +1406,7 @@
 		"data": [{
 			"date": "2019-05-04",
 			"time": "01:54 (UTC)",
+			"series": 1,
 			"missile": "kn-23",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
@@ -1415,29 +1416,41 @@
 			"outcome": "success",
 			"description": "After 522 days since the previous missile test, North Korea carried out a test of a new solid fuel missile. Though the test does not violate North Korea's self-imposed missile testing moratorium, it does suggest it may be unwinding. The new missile was first publicly seen at a April 2017 parade and looks similar to an Iskander missile. The test was accompanied with several MLRS missile launches which created significant confusion in the immediate aftermath as to the number and types of missiles tested (the accompanying MLRS launches are too small for this dataset and are excluded). The range of the new missile is still unknown as is its name. This database records it as the KN-23, though this may later be revised after a new name is adopted."
 		}, {
-			"date": "2019-05-09",
-			"time": "unknown",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "kusong",
-			"landing": "sea-of-japan",
-			"apogee": "unknown",
-			"distance": 420,
-			"bearing": 89,
-			"outcome": "unknown",
-			"description": ""
-		}, {
-			"date": "2019-05-09",
+			"date": "2019-05-04",
 			"time": "unknown",
 			"series": 2,
-			"missile": "unknown",
-			"facility": "kusong",
-			"landing": "sea-of-japan",
+			"missile": "kn-23",
+			"facility": "hodo",
+			"landing": "unknown",
 			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "Reports following the test suggest North Korea launched two missiles. Photos released appeared to show one missile along with MLRS launches but later analysis seems to indicate there may actually have been two launches of the new missile. The US and South Korea have not provided any clarification on this."
+		}, {
+			"date": "2019-05-09",
+			"time": "07:29 (UTC)",
+			"series": 1,
+			"missile": "kn-23",
+			"facility": "baegun",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 420,
+			"bearing": 89,
+			"outcome": "success",
+			"description": "Reports suggest North Korea tested two missiles and rocket artillery, similar to the May 4 test, however it is unclear if two missiles or only one missile was tested. At least one of the missiles also appears to have flown a \"depressed\" trajectory, suggesting it was designed to evade US missile defense systems."
+		}, {
+			"date": "2019-05-09",
+			"time": "07:49 (UTC)",
+			"series": 2,
+			"missile": "kn-23",
+			"facility": "baegun",
+			"landing": "sea-of-japan",
+			"apogee": 50,
 			"distance": 270,
 			"bearing": 91,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "Reports suggest North Korea tested two missiles and rocket artillery, similar to the May 4 test, however it is unclear if two missiles or only one missile was tested. At least one of the missiles also appears to have flown a \"depressed\" trajectory, suggesting it was designed to evade US missile defense systems."
 		}],
 		"year": 2019
 	}]

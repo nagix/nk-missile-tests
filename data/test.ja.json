@@ -1408,6 +1408,7 @@
 		"data": [{
 			"date": "2019-05-04",
 			"time": "10:54 (JST)",
+			"series": 1,
 			"missile": "kn-23",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
@@ -1417,29 +1418,41 @@
 			"outcome": "success",
 			"description": "前回の実験から522日が経過し、北朝鮮は新型固体燃料ミサイルの実験を実施した。この実験は、北朝鮮が自らに課したミサイル実験凍結を破るものではないが、逆戻りの兆候を窺わせる。新型ミサイルが初めて姿を現したのは2017年4月のパレードで、外見はイスカンデルミサイルによく似ている。実験は何発かのMLRSミサイル発射と同時に行われたため、使用されたミサイルの数と型式に関して直後に大きな混乱があった(同時に行われたMLRSの発射は本データベースに記録するには小さすぎるため除外)。新型ミサイルの射程、名称共々未だ不明である。本データベースではKN-23として記録しているが、新たな名称が採用された場合には改訂される可能性がある。"
 		}, {
-			"date": "2019-05-09",
+			"date": "2019-05-04",
 			"time": "unknown",
+			"series": 2,
+			"missile": "kn-23",
+			"facility": "hodo",
+			"landing": "unknown",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "実験後の報告によれば、北朝鮮は2発のミサイルを発射した可能性がある。公開された写真では1発のミサイルがMLRSの発射と合わせて写っているが、その後の分析では新型ミサイルは実際には2発発射された可能性が指摘されている。米国および韓国からこれに関する説明は行われていない。"
+		}, {
+			"date": "2019-05-09",
+			"time": "16:29 (JST)",
 			"series": 1,
-			"missile": "unknown",
-			"facility": "kusong",
+			"missile": "kn-23",
+			"facility": "baegun",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": 420,
 			"bearing": 89,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "北朝鮮は5月4日と同様、2発のミサイルとロケット砲の実験を行なったとの報告がある。しかしながら、ミサイルが2発だったか1発のみだったかは明らかではない。少なくとも1発のミサイルは「ディプレスト」軌道を飛翔したと見られ、米国のミサイル防衛システムを回避しようとする意図があることがうかがわれる。"
 		}, {
 			"date": "2019-05-09",
-			"time": "unknown",
+			"time": "16:49 (JST)",
 			"series": 2,
-			"missile": "unknown",
-			"facility": "kusong",
+			"missile": "kn-23",
+			"facility": "baegun",
 			"landing": "sea-of-japan",
-			"apogee": "unknown",
+			"apogee": 50,
 			"distance": 270,
 			"bearing": 91,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "北朝鮮は5月4日と同様、2発のミサイルとロケット砲の実験を行なったとの報告がある。しかしながら、ミサイルが2発だったか1発のみだったかは明らかではない。少なくとも1発のミサイルは「ディプレスト」軌道を飛翔したと見られ、米国のミサイル防衛システムを回避しようとする意図があることがうかがわれる。"
 		}],
 		"year": 2019
 	}]

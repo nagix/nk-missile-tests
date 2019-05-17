@@ -22,6 +22,7 @@
 		"masikryong": {"name": "Masikryong", "lat": 39.065962, "lon": 127.250257},
 		"pyongyang": {"name": "Pyongyang International Airport", "lat": 39.200159, "lon": 125.673256},
 		"pyongsong": {"name": "Pyongsong Field", "lat": 39.282, "lon": 125.869},
+		"baegun": {"name": "Baegun", "lat": 40.029678, "lon": 125.227326},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
 	}
 }
