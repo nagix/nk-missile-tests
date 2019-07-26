@@ -1453,6 +1453,30 @@
 			"bearing": 91,
 			"outcome": "success",
 			"description": "北朝鮮は5月4日と同様、2発のミサイルとロケット砲の実験を行なったとの報告がある。しかしながら、ミサイルが2発だったか1発のみだったかは明らかではない。少なくとも1発のミサイルは「ディプレスト」軌道を飛翔したと見られ、米国のミサイル防衛システムを回避しようとする意図があることがうかがわれる。"
+		}, {
+			"date": "2019-07-25",
+			"time": "05:34 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "hodo",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 430,
+			"bearing": 78,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-07-25",
+			"time": "05:57 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "hodo",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 690,
+			"bearing": 78,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]

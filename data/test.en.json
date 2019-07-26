@@ -1451,6 +1451,30 @@
 			"bearing": 91,
 			"outcome": "success",
 			"description": "Reports suggest North Korea tested two missiles and rocket artillery, similar to the May 4 test, however it is unclear if two missiles or only one missile was tested. At least one of the missiles also appears to have flown a \"depressed\" trajectory, suggesting it was designed to evade US missile defense systems."
+		}, {
+			"date": "2019-07-24",
+			"time": "20:34 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "hodo",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 430,
+			"bearing": 78,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-07-24",
+			"time": "20:57 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "hodo",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 690,
+			"bearing": 78,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]
