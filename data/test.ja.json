@@ -1461,8 +1461,8 @@
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": 50,
-			"distance": 430,
-			"bearing": 78,
+			"distance": 600,
+			"bearing": 70,
 			"outcome": "success",
 			"description": ""
 		}, {
@@ -1473,8 +1473,8 @@
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": 50,
-			"distance": 690,
-			"bearing": 78,
+			"distance": 600,
+			"bearing": 70,
 			"outcome": "success",
 			"description": ""
 		}, {
@@ -1499,6 +1499,30 @@
 			"apogee": 30,
 			"distance": 250,
 			"bearing": 45,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-08-02",
+			"time": "02:59 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "yonghung",
+			"landing": "sea-of-japan",
+			"apogee": 25,
+			"distance": 220,
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-08-02",
+			"time": "03:23 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "yonghung",
+			"landing": "sea-of-japan",
+			"apogee": 25,
+			"distance": 220,
+			"bearing": 55,
 			"outcome": "success",
 			"description": ""
 		}],
