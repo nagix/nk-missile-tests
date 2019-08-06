@@ -1523,6 +1523,30 @@
 			"bearing": 55,
 			"outcome": "success",
 			"description": ""
+		}, {
+			"date": "2019-08-05",
+			"time": "20:24 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kwail",
+			"landing": "sea-of-japan",
+			"apogee": 37,
+			"distance": 450,
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-08-05",
+			"time": "20:36 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kwail",
+			"landing": "sea-of-japan",
+			"apogee": 37,
+			"distance": 450,
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]
