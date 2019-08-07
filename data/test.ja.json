@@ -1534,7 +1534,7 @@
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
-			"bearing": 70,
+			"bearing": 55,
 			"outcome": "success",
 			"description": ""
 		}, {
@@ -1546,7 +1546,7 @@
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
-			"bearing": 70,
+			"bearing": 55,
 			"outcome": "success",
 			"description": ""
 		}],
