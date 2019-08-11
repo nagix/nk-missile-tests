@@ -1549,6 +1549,30 @@
 			"bearing": 55,
 			"outcome": "success",
 			"description": ""
+		}, {
+			"date": "2019-08-10",
+			"time": "05:34 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": 48,
+			"distance": 400,
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-08-10",
+			"time": "05:50 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": 48,
+			"distance": 400,
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]
