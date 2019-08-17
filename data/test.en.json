@@ -1462,7 +1462,7 @@
 			"distance": 600,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "1 of 2 tests, the missile was launched from the Hodo Peninsula. The launches came less than a week after North Korea stated that continued US-ROK military exercises could jeopardize continued negotiations."
 		}, {
 			"date": "2019-07-24",
 			"time": "20:57 (UTC)",
@@ -1474,103 +1474,79 @@
 			"distance": 600,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-07-30",
-			"time": "20:06 (UTC)",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "wonsan",
-			"landing": "sea-of-japan",
-			"apogee": 30,
-			"distance": 250,
-			"bearing": 45,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-07-30",
-			"time": "20:27 (UTC)",
-			"series": 2,
-			"missile": "unknown",
-			"facility": "wonsan",
-			"landing": "sea-of-japan",
-			"apogee": 30,
-			"distance": 250,
-			"bearing": 45,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-08-01",
-			"time": "17:59 (UTC)",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "yonghung",
-			"landing": "sea-of-japan",
-			"apogee": 25,
-			"distance": 220,
-			"bearing": 55,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-08-01",
-			"time": "18:23 (UTC)",
-			"series": 2,
-			"missile": "unknown",
-			"facility": "yonghung",
-			"landing": "sea-of-japan",
-			"apogee": 25,
-			"distance": 220,
-			"bearing": 55,
-			"outcome": "success",
-			"description": ""
+			"description": "2 of 2 tests, the missile was launched from the Hodo Peninsula. The launches came less than a week after North Korea stated that continued US-ROK military exercises could jeopardize continued negotiations."
 		}, {
 			"date": "2019-08-05",
 			"time": "20:24 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "1 of 2 tests, the test came only a few days after a set of MLRS tests. The MLRS tests were of missiles too small to be included in this dataset. In a statement following the test, North Korea claimed continued US-ROK military exercises were why it carried out the tests. The missiles were fired from the southwest of North Korea in an eastern direction across the peninsula."
 		}, {
 			"date": "2019-08-05",
 			"time": "20:36 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "2 of 2 tests, the test came only a few days after a set of MLRS tests. The MLRS tests were of missiles too small to be included in this dataset. In a statement following the test, North Korea claimed continued US-ROK military exercises were why it carried out the tests. The missiles were fired from the southwest of North Korea in an eastern direction across the peninsula."
 		}, {
 			"date": "2019-08-09",
 			"time": "20:34 (UTC)",
 			"series": 1,
-			"missile": "unknown",
-			"facility": "hamhung",
+			"missile": "kn-25",
+			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "1 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS."
 		}, {
 			"date": "2019-08-09",
 			"time": "20:50 (UTC)",
 			"series": 2,
-			"missile": "unknown",
-			"facility": "hamhung",
+			"missile": "kn-25",
+			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "2 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS."
+		}, {
+			"date": "2019-08-15",
+			"time": "23:01 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 230,
+			"bearing": 34,
+			"outcome": "success",
+			"description": "2発の実験の内の1発目。"
+		}, {
+			"date": "2019-08-15",
+			"time": "23:16 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 230,
+			"bearing": 34,
+			"outcome": "success",
+			"description": "2発の実験の内の2発目。"
 		}],
 		"year": 2019
 	}]

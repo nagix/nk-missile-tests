@@ -1464,7 +1464,7 @@
 			"distance": 600,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の1発目。このミサイルは虎島(ホド)半島から発射された。この発射は、米韓軍事演習の継続が交渉の継続を危うくしかねないとする北朝鮮の声明から1週間も経たずに実施された。"
 		}, {
 			"date": "2019-07-25",
 			"time": "05:57 (JST)",
@@ -1476,103 +1476,79 @@
 			"distance": 600,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-07-31",
-			"time": "05:06 (JST)",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "wonsan",
-			"landing": "sea-of-japan",
-			"apogee": 30,
-			"distance": 250,
-			"bearing": 45,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-07-31",
-			"time": "05:27 (JST)",
-			"series": 2,
-			"missile": "unknown",
-			"facility": "wonsan",
-			"landing": "sea-of-japan",
-			"apogee": 30,
-			"distance": 250,
-			"bearing": 45,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-08-02",
-			"time": "02:59 (JST)",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "yonghung",
-			"landing": "sea-of-japan",
-			"apogee": 25,
-			"distance": 220,
-			"bearing": 55,
-			"outcome": "success",
-			"description": ""
-		}, {
-			"date": "2019-08-02",
-			"time": "03:23 (JST)",
-			"series": 2,
-			"missile": "unknown",
-			"facility": "yonghung",
-			"landing": "sea-of-japan",
-			"apogee": 25,
-			"distance": 220,
-			"bearing": 55,
-			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の2発目。このミサイルは虎島(ホド)半島から発射された。この発射は、米韓軍事演習の継続が交渉の継続を危うくしかねないとする北朝鮮の声明から1週間も経たずに実施された。"
 		}, {
 			"date": "2019-08-06",
 			"time": "05:24 (JST)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の1発目。この実験は複数回のMLRS実験からわずか数日後に実施された。なお、これらのMLRS実験は小型のミサイルによるものであるため本データベースに含めていない。実験後の声明によると、米韓軍事演習の継続によりこの実験が実施されたと北朝鮮は主張している。このミサイルは北朝鮮南西部から半島をまたいで東方向に発射された。"
 		}, {
 			"date": "2019-08-06",
 			"time": "05:36 (JST)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
 			"distance": 450,
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の2発目。この実験は複数回のMLRS実験からわずか数日後に実施された。なお、これらのMLRS実験は小型のミサイルによるものであるため本データベースに含めていない。実験後の声明によると、米韓軍事演習の継続によりこの実験が実施されたと北朝鮮は主張している。このミサイルは北朝鮮南西部から半島をまたいで東方向に発射された。"
 		}, {
 			"date": "2019-08-10",
 			"time": "05:34 (JST)",
 			"series": 1,
-			"missile": "unknown",
-			"facility": "hamhung",
+			"missile": "kn-25",
+			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の1発目。このミサイルは北朝鮮の東海岸から発射された。当初はさらなるKN-23の実験と思われたが、北朝鮮が公開した写真から米国のATACMSに酷似した新型のミサイルであることが確認された。"
 		}, {
 			"date": "2019-08-10",
 			"time": "05:50 (JST)",
 			"series": 2,
-			"missile": "unknown",
-			"facility": "hamhung",
+			"missile": "kn-25",
+			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "2発の実験の内の2発目。このミサイルは北朝鮮の東海岸から発射された。当初はさらなるKN-23の実験と思われたが、北朝鮮が公開した写真から米国のATACMSに酷似した新型のミサイルであることが確認された。"
+		}, {
+			"date": "2019-08-16",
+			"time": "08:01 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 230,
+			"bearing": 34,
+			"outcome": "success",
+			"description": "2発の実験の内の1発目。"
+		}, {
+			"date": "2019-08-16",
+			"time": "08:16 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 230,
+			"bearing": 34,
+			"outcome": "success",
+			"description": "2発の実験の内の2発目。"
 		}],
 		"year": 2019
 	}]

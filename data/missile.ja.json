@@ -5,6 +5,7 @@
 	"hwasong-15": {"name": "火星15号", "type": "ICBM"},
 	"kn-02": {"name": "KN-02", "type": "SRBM"},
 	"kn-23": {"name": "KN-23", "type": "SRBM"},
+	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "ムスダン", "type": "IRBM"},
 	"nodong": {"name": "ノドン", "type": "MRBM"},
 	"polaris-1": {"name": "北極星1号", "type": "SLBM"},

@@ -57,6 +57,7 @@ var missileColors = {
 	'hwasong-15' : 0x17BECF,
 	'kn-02': 0xB68982,
 	'kn-23': 0x9EDAE5,
+	'kn-25': 0xFF9896,
 	'musudan': 0xAEC7E8,
 	'nodong': 0xFF7F0E,
 	'polaris-1': 0xFFBB78,
