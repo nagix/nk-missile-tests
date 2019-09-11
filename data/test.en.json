@@ -1503,7 +1503,7 @@
 			"date": "2019-08-09",
 			"time": "20:34 (UTC)",
 			"series": 1,
-			"missile": "kn-25",
+			"missile": "kn-24",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
@@ -1515,7 +1515,7 @@
 			"date": "2019-08-09",
 			"time": "20:50 (UTC)",
 			"series": 2,
-			"missile": "kn-25",
+			"missile": "kn-24",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
@@ -1527,26 +1527,26 @@
 			"date": "2019-08-15",
 			"time": "23:01 (UTC)",
 			"series": 1,
-			"missile": "kn-25",
+			"missile": "kn-24",
 			"facility": "tongchon",
 			"landing": "sea-of-japan",
 			"apogee": 30,
 			"distance": 230,
 			"bearing": 34,
 			"outcome": "success",
-			"description": "2発の実験の内の1発目。"
+			"description": "1 of 2 tests."
 		}, {
 			"date": "2019-08-15",
 			"time": "23:16 (UTC)",
 			"series": 2,
-			"missile": "kn-25",
+			"missile": "kn-24",
 			"facility": "tongchon",
 			"landing": "sea-of-japan",
 			"apogee": 30,
 			"distance": 230,
 			"bearing": 34,
 			"outcome": "success",
-			"description": "2発の実験の内の2発目。"
+			"description": "2 of 2 tests."
 		}],
 		"year": 2019
 	}]
