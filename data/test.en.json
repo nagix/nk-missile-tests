@@ -1547,6 +1547,66 @@
 			"bearing": 34,
 			"outcome": "success",
 			"description": "2 of 2 tests."
+		}, {
+			"date": "2019-08-23",
+			"time": "21:45 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": 97,
+			"distance": 380,
+			"bearing": 68,
+			"outcome": "success",
+			"description": "1 of 2 tests."
+		}, {
+			"date": "2019-08-23",
+			"time": "22:02 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": 97,
+			"distance": 380,
+			"bearing": 68,
+			"outcome": "success",
+			"description": "2 of 2 tests."
+		}, {
+			"date": "2019-09-09",
+			"time": "21:53 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 330,
+			"bearing": 70,
+			"outcome": "success",
+			"description": "The test came only a few hours after North Korea stated it was willing to continue talks with the US and shortly before John Bolton found out on twitter he was fired. Reports from the ROK Joint Chiefs reported two missiles launched and tracked, images later released by DPRK state media however show evidence that it launched three missiles, suggesting one of the tests failed early in flight. As such, three entries are recorded for this test with the last being recorded as a failure. It is not clear exactly what time the failed launch took place. (1 of 3 tests)"
+		}, {
+			"date": "2019-09-09",
+			"time": "22:12 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 330,
+			"bearing": 70,
+			"outcome": "success",
+			"description": "The test came only a few hours after North Korea stated it was willing to continue talks with the US and shortly before John Bolton found out on twitter he was fired. Reports from the ROK Joint Chiefs reported two missiles launched and tracked, images later released by DPRK state media however show evidence that it launched three missiles, suggesting one of the tests failed early in flight. As such, three entries are recorded for this test with the last being recorded as a failure. It is not clear exactly what time the failed launch took place. (2 of 3 tests)"
+		}, {
+			"date": "2019-09-09",
+			"time": "unknown",
+			"series": 3,
+			"missile": "kn-25",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": "The test came only a few hours after North Korea stated it was willing to continue talks with the US and shortly before John Bolton found out on twitter he was fired. Reports from the ROK Joint Chiefs reported two missiles launched and tracked, images later released by DPRK state media however show evidence that it launched three missiles, suggesting one of the tests failed early in flight. As such, three entries are recorded for this test with the last being recorded as a failure. It is not clear exactly what time the failed launch took place. (3 of 3 tests)"
 		}],
 		"year": 2019
 	}]

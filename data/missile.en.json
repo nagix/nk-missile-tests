@@ -6,6 +6,7 @@
 	"kn-02": {"name": "KN-02", "type": "SRBM"},
 	"kn-23": {"name": "KN-23", "type": "SRBM"},
 	"kn-24": {"name": "KN-24", "type": "SRBM"},
+	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "Musudan", "type": "IRBM"},
 	"nodong": {"name": "Nodong", "type": "MRBM"},
 	"polaris-1": {"name": "Polaris-1", "type": "SLBM"},

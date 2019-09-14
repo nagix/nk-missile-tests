@@ -386,6 +386,9 @@ Bar graph on left
 #barGraph .bar.kn-24, #missileTypeBtns .kn-24 .check {
 	fill: #FF9896;
 }
+#barGraph .bar.kn-25, #missileTypeBtns .kn-25 .check {
+	fill: #FF643D;
+}
 #barGraph .bar.musudan, #missileTypeBtns .musudan .check {
 	fill: #AEC7E8;
 }

@@ -58,6 +58,7 @@ var missileColors = {
 	'kn-02': 0xB68982,
 	'kn-23': 0x9EDAE5,
 	'kn-24': 0xFF9896,
+	'kn-25': 0xFF643D,
 	'musudan': 0xAEC7E8,
 	'nodong': 0xFF7F0E,
 	'polaris-1': 0xFFBB78,
