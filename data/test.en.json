@@ -860,7 +860,7 @@
 		}, {
 			"date": "2015-05-08",
 			"time": "unknown",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "unknown",
 			"apogee": "unknown",
@@ -871,7 +871,7 @@
 		}, {
 			"date": "2015-11-28",
 			"time": "unknown",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "na",
 			"apogee": "na",
@@ -882,7 +882,7 @@
 		}, {
 			"date": "2015-12-21",
 			"time": "unknown",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "na",
 			"apogee": "na",
@@ -966,7 +966,7 @@
 		}, {
 			"date": "2016-04-23",
 			"time": "09:29 (UTC)",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "unknown",
 			"apogee": "unknown",
@@ -1034,7 +1034,7 @@
 		}, {
 			"date": "2016-07-09",
 			"time": "02:28 (UTC)",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "sea-of-japan",
 			"apogee": 10,
@@ -1104,7 +1104,7 @@
 		}, {
 			"date": "2016-08-23",
 			"time": "20:29 (UTC)",
-			"missile": "polaris-1",
+			"missile": "pukguksong-1",
 			"facility": "sinpo",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
@@ -1169,21 +1169,21 @@
 			"distance": "unknown",
 			"bearing": 90,
 			"outcome": "failure",
-			"description": "Similar to the previous test, this missile also exploded shortly after launch. The missile is presumed to have also been a Musudan but it is impossible to rule out the chance that this and/or the test just prior to it were tests of the KN-08 an ICBM, the Polaris-2, or some other new missile North Korea is developing. Satellite images of the airbase show two large scorch marks on the runway seeming to indicate explosions."
+			"description": "Similar to the previous test, this missile also exploded shortly after launch. The missile is presumed to have also been a Musudan but it is impossible to rule out the chance that this and/or the test just prior to it were tests of the KN-08 an ICBM, the Pukguksong-2, or some other new missile North Korea is developing. Satellite images of the airbase show two large scorch marks on the runway seeming to indicate explosions."
 		}],
 		"year": 2016
 	}, {
 		"data": [{
 			"date": "2017-02-11",
 			"time": "22:55 (UTC)",
-			"missile": "polaris-2",
+			"missile": "pukguksong-2",
 			"facility": "kusong",
 			"landing": "sea-of-japan",
 			"apogee": 550,
 			"distance": 500,
 			"bearing": 90,
 			"outcome": "success",
-			"description": "This was the first known test of a land based version of the Polaris-1. The missile is solid fueled which means it is much easier to launch on short notice. This missile was tested only a few kilometers away from the failed October tests prompting speculation those tests were of this missile system."
+			"description": "This was the first known test of a land based version of the Pukguksong-1. The missile is solid fueled which means it is much easier to launch on short notice. This missile was tested only a few kilometers away from the failed October tests prompting speculation those tests were of this missile system."
 		}, {
 			"date": "2017-03-05",
 			"time": "22:34 (UTC)",
@@ -1290,7 +1290,7 @@
 		}, {
 			"date": "2017-05-21",
 			"time": "07:59 (UTC)",
-			"missile": "polaris-2",
+			"missile": "pukguksong-2",
 			"facility": "lake-yonpung",
 			"landing": "sea-of-japan",
 			"apogee": 560,
@@ -1610,14 +1610,14 @@
 		}, {
 			"date": "2019-10-01",
 			"time": "22:11 (UTC)",
-			"missile": "unknown",
-			"facility": "wonsan",
+			"missile": "pukguksong-3",
+			"facility": "yonghung",
 			"landing": "sea-of-japan",
 			"apogee": "910",
 			"distance": "450",
 			"bearing": 90,
 			"outcome": "success",
-			"description": ""
+			"description": "Test of new SLBM. The missile appears to have been launched from an underwater barge. The exact location is not clear but it appears to have been launched off the coast of Wonsan, the site of many other missile tests. North Korea has carried out successful tests from submarines in the past and future tests of this system would likely involve using a submarine as the launch platform. The missile was launched on a lofted trajectory. David Wright estimates that if it been launched to maximize distance it likely could have flown for approx 1,900 km."
 		}],
 		"year": 2019
 	}]

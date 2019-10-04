@@ -378,7 +378,7 @@ Bar graph on left
 	fill: #17BECF;
 }
 #barGraph .bar.kn-02, #missileTypeBtns .kn-02 .check {
-	fill: #B68982;
+	fill: #C49C94;
 }
 #barGraph .bar.kn-23, #missileTypeBtns .kn-23 .check {
 	fill: #9EDAE5;
@@ -387,7 +387,7 @@ Bar graph on left
 	fill: #FF9896;
 }
 #barGraph .bar.kn-25, #missileTypeBtns .kn-25 .check {
-	fill: #FF643D;
+	fill: #FF6741;
 }
 #barGraph .bar.musudan, #missileTypeBtns .musudan .check {
 	fill: #AEC7E8;
@@ -395,10 +395,13 @@ Bar graph on left
 #barGraph .bar.nodong, #missileTypeBtns .nodong .check {
 	fill: #FF7F0E;
 }
-#barGraph .bar.polaris-1, #missileTypeBtns .polaris-1 .check {
-	fill: #FFBB78;
+#barGraph .bar.pukguksong-1, #missileTypeBtns .pukguksong-1 .check {
+	fill: #8C564B;
 }
-#barGraph .bar.polaris-2, #missileTypeBtns .polaris-2 .check {
+#barGraph .bar.pukguksong-2, #missileTypeBtns .pukguksong-2 .check {
+	fill: #C49C94;
+}
+#barGraph .bar.pukguksong-3, #missileTypeBtns .pukguksong-3 .check {
 	fill: #E377C2;
 }
 #barGraph .bar.scud-b, #missileTypeBtns .scud-b .check {
@@ -637,7 +640,7 @@ Bar graph on left
 
 /* missile type buttons (bottom right)*/
 #missileTypeBtns {
-	width: 130px;
+	width: 142px;
 	position: absolute;
 	color: white;
 	display: none;
@@ -662,7 +665,7 @@ Bar graph on left
 }
 #missileTypeBtns .label {
 	float: left;
-	width: 98px;
+	width: 110px;
 	height: 18px;
 	text-transform: uppercase;
 	font-family: 'Roboto';
@@ -767,9 +770,9 @@ Bar graph on left
 		left: -340px;
 	}
 	#missileTypeBtns {
-		right: -130px;
+		right: -142px;
 		top: 180px;
-		width: 150px;
+		width: 162px;
 		background-color: rgba(43,43,43,0.9);
 		padding: 10px 0 6px 0;
 	}

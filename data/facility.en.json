@@ -27,7 +27,8 @@
 		"hungnam": {"name": "Hungnam", "lat": 39.811611, "lon": 127.66375},
 		"tongchon": {"name": "Tongchon", "lat": 38.953797, "lon": 127.891882},
 		"sondok": {"name": "Sondok Airbase", "lat": 39.7437, "lon": 127.4732},
-		"kaechon": {"name": "kaechon Airbase", "lat": 39.752321, "lon": 125.899905},
+		"kaechon": {"name": "Kaechon Airbase", "lat": 39.752321, "lon": 125.899905},
+		"yonghung": {"name": "Yonghung Bay", "lat": 39.26, "lon": 127.58},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
 	}
 }
