@@ -1618,6 +1618,30 @@
 			"bearing": 90,
 			"outcome": "success",
 			"description": "Test of new SLBM. The missile appears to have been launched from an underwater barge. The exact location is not clear but it appears to have been launched off the coast of Wonsan, the site of many other missile tests. North Korea has carried out successful tests from submarines in the past and future tests of this system would likely involve using a submarine as the launch platform. The missile was launched on a lofted trajectory. David Wright estimates that if it been launched to maximize distance it likely could have flown for approx 1,900 km."
+		}, {
+			"date": "2019-10-31",
+			"time": "07:35 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "370",
+			"bearing": 68,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-10-31",
+			"time": "07:38 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "370",
+			"bearing": 68,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]

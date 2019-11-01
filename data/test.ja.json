@@ -1620,6 +1620,30 @@
 			"bearing": 90,
 			"outcome": "success",
 			"description": "新型のSLBMの実験であり、ミサイルは水面下のはしけから発射されたとみられる。正確な発射位置は不明だが、他の多くのミサイル実験が行われた元山(ウォンサン)沿岸からの発射と思われる。北朝鮮は過去に潜水艦から発射実験を成功させており、このシステムの今後の実験は潜水艦を発射プラットフォームとして使用する可能性が高い。このミサイルはロフテッド軌道で発射された。デビッド・ライトはもしこれが最大射程で発射されると、約1,900km飛行すると推定している。"
+		}, {
+			"date": "2019-10-31",
+			"time": "16:35 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "370",
+			"bearing": 68,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2019-10-31",
+			"time": "16:38 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "370",
+			"bearing": 68,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2019
 	}]
