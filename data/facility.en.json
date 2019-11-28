@@ -29,6 +29,7 @@
 		"sondok": {"name": "Sondok Airbase", "lat": 39.7437, "lon": 127.4732},
 		"kaechon": {"name": "Kaechon Airbase", "lat": 39.752321, "lon": 125.899905},
 		"yonghung": {"name": "Yonghung Bay", "lat": 39.26, "lon": 127.58},
+		"yonpo": {"name": "Yonpo", "lat": 39.790556, "lon": 127.535278},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
 	}
 }

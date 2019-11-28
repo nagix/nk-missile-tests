@@ -1629,7 +1629,7 @@
 			"distance": "370",
 			"bearing": 68,
 			"outcome": "success",
-			"description": ""
+			"description": "It is not clear where this test took place. South Korea reported it as \"from areas in the city of Sunchon, South Pyongan Province\". There's an airbase in that area which could be the location given that North Korea has used them, and this one specifically, as launch sites in the past. If more precise location information becomes available this may be changed. Perhaps most notable about this test is how much North Korea appears to have downplayed it. Kim Jong Un was not reported to have attended the test as he has in the past and few photos were released (making it an especially challenging geolocation puzzle). Given the date of the test, the timing makes this the spookiest DPRK missile test to date. (1 of 2 tests)"
 		}, {
 			"date": "2019-10-31",
 			"time": "07:38 (UTC)",
@@ -1639,6 +1639,31 @@
 			"landing": "sea-of-japan",
 			"apogee": "90",
 			"distance": "370",
+			"bearing": 68,
+			"outcome": "success",
+			"description": "It is not clear where this test took place. South Korea reported it as \"from areas in the city of Sunchon, South Pyongan Province\". There's an airbase in that area which could be the location given that North Korea has used them, and this one specifically, as launch sites in the past. If more precise location information becomes available this may be changed. Perhaps most notable about this test is how much North Korea appears to have downplayed it. Kim Jong Un was not reported to have attended the test as he has in the past and few photos were released (making it an especially challenging geolocation puzzle). Given the date of the test, the timing makes this the spookiest DPRK missile test to date. (2 of 2 tests)"
+		}, {
+			"date": "2019-11-28",
+			"time": "07:59 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "yonpo",
+			"landing": "sea-of-japan",
+			"apogee": "97",
+			"distance": "380",
+			"bearing": 68,
+			"outcome": "success",
+			"description": ""
+
+		}, {
+			"date": "2019-11-28",
+			"time": "07:59 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "yonpo",
+			"landing": "sea-of-japan",
+			"apogee": "97",
+			"distance": "380",
 			"bearing": 68,
 			"outcome": "success",
 			"description": ""
