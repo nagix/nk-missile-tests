@@ -474,7 +474,7 @@ var d3Graphs = {
 			.attr('class', 'outcome')
 			.merge(outcomeBars)
 			.attr('transform', function(d, i) {
-				return 'translate(' + (d3Graphs.histogramXScale(i) + size(d3Graphs.histogramLeftPadding)) + ',' + d3Graphs.histogramVertPadding + ')';
+				return 'translate(' + (d3Graphs.histogramXScale(i) + histogramLeftPadding) + ',' + d3Graphs.histogramVertPadding + ')';
 			});
 
 		var outcomeRects = outcomeBars.selectAll("rect.outcome").data(function(d) { return d; });
@@ -503,7 +503,7 @@ var d3Graphs = {
 			.attr('class', 'yearLabel')
 			.attr('text-anchor', 'middle')
 			.merge(yearLabels).transition()
-			.attr('x', this.histogramLeftPadding + this.histogramXScale(this.selectedYearIndex) + handleInterval / 2)
+			.attr('x', histogramLeftPadding + this.histogramXScale(this.selectedYearIndex) + handleInterval / 2)
 			.attr('y', function(d, i) {
 				if (i == 0) {
 					d3Graphs.cumOutcomeY = 0;
