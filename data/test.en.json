@@ -1654,7 +1654,6 @@
 			"bearing": 68,
 			"outcome": "success",
 			"description": "North Korea launched two large-calibar MLRS rockets on Thanksgiving 2019. Noteably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Phtographs later revelaed the location of the test to be Yonpo Airport. 1 of 2."
-
 		}, {
 			"date": "2019-11-28",
 			"time": "07:59 (UTC)",
@@ -1669,5 +1668,68 @@
 			"description": "North Korea launched two large-calibar MLRS rockets on Thanksgiving 2019. Noteably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Phtographs later revelaed the location of the test to be Yonpo Airport. 2 of 2."
 		}],
 		"year": 2019
+	}, {
+		"data": [{
+			"date": "2020-03-02",
+			"time": "03:37 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sangum-ri",
+			"landing": "sea-of-japan",
+			"apogee": "35",
+			"distance": "240",
+			"bearing": 40,
+			"outcome": "success",
+			"description": "North Korea's first test of 2020. The test coincided with a large scale military exercise in the area. Images show the tests were overseen by Kim Jong Un. The two KN-25 missiles were reportedly launched within twenty seconds of each other. It is not clear if an additional KN-25 missile was also tested in addition to these. The tests also involved the launching of multiple, much shorter range missiles which are not included in this database. (1 of 2)"
+		}, {
+			"date": "2020-03-02",
+			"time": "03:37 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sangum-ri",
+			"landing": "sea-of-japan",
+			"apogee": "35",
+			"distance": "240",
+			"bearing": 40,
+			"outcome": "success",
+			"description": "North Korea's first test of 2020. The test coincided with a large scale military exercise in the area. Images show the tests were overseen by Kim Jong Un. The two KN-25 missiles were reportedly launched within twenty seconds of each other. It is not clear if an additional KN-25 missile was also tested in addition to these. The tests also involved the launching of multiple, much shorter range missiles which are not included in this database. (2 of 2)"
+		}, {
+			"date": "2020-03-08",
+			"time": "22:36 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2020-03-08",
+			"time": "22:36 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2020-03-08",
+			"time": "22:37 (UTC)",
+			"series": 3,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}],
+		"year": 2020
 	}]
 }

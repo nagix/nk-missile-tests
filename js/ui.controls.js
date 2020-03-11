@@ -34,8 +34,8 @@ var d3Graphs = {
 	histogramWidth: [686, 366],
 	histogramHeight: 160,
 	histogramBarWidth: [28, 14],
-	histogramLeftPadding: 23,
-	histogramRightPadding: 23,
+	histogramLeftPadding: [28.5, 21.5],
+	histogramRightPadding: [28.5, 21.5],
 	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
@@ -47,8 +47,8 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [28, 20],
-	handleInterval: [40, 20],
+	handleLeftOffset: [32, 16],
+	handleInterval: [37, 19],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
@@ -58,7 +58,7 @@ var d3Graphs = {
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
-	selectedYearIndex: 15,
+	selectedYearIndex: 16,
 
 
 	setTest: function(test) {
@@ -369,13 +369,13 @@ var d3Graphs = {
 		if(d == null) {
 			return null;
 		}
-		return d3Graphs.histogramXScale(d.x) + d3Graphs.histogramLeftPadding;
+		return d3Graphs.histogramXScale(d.x) + size(d3Graphs.histogramLeftPadding);
 	 })
 	.y(function(d) {
 		if(d == null) {
 			return null;
 		}
-		return d3Graphs.histogramYScale(d.y) + d3Graphs.histogramVertPadding;
+		return d3Graphs.histogramYScale(d.y) + size(d3Graphs.histogramVertPadding);
 	}),
 	setHistogramData:function() {
 		var outcomeArray = [];
@@ -400,6 +400,10 @@ var d3Graphs = {
 	drawHistogram:function() {
 		var histogramWidth = size(this.histogramWidth);
 		var histogramBarWidth = size(this.histogramBarWidth);
+		var histogramLeftPadding = size(this.histogramLeftPadding);
+		var histogramRightPadding = size(this.histogramRightPadding);
+		var handleInterval = size(this.handleInterval);
+
 		if(this.histogramSVG == null) {
 			this.histogramSVG = d3.select('#history .container').append('svg')
 				.attr('id', 'histogram');
@@ -411,7 +415,7 @@ var d3Graphs = {
 
 		this.histogramYScale = d3.scaleLinear().domain([0, this.histogramAbsMax]).range([0, this.histogramHeight - this.histogramVertPadding*2]);
 		var maxX = summary.historical.length;
-		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, histogramWidth - this.histogramLeftPadding - this.histogramRightPadding]);
+		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, histogramWidth - histogramLeftPadding - histogramRightPadding]);
 
 		var tickData = this.histogramYScale.ticks(5);
 
@@ -420,11 +424,11 @@ var d3Graphs = {
 		ticks.enter().append('svg:line')
 			.attr('class', 'tick')
 			.merge(ticks)
-			.attr('x1', this.histogramLeftPadding)
+			.attr('x1', histogramLeftPadding)
 			.attr('y1', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
 			})
-			.attr('x2', histogramWidth - this.histogramRightPadding)
+			.attr('x2', histogramWidth - histogramRightPadding)
 			.attr('y2', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d);
 			})
@@ -438,7 +442,7 @@ var d3Graphs = {
 			.attr('class', 'tickLbl tickLblLeft')
 			.attr('text-anchor', 'end')
 			.merge(tickLabels)
-			.attr('x', d3Graphs.histogramLeftPadding - 3)
+			.attr('x', histogramLeftPadding - 3)
 			.attr('y', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
 			})
@@ -449,7 +453,7 @@ var d3Graphs = {
 		tickLabelsRight.enter().append('svg:text')
 			.attr('class', 'tickLbl tickLblRight')
 			.merge(tickLabelsRight)
-			.attr('x', histogramWidth - d3Graphs.histogramRightPadding + 3)
+			.attr('x', histogramWidth - histogramRightPadding + 3)
 			.attr('y', function(d) {
 				return d3Graphs.histogramHeight - d3Graphs.histogramVertPadding - d3Graphs.histogramYScale(d) + 4;
 			})
@@ -470,14 +474,14 @@ var d3Graphs = {
 			.attr('class', 'outcome')
 			.merge(outcomeBars)
 			.attr('transform', function(d, i) {
-				return 'translate(' + (d3Graphs.histogramXScale(i) + d3Graphs.histogramLeftPadding) + ',' + d3Graphs.histogramVertPadding + ')';
+				return 'translate(' + (d3Graphs.histogramXScale(i) + size(d3Graphs.histogramLeftPadding)) + ',' + d3Graphs.histogramVertPadding + ')';
 			});
 
 		var outcomeRects = outcomeBars.selectAll("rect.outcome").data(function(d) { return d; });
 		outcomeRects.enter().append('rect')
 			.attr('class', function(d) { return 'outcome ' + d.type; })
 			.merge(outcomeRects).transition()
-			.attr('x', histogramBarWidth / 4)
+			.attr('x', (handleInterval - histogramBarWidth) / 2)
 			.attr('y', function(d, i) {
 				if (i == 0) {
 					d3Graphs.cumOutcomeY = 0;
@@ -499,7 +503,7 @@ var d3Graphs = {
 			.attr('class', 'yearLabel')
 			.attr('text-anchor', 'middle')
 			.merge(yearLabels).transition()
-			.attr('x', this.histogramLeftPadding + this.histogramXScale(this.selectedYearIndex) + histogramBarWidth * 3 / 4)
+			.attr('x', this.histogramLeftPadding + this.histogramXScale(this.selectedYearIndex) + handleInterval / 2)
 			.attr('y', function(d, i) {
 				if (i == 0) {
 					d3Graphs.cumOutcomeY = 0;
@@ -627,7 +631,7 @@ var d3Graphs = {
 			return d3.interpolateRound(14, 28)(min == max ? 1 : (v - min) / (max - min));
 		}
 		var smallLabelSize = 22;
-		var mediumLabelSize = 40;
+		var mediumLabelSize = 37;
 
 		//success labels
 		var successLabels = this.barGraphSVG.selectAll('g.successLabel').data(successArray);

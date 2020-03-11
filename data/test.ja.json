@@ -1672,5 +1672,68 @@
 			"description": "北朝鮮は2019年の感謝祭の日に2発の大口径MLRSロケットを発射した。特筆すべき点は、2発のミサイルは30秒以内の間隔で発射されており、これに先立つ2019年のハロウィンの日に行われた実験の3分間隔から進歩していることである。事後に公開された写真から、実験の場所は連浦(ヨンポ)空港であることが明らかになった。(2発の実験の内の2発目)"
 		}],
 		"year": 2019
+	}, {
+		"data": [{
+			"date": "2020-03-02",
+			"time": "12:37 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sangum-ri",
+			"landing": "sea-of-japan",
+			"apogee": "35",
+			"distance": "240",
+			"bearing": 40,
+			"outcome": "success",
+			"description": "北朝鮮による2020年の最初の実験。実験は大規模軍事演習のエリアで同時に行われた。金正恩が実験を視察したことが、画像から明らかになった。2発のKN-25ミサイルが20秒間隔で発射されたことが報告されている。この2発の発射に加えて追加のKN-25ミサイルの実験があったかどうかは不明である。この実験では、複数のより短射程のミサイルの発射も行われたが、本データベースには含まれていない。(1 of 2)"
+		}, {
+			"date": "2020-03-02",
+			"time": "12:37 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sangum-ri",
+			"landing": "sea-of-japan",
+			"apogee": "35",
+			"distance": "240",
+			"bearing": 40,
+			"outcome": "success",
+			"description": "北朝鮮による2020年の最初の実験。実験は大規模軍事演習のエリアで同時に行われた。金正恩が実験を視察したことが、画像から明らかになった。2発のKN-25ミサイルが20秒間隔で発射されたことが報告されている。この2発の発射に加えて追加のKN-25ミサイルの実験があったかどうかは不明である。この実験では、複数のより短射程のミサイルの発射も行われたが、本データベースには含まれていない。(1 of 2)"
+		}, {
+			"date": "2020-03-09",
+			"time": "07:36 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2020-03-09",
+			"time": "07:36 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2020-03-09",
+			"time": "07:37 (JST)",
+			"series": 3,
+			"missile": "kn-25",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "200",
+			"bearing": 55,
+			"outcome": "success",
+			"description": ""
+		}],
+		"year": 2020
 	}]
 }

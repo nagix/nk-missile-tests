@@ -99,14 +99,14 @@ li {
 
 #dataviz {
 	background-color: #000000;
-	margin: 0px;
+	margin: 0;
 	overflow-y: hidden;
 	overflow-x: auto;
 }
 #overlay_2d{
 	-webkit-perspective: 800;
 	position: absolute;
-	margin: 0px;
+	margin: 0;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
@@ -122,10 +122,10 @@ li {
 	-moz-user-select: -moz-none;
 	-khtml-user-select: none;
 	-webkit-user-select none;
-	margin: 0px;
-	border: 0px;
-	border-spacing: 0px;
-	padding: 0px;
+	margin: 0;
+	border: 0;
+	border-spacing: 0;
+	padding: 0;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -139,15 +139,15 @@ li {
 }
 
 .marker td {
-	padding: 0px;
+	padding: 0;
 }
 
 .marker .close {
 	width: 8px;
 	height: 8px;
 	background: url('images/close.svg') 0 0 no-repeat;
-	margin-right: 0px;
-	margin-top: 0px;
+	margin-right: 0;
+	margin-top: 0;
 	float: right;
 	cursor: pointer;
 	pointer-events: auto;
@@ -259,7 +259,7 @@ Elements to control the title and test selector
 #hudHeader h1 {
 	font-size: 32px;
 	font-family: 'RopaSans';
-	margin: 0 0 0px 0;
+	margin: 0;
 	display: block;
 	float: left;
 }
@@ -282,7 +282,7 @@ Elements to control the title and test selector
 	float: right;
 	font-size: 17px;
 	width: 300px;
-	margin: 0px 0px 4px 8px;
+	margin: 0 0 4px 8px;
 	font-family: 'RopaSans';
 	text-transform: uppercase;
 }
@@ -296,7 +296,7 @@ Elements to control the title and test selector
 	font-size: 18px;
 	font-family: 'RopaSans';
 	cursor: pointer;
-	margin: 0px 0px 4px 8px;
+	margin: 0 0 4px 8px;
 	opacity: 0.9;
 	-webkit-appearance: none;
 }
@@ -465,18 +465,18 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 23px;
+	margin: 10px 28.5px;
 	padding: 0;
 	padding-bottom: 15px;
 	padding-top: 22px;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 640px;
-	background: url('images/timelineBG.svg') 10px 0 no-repeat;
+	width: 629px;
+	background: url('images/timelineBG.svg') 8.5px 0 no-repeat;
 }
 #history ul li {
-	width: 40px;
+	width: 37px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
@@ -494,7 +494,7 @@ Bar graph on left
 	cursor: pointer;
 	width: 36px;
 	height: 36px;
-	background: url('images/yearHandle.png') 0px 0 no-repeat;
+	background: url('images/yearHandle.png') 0 0 no-repeat;
 	position: absolute;
 	bottom: 20px;
 	left: 622px;
@@ -844,16 +844,16 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 23px;
+		margin: 10px 21.5px;
 		padding: 0;
 		padding-bottom: 15px;
 		padding-top: 22px;
 		font-size: 10px;
-		width: 320px;
-		background: url('images/timelineBG_small.svg') 1px 0 no-repeat;
+		width: 323px;
+		background: url('images/timelineBG_small.svg') 0 0 no-repeat;
 	}
 	#history ul li {
-		width: 20px;
+		width: 19px;
 		position: relative;
 		left: 1px;
 	}
@@ -864,7 +864,7 @@ Bar graph on left
 		display: block;
 	}
 	#history .timeline #handle {
-		background: url('images/yearHandle.png') 0px 0 no-repeat;
+		background: url('images/yearHandle.png') 0 0 no-repeat;
 		left: 318px;
 	}
 	#history .labels .outcome {
@@ -886,7 +886,7 @@ Bar graph on left
 		padding: 6px 0 4px 0;
 	}
 	#missileTypeBtns>div>div {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 	#missileTypeBtnHandle {
 		height: 418px;

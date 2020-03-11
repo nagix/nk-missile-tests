@@ -30,6 +30,7 @@
 		"kaechon": {"name": "Kaechon Airbase", "lat": 39.752321, "lon": 125.899905},
 		"yonghung": {"name": "Yonghung Bay", "lat": 39.26, "lon": 127.58},
 		"yonpo": {"name": "Yonpo Airport", "lat": 39.78938, "lon": 127.53993},
+		"sangum-ri": {"name": "Sangum-ri", "lat": 39.141, "lon": 127.616},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
 	}
 }
