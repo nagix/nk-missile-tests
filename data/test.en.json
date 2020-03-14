@@ -1552,7 +1552,7 @@
 			"time": "21:45 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
-			"facility": "sondok",
+			"facility": "sondok-ab",
 			"landing": "sea-of-japan",
 			"apogee": 97,
 			"distance": 380,
@@ -1564,7 +1564,7 @@
 			"time": "22:02 (UTC)",
 			"series": 2,
 			"missile": "kn-25",
-			"facility": "sondok",
+			"facility": "sondok-ab",
 			"landing": "sea-of-japan",
 			"apogee": 97,
 			"distance": 380,
@@ -1653,7 +1653,7 @@
 			"distance": "380",
 			"bearing": 68,
 			"outcome": "success",
-			"description": "North Korea launched two large-calibar MLRS rockets on Thanksgiving 2019. Noteably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Phtographs later revelaed the location of the test to be Yonpo Airport. 1 of 2."
+			"description": "North Korea launched two large-caliber MLRS rockets on Thanksgiving 2019. Notably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Photographs later revealed the location of the test to be Yonpo Airport. 1 of 2."
 		}, {
 			"date": "2019-11-28",
 			"time": "07:59 (UTC)",
@@ -1665,7 +1665,7 @@
 			"distance": "380",
 			"bearing": 68,
 			"outcome": "success",
-			"description": "North Korea launched two large-calibar MLRS rockets on Thanksgiving 2019. Noteably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Phtographs later revelaed the location of the test to be Yonpo Airport. 2 of 2."
+			"description": "North Korea launched two large-caliber MLRS rockets on Thanksgiving 2019. Notably, the two missiles were launched within 30 seconds of each other, a step up from the three minutes on the Halloween test earlier in 2019. Photographs later revealed the location of the test to be Yonpo Airport. 2 of 2."
 		}],
 		"year": 2019
 	}, {
@@ -1704,7 +1704,7 @@
 			"distance": "200",
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "The exact location of the test is unknown, it appears to be near the beach by Sondok Airport, the site of a previous test of the system. The test was accompanied by smaller MLRS launches, some of which may have been mistaken for KN-25 launches. The number and type of missiles launched is currently disputed with the ROK stating 3 missiles matching the KN-25 flight pattern were launched whereas the US stated as many as 5 were launched. Images appear to show at least two KN-25 missiles launched. This entry may be updated as new information is released. The missiles appear to have been aimed at a small island in the East Sea (potentially located at 40.646, 129.547) but it is not clear if these missiles or other projectiles impacted it. (1 of 3)"
 		}, {
 			"date": "2020-03-08",
 			"time": "22:36 (UTC)",
@@ -1716,7 +1716,7 @@
 			"distance": "200",
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "The exact location of the test is unknown, it appears to be near the beach by Sondok Airport, the site of a previous test of the system. The test was accompanied by smaller MLRS launches, some of which may have been mistaken for KN-25 launches. The number and type of missiles launched is currently disputed with the ROK stating 3 missiles matching the KN-25 flight pattern were launched whereas the US stated as many as 5 were launched. Images appear to show at least two KN-25 missiles launched. This entry may be updated as new information is released. The missiles appear to have been aimed at a small island in the East Sea (potentially located at 40.646, 129.547) but it is not clear if these missiles or other projectiles impacted it. (2 of 3)"
 		}, {
 			"date": "2020-03-08",
 			"time": "22:37 (UTC)",
@@ -1728,7 +1728,7 @@
 			"distance": "200",
 			"bearing": 55,
 			"outcome": "success",
-			"description": ""
+			"description": "The exact location of the test is unknown, it appears to be near the beach by Sondok Airport, the site of a previous test of the system. The test was accompanied by smaller MLRS launches, some of which may have been mistaken for KN-25 launches. The number and type of missiles launched is currently disputed with the ROK stating 3 missiles matching the KN-25 flight pattern were launched whereas the US stated as many as 5 were launched. Images appear to show at least two KN-25 missiles launched. This entry may be updated as new information is released. The missiles appear to have been aimed at a small island in the East Sea (potentially located at 40.646, 129.547) but it is not clear if these missiles or other projectiles impacted it. (3 of 3)"
 		}],
 		"year": 2020
 	}]
