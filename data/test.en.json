@@ -1729,6 +1729,30 @@
 			"bearing": 55,
 			"outcome": "success",
 			"description": "The exact location of the test is unknown, it appears to be near the beach by Sondok Airport, the site of a previous test of the system. The test was accompanied by smaller MLRS launches, some of which may have been mistaken for KN-25 launches. The number and type of missiles launched is currently disputed with the ROK stating 3 missiles matching the KN-25 flight pattern were launched whereas the US stated as many as 5 were launched. Images appear to show at least two KN-25 missiles launched. This entry may be updated as new information is released. The missiles appear to have been aimed at a small island in the East Sea (potentially located at 40.646, 129.547) but it is not clear if these missiles or other projectiles impacted it. (3 of 3)"
+		}, {
+			"date": "2020-03-20",
+			"time": "21:45 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sonchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "410",
+			"bearing": 73,
+			"outcome": "success",
+			"description": "1 of 2"
+		}, {
+			"date": "2020-03-20",
+			"time": "21:50 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sonchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "410",
+			"bearing": 73,
+			"outcome": "success",
+			"description": "2 of 2"
 		}],
 		"year": 2020
 	}]

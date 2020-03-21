@@ -32,6 +32,7 @@
 		"yonpo": {"name": "Yonpo Airport", "lat": 39.78938, "lon": 127.53993},
 		"sangum-ri": {"name": "Sangum-ri", "lat": 39.141, "lon": 127.616},
 		"sondok": {"name": "Sondok", "lat": 39.743, "lon": 127.499},
+		"sonchon": {"name": "Sonchon", "lat": 39.798, "lon": 124.898},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851}
 	}
 }
