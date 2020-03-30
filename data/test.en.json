@@ -1753,6 +1753,30 @@
 			"bearing": 73,
 			"outcome": "success",
 			"description": "The test came in the midst of the global coronavirus pandemic. The exact location of the missile launches is not clear. Yonhap reported them as being launched from the North Pyongan province. Later reporting narrowed it to the Sonchon area. Online open source researchers speculated it may be approx 39°49'23.3\"N 124°49'39.7\"E, approx 5 km outside of Sonchon. (2 of 2)"
+		}, {
+			"date": "2020-03-28",
+			"time": "21:10 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "230",
+			"bearing": 43,
+			"outcome": "success",
+			"description": "1 of 2"
+		}, {
+			"date": "2020-03-28",
+			"time": "21:10 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "230",
+			"bearing": 43,
+			"outcome": "success",
+			"description": "2 of 2"
 		}],
 		"year": 2020
 	}]
