@@ -34,8 +34,8 @@ var d3Graphs = {
 	histogramWidth: [686, 366],
 	histogramHeight: 160,
 	histogramBarWidth: [28, 14],
-	histogramLeftPadding: [28.5, 21.5],
-	histogramRightPadding: [28.5, 21.5],
+	histogramLeftPadding: [28, 21],
+	histogramRightPadding: [28, 21],
 	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
@@ -47,8 +47,8 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [32, 16],
-	handleInterval: [37, 19],
+	handleLeftOffset: [30.5, 16.5],
+	handleInterval: [35, 18],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
@@ -58,7 +58,7 @@ var d3Graphs = {
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
-	selectedYearIndex: 16,
+	selectedYearIndex: 17,
 
 
 	setTest: function(test) {
@@ -630,9 +630,6 @@ var d3Graphs = {
 		var fontSizeInterpolater = function(v, min, max) {
 			return d3.interpolateRound(14, 28)(min == max ? 1 : (v - min) / (max - min));
 		}
-		var smallLabelSize = 22;
-		var mediumLabelSize = 37;
-
 		//success labels
 		var successLabels = this.barGraphSVG.selectAll('g.successLabel').data(successArray);
 		var newSuccessLabels = successLabels.enter().append('g')

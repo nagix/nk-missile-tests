@@ -465,18 +465,18 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 28.5px;
+	margin: 10px 28px;
 	padding: 0;
 	padding-bottom: 15px;
 	padding-top: 22px;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 629px;
-	background: url('images/timelineBG.svg') 8.5px 0 no-repeat;
+	width: 630px;
+	background: url('images/timelineBG.svg') 7.5px 0 no-repeat;
 }
 #history ul li {
-	width: 37px;
+	width: 35px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
@@ -844,16 +844,16 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 21.5px;
+		margin: 10px 21px;
 		padding: 0;
 		padding-bottom: 15px;
 		padding-top: 22px;
 		font-size: 10px;
-		width: 323px;
+		width: 324px;
 		background: url('images/timelineBG_small.svg') 0 0 no-repeat;
 	}
 	#history ul li {
-		width: 19px;
+		width: 18px;
 		position: relative;
 		left: 1px;
 	}
@@ -862,6 +862,12 @@ Bar graph on left
 	}
 	#history ul li.narrow {
 		display: block;
+	}
+	#history ul li.narrow.first span {
+		margin-left: -15px;
+	}
+	#history ul li.narrow.last span {
+		margin-right: -15px;
 	}
 	#history .timeline #handle {
 		background: url('images/yearHandle.png') 0 0 no-repeat;

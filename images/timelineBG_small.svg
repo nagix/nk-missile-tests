@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323 12" height="12" width="323" version="1.1">
-  <path d="M 4.5,0 A 4.5,6 0 0 0 0,6 4.5,6 0 0 0 4.5,12 l 314,0 A 4.5,6 0 0 0 323,6 4.5,6 0 0 0 318.5,0 L 4.5,0 Z" style="fill:#4c4c4c;stroke:none;" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326 12" height="12" width="326" version="1.1">
+  <path d="M 4.5,0 A 4.5,6 0 0 0 0,6 4.5,6 0 0 0 4.5,12 l 317,0 A 4.5,6 0 0 0 326,6 4.5,6 0 0 0 321.5,0 L 4.5,0 Z" style="fill:#4c4c4c;stroke:none;" />
   <ellipse cx="10" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="29" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="48" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="67" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="86" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="105" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="124" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="143" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="162" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="181" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="200" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="219" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="238" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="257" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="276" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="295" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
-  <ellipse cx="314" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="28" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="46" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="64" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="82" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="100" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="118" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="136" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="154" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="172" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="190" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="208" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="226" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="244" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="262" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="280" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="298" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
+  <ellipse cx="316" cy="6" rx="2.1" ry="2.6" style="fill:#7f7f7f;stroke:none;" />
 </svg>

@@ -1852,5 +1852,32 @@
 			"description": "今回の実験により、3月は北朝鮮史上最も忙しいミサイル実験の月となった。ミサイルとTELに若干の違いがあることから、KN-25を新たに改良したものである可能性がある。実験後に公開された写真では、北朝鮮沖の東海上にある他の実験と同じ小島に命中している様子が写っている。最近の他の実験と同様に、北朝鮮は2つのミサイルをわずか20秒の間隔で連続して発射した。今回の実験は、元山(ウォンサン)地域の海岸沿いで行われたと考えられている。正確な場所はまだ確定していない。現時点では、北朝鮮が他のミサイル実験で頻繁に使用している虎島(ホド)半島としている。(2発の実験の内の2発目)"
 		}],
 		"year": 2020
+	}, {
+		"data": [{
+			"date": "2021-03-25",
+			"time": "07:04 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "450",
+			"bearing": 86,
+			"outcome": "success",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2021-03-25",
+			"time": "07:23 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sondok",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "450",
+			"bearing": 86,
+			"outcome": "success",
+			"description": "2発の実験の内の2発目"
+		}],
+		"year": 2021
 	}]
 }
