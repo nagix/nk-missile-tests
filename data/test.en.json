@@ -1233,6 +1233,18 @@
 			"outcome": "success",
 			"description": "North Korea launched these 4 missiles almost simultaneously. It is hypothesized that North Korea was practicing overwhelming THAAD and conducting a simulated attack on the US Marine Corps Airbase in Japan, Iwakuni. As a response to this test, the US deployed THAAD to South Korea ahead of schedule. The apogees and distance travelled for each missile are the averages according to reports, exact distances for each missile are unknown. There were early reports of a fifth missile launch accompanying these four, however, no evidence has surfaced of a launch actually taking place. North Korea may have originally planned to launch five but had to scrub the fifth test for unknown reasons."
 		}, {
+			"date": "2017-03-05",
+			"time": "22:34 (UTC)",
+			"series": 5,
+			"missile": "er-scud",
+			"facility": "sohae",
+			"landing": "na",
+			"apogee": "na",
+			"distance": "na",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": "Initially believed to have been only four missiles launched, a fifth missile was believed to have been launched at the same time as the other four. However, the missile appears to have failed shortly after launch. Videos and images North Korea released of the test did not show this missile launch. There was evidence a fifth missile was present at the test though it was less clear it actually participated in the launch. More recently, the Missile Defense Review stated that the test involved five missile launches. Combined with these earlier reports, this strongly suggests a five missile salvo launch occurred on March 5, 2017."
+		}, {
 			"date": "2017-03-21",
 			"time": "22:00 (UTC)",
 			"missile": "unknown",
@@ -1404,6 +1416,17 @@
 		"year": 2017
 	}, {
 		"data": [{
+			"date": "2019-04-17",
+			"time": "unknown",
+			"missile": "unknown",
+			"facility": "unknown",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "The rocket is described as a \"new type tactical guided weapon\". It is not clear exactly what that is but similar language is used to describe the KN-23."
+		}, {
 			"date": "2019-05-04",
 			"time": "01:54 (UTC)",
 			"series": 1,
@@ -1475,6 +1498,54 @@
 			"bearing": 70,
 			"outcome": "success",
 			"description": "2 of 2 tests, the missile was launched from the Hodo Peninsula. The launches came less than a week after North Korea stated that continued US-ROK military exercises could jeopardize continued negotiations."
+		}, {
+			"date": "2019-07-30",
+			"time": "20:06 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 250,
+			"bearing": 44,
+			"outcome": "success",
+			"description": "Described as a \"New-type Large-caliber Multiple Launch Guided Rocket System\", it is not totally clear if this is the KN-24 or KN-25. The launch location is also unclear but believed to be in the Wonsan area. The missiles were launched within a few minutes of each other. (1 of 2)"
+		}, {
+			"date": "2019-07-30",
+			"time": "20:27 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": 30,
+			"distance": 250,
+			"bearing": 44,
+			"outcome": "success",
+			"description": "Described as a \"New-type Large-caliber Multiple Launch Guided Rocket System\", it is not totally clear if this is the KN-24 or KN-25. The launch location is also unclear but believed to be in the Wonsan area. The missiles were launched within a few minutes of each other. (2 of 2)"
+		}, {
+			"date": "2019-08-01",
+			"time": "17:59 (UTC)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "yonghung",
+			"landing": "sea-of-japan",
+			"apogee": 25,
+			"distance": 220,
+			"bearing": 55,
+			"outcome": "success",
+			"description": "North Korea launched two rockets within a short period of time. The flight path, and the description in later DPRK statements, appears consistent with the KN-25 missiles. The exact location is not clear but one report placed it as somewhere in Yonghung. (1 of 2)"
+		}, {
+			"date": "2019-08-01",
+			"time": "18:23 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "yonghung",
+			"landing": "sea-of-japan",
+			"apogee": 25,
+			"distance": 220,
+			"bearing": 55,
+			"outcome": "success",
+			"description": "North Korea launched two rockets within a short period of time. The flight path, and the description in later DPRK statements, appears consistent with the KN-25 missiles. The exact location is not clear but one report placed it as somewhere in Yonghung. (2 of 2)"
 		}, {
 			"date": "2019-08-05",
 			"time": "20:24 (UTC)",
@@ -1611,7 +1682,7 @@
 			"date": "2019-10-01",
 			"time": "22:11 (UTC)",
 			"missile": "pukguksong-3",
-			"facility": "yonghung",
+			"facility": "yonghung-bay",
 			"landing": "sea-of-japan",
 			"apogee": "910",
 			"distance": "450",
@@ -1758,25 +1829,25 @@
 			"time": "21:10 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
-			"facility": "wonsan",
+			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": "30",
 			"distance": "230",
 			"bearing": 43,
 			"outcome": "success",
-			"description": "1 of 2"
+			"description": "This test marked the busiest month of missile testing in North Korean history. Slight variations in the missile and TEL suggest this may be a newly modified version of the KN-25. Pictures released following the test show them impacting the same small island in the East Sea, off the coast of North Korea. As with several other recent tests of the system, North Korea launched these missiles in a pair with only a 20 second interval between them. The test is believed to have been carried out in the Wonson area along the shoreline. An exact location has not yet been determined. Currently, this is placed at the Hodo Peninsula, an area which North Korea has frequently used for other missile tests. (1 of 2)"
 		}, {
 			"date": "2020-03-28",
 			"time": "21:10 (UTC)",
 			"series": 2,
 			"missile": "kn-25",
-			"facility": "wonsan",
+			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": "30",
 			"distance": "230",
 			"bearing": 43,
 			"outcome": "success",
-			"description": "2 of 2"
+			"description": "This test marked the busiest month of missile testing in North Korean history. Slight variations in the missile and TEL suggest this may be a newly modified version of the KN-25. Pictures released following the test show them impacting the same small island in the East Sea, off the coast of North Korea. As with several other recent tests of the system, North Korea launched these missiles in a pair with only a 20 second interval between them. The test is believed to have been carried out in the Wonson area along the shoreline. An exact location has not yet been determined. Currently, this is placed at the Hodo Peninsula, an area which North Korea has frequently used for other missile tests. (2 of 2)"
 		}],
 		"year": 2020
 	}]

@@ -576,7 +576,7 @@ var d3Graphs = {
 			failureArray.unshift({"type":code, "count": fCount});
 			unknownArray.unshift({"type":code, "count": uCount});
 		}
-		var max = 19;
+		var max = 26;
 		var yScale = d3.scaleLinear().domain([0,max]).range([0,this.barGraphHeight - this.barGraphBottomPadding - this.barGraphTopPadding]);
 		var midX = this.barGraphWidth / 3;
 		this.cumSuccessY = this.cumFailureY = this.cumUnknownY = 0;

@@ -1,6 +1,6 @@
 # nk-missile-tests: North Korea Missile Test Visualization
 
-An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2019.
+An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2020.
 
 ![Screenshot](https://nagix.github.io/nk-missile-tests/images/screenshot.jpg)
 
