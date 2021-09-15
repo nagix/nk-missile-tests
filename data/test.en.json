@@ -1875,6 +1875,30 @@
 			"bearing": 86,
 			"outcome": "success",
 			"description": "On March 24, 2021, North Korea conducted its first ballistic missile test in nearly a year. The Japanese government initially announced detection of the tests, stating that two missiles were launched at 10:04 and 10:23 PM UTC, reaching an apogee of 60 km and a range of 450 km. According to the South Korean government, the launches occurred at 10:06 and 10:25. The official North Korean announcement on March 25 claimed that the missiles had in fact flown 600 km. The missiles may have conducted a pitch-up maneuver, similar to the KN-23, however, no independent confirmation is available of a 600 km flight. (2 of 2)"
+		}, {
+			"date": "2021-09-15",
+			"time": "03:34 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "yangdok",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "800",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2021-09-15",
+			"time": "03:39 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "yangdok",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "800",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2021
 	}]
