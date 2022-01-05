@@ -1,5 +1,6 @@
 {
 	"er-scud": {"name": "ER Scud", "type": "MRBM"},
+	"hwasong-8": {"name": "Hwasong-8", "type": "HGV"},
 	"hwasong-12": {"name": "Hwasong-12", "type": "IRBM"},
 	"hwasong-14": {"name": "Hwasong-14", "type": "ICBM"},
 	"hwasong-15": {"name": "Hwasong-15", "type": "ICBM"},
@@ -8,10 +9,12 @@
 	"kn-24": {"name": "KN-24", "type": "SRBM"},
 	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "Musudan", "type": "IRBM"},
+	"navalized-kn-23": {"name": "Navalized KN-23", "type": "SLBM"},
 	"nodong": {"name": "Nodong", "type": "MRBM"},
 	"pukguksong-1": {"name": "Pukguksong-1", "type": "SLBM"},
 	"pukguksong-2": {"name": "Pukguksong-2", "type": "MRBM"},
 	"pukguksong-3": {"name": "Pukguksong-3", "type": "SLBM"},
+	"rail-mobile-kn-23": {"name": "Rail-mobile KN-23", "type": "SRBM"},
 	"scud-b": {"name": "Scud-B", "type": "SRBM"},
 	"scud-b-marv": {"name": "Scud-B MaRV", "type": "SRBM"},
 	"scud-c": {"name": "Scud-C", "type": "SRBM"},
@@ -19,5 +22,6 @@
 	"taepodong-1": {"name": "Taepodong-1", "type": "SLV"},
 	"unha": {"name": "Unha", "type": "SLV"},
 	"unha-3": {"name": "Unha-3", "type": "SLV"},
-	"unknown": {"name": "Unknown", "type": "Unknown"}
+	"unknown": {"name": "Unknown", "type": "Unknown"},
+	"unnamed-kn-23-mod": {"name": "Unnamed KN-23 Mod", "type": "SRBM"}
 }

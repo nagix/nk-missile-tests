@@ -238,12 +238,12 @@ Elements to control the title and test selector
 }
 
 #glContainer {
-	z-index:1;
-	pointer-events:none;
+	z-index: 1;
+	pointer-events: none;
 }
 #glContainer canvas {
-	z-index:1;
-	pointer-events:none;
+	z-index: 1;
+	pointer-events: none;
 }
 
 #hudHeader {
@@ -368,6 +368,9 @@ Bar graph on left
 #barGraph .bar.er-scud, #missileTypeBtns .er-scud .check {
 	fill: #1F77B4;
 }
+#barGraph .bar.hwasong-8, #missileTypeBtns .hwasong-8 .check {
+	fill: #AEC7E8;
+}
 #barGraph .bar.hwasong-12, #missileTypeBtns .hwasong-12 .check {
 	fill: #7F7F7F;
 }
@@ -392,6 +395,9 @@ Bar graph on left
 #barGraph .bar.musudan, #missileTypeBtns .musudan .check {
 	fill: #AEC7E8;
 }
+#barGraph .bar.navalized-kn-23, #missileTypeBtns .navalized-kn-23 .check {
+	fill: #8C564B;
+}
 #barGraph .bar.nodong, #missileTypeBtns .nodong .check {
 	fill: #FF7F0E;
 }
@@ -403,6 +409,9 @@ Bar graph on left
 }
 #barGraph .bar.pukguksong-3, #missileTypeBtns .pukguksong-3 .check {
 	fill: #E377C2;
+}
+#barGraph .bar.rail-mobile-kn-23, #missileTypeBtns .rail-mobile-kn-23 .check {
+	fill: #C7C7C7;
 }
 #barGraph .bar.scud-b, #missileTypeBtns .scud-b .check {
 	fill: #2CA02C;
@@ -427,6 +436,9 @@ Bar graph on left
 }
 #barGraph .bar.unknown, #missileTypeBtns .unknown .check {
 	fill: #8C564B;
+}
+#barGraph .bar.unnamed-kn-23-mod, #missileTypeBtns .unnamed-kn-23-mod .check {
+	fill: #AEC7E8;
 }
 #barGraph .successLabel text,#barGraph .failureLabel text,#barGraph .unknownLabel text {
 	fill: white;
@@ -510,7 +522,7 @@ Bar graph on left
 	margin-top: 5px;
 	float: right;
 	cursor: pointer;
-	pointer-events:auto;
+	pointer-events: auto;
 }
 
 #history .labels {
@@ -644,6 +656,8 @@ Bar graph on left
 	position: absolute;
 	color: white;
 	display: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #missileTypeBtns .missileTypeBtnGroup {
 	float: right;
@@ -672,6 +686,7 @@ Bar graph on left
 	font-size: 13px;
 	vertical-align: middle;
 	padding-top: 4px;
+	white-space: nowrap;
 }
 #missileTypeBtns .check {
 	margin: 4px 6px auto;
@@ -785,7 +800,7 @@ Bar graph on left
 		left: 0;
 		background: url('images/panelHandle.svg') left center no-repeat;
 		width: 20px;
-		height: 492px;
+		height: 100%;
 		cursor: pointer;
 	}
 	#barGraph {
@@ -894,9 +909,6 @@ Bar graph on left
 	#missileTypeBtns>div>div {
 		margin-bottom: 0;
 	}
-	#missileTypeBtnHandle {
-		height: 418px;
-	}
 	#aboutContainer {
 		top: 126px;
 		width: 320px;
@@ -935,8 +947,5 @@ Bar graph on left
 	}
 	#missileTypeBtns .check {
 		margin: 2px 6px auto;
-	}
-	#missileTypeBtnHandle {
-		height: 350px;
 	}
 }

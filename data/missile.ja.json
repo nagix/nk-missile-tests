@@ -1,5 +1,6 @@
 {
 	"er-scud": {"name": "スカッドER", "type": "MRBM"},
+	"hwasong-8": {"name": "火星8号", "type": "HGV"},
 	"hwasong-12": {"name": "火星12号", "type": "IRBM"},
 	"hwasong-14": {"name": "火星14号", "type": "ICBM"},
 	"hwasong-15": {"name": "火星15号", "type": "ICBM"},
@@ -8,10 +9,12 @@
 	"kn-24": {"name": "KN-24", "type": "SRBM"},
 	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "ムスダン", "type": "IRBM"},
+	"navalized-kn-23": {"name": "艦載型KN-23", "type": "SLBM"},
 	"nodong": {"name": "ノドン", "type": "MRBM"},
 	"pukguksong-1": {"name": "北極星1号", "type": "SLBM"},
 	"pukguksong-2": {"name": "北極星2号", "type": "MRBM"},
 	"pukguksong-3": {"name": "北極星3号", "type": "SLBM"},
+	"rail-mobile-kn-23": {"name": "鉄道移動式KN-23", "type": "SRBM"},
 	"scud-b": {"name": "スカッドB", "type": "SRBM"},
 	"scud-b-marv": {"name": "スカッドB MaRV", "type": "SRBM"},
 	"scud-c": {"name": "スカッドC", "type": "SRBM"},
@@ -19,5 +22,6 @@
 	"taepodong-1": {"name": "テポドン1号", "type": "SLV"},
 	"unha": {"name": "銀河", "type": "SLV"},
 	"unha-3": {"name": "銀河3号", "type": "SLV"},
-	"unknown": {"name": "不明", "type": "不明"}
+	"unknown": {"name": "不明", "type": "不明"},
+	"unnamed-kn-23-mod": {"name": "名称未定KN-23改", "type": "SRBM"}
 }

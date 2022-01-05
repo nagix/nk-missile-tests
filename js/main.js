@@ -52,6 +52,7 @@ var outcomeLookup = {
 //	A list of missile colors
 var missileColors = {
 	'er-scud' : 0x1F77B4,
+	'hwasong-8' : 0xAEC7E8,
 	'hwasong-12' : 0x7F7F7F,
 	'hwasong-14' : 0xBCBD22,
 	'hwasong-15' : 0x17BECF,
@@ -60,10 +61,12 @@ var missileColors = {
 	'kn-24': 0xFF9896,
 	'kn-25': 0xFF6741,
 	'musudan': 0xAEC7E8,
+	'navalized-kn-23': 0x8C564B,
 	'nodong': 0xFF7F0E,
 	'pukguksong-1': 0x8C564B,
 	'pukguksong-2': 0xC49C94,
 	'pukguksong-3': 0xE377C2,
+	'rail-mobile-kn-23': 0XC7C7C7,
 	'scud-b': 0x2CA02C,
 	'scud-b-marv': 0xDBDB8D,
 	'scud-c': 0x98DF8A,
@@ -71,7 +74,8 @@ var missileColors = {
 	'taepodong-1': 0xD62728,
 	'unha': 0x9467BD,
 	'unha-3': 0xC5B0D5,
-	'unknown': 0x8C564B
+	'unknown': 0x8C564B,
+	'unnamed-kn-23-mod': 0xAEC7E8
 };
 
 //	the currently selected test

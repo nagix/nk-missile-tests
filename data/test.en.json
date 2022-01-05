@@ -1855,8 +1855,8 @@
 			"date": "2021-03-24",
 			"time": "22:04 (UTC)",
 			"series": 1,
-			"missile": "unknown",
-			"facility": "yonpo",
+			"missile": "unnamed-kn-23-mod",
+			"facility": "sondok-ab",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "450",
@@ -1867,7 +1867,7 @@
 			"date": "2021-03-24",
 			"time": "22:23 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "unnamed-kn-23-mod",
 			"facility": "yonpo",
 			"landing": "sea-of-japan",
 			"apogee": "60",
@@ -1879,26 +1879,48 @@
 			"date": "2021-09-15",
 			"time": "03:34 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "rail-mobile-kn-23",
 			"facility": "yangdok",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "800",
-			"bearing": 70,
+			"bearing": 80,
 			"outcome": "success",
-			"description": ""
+			"description": "On September 15, North Korea launched two KN-23-type SRBMs from a train in Yangdok county. According to the South Korean Joint Chiefs of Staff, the missiles were launched at 3:34 and 3:39 UTC, reaching an altitude of 60 km and a range of 800 km. Several hours later, South Korea tested a submarine-launched ballistic missile. (1 of 2)"
 		}, {
 			"date": "2021-09-15",
 			"time": "03:39 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "rail-mobile-kn-23",
 			"facility": "yangdok",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "800",
+			"bearing": 80,
+			"outcome": "success",
+			"description": "On September 15, North Korea launched two KN-23-type SRBMs from a train in Yangdok county. According to the South Korean Joint Chiefs of Staff, the missiles were launched at 3:34 and 3:39 UTC, reaching an altitude of 60 km and a range of 800 km. Several hours later, South Korea tested a submarine-launched ballistic missile. (2 of 2)"
+		}, {
+			"date": "2021-09-27",
+			"time": "21:40 (UTC)",
+			"missile": "hwasong-8",
+			"facility": "mupyong-ni",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "200",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "Less than two weeks after the rail-mobile missile launch, North Korea tested a new missile which it calls the Hwasong-8. The missile's payload was claimed to be a hypersonic glide vehicle, mounted on top of what appeared to be a modified Hwasong-12 missile. According to the South Korean Joint Chiefs of Staff, the missile was launched at 9:40PM UTC, reaching an altitude of 60 km and traveling 200 km. It is possible that the 200 km range is for the booster only, and the HGV traveled further, but was not observed by radar. Yonhap noted the trajectory was \"unique.\" This is the first appearance of the Hwasong-8, although Kim Jong-un hinted at the existence of an HGV in January 2021."
+		}, {
+			"date": "2021-10-19",
+			"time": "01:17 (UTC)",
+			"missile": "navalized-kn-23",
+			"facility": "sinpo",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "590",
 			"bearing": 70,
 			"outcome": "success",
-			"description": ""
+			"description": "On October 19, 2021, North Korea conducted its first SLBM test in over two years. This new missile, which appears to be a modified KN-23, was revealed at a major defense exhibition in Pyongyang the previous week. The missile reached an altitude 60 km and traveled 590 km. The missile was launched from the Gorae-class submarine used in previous SLBM tests."
 		}],
 		"year": 2021
 	}]

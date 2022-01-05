@@ -50,6 +50,9 @@ function onDocumentMouseDown(event) {
 	if (typeof event.target.className === 'string' && event.target.className.indexOf('noMapDrag') !== -1) {
 		return;
 	}
+	if (event.target.className instanceof SVGAnimatedString && event.target.className.animVal.indexOf('noMapDrag') !== -1) {
+		return;
+	}
 
 	if (event instanceof MouseEvent) {
 		mouseX = event.clientX - window.innerWidth * 0.5;
