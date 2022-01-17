@@ -11,8 +11,8 @@
 		<meta property="og:description" content="An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2021. This data visualization was produced by Akihiko Kusanagi. The data for this visualization are sourced from the CNS North Korea Missile Test Database.">
 		<meta property="og:url" content="https://nagix.github.io/nk-missile-tests/">
 		<meta property="og:image" content="https://nagix.github.io/nk-missile-tests/images/screenshot.jpg">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
+		<link rel="stylesheet" type="text/css" href="css/OverlayScrollbars.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body onload="start()" id="dataviz" class="">
@@ -56,6 +56,7 @@
 		<script src="js/d3-5.12.0.min.js"></script>
 		<script src="js/ui.controls.js"></script>
 		<script src="js/hammer-2.0.8.min.js"></script>
+		<script src="js/jquery.overlayScrollbars.min.js"></script>
 
 		<script type="x-shader/x-vertex" id="vertexshader">
 			uniform float amplitude;
@@ -198,9 +199,9 @@
 		</div>
 		<div id="graphIcon" class="overlayTests"></div>
 		<div id="missileTypeBtns" class="overlayTests">
-			<div class="missileTypeBtnGroup">
-				<div class="er-scud">
-					<div class="box">
+			<div class="missileTypeBtnGroup noMapDrag">
+				<div class="missileTypeBtn er-scud">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16">
 							<defs>
 								<g id="checkbutton">
@@ -213,146 +214,146 @@
 					</div>
 					<div class="label noMapDrag">ER Scud</div><br class="clear">
 				</div>
-				<div class="hwasong-8">
-					<div class="box">
+				<div class="missileTypeBtn hwasong-8">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Hwasong-8</div><br class="clear">
 				</div>
-				<div class="hwasong-12">
-					<div class="box">
+				<div class="missileTypeBtn hwasong-12">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Hwasong-12</div><br class="clear">
 				</div>
-				<div class="hwasong-14">
-					<div class="box">
+				<div class="missileTypeBtn hwasong-14">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Hwasong-14</div><br class="clear">
 				</div>
-				<div class="hwasong-15">
-					<div class="box">
+				<div class="missileTypeBtn hwasong-15">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Hwasong-15</div><br class="clear">
 				</div>
-				<div class="kn-02">
-					<div class="box">
+				<div class="missileTypeBtn kn-02">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">KN-02</div><br class="clear">
 				</div>
-				<div class="kn-23">
-					<div class="box">
+				<div class="missileTypeBtn kn-23">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">KN-23</div><br class="clear">
 				</div>
-				<div class="kn-24">
-					<div class="box">
+				<div class="missileTypeBtn kn-24">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">KN-24</div><br class="clear">
 				</div>
-				<div class="kn-25">
-					<div class="box">
+				<div class="missileTypeBtn kn-25">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">KN-25</div><br class="clear">
 				</div>
-				<div class="musudan">
-					<div class="box">
+				<div class="missileTypeBtn musudan">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Musudan</div><br class="clear">
 				</div>
-				<div class="navalized-kn-23">
-					<div class="box">
+				<div class="missileTypeBtn navalized-kn-23">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Navalized KN-23</div><br class="clear">
 				</div>
-				<div class="nodong">
-					<div class="box">
+				<div class="missileTypeBtn nodong">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Nodong</div><br class="clear">
 				</div>
-				<div class="pukguksong-1">
-					<div class="box">
+				<div class="missileTypeBtn pukguksong-1">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Pukguksong-1</div><br class="clear">
 				</div>
-				<div class="pukguksong-2">
-					<div class="box">
+				<div class="missileTypeBtn pukguksong-2">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Pukguksong-2</div><br class="clear">
 				</div>
-				<div class="pukguksong-3">
-					<div class="box">
+				<div class="missileTypeBtn pukguksong-3">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Pukguksong-3</div><br class="clear">
 				</div>
-				<div class="rail-mobile-kn-23">
-					<div class="box">
+				<div class="missileTypeBtn rail-mobile-kn-23">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Rail-mobile KN-23</div><br class="clear">
 				</div>
-				<div class="scud-b">
-					<div class="box">
+				<div class="missileTypeBtn scud-b">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Scud-B</div><br class="clear">
 				</div>
-				<div class="scud-b-marv">
-					<div class="box">
+				<div class="missileTypeBtn scud-b-marv">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Scud-B MaRV</div><br class="clear">
 				</div>
-				<div class="scud-c">
-					<div class="box">
+				<div class="missileTypeBtn scud-c">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Scud-C</div><br class="clear">
 				</div>
-				<div class="scud-c-marv">
-					<div class="box">
+				<div class="missileTypeBtn scud-c-marv">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Scud-C MaRV</div><br class="clear">
 				</div>
-				<div class="taepodong-1">
-					<div class="box">
+				<div class="missileTypeBtn taepodong-1">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Taepodong-1</div><br class="clear">
 				</div>
-				<div class="unha">
-					<div class="box">
+				<div class="missileTypeBtn unha">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Unha</div><br class="clear">
 				</div>
-				<div class="unha-3">
-					<div class="box">
+				<div class="missileTypeBtn unha-3">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Unha-3</div><br class="clear">
 				</div>
-				<div class="unknown">
-					<div class="box">
+				<div class="missileTypeBtn unknown">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Unknown</div><br class="clear">
 				</div>
-				<div class="unnamed-kn-23-mod">
-					<div class="box">
+				<div class="missileTypeBtn unnamed-kn-23-mod">
+					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">Unnamed KN-23 Mod</div><br class="clear">

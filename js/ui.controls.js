@@ -102,7 +102,7 @@ var d3Graphs = {
 		$("#handle").draggable({axis: 'x',containment: "parent",grid:[size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
 		$("#hudButtons .searchBtn").on('click', d3Graphs.updateViz);
 		$("#outcomeBtns>div>.label").on('click', d3Graphs.outcomeLabelClick);
-		$("#missileTypeBtns>div>div").on('click', d3Graphs.missileBtnClick);
+		$(".missileTypeBtn").on('click', d3Graphs.missileBtnClick);
 		$("#hudButtons .testTextInput").autocomplete({ source:selectableTests, autoFocus: true });
 		$("#hudButtons .testTextInput").keyup(d3Graphs.testKeyUp);
 		$("#hudButtons .testTextInput").focus(d3Graphs.testFocus);
@@ -201,6 +201,15 @@ var d3Graphs = {
 			var h = Math.max(windowHeight, minHeight);
 			$("#missileTypeBtns").css('height', Math.min(700, h - 215));
 		}
+		$("#missileTypeBtns").overlayScrollbars({
+			className: "os-theme-light",
+			overflowBehavior: {
+				x: "hidden",
+				y: "scroll"
+			}
+		});
+		$(".os-scrollbar-handle").addClass("noMapDrag");
+
 		/*
 		var hudHeaderLeft = $("#hudHeader").css('left');
 		hudHeaderLeft = hudHeaderLeft.substr(0,hudHeaderLeft.length-2);
@@ -287,10 +296,10 @@ var d3Graphs = {
 
 		//missile
 		var missileArray = [];
-		var missileBtns = $("#missileTypeBtns>div>div");
+		var missileBtns = $(".missileTypeBtn");
 		for(var i = 0; i < missileBtns.length; i++) {
 			var btn = $(missileBtns[i]);
-			var missileKey = btn.attr('class');
+			var missileKey = btn.attr('class').replace('missileTypeBtn', '').trim();
 			if(btn.find('.inactive').length == 0) {
 				missileArray.push(missileKey);
 				selectionData.missileCategories[missileKey] = true;

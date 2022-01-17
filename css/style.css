@@ -145,7 +145,7 @@ li {
 .marker .close {
 	width: 8px;
 	height: 8px;
-	background: url('images/close.svg') 0 0 no-repeat;
+	background: url('../images/close.svg') 0 0 no-repeat;
 	margin-right: 0;
 	margin-top: 0;
 	float: right;
@@ -316,10 +316,10 @@ Elements to control the title and test selector
 	float: none;
 }
 #hudButtons .topViewBtn {
-	background: #333333 url('images/topview.svg') 7px 4px no-repeat;
+	background: #333333 url('../images/topview.svg') 7px 4px no-repeat;
 }
 #hudButtons .sideViewBtn {
-	background: #333333 url('images/sideview.svg') 7px 4px no-repeat;
+	background: #333333 url('../images/sideview.svg') 7px 4px no-repeat;
 }
 #hudButtons .zoomBtn {
 	width: 30px;
@@ -485,7 +485,7 @@ Bar graph on left
 	font-size: 12px;
 	font-family: 'Roboto';
 	width: 630px;
-	background: url('images/timelineBG.svg') 7.5px 0 no-repeat;
+	background: url('../images/timelineBG.svg') 7.5px 0 no-repeat;
 }
 #history ul li {
 	width: 35px;
@@ -506,7 +506,7 @@ Bar graph on left
 	cursor: pointer;
 	width: 36px;
 	height: 36px;
-	background: url('images/yearHandle.png') 0 0 no-repeat;
+	background: url('../images/yearHandle.png') 0 0 no-repeat;
 	position: absolute;
 	bottom: 20px;
 	left: 622px;
@@ -517,7 +517,7 @@ Bar graph on left
 #history .close {
 	width: 8px;
 	height: 8px;
-	background: url('images/close.svg') 0 0 no-repeat;
+	background: url('../images/close.svg') 0 0 no-repeat;
 	margin-right: 8px;
 	margin-top: 5px;
 	float: right;
@@ -656,19 +656,17 @@ Bar graph on left
 	position: absolute;
 	color: white;
 	display: none;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 #missileTypeBtns .missileTypeBtnGroup {
 	float: right;
 }
-#missileTypeBtns>div>div {
+#missileTypeBtns .missileTypeBtn {
 	cursor: pointer;
 	background: #262626;
 	opacity: 0.9;
 	margin-bottom: 4px;
 }
-#missileTypeBtns>div>div:hover {
+#missileTypeBtns .missileTypeBtn:hover {
 	opacity: 1;
 }
 #missileTypeBtns .box {
@@ -704,7 +702,7 @@ Bar graph on left
 	bottom: 10px;
 	left: 1255px;
 	cursor: pointer;
-	background: url('images/graphIcon.svg') 0 0 no-repeat;
+	background: url('../images/graphIcon.svg') 0 0 no-repeat;
 	display: none;
 	opacity: 0.9;
 }
@@ -776,7 +774,7 @@ Bar graph on left
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: url('images/panelHandle.svg') left center no-repeat;
+		background: url('../images/panelHandle.svg') left center no-repeat;
 		width: 20px;
 		height: 72px;
 		cursor: pointer;
@@ -798,7 +796,7 @@ Bar graph on left
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: url('images/panelHandle.svg') left center no-repeat;
+		background: url('../images/panelHandle.svg') left center no-repeat;
 		width: 20px;
 		height: 100%;
 		cursor: pointer;
@@ -865,7 +863,7 @@ Bar graph on left
 		padding-top: 22px;
 		font-size: 10px;
 		width: 324px;
-		background: url('images/timelineBG_small.svg') 0 0 no-repeat;
+		background: url('../images/timelineBG_small.svg') 0 0 no-repeat;
 	}
 	#history ul li {
 		width: 18px;
@@ -885,7 +883,7 @@ Bar graph on left
 		margin-right: -15px;
 	}
 	#history .timeline #handle {
-		background: url('images/yearHandle.png') 0 0 no-repeat;
+		background: url('../images/yearHandle.png') 0 0 no-repeat;
 		left: 318px;
 	}
 	#history .labels .outcome {
