@@ -108,7 +108,7 @@ function loadLangCSS(lang) {
 		var link = document.createElement('link');
 		link.rel = 'stylesheet';
 		link.type = 'text/css';
-		link.href = 'style.' + lang + '.css';
+		link.href = 'css/style.' + lang + '.css';
 		tags.appendChild(link);
 		document.getElementsByTagName('head')[0].appendChild(tags);
 	}
