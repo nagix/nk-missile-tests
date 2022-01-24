@@ -289,7 +289,7 @@ function initScene() {
 
 	//	-----------------------------------------------------------------------------
 	//	Setup our renderer
-	renderer = new THREE.WebGLRenderer({antialias:false});
+	renderer = new THREE.WebGLRenderer({antialias: false});
 	renderer.setPixelRatio(dpr);
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.autoClear = false;
@@ -470,7 +470,7 @@ function getHistoricalData() {
 
 	for( var i in timeBins ){
 		var yearBin = timeBins[i].data;
-		var value = {successes: 0, failures:0, unknowns:0};
+		var value = {successes: 0, failures: 0, unknowns: 0};
 		for( var s in yearBin ){
 			var set = yearBin[s];
 			var outcomeName = set.outcome;

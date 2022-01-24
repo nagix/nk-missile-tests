@@ -73,24 +73,24 @@ a {
 	text-transform: uppercase;
 }
 a:hover {
-	color:#8eb423;
+	color: #8eb423;
 }
 h1 {
 	font-family: 'RopaSans';
-	font-weight:normal;
+	font-weight: normal;
 }
 h2 {
 	font-family: 'RopaSans';
-	font-weight:normal;
+	font-weight: normal;
 }
 li {
 	list-style-type: none;
 }
 
 #wrapper {
-	display:block;
-	float:left;
- /*	min-width:1280px;*/
+	display: block;
+	float: left;
+ /*	min-width: 1280px;*/
 }
 
 #visualization{
@@ -203,7 +203,7 @@ li {
 
 /*Styles by Pitch*/
 .clear {
-	clear:both;
+	clear: both;
 }
 
 /*Remove all text selection (except for Text Input)*/
@@ -228,7 +228,7 @@ input[type='text'] {
 Elements to control the title and test selector
 */
 .overlayTests {
-	z-index: 10001; /* selected test has z-index:10000*/
+	z-index: 10001; /* selected test has z-index: 10000*/
 }
 .pointer {
 	pointer-events: auto;
@@ -358,8 +358,8 @@ Bar graph on left
 */
 #barGraph {
 	position: absolute;
-	/*bottom:10px;*/
-	left:-7px;
+	/*bottom: 10px;*/
+	left: -7px;
 	opacity: 0.9;
 }
 #barGraph .textLabel {
@@ -477,18 +477,18 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 28px;
-	padding: 0;
-	padding-bottom: 15px;
-	padding-top: 22px;
+	margin: 10px 29.5px;
+	padding: 22px 0 0 0;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 630px;
-	background: url('../images/timelineBG.svg') 7.5px 0 no-repeat;
+	width: 627px;
+	height: 37px;
+	box-sizing: border-box;
+	background: url('../images/timelineBG.svg') center top no-repeat;
 }
 #history ul li {
-	width: 35px;
+	width: 33px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
@@ -540,7 +540,7 @@ Bar graph on left
 	float: right;
 	font-family: Roboto;
 	font-size: 14px;
-	color:#70B4CB;
+	color: #70B4CB;
 	margin-top: 10px;
 }
 #history .labels .failures {
@@ -857,18 +857,13 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 21px;
-		padding: 0;
-		padding-bottom: 15px;
-		padding-top: 22px;
+		margin: 10px 21.5px;
 		font-size: 10px;
-		width: 324px;
-		background: url('../images/timelineBG_small.svg') 0 0 no-repeat;
+		width: 323px;
+		background-image: url('../images/timelineBG_small.svg');
 	}
 	#history ul li {
-		width: 18px;
-		position: relative;
-		left: 1px;
+		width: 17px;
 	}
 	#history ul li.wide {
 		display: none;

@@ -1923,5 +1923,78 @@
 			"description": "On October 19, 2021, North Korea conducted its first SLBM test in over two years. This new missile, which appears to be a modified KN-23, was revealed at a major defense exhibition in Pyongyang the previous week. The missile reached an altitude 60 km and traveled 590 km. The missile was launched from the Gorae-class submarine used in previous SLBM tests."
 		}],
 		"year": 2021
+	}, {
+		"data": [{
+			"date": "2022-01-04",
+			"time": "23:07 (UTC)",
+			"missile": "unknown",
+			"facility": "chagang",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "500",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-01-10",
+			"time": "22:27 (UTC)",
+			"missile": "unknown",
+			"facility": "chagang",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "1000",
+			"bearing": 67,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-01-14",
+			"time": "05:41 (UTC)",
+			"series": 1,
+			"missile": "rail-mobile-kn-23",
+			"facility": "pihyon",
+			"landing": "sea-of-japan",
+			"apogee": "36",
+			"distance": "430",
+			"bearing": 78,
+			"outcome": "success",
+			"description": "(1 of 2)"
+		}, {
+			"date": "2022-01-14",
+			"time": "05:52 (UTC)",
+			"series": 2,
+			"missile": "rail-mobile-kn-23",
+			"facility": "pihyon",
+			"landing": "sea-of-japan",
+			"apogee": "36",
+			"distance": "430",
+			"bearing": 78,
+			"outcome": "success",
+			"description": "(2 of 2)"
+		}, {
+			"date": "2022-01-16",
+			"time": "23:49 (UTC)",
+			"series": 1,
+			"missile": "kn-24",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "42",
+			"distance": "380",
+			"bearing": 62,
+			"outcome": "success",
+			"description": "(1 of 2)"
+		}, {
+			"date": "2022-01-16",
+			"time": "23:52 (UTC)",
+			"series": 2,
+			"missile": "kn-24",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "42",
+			"distance": "380",
+			"bearing": 62,
+			"outcome": "success",
+			"description": "(2 of 2)"
+		}],
+		"year": 2022
 	}]
 }

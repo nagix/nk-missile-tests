@@ -33,9 +33,9 @@ var d3Graphs = {
 	barGraphBottomPadding: 75,
 	histogramWidth: [686, 366],
 	histogramHeight: 160,
-	histogramBarWidth: [28, 14],
-	histogramLeftPadding: [28, 21],
-	histogramRightPadding: [28, 21],
+	histogramBarWidth: [27, 14],
+	histogramLeftPadding: [29.5, 21.5],
+	histogramRightPadding: [29.5, 21.5],
 	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
@@ -47,8 +47,8 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [30.5, 16.5],
-	handleInterval: [35, 18],
+	handleLeftOffset: [31, 16],
+	handleInterval: [33, 17],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
@@ -58,7 +58,7 @@ var d3Graphs = {
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
-	selectedYearIndex: 17,
+	selectedYearIndex: 18,
 
 
 	setTest: function(test) {
@@ -99,11 +99,11 @@ var d3Graphs = {
 		$("#graphIcon").on('click', d3Graphs.graphIconClick);
 		$("#history .close").on('click', d3Graphs.closeHistogram);
 		$("#history ul li").on('click', d3Graphs.clickTimeline);
-		$("#handle").draggable({axis: 'x',containment: "parent",grid:[size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle });
+		$("#handle").draggable({axis: 'x', containment: "parent", grid: [size(this.handleInterval), 0], stop: d3Graphs.dropHandle, drag: d3Graphs.dropHandle});
 		$("#hudButtons .searchBtn").on('click', d3Graphs.updateViz);
 		$("#outcomeBtns>div>.label").on('click', d3Graphs.outcomeLabelClick);
 		$(".missileTypeBtn").on('click', d3Graphs.missileBtnClick);
-		$("#hudButtons .testTextInput").autocomplete({ source:selectableTests, autoFocus: true });
+		$("#hudButtons .testTextInput").autocomplete({source: selectableTests, autoFocus: true});
 		$("#hudButtons .testTextInput").keyup(d3Graphs.testKeyUp);
 		$("#hudButtons .testTextInput").focus(d3Graphs.testFocus);
 		$("#hudButtons .aboutBtn").on('click', d3Graphs.toggleAboutBox);
@@ -119,7 +119,7 @@ var d3Graphs = {
 	tiltBtnMouseup: function() {
 		clearInterval(d3Graphs.tiltBtnInterval);
 	},
-	tiltBtnClick:function() {
+	tiltBtnClick: function() {
 		var delta;
 		if($(this).hasClass('sideViewBtn')) {
 			delta = 5;
@@ -129,7 +129,7 @@ var d3Graphs = {
 		d3Graphs.doTilt(delta);
 		d3Graphs.tiltBtnInterval = setInterval(d3Graphs.doTilt, 50, delta);
 	},
-	doTilt:function(delta) {
+	doTilt: function(delta) {
 		tilt += delta * 0.01;
 		tilt = constrain(tilt, 0, Math.PI / 2);
 		camera.position.y = 300 * Math.sin(-tilt);
@@ -140,7 +140,7 @@ var d3Graphs = {
 	zoomBtnMouseup: function() {
 		clearInterval(d3Graphs.zoomBtnInterval);
 	},
-	zoomBtnClick:function() {
+	zoomBtnClick: function() {
 		var delta;
 		if($(this).hasClass('zoomOutBtn')) {
 			delta = -0.5;
@@ -150,16 +150,16 @@ var d3Graphs = {
 		d3Graphs.doZoom(delta);
 		d3Graphs.zoomBtnInterval = setInterval(d3Graphs.doZoom,50,delta);
 	},
-	doZoom:function(delta) {
+	doZoom: function(delta) {
 		camera.zoom += delta * 0.1;
 		camera.zoom = constrain( camera.zoom, 0.5, 5.0 );
 		camera.updateProjectionMatrix();
 		scaleTarget = undefined;
 	},
-	toggleAboutBox:function() {
+	toggleAboutBox: function() {
 		$("#aboutContainer").toggle();
 	},
-	clickTimeline:function() {
+	clickTimeline: function() {
 		var year = $(this).text();
 		if (year < 70) {
 			year = (year * 1) + 2000;
@@ -170,7 +170,7 @@ var d3Graphs = {
 		d3Graphs.setHandlePosition(yearIndexLookup[year]);
 		d3Graphs.updateViz(true);
 	},
-	windowResizeCB:function() {
+	windowResizeCB: function() {
 		clearTimeout(d3Graphs.windowResizeTimeout);
 		d3Graphs.windowResizeTimeout = setTimeout(d3Graphs.windowResize, 50);
 	},
@@ -223,7 +223,7 @@ var d3Graphs = {
 		$("#handle").draggable({
 			axis: 'x',
 			containment: "parent",
-			grid:[size(d3Graphs.handleInterval), 0],
+			grid: [size(d3Graphs.handleInterval), 0],
 			stop: d3Graphs.dropHandle,
 			drag: d3Graphs.dropHandle
 		});
@@ -242,11 +242,11 @@ var d3Graphs = {
 		$("#history").css('left',historyLeftPos+"px");
 		$("#graphIcon").css('left',historyLeftPos + historyWidth + graphIconPadding+'px');
 	},
-	testFocus:function(event) {
+	testFocus: function(event) {
 		//console.log("focus");
-		setTimeout(function() { $('#hudButtons .testTextInput').select() },50);
+		setTimeout(function() { $('#hudButtons .testTextInput').select(); },50);
 	},
-	menuItemClick:function(event) {
+	menuItemClick: function(event) {
 		setTimeout(function() {
 			$('#hudButtons .testTextInput').blur();
 		}, 50);
@@ -259,7 +259,7 @@ var d3Graphs = {
 		}
 	},
 
-	updateViz:function(filterChanged) {
+	updateViz: function(filterChanged) {
 		var test = $("#hudButtons .testTextInput").val().toUpperCase();
 		if (typeof testData[test] == 'undefined') {
 			if (!filterChanged) {
@@ -317,7 +317,7 @@ var d3Graphs = {
 		selectionData.selectedTest = test;
 		selectVisualization(timeBins, year, [test], outcomeArray, missileArray);
 	},
-	dropHandle:function() {
+	dropHandle: function() {
 		var yearOffset = $("#handle").css('left');
 		yearOffset = yearOffset.substr(0, yearOffset.length - 2);
 		yearOffset -= size(d3Graphs.handleLeftOffset);
@@ -335,7 +335,7 @@ var d3Graphs = {
 		}
 		d3Graphs.updateViz(true);
 	},
-	missileBtnClick:function() {
+	missileBtnClick: function() {
 		var check = $(this).find('.check');
 		if(check.hasClass('inactive')) {
 			check.removeClass('inactive');
@@ -382,14 +382,14 @@ var d3Graphs = {
 			return null;
 		}
 		return d3Graphs.histogramXScale(d.x) + size(d3Graphs.histogramLeftPadding);
-	 })
+	})
 	.y(function(d) {
 		if(d == null) {
 			return null;
 		}
 		return d3Graphs.histogramYScale(d.y) + size(d3Graphs.histogramVertPadding);
 	}),
-	setHistogramData:function() {
+	setHistogramData: function() {
 		var outcomeArray = [];
 		var historical = summary.historical;
 		var numHistory = historical.length;
@@ -409,7 +409,7 @@ var d3Graphs = {
 		this.histogramOutcomeArray = outcomeArray;
 		this.histogramAbsMax = absMax;
 	},
-	drawHistogram:function() {
+	drawHistogram: function() {
 		var histogramWidth = size(this.histogramWidth);
 		var histogramBarWidth = size(this.histogramBarWidth);
 		var histogramLeftPadding = size(this.histogramLeftPadding);
@@ -425,9 +425,9 @@ var d3Graphs = {
 			.attr('height', this.histogramHeight);
 		this.setHistogramData();
 
-		this.histogramYScale = d3.scaleLinear().domain([0, this.histogramAbsMax]).range([0, this.histogramHeight - this.histogramVertPadding*2]);
+		this.histogramYScale = d3.scaleLinear().domain([0, this.histogramAbsMax]).range([0, this.histogramHeight - this.histogramVertPadding * 2]);
 		var maxX = summary.historical.length;
-		this.histogramXScale = d3.scaleLinear().domain([0,maxX]).range([0, histogramWidth - histogramLeftPadding - histogramRightPadding]);
+		this.histogramXScale = d3.scaleLinear().domain([0, maxX]).range([0, histogramWidth - histogramLeftPadding - histogramRightPadding]);
 
 		var tickData = this.histogramYScale.ticks(5);
 
@@ -584,9 +584,9 @@ var d3Graphs = {
 				minMissileCount = Math.min(minMissileCount, uCount);
 				maxMissileCount = Math.max(maxMissileCount, uCount);
 			}
-			successArray.unshift({"type":code, "count": sCount});
-			failureArray.unshift({"type":code, "count": fCount});
-			unknownArray.unshift({"type":code, "count": uCount});
+			successArray.unshift({type: code, count: sCount});
+			failureArray.unshift({type: code, count: fCount});
+			unknownArray.unshift({type: code, count: uCount});
 		}
 		var max = 26;
 		var yScale = d3.scaleLinear().domain([0,max]).range([0,this.barGraphHeight - this.barGraphBottomPadding - this.barGraphTopPadding]);

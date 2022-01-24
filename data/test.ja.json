@@ -1925,5 +1925,78 @@
 			"description": "2021年10月19日、北朝鮮は2年以上ぶりにSLBMの発射実験を行った。KN-23を改良したものと思われるこの新型ミサイルは、前週に平壌で開催された大規模な防衛展示会で公開された。ミサイルは高度60kmに達し、590kmを飛行した。このミサイルは、過去のSLBM実験でも使用された高麗(ゴレ)級潜水艦から発射された。"
 		}],
 		"year": 2021
+	}, {
+		"data": [{
+			"date": "2022-01-05",
+			"time": "08:07 (JST)",
+			"missile": "unknown",
+			"facility": "chagang",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "700",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-01-11",
+			"time": "07:27 (JST)",
+			"missile": "unknown",
+			"facility": "chagang",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "1000",
+			"bearing": 67,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-01-14",
+			"time": "14:41 (JST)",
+			"series": 1,
+			"missile": "rail-mobile-kn-23",
+			"facility": "pihyon",
+			"landing": "sea-of-japan",
+			"apogee": "36",
+			"distance": "430",
+			"bearing": 78,
+			"outcome": "success",
+			"description": "(2発の実験の内の1発目)"
+		}, {
+			"date": "2022-01-14",
+			"time": "14:52 (JST)",
+			"series": 2,
+			"missile": "rail-mobile-kn-23",
+			"facility": "pihyon",
+			"landing": "sea-of-japan",
+			"apogee": "36",
+			"distance": "430",
+			"bearing": 78,
+			"outcome": "success",
+			"description": "(2発の実験の内の2発目)"
+		}, {
+			"date": "2022-01-17",
+			"time": "08:49 (JST)",
+			"series": 1,
+			"missile": "kn-24",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "42",
+			"distance": "380",
+			"bearing": 62,
+			"outcome": "success",
+			"description": "(2発の実験の内の1発目)"
+		}, {
+			"date": "2022-01-17",
+			"time": "08:52 (JST)",
+			"series": 2,
+			"missile": "kn-24",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "42",
+			"distance": "380",
+			"bearing": 62,
+			"outcome": "success",
+			"description": "(2発の実験の内の2発目)"
+		}],
+		"year": 2022
 	}]
 }
