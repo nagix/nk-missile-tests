@@ -1996,6 +1996,30 @@
 			"bearing": 62,
 			"outcome": "success",
 			"description": "(2発の実験の内の2発目)"
+		}, {
+			"date": "2022-01-27",
+			"time": "08:00 (JST)",
+			"series": 1,
+			"missile": "kn-23",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": "20",
+			"distance": "190",
+			"bearing": 63,
+			"outcome": "success",
+			"description": "(2発の実験の内の1発目)"
+		}, {
+			"date": "2022-01-27",
+			"time": "08:05 (JST)",
+			"series": 2,
+			"missile": "kn-23",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": "20",
+			"distance": "190",
+			"bearing": 63,
+			"outcome": "success",
+			"description": "(2発の実験の内の2発目)"
 		}],
 		"year": 2022
 	}]

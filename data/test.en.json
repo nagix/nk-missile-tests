@@ -1994,6 +1994,30 @@
 			"bearing": 62,
 			"outcome": "success",
 			"description": "(2 of 2)"
+		}, {
+			"date": "2022-01-26",
+			"time": "23:00 (UTC)",
+			"series": 1,
+			"missile": "kn-23",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": "20",
+			"distance": "190",
+			"bearing": 63,
+			"outcome": "success",
+			"description": "(1 of 2)"
+		}, {
+			"date": "2022-01-26",
+			"time": "23:05 (UTC)",
+			"series": 2,
+			"missile": "kn-23",
+			"facility": "hamhung",
+			"landing": "sea-of-japan",
+			"apogee": "20",
+			"distance": "190",
+			"bearing": 63,
+			"outcome": "success",
+			"description": "(2 of 2)"
 		}],
 		"year": 2022
 	}]
