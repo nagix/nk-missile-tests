@@ -2020,6 +2020,17 @@
 			"bearing": 63,
 			"outcome": "success",
 			"description": "(2発の実験の内の2発目)"
+		}, {
+			"date": "2022-01-30",
+			"time": "07:52 (JST)",
+			"missile": "hwasong-12",
+			"facility": "mupyong-ni",
+			"landing": "sea-of-japan",
+			"apogee": "2000",
+			"distance": "800",
+			"bearing": 75,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2022
 	}]

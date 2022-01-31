@@ -2018,6 +2018,17 @@
 			"bearing": 63,
 			"outcome": "success",
 			"description": "(2 of 2)"
+		}, {
+			"date": "2022-01-29",
+			"time": "22:52 (UTC)",
+			"missile": "hwasong-12",
+			"facility": "mupyong-ni",
+			"landing": "sea-of-japan",
+			"apogee": "2000",
+			"distance": "800",
+			"bearing": 75,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2022
 	}]
