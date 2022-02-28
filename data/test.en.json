@@ -2029,6 +2029,17 @@
 			"bearing": 75,
 			"outcome": "success",
 			"description": ""
+		}, {
+			"date": "2022-02-27",
+			"time": "00:12 (UTC)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "620",
+			"distance": "300",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2022
 	}]
