@@ -4,6 +4,7 @@
 	"hwasong-12": {"name": "Hwasong-12", "type": "IRBM"},
 	"hwasong-14": {"name": "Hwasong-14", "type": "ICBM"},
 	"hwasong-15": {"name": "Hwasong-15", "type": "ICBM"},
+	"hwasong-17": {"name": "Hwasong-17", "type": "ICBM"},
 	"kn-02": {"name": "KN-02", "type": "SRBM"},
 	"kn-23": {"name": "KN-23", "type": "SRBM"},
 	"kn-24": {"name": "KN-24", "type": "SRBM"},

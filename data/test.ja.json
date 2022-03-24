@@ -2034,12 +2034,45 @@
 		}, {
 			"date": "2022-02-27",
 			"time": "09:12 (JST)",
-			"missile": "unknown",
+			"missile": "hwasong-17",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "620",
 			"distance": "300",
 			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-03-05",
+			"time": "00:12 (JST)",
+			"missile": "hwasong-17",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "560",
+			"distance": "270",
+			"bearing": 70,
+			"outcome": "success",
+			"description": ""
+		}, {
+			"date": "2022-03-16",
+			"time": "09:30 (JST)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": ""
+		}, {
+			"date": "2022-03-24",
+			"time": "14:33 (JST)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "6200",
+			"distance": "1080",
+			"bearing": 72,
 			"outcome": "success",
 			"description": ""
 		}],
