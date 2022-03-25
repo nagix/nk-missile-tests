@@ -1,6 +1,7 @@
 {
 	"er-scud": {"name": "ER Scud", "type": "MRBM"},
 	"hwasong-8": {"name": "Hwasong-8", "type": "HGV"},
+	"hwasong-8-marv": {"name": "Hwasong-8 MaRV", "type": "MRBM"},
 	"hwasong-12": {"name": "Hwasong-12", "type": "IRBM"},
 	"hwasong-14": {"name": "Hwasong-14", "type": "ICBM"},
 	"hwasong-15": {"name": "Hwasong-15", "type": "ICBM"},

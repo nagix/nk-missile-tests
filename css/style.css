@@ -371,6 +371,9 @@ Bar graph on left
 #barGraph .bar.hwasong-8, #missileTypeBtns .hwasong-8 .check {
 	fill: #AEC7E8;
 }
+#barGraph .bar.hwasong-8-marv, #missileTypeBtns .hwasong-8-marv .check {
+	fill: #FFBB78;
+}
 #barGraph .bar.hwasong-12, #missileTypeBtns .hwasong-12 .check {
 	fill: #7F7F7F;
 }
@@ -381,7 +384,7 @@ Bar graph on left
 	fill: #17BECF;
 }
 #barGraph .bar.hwasong-17, #missileTypeBtns .hwasong-17 .check {
-	fill: #9467BD;
+	fill: #FF9896;
 }
 #barGraph .bar.kn-02, #missileTypeBtns .kn-02 .check {
 	fill: #C49C94;

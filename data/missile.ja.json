@@ -1,6 +1,7 @@
 {
 	"er-scud": {"name": "スカッドER", "type": "MRBM"},
 	"hwasong-8": {"name": "火星8号", "type": "HGV"},
+	"hwasong-8-marv": {"name": "火星8号 MaRV", "type": "MRBM"},
 	"hwasong-12": {"name": "火星12号", "type": "IRBM"},
 	"hwasong-14": {"name": "火星14号", "type": "ICBM"},
 	"hwasong-15": {"name": "火星15号", "type": "ICBM"},

@@ -186,7 +186,7 @@ var d3Graphs = {
 			$('#hudButtons').css('left', w - hudButtonWidth - 20);
 			var outcomeButtonHeight = $("#outcomeBtns").height();
 			$("#outcomeBtns").css('top', h - outcomeButtonHeight - 15);
-			$("#missileTypeBtns").css('height', Math.min(700, h - 96));
+			$("#missileTypeBtns").css('height', Math.min(756, h - 96));
 			var missileButtonWidth = $("#missileTypeBtns").width();
 			var missileButtonHeight = $("#missileTypeBtns").height();
 			$("#missileTypeBtns").css('left', w - missileButtonWidth - 20);
@@ -199,7 +199,7 @@ var d3Graphs = {
 			$("#hudButtons").css('right', d3Graphs.hudButtonsOpen ?
 				0 : $("#hudButtonHandle").width() - $("#hudButtons").width() + 'px');
 			var h = Math.max(windowHeight, minHeight);
-			$("#missileTypeBtns").css('height', Math.min(700, h - 215));
+			$("#missileTypeBtns").css('height', Math.min(756, h - 215));
 		}
 		$("#missileTypeBtns").overlayScrollbars({
 			className: "os-theme-light",

@@ -51,12 +51,13 @@ var outcomeLookup = {
 
 //	A list of missile colors
 var missileColors = {
-	'er-scud' : 0x1F77B4,
-	'hwasong-8' : 0xAEC7E8,
-	'hwasong-12' : 0x7F7F7F,
-	'hwasong-14' : 0xBCBD22,
-	'hwasong-15' : 0x17BECF,
-	'hwasong-17' : 0x9467BD,
+	'er-scud': 0x1F77B4,
+	'hwasong-8': 0xAEC7E8,
+	'hwasong-8-marv': 0xFFBB78,
+	'hwasong-12': 0x7F7F7F,
+	'hwasong-14': 0xBCBD22,
+	'hwasong-15': 0x17BECF,
+	'hwasong-17': 0xFF9896,
 	'kn-02': 0xC49C94,
 	'kn-23': 0x9EDAE5,
 	'kn-24': 0xFF9896,
