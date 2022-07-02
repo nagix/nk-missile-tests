@@ -2078,6 +2078,7 @@
 		}, {
 			"date": "2022-04-16",
 			"time": "18:00 (JST)",
+			"series": 1,
 			"missile": "unnamed-srbm-2022",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
@@ -2089,6 +2090,7 @@
 		}, {
 			"date": "2022-04-16",
 			"time": "18:00 (JST)",
+			"series": 2,
 			"missile": "unnamed-srbm-2022",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
@@ -2119,6 +2121,42 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "5月7日現地時間午後2時7分、北朝鮮はSLBM実験を実施したとみられる。ミサイルは600km飛行し、高度60kmに達した。これは2021年10月に実験した艦載型KN-23と同等の性能である。北朝鮮はこの実験についてプレスリリースを発表していないため、成功とみなされたのかどうかは不明である。"
+		}, {
+			"date": "2022-05-12",
+			"time": "18:29 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "5月12日、北朝鮮は弾道ミサイル3発を発射した。この実験は保守派の尹錫悦氏が韓国大統領に就任した2日後に行われた。北朝鮮はこの実験に関するプレスリリースを発表しなかったが、アナリストは、軌道が既知のKN-25実験で観測されたものと非常に類似していると指摘している。(3発の実験の内の1発目)"
+		}, {
+			"date": "2022-05-12",
+			"time": "18:29 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "5月12日、北朝鮮は弾道ミサイル3発を発射した。この実験は保守派の尹錫悦氏が韓国大統領に就任した2日後に行われた。北朝鮮はこの実験に関するプレスリリースを発表しなかったが、アナリストは、軌道が既知のKN-25実験で観測されたものと非常に類似していると指摘している。(3発の実験の内の2発目)"
+		}, {
+			"date": "2022-05-12",
+			"time": "18:29 (JST)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "5月12日、北朝鮮は弾道ミサイル3発を発射した。この実験は保守派の尹錫悦氏が韓国大統領に就任した2日後に行われた。北朝鮮はこの実験に関するプレスリリースを発表しなかったが、アナリストは、軌道が既知のKN-25実験で観測されたものと非常に類似していると指摘している。(3発の実験の内の3発目)"
 		}],
 		"year": 2022
 	}]

@@ -2076,6 +2076,7 @@
 		}, {
 			"date": "2022-04-16",
 			"time": "09:00 (UTC)",
+			"series": 1,
 			"missile": "unnamed-srbm-2022",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
@@ -2087,6 +2088,7 @@
 		}, {
 			"date": "2022-04-16",
 			"time": "09:00 (UTC)",
+			"series": 2,
 			"missile": "unnamed-srbm-2022",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
@@ -2117,6 +2119,42 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "At 2:07 PM local time on 7 May, North Korea conducted an apparent SLBM test. The missile traveled 600 km downrange and reached an altitude of 60 km, a similar performance to the navalized KN-23 tested in October 2021. North Korea did not issue a press release about the test, and it is therefore unclear if it was considered successful."
+		}, {
+			"date": "2022-05-12",
+			"time": "09:29 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "On May 12, North Korea launched three ballistic missiles. The test occurred two days after conservative Yoon Suk-yeol was sworn in as President of South Korea. North Korea did not issue a press release regarding the test, although analysts noted that the trajectory was very similar to that observed in known KN-25 tests. (1 of 3)"
+		}, {
+			"date": "2022-05-12",
+			"time": "09:29 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "On May 12, North Korea launched three ballistic missiles. The test occurred two days after conservative Yoon Suk-yeol was sworn in as President of South Korea. North Korea did not issue a press release regarding the test, although analysts noted that the trajectory was very similar to that observed in known KN-25 tests. (2 of 3)"
+		}, {
+			"date": "2022-05-12",
+			"time": "09:29 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "90",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "On May 12, North Korea launched three ballistic missiles. The test occurred two days after conservative Yoon Suk-yeol was sworn in as President of South Korea. North Korea did not issue a press release regarding the test, although analysts noted that the trajectory was very similar to that observed in known KN-25 tests. (3 of 3)"
 		}],
 		"year": 2022
 	}]
