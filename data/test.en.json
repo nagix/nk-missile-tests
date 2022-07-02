@@ -2155,6 +2155,42 @@
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": "On May 12, North Korea launched three ballistic missiles. The test occurred two days after conservative Yoon Suk-yeol was sworn in as President of South Korea. North Korea did not issue a press release regarding the test, although analysts noted that the trajectory was very similar to that observed in known KN-25 tests. (3 of 3)"
+		}, {
+			"date": "2022-05-24",
+			"time": "09:00 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "360",
+			"distance": "540",
+			"bearing": 72,
+			"outcome": "failure",
+			"description": "On May 25 (local time), North Korea conducted three missile launches. The first, at 6:00 AM local time, reached an apogee of 360 km and traveled 540 km downrange. The South Korean and US governments believe that this first missile was a failed ICBM test, possibly of the Hwasong-17. Approximately 37 minutes later, two further missiles were launched. One reached an altitude of 20 km and \"vanished,\" presumably failing mid-flight. The other missile reached an apogee of 60 km and a range of 760 km. The South Korean government believed these second two launches were of KN-23 missiles. According to CNN, data available to the US intelligence community indicated that one of the missiles may have conducted a \"double arc\" maneuver. North Korea did not issue a press release regarding any of the launches, which occurred shortly after the conclusion of US President Biden's first visit to South Korea since taking office. (1 of 3)"
+		}, {
+			"date": "2022-05-24",
+			"time": "09:37 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "unknown",
+			"apogee": "20",
+			"distance": "unknown",
+			"bearing": 72,
+			"outcome": "failure",
+			"description": "On May 25 (local time), North Korea conducted three missile launches. The first, at 6:00 AM local time, reached an apogee of 360 km and traveled 540 km downrange. The South Korean and US governments believe that this first missile was a failed ICBM test, possibly of the Hwasong-17. Approximately 37 minutes later, two further missiles were launched. One reached an altitude of 20 km and \"vanished,\" presumably failing mid-flight. The other missile reached an apogee of 60 km and a range of 760 km. The South Korean government believed these second two launches were of KN-23 missiles. According to CNN, data available to the US intelligence community indicated that one of the missiles may have conducted a \"double arc\" maneuver. North Korea did not issue a press release regarding any of the launches, which occurred shortly after the conclusion of US President Biden's first visit to South Korea since taking office. (2 of 3)"
+		}, {
+			"date": "2022-05-24",
+			"time": "09:42 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "760",
+			"bearing": 72,
+			"outcome": "success",
+			"description": "On May 25 (local time), North Korea conducted three missile launches. The first, at 6:00 AM local time, reached an apogee of 360 km and traveled 540 km downrange. The South Korean and US governments believe that this first missile was a failed ICBM test, possibly of the Hwasong-17. Approximately 37 minutes later, two further missiles were launched. One reached an altitude of 20 km and \"vanished,\" presumably failing mid-flight. The other missile reached an apogee of 60 km and a range of 760 km. The South Korean government believed these second two launches were of KN-23 missiles. According to CNN, data available to the US intelligence community indicated that one of the missiles may have conducted a \"double arc\" maneuver. North Korea did not issue a press release regarding any of the launches, which occurred shortly after the conclusion of US President Biden's first visit to South Korea since taking office. (3 of 3)"
 		}],
 		"year": 2022
 	}]
