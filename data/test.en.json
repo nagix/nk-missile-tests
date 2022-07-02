@@ -2073,6 +2073,28 @@
 			"bearing": 72,
 			"outcome": "success",
 			"description": "At 2:34 PM local time on March 24, 2022, North Korea conducted its first ICBM launch since 2017. The Hwasong-17, in its first launch, reached an apogee of over 6200 km, traveling nearly 1100 km downrange, with a flight time of nearly 71 minutes. With a first stage powered by two 80-ton boosters, this is easily the largest missile tested by North Korea."
+		}, {
+			"date": "2022-04-16",
+			"time": "09:00 (UTC)",
+			"missile": "unnamed-srbm-2022",
+			"facility": "hungnam",
+			"landing": "sea-of-japan",
+			"apogee": "25",
+			"distance": "110",
+			"bearing": 58,
+			"outcome": "success",
+			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. (1 of 2)"
+		}, {
+			"date": "2022-04-16",
+			"time": "09:00 (UTC)",
+			"missile": "unnamed-srbm-2022",
+			"facility": "hungnam",
+			"landing": "sea-of-japan",
+			"apogee": "25",
+			"distance": "110",
+			"bearing": 58,
+			"outcome": "success",
+			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. (2 of 2)"
 		}],
 		"year": 2022
 	}]

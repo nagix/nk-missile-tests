@@ -446,6 +446,9 @@ Bar graph on left
 #barGraph .bar.unnamed-kn-23-mod, #missileTypeBtns .unnamed-kn-23-mod .check {
 	fill: #AEC7E8;
 }
+#barGraph .bar.unnamed-srbm-2022, #missileTypeBtns .unnamed-srbm-2022 .check {
+	fill: #9467BD;
+}
 #barGraph .successLabel text,#barGraph .failureLabel text,#barGraph .unknownLabel text {
 	fill: white;
 	font-family: Roboto;

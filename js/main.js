@@ -77,7 +77,8 @@ var missileColors = {
 	'unha': 0x9467BD,
 	'unha-3': 0xC5B0D5,
 	'unknown': 0x8C564B,
-	'unnamed-kn-23-mod': 0xAEC7E8
+	'unnamed-kn-23-mod': 0xAEC7E8,
+	'unnamed-srbm-2022': 0x9467BD
 };
 
 //	the currently selected test
