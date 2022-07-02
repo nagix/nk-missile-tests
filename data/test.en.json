@@ -2106,6 +2106,17 @@
 			"bearing": 70,
 			"outcome": "failure",
 			"description": "At 12:03 PM local time on 4 May 2022, North Korea launched a missile that traveled 470 km downrange and reached an altitude of 780 km. North Korea did not issue a press release about the launch. However, the trajectory is somewhat similar to that of the missile tests conducted on 26/27 February and 4/5 March. The test might therefore have been a test of ICBM or satellite components, or a failed ICBM test. On May 18, CNN reported that the US government believes this test was a failed ICBM launch."
+		}, {
+			"date": "2022-05-07",
+			"time": "05:07 (UTC)",
+			"missile": "unknown",
+			"facility": "sinpo",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "600",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "At 2:07 PM local time on 7 May, North Korea conducted an apparent SLBM test. The missile traveled 600 km downrange and reached an altitude of 60 km, a similar performance to the navalized KN-23 tested in October 2021. North Korea did not issue a press release about the test, and it is therefore unclear if it was considered successful."
 		}],
 		"year": 2022
 	}]
