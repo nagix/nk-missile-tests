@@ -2287,6 +2287,17 @@
 			"bearing": 71,
 			"outcome": "unknown",
 			"description": "On June 5, North Korea launched several short-range ballistic missiles from multiple locations in less than an hour. According to the South Korean government, 8 missiles were launched between 9:08 and 9:43 AM local time from Sunan, Kaechon, Tongchang-ri, and Hamhung, traveling 110 to 670 km with apogees between 25 and 90 km. The Japanese government lists six launches between 9:06 and 9:41 AM, from the east coast, west coast, and inland, traveling 300 to 400 km with apogees of approximately 50 and 100 km. The Japanese government further indicated that some of the missiles may have flown on \"irregular\" trajectories, suggesting that at least one missile may have conducted a \"pull-up\" maneuver. North Korea did not issue a press release regarding the launch. Following this test, the US and South Korean armies launched 8 ATACMS short-range missiles. The 9:41 missile was launched from an inland area, according to the Japanese government. Possibly one of the 600km tests observed by South Korea. (8 of 8)"
+		}, {
+			"date": "2022-09-24",
+			"time": "21:53 (UTC)",
+			"missile": "unknown",
+			"facility": "taechon",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "600",
+			"bearing": 71,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
