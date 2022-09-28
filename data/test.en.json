@@ -2298,6 +2298,30 @@
 			"bearing": 71,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2022-09-28",
+			"time": "09:10 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2022-09-28",
+			"time": "09:20 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "360",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
