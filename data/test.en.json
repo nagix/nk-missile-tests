@@ -2309,7 +2309,7 @@
 			"distance": "360",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "1 of 2 tests."
 		}, {
 			"date": "2022-09-28",
 			"time": "09:20 (UTC)",
@@ -2321,7 +2321,31 @@
 			"distance": "360",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "2 of 2 tests."
+		}, {
+			"date": "2022-09-29",
+			"time": "11:48 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 64,
+			"outcome": "unknown",
+			"description": "1 of 2 tests."
+		}, {
+			"date": "2022-09-29",
+			"time": "11:57 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 64,
+			"outcome": "unknown",
+			"description": "2 of 2 tests."
 		}],
 		"year": 2022
 	}]

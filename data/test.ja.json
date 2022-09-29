@@ -2311,7 +2311,7 @@
 			"distance": "360",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "2発の実験の内の1発目。"
 		}, {
 			"date": "2022-09-28",
 			"time": "18:20 (JST)",
@@ -2323,7 +2323,31 @@
 			"distance": "360",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "2発の実験の内の2発目。"
+		}, {
+			"date": "2022-09-29",
+			"time": "20:48 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 64,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目。"
+		}, {
+			"date": "2022-09-29",
+			"time": "20:57 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sunchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 64,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目。"
 		}],
 		"year": 2022
 	}]
