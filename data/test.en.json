@@ -2370,6 +2370,17 @@
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": "2 of 2 tests."
+		}, {
+			"date": "2022-10-03",
+			"time": "22:22 (UTC)",
+			"missile": "unknown",
+			"facility": "mupyong-ni",
+			"landing": "sea-of-japan",
+			"apogee": "1000",
+			"distance": "4600",
+			"bearing": 80,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
