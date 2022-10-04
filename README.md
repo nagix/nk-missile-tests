@@ -33,6 +33,8 @@ The CNS North Korea Missile Test Database doesn't include the exact landing loca
 
 nk-missile-tests is largely inspired by [Arms Globe Visualization](https://github.com/dataarts/armsglobe) project by the Google Data Arts Team, and uses the code from it.
 
+The CNS North Korea Missile Test Database is created by the James Martin Center for Nonproliferation Studies for the Nuclear Threat Initiative.
+
 ## License
 
 nk-missile-tests is available under the [Apache license 2.0](opensource.org/licenses/Apache-2.0).
