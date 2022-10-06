@@ -2381,6 +2381,30 @@
 			"bearing": 80,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2022-10-05",
+			"time": "21:00 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": "1 of 2 tests."
+		}, {
+			"date": "2022-10-05",
+			"time": "21:15 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "800",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2 of 2 tests."
 		}],
 		"year": 2022
 	}]
