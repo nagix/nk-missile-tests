@@ -2407,6 +2407,30 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目。"
+		}, {
+			"date": "2022-10-09",
+			"time": "01:47 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "munchon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目。"
+		}, {
+			"date": "2022-10-09",
+			"time": "01:53 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "munchon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目。"
 		}],
 		"year": 2022
 	}]
