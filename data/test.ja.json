@@ -2431,6 +2431,17 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目。"
+		}, {
+			"date": "2022-10-14",
+			"time": "01:49 (JST)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "700",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
