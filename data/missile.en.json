@@ -12,6 +12,7 @@
 	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "Musudan", "type": "IRBM"},
 	"navalized-kn-23": {"name": "Navalized KN-23", "type": "SLBM"},
+	"new-irbm-2022": {"name": "New IRBM 2022", "type": "IRBM"},
 	"nodong": {"name": "Nodong", "type": "MRBM"},
 	"pukguksong-1": {"name": "Pukguksong-1", "type": "SLBM"},
 	"pukguksong-2": {"name": "Pukguksong-2", "type": "MRBM"},

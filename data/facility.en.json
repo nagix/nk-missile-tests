@@ -20,6 +20,7 @@
 		"panghyon": {"name": "Panghyon", "lat": 39.872153, "lon": 125.269192},
 		"mupyong-ni": {"name": "Mupyong-ni Arms Plant", "lat": 40.611208, "lon": 126.425743},
 		"masikryong": {"name": "Masikryong", "lat": 39.065962, "lon": 127.250257},
+		"munchon": {"name": "Munchon", "lat": 39.2815, "lon": 127.377},
 		"pyongyang": {"name": "Pyongyang International Airport", "lat": 39.200159, "lon": 125.673256},
 		"pyongsong": {"name": "Pyongsong Field", "lat": 39.282, "lon": 125.869},
 		"baegun": {"name": "Baegun", "lat": 40.029678, "lon": 125.227326},
@@ -30,15 +31,16 @@
 		"kaechon": {"name": "Kaechon Airbase", "lat": 39.752321, "lon": 125.899905},
 		"yonghung-bay": {"name": "Yonghung Bay", "lat": 39.26, "lon": 127.58},
 		"yonpo": {"name": "Yonpo Airport", "lat": 39.78938, "lon": 127.53993},
+		"samsok": {"name": "Samsok", "lat": 39.1268, "lon": 125.9579},
 		"sangum-ri": {"name": "Sangum-ri", "lat": 39.141, "lon": 127.616},
 		"sondok": {"name": "Sondok", "lat": 39.743, "lon": 127.499},
+		"sunan": {"name": "Sunan", "lat": 39.20299, "lon": 125.70926},
+		"west-sunan": {"name": "Wast Sunan", "lat": 39.3942, "lon": 125.6773},
 		"sonchon": {"name": "Sonchon", "lat": 39.79, "lon": 124.91},
+		"taechon": {"name": "Taechon Reservoir", "lat": 39.9857, "lon": 125.5186},
 		"uiju": {"name": "Uiju", "lat": 40.025847, "lon": 124.577936},
 		"yangdok": {"name": "Yangdok", "lat": 39.275721, "lon": 126.804867},
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851},
-		"yonghung": {"name": "Yonghung", "lat": 39.538, "lon": 127.241},
-		"taechon": {"name": "Taechon", "lat": 39.902976, "lon": 125.488707},
-		"samsok": {"name": "Samsok", "lat": 39.109091, "lon": 125.93427},
-		"munchon": {"name": "Munchon", "lat": 39.247243, "lon": 127.343617}
+		"yonghung": {"name": "Yonghung", "lat": 39.538, "lon": 127.241}
 	}
 }

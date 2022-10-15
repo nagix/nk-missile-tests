@@ -404,6 +404,9 @@ Bar graph on left
 #barGraph .bar.navalized-kn-23, #missileTypeBtns .navalized-kn-23 .check {
 	fill: #8C564B;
 }
+#barGraph .bar.new-irbm-2022, #missileTypeBtns .new-irbm-2022 .check {
+	fill: #D62728;
+}
 #barGraph .bar.nodong, #missileTypeBtns .nodong .check {
 	fill: #FF7F0E;
 }

@@ -64,6 +64,7 @@ var missileColors = {
 	'kn-25': 0xFF6741,
 	'musudan': 0xAEC7E8,
 	'navalized-kn-23': 0x8C564B,
+	'new-irbm-2022': 0xD62728,
 	'nodong': 0xFF7F0E,
 	'pukguksong-1': 0x8C564B,
 	'pukguksong-2': 0xC49C94,
