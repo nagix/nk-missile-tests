@@ -2426,18 +2426,18 @@
 			"distance": "350",
 			"bearing": 70,
 			"outcome": "success",
-			"description": "2 of 2 tests."
+			"description": "On October 9 (local time), North Korea launched two KN-25 rockets from a dock in Munchon, on North Korea's east coast. The South Korean Joint Chiefs of Staff stated the missiles were detected between 1:48 and 1:58 AM local time and launched from Munchon, Kangwon Province, with a range of 350 km and an apogee of 90 km. The Japanese government noted that the missiles were launched at 1:47 and 1:53 AM local time with a range of 350 km and an apogee of 100 km. The Japanese government also stated that the missiles may have been launched from the sea. Using images released by North Korea on October 9, analysts geolocated a the launch to a dock in Munchon. (2 of 2)"
 		}, {
 			"date": "2022-10-13",
-			"time": "16:49 (UTC)",
+			"time": "16:47 (UTC)",
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "700",
 			"bearing": 70,
 			"outcome": "unknown",
-			"description": ""
+			"description": "On October 14 (local time), North Korea launched a short-range ballistic missile. According to the South Korean Joint Chiefs of Staff, the launch was detected at 1:49 AM and originated from Sunan, flying 700 km with an apogee of 50 km. The Japanese government stated that the missile was launched at 1:47 AM and flew 650 km with an apogee of 50 km. The launch followed artillery drills by both South and North Korea."
 		}],
 		"year": 2022
 	}]
