@@ -2438,6 +2438,30 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "On October 14 (local time), North Korea launched a short-range ballistic missile. According to the South Korean Joint Chiefs of Staff, the launch was detected at 1:49 AM and originated from Sunan, flying 700 km with an apogee of 50 km. The Japanese government stated that the missile was launched at 1:47 AM and flew 650 km with an apogee of 50 km. The launch followed artillery drills by both South and North Korea."
+		}, {
+			"date": "2022-10-28",
+			"time": "2:59 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": "24",
+			"distance": "230",
+			"bearing": 34,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2022-10-28",
+			"time": "2:18 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": "24",
+			"distance": "230",
+			"bearing": 34,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2022
 	}]

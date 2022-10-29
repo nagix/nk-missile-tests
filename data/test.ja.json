@@ -2440,6 +2440,30 @@
 			"bearing": 70,
 			"outcome": "unknown",
 			"description": "10月14日(現地時間)、北朝鮮は短距離弾道ミサイルを発射した。韓国軍合同参謀本部によると、発射は午前1時49分に探知され、発射地は蘇南、最高高度50kmで700kmを飛行した。日本政府は、ミサイルは午前1時47分に発射され、最高高度は50km、650kmを飛行したと発表した。この発射は、韓国と北朝鮮による砲撃訓練に続いて行われた。"
+		}, {
+			"date": "2022-10-28",
+			"time": "11:59 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": "24",
+			"distance": "230",
+			"bearing": 34,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2022-10-28",
+			"time": "12:18 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "tongchon",
+			"landing": "sea-of-japan",
+			"apogee": "24",
+			"distance": "230",
+			"bearing": 34,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2022
 	}]
