@@ -2462,6 +2462,77 @@
 			"bearing": 34,
 			"outcome": "unknown",
 			"description": "2 of 2"
+		}, {
+			"date": "2022-11-02",
+			"time": "22:39 (UTC)",
+			"missile": "hwasong-17",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "1920",
+			"distance": "760",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": ""
+		}, {
+			"date": "2022-11-02",
+			"time": "23:39 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "330",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2022-11-02",
+			"time": "23:48 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "330",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2 of 2"
+		}, {
+			"date": "2022-11-03",
+			"time": "12:34 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "1 of 3"
+		}, {
+			"date": "2022-11-03",
+			"time": "12:39 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2 of 3"
+		}, {
+			"date": "2022-11-03",
+			"time": "12:42 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "3 of 3"
 		}],
 		"year": 2022
 	}]

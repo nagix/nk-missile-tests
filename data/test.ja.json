@@ -2464,6 +2464,77 @@
 			"bearing": 34,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2022-11-03",
+			"time": "07:39 (JST)",
+			"missile": "hwasong-17",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "1920",
+			"distance": "760",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": ""
+		}, {
+			"date": "2022-11-03",
+			"time": "08:39 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "330",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2022-11-03",
+			"time": "08:48 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "330",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2022-11-03",
+			"time": "21:34 (JST)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "3発の実験の内の1発目"
+		}, {
+			"date": "2022-11-03",
+			"time": "21:39 (JST)",
+			"series": 4,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "3発の実験の内の2発目"
+		}, {
+			"date": "2022-11-03",
+			"time": "21:42 (JST)",
+			"series": 5,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "sea-of-japan",
+			"apogee": "130",
+			"distance": "490",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "3発の実験の内の3発目"
 		}],
 		"year": 2022
 	}]
