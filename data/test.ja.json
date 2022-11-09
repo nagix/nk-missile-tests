@@ -2544,7 +2544,7 @@
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "4発の実験の内の1発目"
 		}, {
@@ -2556,7 +2556,7 @@
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "4発の実験の内の2発目"
 		}, {
@@ -2568,7 +2568,7 @@
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "4発の実験の内の3発目"
 		}, {
@@ -2580,9 +2580,20 @@
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "4発の実験の内の4発目"
+		}, {
+			"date": "2022-11-09",
+			"time": "15:31 (JST)",
+			"missile": "unknown",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "290",
+			"bearing": 68,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]

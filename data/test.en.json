@@ -2440,7 +2440,7 @@
 			"description": "On October 14 (local time), North Korea launched a short-range ballistic missile. According to the South Korean Joint Chiefs of Staff, the launch was detected at 1:49 AM and originated from Sunan, flying 700 km with an apogee of 50 km. The Japanese government stated that the missile was launched at 1:47 AM and flew 650 km with an apogee of 50 km. The launch followed artillery drills by both South and North Korea."
 		}, {
 			"date": "2022-10-28",
-			"time": "2:59 (UTC)",
+			"time": "02:59 (UTC)",
 			"series": 1,
 			"missile": "unknown",
 			"facility": "tongchon",
@@ -2452,7 +2452,7 @@
 			"description": "1 of 2"
 		}, {
 			"date": "2022-10-28",
-			"time": "2:18 (UTC)",
+			"time": "02:18 (UTC)",
 			"series": 2,
 			"missile": "unknown",
 			"facility": "tongchon",
@@ -2535,52 +2535,63 @@
 			"description": "3 of 3"
 		}, {
 			"date": "2022-11-05",
-			"time": "2:32 (UTC)",
+			"time": "02:32 (UTC)",
 			"series": 1,
 			"missile": "unknown",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "1 of 4"
 		}, {
 			"date": "2022-11-05",
-			"time": "2:32 (UTC)",
+			"time": "02:32 (UTC)",
 			"series": 2,
 			"missile": "unknown",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "2 of 4"
 		}, {
 			"date": "2022-11-05",
-			"time": "2:32 (UTC)",
+			"time": "02:32 (UTC)",
 			"series": 3,
 			"missile": "unknown",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "3 of 4"
 		}, {
 			"date": "2022-11-05",
-			"time": "2:32 (UTC)",
+			"time": "02:32 (UTC)",
 			"series": 4,
 			"missile": "unknown",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
-			"bearing": "210",
+			"bearing": 210,
 			"outcome": "unknown",
 			"description": "4 of 4"
+		}, {
+			"date": "2022-11-09",
+			"time": "06:31 (UTC)",
+			"missile": "unknown",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "30",
+			"distance": "290",
+			"bearing": 68,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
