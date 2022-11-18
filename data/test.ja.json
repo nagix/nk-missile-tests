@@ -2605,6 +2605,17 @@
 			"bearing": 44,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2022-11-18",
+			"time": "10:14 (JST)",
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "6000",
+			"distance": "1000",
+			"bearing": 69,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
