@@ -2592,6 +2592,17 @@
 			"bearing": 68,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2022-11-17",
+			"time": "1:47 (UTC)",
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "47",
+			"distance": "240",
+			"bearing": 44,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2022
 	}]
