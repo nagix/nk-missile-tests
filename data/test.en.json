@@ -2449,10 +2449,10 @@
 			"distance": "230",
 			"bearing": 34,
 			"outcome": "unknown",
-			"description": "1 of 2"
+			"description": "North Korea launched two short-range ballistic missiles on October 28 (local time). According to the South Korean Joint Chiefs of Staff, the launches were detected between 11:59 AM and 12:18 PM from the Tongchon area, and flew 230 km with an apogee of 24 kilometers. The Japanese ministry of defense did not provide launch data in its press release, and North Korea did not issue a statement. (1 of 2)"
 		}, {
 			"date": "2022-10-28",
-			"time": "02:18 (UTC)",
+			"time": "03:18 (UTC)",
 			"series": 2,
 			"missile": "unknown",
 			"facility": "tongchon",
@@ -2461,33 +2461,106 @@
 			"distance": "230",
 			"bearing": 34,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "North Korea launched two short-range ballistic missiles on October 28 (local time). According to the South Korean Joint Chiefs of Staff, the launches were detected between 11:59 AM and 12:18 PM from the Tongchon area, and flew 230 km with an apogee of 24 kilometers. The Japanese ministry of defense did not provide launch data in its press release, and North Korea did not issue a statement. (2 of 2)"
+		}, {
+			"date": "2022-11-01",
+			"time": "21:51 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "uiju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "November 2, 2022 (local time) was one of the busiest days in the history of North Korean missile testing to date, with at least 23 missile launches including both ballistic and surface-to-air missiles. The launches coincided with (and were likely a response to) the beginning of the annual joint Republic of Korea Air Force - US Air Force exercise. For 2022, Vigilant Storm (previously called the Combined Flying Training Event or CTFE) involved approximately 240 aircraft flying 1600 sorties - a record number for the exercise. According to the South Korean Joint Chiefs of Staff, the first launches detected were four SRBMs from North Pyongan Province starting at 6:51 AM. These launches were visible from the Chinese border, and analysts were able to determine the approximate launch area using pictures posted to social media. The missiles landed in the Yellow Sea, making this the first known instance of North Korea launching a ballistic missile on a westward flight path. North Korea described these launches as \"simulating the strike on the enemy's air force base\" using \"dispersion warheads and underground infiltration warheads.\" (1 of 4)"
+		}, {
+			"date": "2022-11-01",
+			"time": "21:51 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "uiju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "November 2, 2022 (local time) was one of the busiest days in the history of North Korean missile testing to date, with at least 23 missile launches including both ballistic and surface-to-air missiles. The launches coincided with (and were likely a response to) the beginning of the annual joint Republic of Korea Air Force - US Air Force exercise. For 2022, Vigilant Storm (previously called the Combined Flying Training Event or CTFE) involved approximately 240 aircraft flying 1600 sorties - a record number for the exercise. According to the South Korean Joint Chiefs of Staff, the first launches detected were four SRBMs from North Pyongan Province starting at 6:51 AM. These launches were visible from the Chinese border, and analysts were able to determine the approximate launch area using pictures posted to social media. The missiles landed in the Yellow Sea, making this the first known instance of North Korea launching a ballistic missile on a westward flight path. North Korea described these launches as \"simulating the strike on the enemy's air force base\" using \"dispersion warheads and underground infiltration warheads.\" (2 of 4)"
+		}, {
+			"date": "2022-11-01",
+			"time": "21:51 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "uiju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "November 2, 2022 (local time) was one of the busiest days in the history of North Korean missile testing to date, with at least 23 missile launches including both ballistic and surface-to-air missiles. The launches coincided with (and were likely a response to) the beginning of the annual joint Republic of Korea Air Force - US Air Force exercise. For 2022, Vigilant Storm (previously called the Combined Flying Training Event or CTFE) involved approximately 240 aircraft flying 1600 sorties - a record number for the exercise. According to the South Korean Joint Chiefs of Staff, the first launches detected were four SRBMs from North Pyongan Province starting at 6:51 AM. These launches were visible from the Chinese border, and analysts were able to determine the approximate launch area using pictures posted to social media. The missiles landed in the Yellow Sea, making this the first known instance of North Korea launching a ballistic missile on a westward flight path. North Korea described these launches as \"simulating the strike on the enemy's air force base\" using \"dispersion warheads and underground infiltration warheads.\" (3 of 4)"
+		}, {
+			"date": "2022-11-01",
+			"time": "21:51 (UTC)",
+			"series": 4,
+			"missile": "unknown",
+			"facility": "uiju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "November 2, 2022 (local time) was one of the busiest days in the history of North Korean missile testing to date, with at least 23 missile launches including both ballistic and surface-to-air missiles. The launches coincided with (and were likely a response to) the beginning of the annual joint Republic of Korea Air Force - US Air Force exercise. For 2022, Vigilant Storm (previously called the Combined Flying Training Event or CTFE) involved approximately 240 aircraft flying 1600 sorties - a record number for the exercise. According to the South Korean Joint Chiefs of Staff, the first launches detected were four SRBMs from North Pyongan Province starting at 6:51 AM. These launches were visible from the Chinese border, and analysts were able to determine the approximate launch area using pictures posted to social media. The missiles landed in the Yellow Sea, making this the first known instance of North Korea launching a ballistic missile on a westward flight path. North Korea described these launches as \"simulating the strike on the enemy's air force base\" using \"dispersion warheads and underground infiltration warheads.\" (4 of 4)"
+		}, {
+			"date": "2022-11-01",
+			"time": "23:51 (UTC)",
+			"series": 5,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "200",
+			"bearing": 118,
+			"outcome": "unknown",
+			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (1 of 3)"
+		}, {
+			"date": "2022-11-01",
+			"time": "23:51 (UTC)",
+			"series": 6,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "150",
+			"distance": "150",
+			"bearing": 90,
+			"outcome": "unknown",
+			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (1 of 3)"
+		}, {
+			"date": "2022-11-01",
+			"time": "23:51 (UTC)",
+			"series": 7,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "150",
+			"distance": "150",
+			"bearing": 90,
+			"outcome": "unknown",
+			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (1 of 3)"
 		}, {
 			"date": "2022-11-02",
 			"time": "22:39 (UTC)",
-			"missile": "hwasong-17",
+			"series": 1,
+			"missile": "unknown",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "1920",
 			"distance": "760",
 			"bearing": 90,
 			"outcome": "failure",
-			"description": ""
+			"description": "The following day, November 3, North Korea conducted six more ballistic missile launches. The first was an apparent ICBM test that failed during the second stage burn. The South Korean Joint Chiefs of Staff stated that the launch, which they believed to be a Hwasong-17, was detected at 7:40 AM local time from near Sunan, and traveled 760 km with an apogee of 1920 km. An unnamed source told Yonhap that \"Following the second stage separation, however, the ICBM seems to have failed in normal flight.\" The Japanese Ministry of Defense stated that the missile was launched at 7:39 AM and traveled 750 km, reaching an apogee of approximately 2000 km. North Korea described the test by saying \"At the request of the Academy of Defense Science on the second day of the operations, the KPA conducted important test-fire of ballistic missile to verify the movement reliability of a special functional warhead paralyzing the operation command system of the enemy.\" The images accompanying the North Korean press release included one photograph of a Hwasong-15 launch."
 		}, {
 			"date": "2022-11-02",
 			"time": "23:39 (UTC)",
-			"series": 1,
-			"missile": "unknown",
-			"facility": "kaechon",
-			"landing": "sea-of-japan",
-			"apogee": "70",
-			"distance": "330",
-			"bearing": 70,
-			"outcome": "unknown",
-			"description": "1 of 2"
-		}, {
-			"date": "2022-11-02",
-			"time": "23:48 (UTC)",
 			"series": 2,
 			"missile": "unknown",
 			"facility": "kaechon",
@@ -2495,8 +2568,20 @@
 			"apogee": "70",
 			"distance": "330",
 			"bearing": 70,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "One hour later, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the launches were detected near Kaechon at 8:39 AM local time, and traveled 330 km with an apogee of 70 km. The Japanese ministry of Defense stated that the missiles were launched at 8:39 and 8:48 AM and traveled approximately 350 km with an apogee of about 50 km. Several hours after this test, South Korea announced an extension to the Vigilant Storm exercise. North Korea described the 5 short-range launches on November 3 as \"five super-large multiple launch missiles and tactical ballistic missiles of various missions.\" (1 of 2)"
+		}, {
+			"date": "2022-11-02",
+			"time": "23:48 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "330",
+			"bearing": 70,
+			"outcome": "success",
+			"description": "One hour later, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the launches were detected near Kaechon at 8:39 AM local time, and traveled 330 km with an apogee of 70 km. The Japanese ministry of Defense stated that the missiles were launched at 8:39 and 8:48 AM and traveled approximately 350 km with an apogee of about 50 km. Several hours after this test, South Korea announced an extension to the Vigilant Storm exercise. North Korea described the 5 short-range launches on November 3 as \"five super-large multiple launch missiles and tactical ballistic missiles of various missions.\" (2 of 2)"
 		}, {
 			"date": "2022-11-03",
 			"time": "12:34 (UTC)",
@@ -2507,8 +2592,8 @@
 			"apogee": "130",
 			"distance": "490",
 			"bearing": 70,
-			"outcome": "unknown",
-			"description": "1 of 3"
+			"outcome": "success",
+			"description": "Following the decision by the US and South Korea to extend Vigilant Storm, North Korea issued a press release condemning the decision, and subsequently launched three SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected near Koksan at around 9:35 PM, and traveled 490 km with an apogee of approximately 130 km. The Japanese Ministry of Defense stated that the missiles were launched at 9:34, 9:39, and 9:42 PM and traveled approximately 500 km with an apogee of about 150 km. (1 of 3)"
 		}, {
 			"date": "2022-11-03",
 			"time": "12:39 (UTC)",
@@ -2519,8 +2604,8 @@
 			"apogee": "130",
 			"distance": "490",
 			"bearing": 70,
-			"outcome": "unknown",
-			"description": "2 of 3"
+			"outcome": "success",
+			"description": "Following the decision by the US and South Korea to extend Vigilant Storm, North Korea issued a press release condemning the decision, and subsequently launched three SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected near Koksan at around 9:35 PM, and traveled 490 km with an apogee of approximately 130 km. The Japanese Ministry of Defense stated that the missiles were launched at 9:34, 9:39, and 9:42 PM and traveled approximately 500 km with an apogee of about 150 km. (2 of 3)"
 		}, {
 			"date": "2022-11-03",
 			"time": "12:42 (UTC)",
@@ -2531,55 +2616,55 @@
 			"apogee": "130",
 			"distance": "490",
 			"bearing": 70,
-			"outcome": "unknown",
-			"description": "3 of 3"
+			"outcome": "success",
+			"description": "Following the decision by the US and South Korea to extend Vigilant Storm, North Korea issued a press release condemning the decision, and subsequently launched three SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected near Koksan at around 9:35 PM, and traveled 490 km with an apogee of approximately 130 km. The Japanese Ministry of Defense stated that the missiles were launched at 9:34, 9:39, and 9:42 PM and traveled approximately 500 km with an apogee of about 150 km. (3 of 3)"
 		}, {
 			"date": "2022-11-05",
 			"time": "02:32 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
 			"bearing": 210,
-			"outcome": "unknown",
+			"outcome": "success",
 			"description": "1 of 4"
 		}, {
 			"date": "2022-11-05",
 			"time": "02:32 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-23",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
 			"bearing": 210,
-			"outcome": "unknown",
+			"outcome": "success",
 			"description": "2 of 4"
 		}, {
 			"date": "2022-11-05",
 			"time": "02:32 (UTC)",
-			"series": 3,
-			"missile": "unknown",
+			"series": 1,
+			"missile": "kn-25",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
 			"bearing": 210,
-			"outcome": "unknown",
+			"outcome": "success",
 			"description": "3 of 4"
 		}, {
 			"date": "2022-11-05",
 			"time": "02:32 (UTC)",
-			"series": 4,
-			"missile": "unknown",
+			"series": 2,
+			"missile": "kn-25",
 			"facility": "tongrim",
 			"landing": "yellow-sea",
 			"apogee": "20",
 			"distance": "130",
 			"bearing": 210,
-			"outcome": "unknown",
+			"outcome": "success",
 			"description": "4 of 4"
 		}, {
 			"date": "2022-11-09",
@@ -2591,10 +2676,10 @@
 			"distance": "290",
 			"bearing": 68,
 			"outcome": "unknown",
-			"description": ""
+			"description": "On November 9, North Korea conducted an additional SRBM launch. The South Korean Joint Chiefs of staff stated that that the launch was detected from near Sukchon at 3:31 PM local time, and flew 290 km with an apogee of 30 km. The Japanese Ministry of Defense stated that the missile was launched at 3:31 PM and flew about 250 km \"at an extremely low altitude of about 50 km or less\". North Korea did not issue a press release about the launch."
 		}, {
 			"date": "2022-11-17",
-			"time": "1:47 (UTC)",
+			"time": "01:47 (UTC)",
 			"missile": "unknown",
 			"facility": "wonsan",
 			"landing": "sea-of-japan",
@@ -2602,18 +2687,18 @@
 			"distance": "240",
 			"bearing": 44,
 			"outcome": "unknown",
-			"description": ""
+			"description": "On November 17, North Korea conducted an SRBM launch. The South Korean Joint Chiefs of staff stated that that the launch was detected from near Wonsan at 10:48 AM local time, and flew 240 km with an apogee of 47 km. The Japanese Ministry of Defense stated that the missile was launched at 10:47 AM, but did not provide any trajectory information. North Korea did not issue a press release about the launch."
 		}, {
 			"date": "2022-11-18",
-			"time": "1:14 (JST)",
-			"missile": "unknown",
-			"facility": "sunan",
+			"time": "01:14 (UTC)",
+			"missile": "hwasong-17",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
-			"apogee": "6000",
+			"apogee": "6100",
 			"distance": "1000",
-			"bearing": 69,
-			"outcome": "unknown",
-			"description": ""
+			"bearing": 70,
+			"outcome": "success",
+			"description": "On November 18, North Korea test launched an ICBM. According to the South Korean Joint Chiefs of Staff, the launch was detected at 10:15 AM local time from Sunan and flew 1000 km, reaching an apogee of 6100 km. Yonhap additionally stated that the missile was believed to be a Hwasong-17. The Japanese Ministry of Defense stated the missile was launched at 10:14 AM and flew for 69 minutes, reaching a range of 1000 km and an apogee of 6000 km, impacting 200 km west of Oshima Island at 11:23 AM. The North Korean press release stated the missile flew for 4135 seconds, traveling 999.2 km downrange and reaching an apogee of 6040.9 km. The press release and accompanying photos and video indicated that this was the first successful Hwasong-17 launch. Kim's daughter and wife also attended the test, and his daughter was prominently featured alongside Kim in many of the pictures."
 		}],
 		"year": 2022
 	}]
