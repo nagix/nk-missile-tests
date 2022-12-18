@@ -2701,6 +2701,30 @@
 			"bearing": 70,
 			"outcome": "success",
 			"description": "11月18日、北朝鮮がICBMを試験発射した。韓国軍合同参謀本部によると、発射は現地時間午前10時15分に順安(スナン)で検知され、1000km飛行し、最高高度は6100kmに達したという。聯合ニュースはさらに、ミサイルは火星17号と見られると述べた。日本の防衛省は、ミサイルは午前10時14分に発射され、69分間飛行し、飛距離1000km、最高高度6000kmに達し、午前11時23分に渡島大島西方200kmに着弾したと発表した。北朝鮮のプレスリリースによると、ミサイルは4135秒間飛行し、飛距離は999.2km、最高高度は6040.9kmに達したという。プレスリリースと添付の写真・動画は、これが火星17号の最初の打ち上げ成功であることを示している。金正恩の娘と妻もこの実験に参加し、多くの写真で娘が金正恩と並んで大きく写っている。"
+		}, {
+			"date": "2022-12-18",
+			"time": "11:11 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "500",
+			"distance": "550",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2022-12-18",
+			"time": "11:52 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "500",
+			"distance": "550",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2022
 	}]

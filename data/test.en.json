@@ -2699,6 +2699,30 @@
 			"bearing": 70,
 			"outcome": "success",
 			"description": "On November 18, North Korea test launched an ICBM. According to the South Korean Joint Chiefs of Staff, the launch was detected at 10:15 AM local time from Sunan and flew 1000 km, reaching an apogee of 6100 km. Yonhap additionally stated that the missile was believed to be a Hwasong-17. The Japanese Ministry of Defense stated the missile was launched at 10:14 AM and flew for 69 minutes, reaching a range of 1000 km and an apogee of 6000 km, impacting 200 km west of Oshima Island at 11:23 AM. The North Korean press release stated the missile flew for 4135 seconds, traveling 999.2 km downrange and reaching an apogee of 6040.9 km. The press release and accompanying photos and video indicated that this was the first successful Hwasong-17 launch. Kim's daughter and wife also attended the test, and his daughter was prominently featured alongside Kim in many of the pictures."
+		}, {
+			"date": "2022-12-18",
+			"time": "02:11 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "500",
+			"distance": "550",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2022-12-18",
+			"time": "02:52 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "500",
+			"distance": "550",
+			"bearing": 70,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2022
 	}]
