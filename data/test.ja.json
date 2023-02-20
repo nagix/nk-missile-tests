@@ -2737,7 +2737,10 @@
 			"bearing": 56,
 			"outcome": "success",
 			"description": "12月31日、北朝鮮は短距離弾道ミサイル3発を発射した。韓国軍合同参謀本部によると、発射は午前8時00分に中和(チュンファ)郡で探知され、350kmの距離を飛行した。日本の防衛省は、ミサイルは午前8時1分、8時14分、8時15分に発射され、いずれも350kmを飛行し、最高高度は100kmであったと発表している。北朝鮮は、(KN-25)超大型多連装ロケット弾の発射実験であったと発表した。(3発の実験の内の3発目)"
-		}, {
+		}],
+		"year": 2022
+	}, {
+		"data": [{
 			"date": "2023-01-01",
 			"time": "02:50 (JST)",
 			"missile": "kn-25",
@@ -2748,7 +2751,42 @@
 			"bearing": 60,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2023-02-18",
+			"time": "17:21 (JST)",
+			"missile": "hwasong-15",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "5700",
+			"distance": "900",
+			"bearing": 72,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2023-02-20",
+			"time": "06:59 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2023-02-20",
+			"time": "07:10 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 85,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
-		"year": 2022
+		"year": 2023
 	}]
 }

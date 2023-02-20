@@ -89,6 +89,8 @@ var previouslySelectedTest = null;
 //	contains info about what year, what tests, outcomes, missiles, etc that's being visualized
 var selectionData;
 
+var lastUpdate = 0;
+
 function getLang() {
 	var lang = '';
 	var match = location.search.match(/lang=(.*?)(&|$)/);
@@ -365,6 +367,8 @@ function initScene() {
 
 
 function animate() {
+	var now = performance.now();
+	var delta = Math.min(now - lastUpdate, 1000 / 60);
 
 	//	Disallow roll for now, this is interfering with keyboard input during search
 /*
@@ -376,8 +380,8 @@ function animate() {
 
 	if( rotateTargetX !== undefined && rotateTargetY !== undefined ){
 
-		rotateVX += (rotateTargetX - rotateX) * 0.012;
-		rotateVY += (rotateTargetY - rotateY) * 0.012;
+		rotateVX += (rotateTargetX - rotateX) * 0.012 * delta / (1000 / 60);
+		rotateVY += (rotateTargetY - rotateY) * 0.012 * delta / (1000 / 60);
 
 		// var move = new THREE.Vector3( rotateVX, rotateVY, 0 );
 		// var distance = move.length();
@@ -395,35 +399,35 @@ function animate() {
 		}
 	}
 
-	rotateX += rotateVX;
-	rotateY += rotateVY;
+	rotateX += rotateVX * delta / (1000 / 60);
+	rotateY += rotateVY * delta / (1000 / 60);
 
 	//rotateY = wrap( rotateY, -Math.PI, Math.PI );
 
-	rotateVX *= 0.98;
-	rotateVY *= 0.98;
+	rotateVX *= 1 - 0.02 * delta / (1000 / 60);
+	rotateVY *= 1 - 0.02 * delta / (1000 / 60);
 
 	if(dragging || rotateTargetX !== undefined ){
-		rotateVX *= 0.6;
-		rotateVY *= 0.6;
+		rotateVX *= 1 - 0.4 * delta / (1000 / 60);
+		rotateVY *= 1 - 0.4 * delta / (1000 / 60);
 	}
 
 	//	constrain the pivot up/down to the poles
 	//	force a bit of bounce back action when hitting the poles
 	if(rotateX < -rotateXMax){
 		rotateX = -rotateXMax;
-		rotateVX *= -0.95;
+		rotateVX *= -(1 - 0.05 * delta / (1000 / 60));
 	}
 	if(rotateX > rotateXMax){
 		rotateX = rotateXMax;
-		rotateVX *= -0.95;
+		rotateVX *= -(1 - 0.05 * delta / (1000 / 60));
 	}
 
 	rotating.rotation.x = rotateX;
 	rotating.rotation.y = rotateY;
 
 	if (tiltTarget !== undefined) {
-		tilt += (tiltTarget - tilt) * 0.012;
+		tilt += (tiltTarget - tilt) * 0.012 * delta / (1000 / 60);
 		camera.position.y = 300 * Math.sin(-tilt);
 		camera.position.z = 100 + 300 * Math.cos(-tilt);
 		camera.lookAt(new THREE.Vector3(0, 0, 100));
@@ -434,7 +438,7 @@ function animate() {
 	}
 
 	if (scaleTarget !== undefined) {
-		camera.zoom *= Math.pow(scaleTarget / camera.zoom, 0.012);
+		camera.zoom *= Math.pow(scaleTarget / camera.zoom, 0.012 * delta / (1000 / 60));
 		camera.updateProjectionMatrix();
 
 		if (Math.abs(Math.log(scaleTarget / camera.zoom)) < 0.05) {
@@ -449,12 +453,14 @@ function animate() {
 
 	rotating.traverse(function(mesh) {
 		if (mesh.update !== undefined) {
-			mesh.update();
+			mesh.update(delta);
 		}
 	});
 
 	updateMarkers();
 	render2d();
+
+	lastUpdate = now;
 }
 
 function render() {

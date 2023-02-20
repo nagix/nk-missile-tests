@@ -278,7 +278,7 @@ function getVisualizedMesh( linearData, year, outcomeCategories, missileCategori
 	pSystem.dynamic = true;
 	splineOutline.add( pSystem );
 
-	pSystem.update = function(){
+	pSystem.update = function(delta){
 		// var time = Date.now();
 		var positionArray = this.geometry.attributes.position.array;
 		var index = 0;
@@ -287,7 +287,7 @@ function getVisualizedMesh( linearData, year, outcomeCategories, missileCategori
 			var path = particle.path;
 			var moveLength = path.length;
 
-			particle.lerpN += 0.05;
+			particle.lerpN += 0.05 * delta / (1000 / 60);
 			if(particle.lerpN > 1){
 				particle.lerpN = 0;
 				particle.moveIndex = particle.nextIndex;

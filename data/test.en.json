@@ -2735,7 +2735,10 @@
 			"bearing": 56,
 			"outcome": "success",
 			"description": "On December 31, North Korea launched 3 short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected at 8:00 AM from Chunghwa County and traveled 350 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 8:01, 8:14, and 8:15 AM, and all traveled 350 kilometers with an apogee of 100 kilometers. North Korea stated that the test was of (KN-25) super-large multiple rocket launchers. (3 of 3)"
-		}, {
+		}],
+		"year": 2022
+	}, {
+		"data": [{
 			"date": "2022-12-31",
 			"time": "17:50 (UTC)",
 			"missile": "kn-25",
@@ -2746,7 +2749,42 @@
 			"bearing": 60,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2023-02-18",
+			"time": "08:21 (UTC)",
+			"missile": "hwasong-15",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "5700",
+			"distance": "900",
+			"bearing": 72,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2023-02-19",
+			"time": "21:59 (JST)",
+			"series": 1,
+			"missile": "kn-25",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2023-02-19",
+			"time": "22:10 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "sukchon",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 85,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
-		"year": 2022
+		"year": 2023
 	}]
 }
