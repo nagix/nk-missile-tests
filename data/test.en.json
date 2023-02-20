@@ -2619,54 +2619,6 @@
 			"outcome": "success",
 			"description": "Following the decision by the US and South Korea to extend Vigilant Storm, North Korea issued a press release condemning the decision, and subsequently launched three SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected near Koksan at around 9:35 PM, and traveled 490 km with an apogee of approximately 130 km. The Japanese Ministry of Defense stated that the missiles were launched at 9:34, 9:39, and 9:42 PM and traveled approximately 500 km with an apogee of about 150 km. (3 of 3)"
 		}, {
-			"date": "2022-11-05",
-			"time": "02:32 (UTC)",
-			"series": 1,
-			"missile": "kn-23",
-			"facility": "tongrim",
-			"landing": "yellow-sea",
-			"apogee": "20",
-			"distance": "130",
-			"bearing": 210,
-			"outcome": "success",
-			"description": "1 of 4"
-		}, {
-			"date": "2022-11-05",
-			"time": "02:32 (UTC)",
-			"series": 2,
-			"missile": "kn-23",
-			"facility": "tongrim",
-			"landing": "yellow-sea",
-			"apogee": "20",
-			"distance": "130",
-			"bearing": 210,
-			"outcome": "success",
-			"description": "2 of 4"
-		}, {
-			"date": "2022-11-05",
-			"time": "02:32 (UTC)",
-			"series": 1,
-			"missile": "kn-25",
-			"facility": "tongrim",
-			"landing": "yellow-sea",
-			"apogee": "20",
-			"distance": "130",
-			"bearing": 210,
-			"outcome": "success",
-			"description": "3 of 4"
-		}, {
-			"date": "2022-11-05",
-			"time": "02:32 (UTC)",
-			"series": 2,
-			"missile": "kn-25",
-			"facility": "tongrim",
-			"landing": "yellow-sea",
-			"apogee": "20",
-			"distance": "130",
-			"bearing": 210,
-			"outcome": "success",
-			"description": "4 of 4"
-		}, {
 			"date": "2022-11-09",
 			"time": "06:31 (UTC)",
 			"missile": "unknown",
@@ -2709,8 +2661,8 @@
 			"apogee": "500",
 			"distance": "550",
 			"bearing": 70,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On December 18, North Korea launched two medium-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from near Tongchang-ri at 11:13 AM and 12:05 PM local time. The missiles were fired at a steep angle and flew 500 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:11 and 11:52 AM, reached an apogee of 550 kilometers, and traveled 500 kilometers. North Korea stated that the launches were carried out by NADA and were primarily focused on testing satellite photography and data transmission. The payload reportedly included \"one panchromatic camera for 20m resolution test, two multispectral cameras, video transmitter and transmitters and receivers of various bands, control devices and batteries.\" The launch vehicle appeared to be either Scud- or Nodong-derived. (1 of 2)"
 		}, {
 			"date": "2022-12-18",
 			"time": "02:52 (UTC)",
@@ -2721,9 +2673,33 @@
 			"apogee": "500",
 			"distance": "550",
 			"bearing": 70,
+			"outcome": "success",
+			"description": "On December 18, North Korea launched two medium-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from near Tongchang-ri at 11:13 AM and 12:05 PM local time. The missiles were fired at a steep angle and flew 500 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:11 and 11:52 AM, reached an apogee of 550 kilometers, and traveled 500 kilometers. North Korea stated that the launches were carried out by NADA and were primarily focused on testing satellite photography and data transmission. The payload reportedly included \"one panchromatic camera for 20m resolution test, two multispectral cameras, video transmitter and transmitters and receivers of various bands, control devices and batteries.\" The launch vehicle appeared to be either Scud- or Nodong-derived. (2 of 2)"
+	}, {
+			"date": "2022-12-23",
+			"time": "07:31 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "250",
+			"bearing": 65,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "On December 23, North Korea launched two short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from the Sunan area at 4:32 PM, with one missile flying 250 kilometers and the other flying 350 kilometers. The Japanese Ministry of Defense stated that at least one missile was launched at 4:31 PM, traveling 300 kilometers with an apogee of 50 kilometers. (1 of 2)"
 		}, {
+			"date": "2022-12-23",
+			"time": "unknown",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "On December 23, North Korea launched two short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from the Sunan area at 4:32 PM, with one missile flying 250 kilometers and the other flying 350 kilometers. The Japanese Ministry of Defense stated that at least one missile was launched at 4:31 PM, traveling 300 kilometers with an apogee of 50 kilometers. (2 of 2)"
+			}, {
 			"date": "2022-12-30",
 			"time": "23:01 (UTC)",
 			"series": 1,
@@ -2733,8 +2709,8 @@
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 56,
-			"outcome": "unknown",
-			"description": "1 of 3"
+			"outcome": "success",
+			"description": "On December 31, North Korea launched 3 short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected at 8:00 AM from Chunghwa County and traveled 350 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 8:01, 8:14, and 8:15 AM, and all traveled 350 kilometers with an apogee of 100 kilometers. North Korea stated that the test was of (KN-25) super-large multiple rocket launchers. (1 of 3)"
 		}, {
 			"date": "2022-12-30",
 			"time": "23:14 (UTC)",
@@ -2745,8 +2721,8 @@
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 56,
-			"outcome": "unknown",
-			"description": "2 of 3"
+			"outcome": "success",
+			"description": "On December 31, North Korea launched 3 short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected at 8:00 AM from Chunghwa County and traveled 350 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 8:01, 8:14, and 8:15 AM, and all traveled 350 kilometers with an apogee of 100 kilometers. North Korea stated that the test was of (KN-25) super-large multiple rocket launchers. (2 of 3)"
 		}, {
 			"date": "2022-12-30",
 			"time": "23:15 (UTC)",
@@ -2757,8 +2733,8 @@
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 56,
-			"outcome": "unknown",
-			"description": "3 of 3"
+			"outcome": "success",
+			"description": "On December 31, North Korea launched 3 short-range ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected at 8:00 AM from Chunghwa County and traveled 350 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 8:01, 8:14, and 8:15 AM, and all traveled 350 kilometers with an apogee of 100 kilometers. North Korea stated that the test was of (KN-25) super-large multiple rocket launchers. (3 of 3)"
 		}, {
 			"date": "2022-12-31",
 			"time": "17:50 (UTC)",
