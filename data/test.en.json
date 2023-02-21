@@ -2054,7 +2054,7 @@
 		}, {
 			"date": "2022-03-16",
 			"time": "00:30 (UTC)",
-			"missile": "unknown",
+			"missile": "hwasong-17",
 			"facility": "pyongyang",
 			"landing": "unknown",
 			"apogee": "unknown",
@@ -2065,14 +2065,14 @@
 		}, {
 			"date": "2022-03-24",
 			"time": "05:34 (UTC)",
-			"missile": "hwasong-17",
+			"missile": "hwasong-15",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "6248",
 			"distance": "1090",
 			"bearing": 72,
 			"outcome": "success",
-			"description": "At 2:34 PM local time on March 24, 2022, North Korea conducted its first ICBM launch since 2017. The Hwasong-17, in its first launch, reached an apogee of over 6200 km, traveling nearly 1100 km downrange, with a flight time of nearly 71 minutes. With a first stage powered by two 80-ton boosters, this is easily the largest missile tested by North Korea."
+			"description": "At 2:34 PM local time on March 24, 2022, North Korea conducted its first ICBM launch since 2017. The missile reached an apogee of over 6200 km, traveling nearly 1100 km downrange, with a flight time of nearly 71 minutes. North Korea's press release claimed the missile tested was the Hwasong-17, but analysts suspect the footage of the Hwasong-17 was actually from the failed March 16 launch, raising the possibility that the March 24 launch was a previously-tested ICBM. Yonhap noted that South Korea believes the March 24 test may have been a Hwasong-15."
 		}, {
 			"date": "2022-04-16",
 			"time": "09:00 (UTC)",
