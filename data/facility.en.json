@@ -45,6 +45,7 @@
 		"monggumpo": {"name": "Monggumpo", "lat": 38.202, "lon": 124.851},
 		"yonghung": {"name": "Yonghung", "lat": 39.538, "lon": 127.241},
 		"chunghwa": {"name": "Chunghwa", "lat": 38.86, "lon": 125.8},
-		"ryongsong": {"name": "Ryongsong", "lat": 39.123, "lon": 125.785}
+		"ryongsong": {"name": "Ryongsong", "lat": 39.123, "lon": 125.785},
+		"changyon": {"name": "Changyon", "lat": 38.27611, "lon": 125.071522}
 	}
 }

@@ -2762,7 +2762,7 @@
 			"description": ""
 		}, {
 			"date": "2023-02-19",
-			"time": "21:59 (JST)",
+			"time": "21:59 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
 			"facility": "sukchon",
@@ -2774,7 +2774,7 @@
 			"description": "1 of 2"
 		}, {
 			"date": "2023-02-19",
-			"time": "22:10 (JST)",
+			"time": "22:10 (UTC)",
 			"series": 2,
 			"missile": "kn-25",
 			"facility": "sukchon",
@@ -2782,6 +2782,30 @@
 			"apogee": "50",
 			"distance": "350",
 			"bearing": 85,
+			"outcome": "unknown",
+			"description": "2 of 2"
+		}, {
+			"date": "2023-03-13",
+			"time": "22:41 (UTC)",
+			"series": 1,
+			"missile": "kn-23",
+			"facility": "changyon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "620",
+			"bearing": 45,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2023-03-13",
+			"time": "22:51 (UTC)",
+			"series": 2,
+			"missile": "kn-23",
+			"facility": "changyon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "620",
+			"bearing": 45,
 			"outcome": "unknown",
 			"description": "2 of 2"
 		}],
