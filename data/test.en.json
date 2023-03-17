@@ -2811,12 +2811,12 @@
 		}, {
 			"date": "2023-03-15",
 			"time": "22:09 (UTC)",
-			"missile": "unknown",
+			"missile": "hwasong-17",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "6000",
 			"distance": "1000",
-			"bearing": 72,
+			"bearing": 65,
 			"outcome": "unknown",
 			"description": ""
 		}],
