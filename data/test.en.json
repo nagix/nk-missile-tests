@@ -2819,6 +2819,17 @@
 			"bearing": 65,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2023-03-19",
+			"time": "02:05 (UTC)",
+			"missile": "unknown",
+			"facility": "sohae",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "800",
+			"bearing": 74,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2023
 	}]
