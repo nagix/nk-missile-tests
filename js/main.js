@@ -74,6 +74,7 @@ var missileColors = {
 	'scud-b-marv': 0xDBDB8D,
 	'scud-c': 0x98DF8A,
 	'scud-c-marv': 0xC7C7C7,
+	'silo-based-kn-23': 0x2CA02C,
 	'taepodong-1': 0xD62728,
 	'unha': 0x9467BD,
 	'unha-3': 0xC5B0D5,

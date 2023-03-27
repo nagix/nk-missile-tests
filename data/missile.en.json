@@ -22,6 +22,7 @@
 	"scud-b-marv": {"name": "Scud-B MaRV", "type": "SRBM"},
 	"scud-c": {"name": "Scud-C", "type": "SRBM"},
 	"scud-c-marv": {"name": "Scud-C MaRV", "type": "SRBM"},
+	"silo-based-kn-23": {"name": "Silo-based KN-23", "type": "SRBM"},
 	"taepodong-1": {"name": "Taepodong-1", "type": "SLV"},
 	"unha": {"name": "Unha", "type": "SLV"},
 	"unha-3": {"name": "Unha-3", "type": "SLV"},

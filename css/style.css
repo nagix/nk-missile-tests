@@ -434,6 +434,9 @@ Bar graph on left
 #barGraph .bar.scud-c-marv, #missileTypeBtns .scud-c-marv .check {
 	fill: #C7C7C7;
 }
+#barGraph .bar.silo-based-kn-23, #missileTypeBtns .silo-based-kn-23 .check {
+	fill: #2CA02C;
+}
 #barGraph .bar.taepodong-1, #missileTypeBtns .taepodong-1 .check {
 	fill: #D62728;
 }

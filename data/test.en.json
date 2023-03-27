@@ -2739,17 +2739,6 @@
 		"year": 2022
 	}, {
 		"data": [{
-			"date": "2022-12-31",
-			"time": "17:50 (UTC)",
-			"missile": "kn-25",
-			"facility": "ryongsong",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "350",
-			"bearing": 60,
-			"outcome": "unknown",
-			"description": ""
-		}, {
 			"date": "2023-02-18",
 			"time": "08:21 (UTC)",
 			"missile": "hwasong-15",
@@ -2758,8 +2747,8 @@
 			"apogee": "5700",
 			"distance": "900",
 			"bearing": 72,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On February 18, 2023, North Korea conducted what it called an ICBM launching drill. According to the South Korean Joint Chiefs of staff, the launch was detected at 5:22 PM local time and flew to a range of 900 km. The Japanese Ministry of Defense stated that the missile was launched at 5:21 PM and flew for 66 minutes, reaching a range of 900 km and an apogee of 5700 km. A North Korean press release stated that the launch was a drill of an operational missile unit, under the guidance of the Missile General Bureau. The launching unit, identified as \"the First Red Flag Hero Company,\" was placed on standby at dawn on February 18, and received the launch order at 8:00 AM. The press release indicated that the missile was a Hwasong-15, and that it flew for 4015 seconds, traveling 989 km downrange and reaching an apogee of 5768.5 km."
 		}, {
 			"date": "2023-02-19",
 			"time": "21:59 (UTC)",
@@ -2770,8 +2759,8 @@
 			"apogee": "100",
 			"distance": "400",
 			"bearing": 65,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On February 20 (local time), North Korea launched two short-ranged ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from the Sukchon area between 7 and 7:11 AM, and traveled 390 and 340 km. The Japanese Ministry of Defense stated that the launches were detected at 6:59 and 7:10 AM and flew 400 and 350 km downrange, with apogees of 100 and 50 km, respectively. A North Korean press release stated that the missiles were (KN-25) 600 mm rockets, and tied the launches to a recent US-ROK air exercise. The launches were intended to demonstrate North Korea's ability to strike airfields in South Korea with tactical nuclear weapons. The press release stated the missiles 395 and 337 km, as part of an exercise during which other, non-firing units trained in tunnel positions. (1 of 2)"
 		}, {
 			"date": "2023-02-19",
 			"time": "22:10 (UTC)",
@@ -2782,32 +2771,104 @@
 			"apogee": "50",
 			"distance": "350",
 			"bearing": 85,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "On February 20 (local time), North Korea launched two short-ranged ballistic missiles. According to the South Korean Joint Chiefs of Staff, the launches were detected from the Sukchon area between 7 and 7:11 AM, and traveled 390 and 340 km. The Japanese Ministry of Defense stated that the launches were detected at 6:59 and 7:10 AM and flew 400 and 350 km downrange, with apogees of 100 and 50 km, respectively. A North Korean press release stated that the missiles were (KN-25) 600 mm rockets, and tied the launches to a recent US-ROK air exercise. The launches were intended to demonstrate North Korea's ability to strike airfields in South Korea with tactical nuclear weapons. The press release stated the missiles 395 and 337 km, as part of an exercise during which other, non-firing units trained in tunnel positions. (2 of 2)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 1,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (1 of 6)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 2,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (2 of 6)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 3,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (3 of 6)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 4,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (4 of 6)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 5,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (5 of 6)"
+		}, {
+			"date": "2023-03-09",
+			"time": "09:20 (UTC)",
+			"series": 6,
+			"missile": "unnamed-srbm-2022",
+			"facility": "taesong",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "success",
+			"description": "On 9 March, 2023, North Korea launched a barrage of short-range ballistic missiles towards the Yellow Sea. The South Korean Joint Chiefs of Staff stated the launch from Nampo was detected at 6:20 PM local time and noted the possibility that North Korea had lobbed multiple SRBMs simultaneously from the same area. A North Korean press release included photographs indicating that six missiles were launched. Using the photos, open source analysts geolocated the launch to the shores of Lake Taesong, near a North Korean leadership compound. The launches came less than a week before major US-South Korean military exercises. The missiles launched were of a short-range type previously seen in an April 2022 test. The North Korean press release stated that the test was a demonstration of the 8th Fire Assault Company's capability to contain enemy maneuver capabilities by targeting enemy airfields. (6 of 6)"
 		}, {
 			"date": "2023-03-13",
 			"time": "22:41 (UTC)",
 			"series": 1,
 			"missile": "kn-23",
-			"facility": "changyon",
+			"facility": "jangyon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": "620",
 			"bearing": 45,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On March 14 (local time), North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Changyon area between 7:41 and 7:51 AM and traveled 620 kilometers. A North Korean press release stated that the launches were conducted by the 11th firepower assault company for \"demonstration teaching\" and struck a target island off the shores of Pangjin-dong, North Hamgyong Province, at a distance of 611.4 kilometers. OSINT analysts geolocated the launch site using photographs included in the press release. The launches came one day after the start of joint US-South Korean military exercises, and several days before a bilateral South Korean-Japan summit (the first in twelve years). (1 of 2)"
 		}, {
 			"date": "2023-03-13",
 			"time": "22:51 (UTC)",
 			"series": 2,
 			"missile": "kn-23",
-			"facility": "changyon",
+			"facility": "jangyon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": "620",
 			"bearing": 45,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "On March 14 (local time), North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Changyon area between 7:41 and 7:51 AM and traveled 620 kilometers. A North Korean press release stated that the launches were conducted by the 11th firepower assault company for \"demonstration teaching\" and struck a target island off the shores of Pangjin-dong, North Hamgyong Province, at a distance of 611.4 kilometers. OSINT analysts geolocated the launch site using photographs included in the press release. The launches came one day after the start of joint US-South Korean military exercises, and several days before a bilateral South Korean-Japan summit (the first in twelve years). (2 of 2)"
 		}, {
 			"date": "2023-03-15",
 			"time": "22:09 (UTC)",
@@ -2817,19 +2878,19 @@
 			"apogee": "6000",
 			"distance": "1000",
 			"bearing": 65,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On the morning of March 16 (local time), North Korea conducted an ICBM launch. The South Korean Joint Chiefs of Staff stated that the launch from the Sunan area was detected at 7:10 AM and flew a lofted trajectory to a range of 1000 km. The Japanese Ministry of Defense stated that the missile was launched from the suburbs of Pyongyang at 7:09 AM and flew for approximately 70 minutes, reaching a range of 1000 km and a 6000 km apogee before impacting 200 km west of Oshima island. A Japanese Self Defense Forces F-15 fighter caught video of the reentry vehicle and upper stage reentering the atmosphere. A North Korean press release stated that the launch was a response to ongoing joint US-South Korea military exercises, and that the missile was launched from Pyongyang International Airport and flew for 4,151 seconds, reaching and apogee of 6045 km and range of 1000.2 km. The launch came the same day as the first bilateral South Korea-Japan summit in 12 years, and amid ongoing joint US-South Korea military exercises."
 		}, {
 			"date": "2023-03-19",
 			"time": "02:05 (UTC)",
-			"missile": "unknown",
+			"missile": "silo-based-kn-23",
 			"facility": "sohae",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "800",
 			"bearing": 74,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On March 19, North Korea launched another SRBM. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Tongchang-ri area at 11:05 AM local time and flew 800 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 11:05 AM and flew 800 km with an apogee of 50 km, adding that the missile may have flown an irregular trajectory. A North Korean Press release stated that the launch was part of a two-day \"combined tactical drill\" to practice conducting tactical nuclear nuclear missions. North Korea stated that on March 18, several drills were conducted to examine the reliability of the command and control systems for tactical nuclear units. The March 19 missile launch, intended to simulate a strike on a \"major enemy target,\" included an inspection of the \"technical and mechanical devices\" and procedures for authenticating and approving a launch order. Photographs of the launch, which were geolocated to near the Sohae Satellite Launching Station, showed a KN-23 missile being hot-launched from a silo. The silo is new, and was constructed in less than two months. The launch occurred amid ongoing US-South Korean military exercises."
 		}],
 		"year": 2023
 	}]
