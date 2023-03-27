@@ -2891,6 +2891,30 @@
 			"bearing": 74,
 			"outcome": "success",
 			"description": "On March 19, North Korea launched another SRBM. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Tongchang-ri area at 11:05 AM local time and flew 800 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 11:05 AM and flew 800 km with an apogee of 50 km, adding that the missile may have flown an irregular trajectory. A North Korean Press release stated that the launch was part of a two-day \"combined tactical drill\" to practice conducting tactical nuclear nuclear missions. North Korea stated that on March 18, several drills were conducted to examine the reliability of the command and control systems for tactical nuclear units. The March 19 missile launch, intended to simulate a strike on a \"major enemy target,\" included an inspection of the \"technical and mechanical devices\" and procedures for authenticating and approving a launch order. Photographs of the launch, which were geolocated to near the Sohae Satellite Launching Station, showed a KN-23 missile being hot-launched from a silo. The silo is new, and was constructed in less than two months. The launch occurred amid ongoing US-South Korean military exercises."
+		}, {
+			"date": "2023-03-26",
+			"time": "22:47 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "chunghwa",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 56,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2023-03-26",
+			"time": "22:57 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "chunghwa",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "350",
+			"bearing": 56,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2023
 	}]
