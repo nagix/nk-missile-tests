@@ -2917,6 +2917,17 @@
 			"bearing": 56,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2023-04-13",
+			"time": "07:22 (JST)",
+			"missile": "hwasong-18",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "3000",
+			"distance": "1000",
+			"bearing": 63,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2023
 	}]

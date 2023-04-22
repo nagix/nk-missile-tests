@@ -386,6 +386,9 @@ Bar graph on left
 #barGraph .bar.hwasong-17, #missileTypeBtns .hwasong-17 .check {
 	fill: #FF9896;
 }
+#barGraph .bar.hwasong-18, #missileTypeBtns .hwasong-18 .check {
+	fill: #D62728;
+}
 #barGraph .bar.kn-02, #missileTypeBtns .kn-02 .check {
 	fill: #C49C94;
 }

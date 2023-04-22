@@ -58,6 +58,7 @@ var missileColors = {
 	'hwasong-14': 0xBCBD22,
 	'hwasong-15': 0x17BECF,
 	'hwasong-17': 0xFF9896,
+	'hwasong-18': 0xD62728,
 	'kn-02': 0xC49C94,
 	'kn-23': 0x9EDAE5,
 	'kn-24': 0xFF9896,
