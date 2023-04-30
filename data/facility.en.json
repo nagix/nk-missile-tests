@@ -2,7 +2,7 @@
 	"facilities": {
 		"tonghae": {"name": "Tonghae Satellite Launching Ground", "lat": 40.8499966, "lon": 129.666664},
 		"chihari": {"name": "Chihari Missile Base", "lat": 38.62333, "lon": 126.6847},
-		"chunghwa": {"name": "Chunghwa", "lat": 38.86, "lon": 125.8},
+		"chunghwa": {"name": "Chunghwa", "lat": 38.875, "lon": 125.926},
 		"jangyon": {"name": "Jangyon", "lat": 38.275, "lon": 125.071},
 		"unknown": {"name": "Unknown", "lat": 39.200159, "lon": 125.673256},
 		"kittaeryong": {"name": "Kittaeryong Missile Base", "lat": 38.99083, "lon": 127.6236},
@@ -36,6 +36,7 @@
 		"yonghung-bay": {"name": "Yonghung Bay", "lat": 39.26, "lon": 127.58},
 		"yonpo": {"name": "Yonpo Airport", "lat": 39.78938, "lon": 127.53993},
 		"samsok": {"name": "Samsok", "lat": 39.1268, "lon": 125.9579},
+		"samsok-icbm": {"name": "Samsok ICBM test site", "lat": 39.112, "lon": 125.998},
 		"sangum-ri": {"name": "Sangum-ri", "lat": 39.141, "lon": 127.616},
 		"sondok": {"name": "Sondok", "lat": 39.743, "lon": 127.499},
 		"sukchon": {"name": "Sukchon", "lat": 39.42, "lon": 125.63},

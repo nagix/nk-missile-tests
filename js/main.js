@@ -54,17 +54,19 @@ var missileColors = {
 	'er-scud': 0x1F77B4,
 	'hwasong-8': 0xAEC7E8,
 	'hwasong-8-marv': 0xFFBB78,
+	'hwasong-11a': 0x9EDAE5,
+	'hwasong-11b': 0xFF9896,
+	'hwasong-11c': 0xAEC7E8,
+	'hwasong-11d': 0x9467BD,
+	'hwasong-11s': 0x8C564B,
 	'hwasong-12': 0x7F7F7F,
 	'hwasong-14': 0xBCBD22,
 	'hwasong-15': 0x17BECF,
 	'hwasong-17': 0xFF9896,
 	'hwasong-18': 0xD62728,
 	'kn-02': 0xC49C94,
-	'kn-23': 0x9EDAE5,
-	'kn-24': 0xFF9896,
 	'kn-25': 0xFF6741,
 	'musudan': 0xAEC7E8,
-	'navalized-kn-23': 0x8C564B,
 	'new-irbm-2022': 0x7F7F7F,
 	'nodong': 0xFF7F0E,
 	'pukguksong-1': 0x8C564B,
@@ -79,9 +81,7 @@ var missileColors = {
 	'taepodong-1': 0xD62728,
 	'unha': 0x9467BD,
 	'unha-3': 0xC5B0D5,
-	'unknown': 0x8C564B,
-	'unnamed-kn-23-mod': 0xAEC7E8,
-	'unnamed-srbm-2022': 0x9467BD
+	'unknown': 0x8C564B
 };
 
 //	the currently selected test

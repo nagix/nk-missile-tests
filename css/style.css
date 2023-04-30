@@ -374,6 +374,21 @@ Bar graph on left
 #barGraph .bar.hwasong-8-marv, #missileTypeBtns .hwasong-8-marv .check {
 	fill: #FFBB78;
 }
+#barGraph .bar.hwasong-11a, #missileTypeBtns .hwasong-11a .check {
+	fill: #9EDAE5;
+}
+#barGraph .bar.hwasong-11b, #missileTypeBtns .hwasong-11b .check {
+	fill: #FF9896;
+}
+#barGraph .bar.hwasong-11c, #missileTypeBtns .hwasong-11c .check {
+	fill: #AEC7E8;
+}
+#barGraph .bar.hwasong-11d, #missileTypeBtns .hwasong-11d .check {
+	fill: #9467BD;
+}
+#barGraph .bar.hwasong-11s, #missileTypeBtns .hwasong-11s .check {
+	fill: #8C564B;
+}
 #barGraph .bar.hwasong-12, #missileTypeBtns .hwasong-12 .check {
 	fill: #7F7F7F;
 }
@@ -392,20 +407,11 @@ Bar graph on left
 #barGraph .bar.kn-02, #missileTypeBtns .kn-02 .check {
 	fill: #C49C94;
 }
-#barGraph .bar.kn-23, #missileTypeBtns .kn-23 .check {
-	fill: #9EDAE5;
-}
-#barGraph .bar.kn-24, #missileTypeBtns .kn-24 .check {
-	fill: #FF9896;
-}
 #barGraph .bar.kn-25, #missileTypeBtns .kn-25 .check {
 	fill: #FF6741;
 }
 #barGraph .bar.musudan, #missileTypeBtns .musudan .check {
 	fill: #AEC7E8;
-}
-#barGraph .bar.navalized-kn-23, #missileTypeBtns .navalized-kn-23 .check {
-	fill: #8C564B;
 }
 #barGraph .bar.new-irbm-2022, #missileTypeBtns .new-irbm-2022 .check {
 	fill: #7F7F7F;
@@ -451,12 +457,6 @@ Bar graph on left
 }
 #barGraph .bar.unknown, #missileTypeBtns .unknown .check {
 	fill: #8C564B;
-}
-#barGraph .bar.unnamed-kn-23-mod, #missileTypeBtns .unnamed-kn-23-mod .check {
-	fill: #AEC7E8;
-}
-#barGraph .bar.unnamed-srbm-2022, #missileTypeBtns .unnamed-srbm-2022 .check {
-	fill: #9467BD;
 }
 #barGraph .successLabel text,#barGraph .failureLabel text,#barGraph .unknownLabel text {
 	fill: white;

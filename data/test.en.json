@@ -1430,19 +1430,19 @@
 			"date": "2019-05-04",
 			"time": "01:54 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": 200,
 			"bearing": 65,
 			"outcome": "success",
-			"description": "After 522 days since the previous missile test, North Korea carried out a test of a new solid fuel missile. Though the test does not violate North Korea's self-imposed missile testing moratorium, it does suggest it may be unwinding. The new missile was first publicly seen at a April 2017 parade and looks similar to an Iskander missile. The test was accompanied with several MLRS missile launches which created significant confusion in the immediate aftermath as to the number and types of missiles tested (the accompanying MLRS launches are too small for this dataset and are excluded). The range of the new missile is still unknown as is its name. This database records it as the KN-23, though this may later be revised after a new name is adopted."
+			"description": "After 522 days since the previous missile test, North Korea carried out a test of a new solid fuel missile. Though the test does not violate North Korea's self-imposed missile testing moratorium, it does suggest it may be unwinding. The new missile was first publicly seen at a April 2017 parade and looks similar to an Iskander missile. The test was accompanied with several MLRS missile launches which created significant confusion in the immediate aftermath as to the number and types of missiles tested (the accompanying MLRS launches are too small for this dataset and are excluded). The range of the new missile is still unknown as is its name. This database records it as the KN-23, though this may later be revised after a new name is adopted. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11A."
 		}, {
 			"date": "2019-05-04",
 			"time": "unknown",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hodo",
 			"landing": "unknown",
 			"apogee": "unknown",
@@ -1454,7 +1454,7 @@
 			"date": "2019-05-09",
 			"time": "07:29 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "baegun",
 			"landing": "sea-of-japan",
 			"apogee": 50,
@@ -1466,7 +1466,7 @@
 			"date": "2019-05-09",
 			"time": "07:49 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "baegun",
 			"landing": "sea-of-japan",
 			"apogee": 50,
@@ -1478,7 +1478,7 @@
 			"date": "2019-07-24",
 			"time": "20:34 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": 50,
@@ -1490,7 +1490,7 @@
 			"date": "2019-07-24",
 			"time": "20:57 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hodo",
 			"landing": "sea-of-japan",
 			"apogee": 50,
@@ -1550,7 +1550,7 @@
 			"date": "2019-08-05",
 			"time": "20:24 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
@@ -1562,7 +1562,7 @@
 			"date": "2019-08-05",
 			"time": "20:36 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "kwail",
 			"landing": "sea-of-japan",
 			"apogee": 37,
@@ -1574,31 +1574,31 @@
 			"date": "2019-08-09",
 			"time": "20:34 (UTC)",
 			"series": 1,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": "1 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS."
+			"description": "1 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11B."
 		}, {
 			"date": "2019-08-09",
 			"time": "20:50 (UTC)",
 			"series": 2,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": 48,
 			"distance": 400,
 			"bearing": 70,
 			"outcome": "success",
-			"description": "2 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS."
+			"description": "2 of 2 tests, the missiles were fired from the Eastern coast of North Korea. Initially believed to be another KN-23 test, photographs released by North Korea confirmed it was a new type of missile strongly resembling the US's ATACMS. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11B."
 		}, {
 			"date": "2019-08-15",
 			"time": "23:01 (UTC)",
 			"series": 1,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "tongchon",
 			"landing": "sea-of-japan",
 			"apogee": 30,
@@ -1610,7 +1610,7 @@
 			"date": "2019-08-15",
 			"time": "23:16 (UTC)",
 			"series": 2,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "tongchon",
 			"landing": "sea-of-japan",
 			"apogee": 30,
@@ -1804,7 +1804,7 @@
 			"date": "2020-03-20",
 			"time": "21:45 (UTC)",
 			"series": 1,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "sonchon",
 			"landing": "sea-of-japan",
 			"apogee": "50",
@@ -1816,7 +1816,7 @@
 			"date": "2020-03-20",
 			"time": "21:50 (UTC)",
 			"series": 2,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "sonchon",
 			"landing": "sea-of-japan",
 			"apogee": "50",
@@ -1855,26 +1855,26 @@
 			"date": "2021-03-24",
 			"time": "22:04 (UTC)",
 			"series": 1,
-			"missile": "unnamed-kn-23-mod",
+			"missile": "hwasong-11c",
 			"facility": "sondok-ab",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "450",
 			"bearing": 86,
 			"outcome": "success",
-			"description": "On March 24, 2021, North Korea conducted its first ballistic missile test in nearly a year. The Japanese government initially announced detection of the tests, stating that two missiles were launched at 10:04 and 10:23 PM UTC, reaching an apogee of 60 km and a range of 450 km. According to the South Korean government, the launches occurred at 10:06 and 10:25. The official North Korean announcement on March 25 claimed that the missiles had in fact flown 600 km. The missiles may have conducted a pitch-up maneuver, similar to the KN-23, however, no independent confirmation is available of a 600 km flight. (1 of 2)"
+			"description": "On March 24, 2021, North Korea conducted its first ballistic missile test in nearly a year. The Japanese government initially announced detection of the tests, stating that two missiles were launched at 10:04 and 10:23 PM UTC, reaching an apogee of 60 km and a range of 450 km. According to the South Korean government, the launches occurred at 10:06 and 10:25. The official North Korean announcement on March 25 claimed that the missiles had in fact flown 600 km. The missiles may have conducted a pitch-up maneuver, similar to the KN-23, however, no independent confirmation is available of a 600 km flight. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11C. (1 of 2)"
 		}, {
 			"date": "2021-03-24",
 			"time": "22:23 (UTC)",
 			"series": 2,
-			"missile": "unnamed-kn-23-mod",
+			"missile": "hwasong-11c",
 			"facility": "yonpo",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "450",
 			"bearing": 86,
 			"outcome": "success",
-			"description": "On March 24, 2021, North Korea conducted its first ballistic missile test in nearly a year. The Japanese government initially announced detection of the tests, stating that two missiles were launched at 10:04 and 10:23 PM UTC, reaching an apogee of 60 km and a range of 450 km. According to the South Korean government, the launches occurred at 10:06 and 10:25. The official North Korean announcement on March 25 claimed that the missiles had in fact flown 600 km. The missiles may have conducted a pitch-up maneuver, similar to the KN-23, however, no independent confirmation is available of a 600 km flight. (2 of 2)"
+			"description": "On March 24, 2021, North Korea conducted its first ballistic missile test in nearly a year. The Japanese government initially announced detection of the tests, stating that two missiles were launched at 10:04 and 10:23 PM UTC, reaching an apogee of 60 km and a range of 450 km. According to the South Korean government, the launches occurred at 10:06 and 10:25. The official North Korean announcement on March 25 claimed that the missiles had in fact flown 600 km. The missiles may have conducted a pitch-up maneuver, similar to the KN-23, however, no independent confirmation is available of a 600 km flight. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11C. (2 of 2)"
 		}, {
 			"date": "2021-09-15",
 			"time": "03:34 (UTC)",
@@ -1913,14 +1913,14 @@
 		}, {
 			"date": "2021-10-19",
 			"time": "01:17 (UTC)",
-			"missile": "navalized-kn-23",
+			"missile": "hwasong-11s",
 			"facility": "sinpo",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "590",
 			"bearing": 70,
 			"outcome": "success",
-			"description": "On October 19, 2021, North Korea conducted its first SLBM test in over two years. This new missile, which appears to be a modified KN-23, was revealed at a major defense exhibition in Pyongyang the previous week. The missile reached an altitude 60 km and traveled 590 km. The missile was launched from the Gorae-class submarine used in previous SLBM tests."
+			"description": "On October 19, 2021, North Korea conducted its first SLBM test in over two years. This new missile, which appears to be a modified KN-23, was revealed at a major defense exhibition in Pyongyang the previous week. The missile reached an altitude 60 km and traveled 590 km. The missile was launched from the Gorae-class submarine used in previous SLBM tests. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11S."
 		}],
 		"year": 2021
 	}, {
@@ -1974,7 +1974,7 @@
 			"date": "2022-01-16",
 			"time": "23:50 (UTC)",
 			"series": 1,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "42",
@@ -1986,7 +1986,7 @@
 			"date": "2022-01-16",
 			"time": "23:54 (UTC)",
 			"series": 2,
-			"missile": "kn-24",
+			"missile": "hwasong-11b",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "42",
@@ -1998,7 +1998,7 @@
 			"date": "2022-01-26",
 			"time": "23:00 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": "20",
@@ -2010,7 +2010,7 @@
 			"date": "2022-01-26",
 			"time": "23:05 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": "20",
@@ -2077,26 +2077,26 @@
 			"date": "2022-04-16",
 			"time": "09:00 (UTC)",
 			"series": 1,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": "25",
 			"distance": "110",
 			"bearing": 58,
 			"outcome": "success",
-			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. (1 of 2)"
+			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11D. (1 of 2)"
 		}, {
 			"date": "2022-04-16",
 			"time": "09:00 (UTC)",
 			"series": 2,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "hungnam",
 			"landing": "sea-of-japan",
 			"apogee": "25",
 			"distance": "110",
 			"bearing": 58,
 			"outcome": "success",
-			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. (2 of 2)"
+			"description": "On 16 April 2022, Kim Jon-Un oversaw a test of a \"New-type Tactical Guided Weapon.\" Two missiles were launched at approximately 6:00 PM local time, and traveled 110 km downrange. The KCNA press release about the launch explicitly stated that the missile has a tactical nuclear role, and connected the system with the goals set forth at the 8th WPK Congress in January 2021. Information published by North Korea in April 2023 suggests that this missile has the internal designation of Hwasong-11D. (2 of 2)"
 		}, {
 			"date": "2022-05-04",
 			"time": "03:03 (UTC)",
@@ -2290,38 +2290,38 @@
 		}, {
 			"date": "2022-09-24",
 			"time": "21:53 (UTC)",
-			"missile": "navalized-kn-23",
+			"missile": "hwasong-11s",
 			"facility": "taechon",
 			"landing": "sea-of-japan",
 			"apogee": "60",
 			"distance": "600",
 			"bearing": 71,
 			"outcome": "success",
-			"description": "On 6:53 AM local time on 25 September 2022, North Korea launched one missile. According to the South Korean Joint Chiefs of Staff, the missile was launched from a location near Taechon, North Pyongan province, and traveled approximately 600 km, reaching an apogee of 60 km. The Japanese government stated the missile flew 400 km on an irregular trajectory, with an apogee of 50 km. The launch took place two days after the aircraft carrier USS Ronald Reagan arrived in Busan for exercises. On October 9, North Korea issued a press release and photographs stating \"At dawn of September 25, a simulated launching drill of ballistic missile... was conducted at the underwater launching ground in a reservoir in the northwestern part of Korea\". An analyst subsequently noted that in one of the pictures, Kim Jong-un appears to be standing on the Taechon dam."
+			"description": "On 6:53 AM local time on 25 September 2022, North Korea launched one missile. According to the South Korean Joint Chiefs of Staff, the missile was launched from a location near Taechon, North Pyongan province, and traveled approximately 600 km, reaching an apogee of 60 km. The Japanese government stated the missile flew 400 km on an irregular trajectory, with an apogee of 50 km. The launch took place two days after the aircraft carrier USS Ronald Reagan arrived in Busan for exercises. On October 9, North Korea issued a press release and photographs stating \"At dawn of September 25, a simulated launching drill of ballistic missile... was conducted at the underwater launching ground in a reservoir in the northwestern part of Korea\". North Korea further stated that \"The drill was aimed at confirming the order of taking tactical nuclear warheads out and transporting them and of managing them in a rapid and safe way at the time of operation, checking the reliability of the overall management system, making the units acquire launching capabilities of the ballistic missile at the underwater silos and inspecting their rapid response posture.\" An analyst subsequently noted that in one of the pictures, Kim Jong-un appears to be standing on the Taechon dam."
 		}, {
 			"date": "2022-09-28",
 			"time": "09:10 (UTC)",
 			"series": 1,
-			"missile": "unnamed-kn-23-mod",
+			"missile": "hwasong-11c",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "success",
-			"description": "Three days after the previous test, North Korea launched two SRBMs. According to the South Korean Joint Chiefs of Staff, the missiles were launched from near Sunan and detected between 6:10 and 6:20 AM local time, traveling 360 km with an apogee of 30 km. Yonhap additionally noted that the missiles might be KN-23s. The Japanese government stated the missiles were launched at 6:10 and 6:17 AM, traveling between 300 and 350 km, with an apogee of 50 km. The test took place the day before US Vice President Kamala Harris arrived in South Korea. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. (1 of 2 )"
+			"description": "Three days after the previous test, North Korea launched two SRBMs. According to the South Korean Joint Chiefs of Staff, the missiles were launched from near Sunan and detected between 6:10 and 6:20 AM local time, traveling 360 km with an apogee of 30 km. Yonhap additionally noted that the missiles might be KN-23s. The Japanese government stated the missiles were launched at 6:10 and 6:17 AM, traveling between 300 and 350 km, with an apogee of 50 km. The test took place the day before US Vice President Kamala Harris arrived in South Korea. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. According to North Korea, the test simulated the loading and launching of nuclear warheads \"for the purpose of neutralizing the airports in the operation zones of south Korea.\" (1 of 2)"
 		}, {
 			"date": "2022-09-28",
 			"time": "09:17 (UTC)",
 			"series": 2,
-			"missile": "unnamed-kn-23-mod",
+			"missile": "hwasong-11c",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "300",
 			"bearing": 62,
 			"outcome": "success",
-			"description": "Three days after the previous test, North Korea launched two SRBMs. According to the South Korean Joint Chiefs of Staff, the missiles were launched from near Sunan and detected between 6:10 and 6:20 AM local time, traveling 360 km with an apogee of 30 km. Yonhap additionally noted that the missiles might be KN-23s. The Japanese government stated the missiles were launched at 6:10 and 6:17 AM, traveling between 300 and 350 km, with an apogee of 50 km. The test took place the day before US Vice President Kamala Harris arrived in South Korea. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. (2 of 2)"
+			"description": "Three days after the previous test, North Korea launched two SRBMs. According to the South Korean Joint Chiefs of Staff, the missiles were launched from near Sunan and detected between 6:10 and 6:20 AM local time, traveling 360 km with an apogee of 30 km. Yonhap additionally noted that the missiles might be KN-23s. The Japanese government stated the missiles were launched at 6:10 and 6:17 AM, traveling between 300 and 350 km, with an apogee of 50 km. The test took place the day before US Vice President Kamala Harris arrived in South Korea. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. According to North Korea, the test simulated the loading and launching of nuclear warheads \"for the purpose of neutralizing the airports in the operation zones of south Korea.\" (2 of 2)"
 		}, {
 			"date": "2022-09-29",
 			"time": "11:48 (UTC)",
@@ -2350,7 +2350,7 @@
 			"date": "2022-09-30",
 			"time": "21:42 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "west-sunan",
 			"landing": "sea-of-japan",
 			"apogee": "50",
@@ -2362,7 +2362,7 @@
 			"date": "2022-09-30",
 			"time": "21:58 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "west-sunan",
 			"landing": "sea-of-japan",
 			"apogee": "50",
@@ -2380,7 +2380,7 @@
 			"distance": "4500",
 			"bearing": 80,
 			"outcome": "success",
-			"description": "At 7:22 AM local time on 4 October 2022, North Korea launched an IRBM which overflew Japan, the first such launch since 2017. According to the South Korean Joint Chiefs of Staff, the missile was detected at 7:23 AM and launched from Mupyong-ri, reaching range of 4500 km and an apogee of 970 km. According to the Japanese government, the missile flew approximately 4600 km with an approximate apogee of 1000 km. The missile prompted the Japanese government to issue an alert to residents of northern Japan using the J-Alert system and a temporary stoppage of trains in the Aomori and Hokkaido regions. The following day, 5 October, a South Korean missile launch failed when a Hyunmoo-2 SRBM crashed shortly after launch. On October 9, North Korea released images confirming that the launch was from the Mupyong-ni Arms Plant. Although the missile's performance resembled that of the Hwasong-12, the pictures indicate that it was, in fact, a new missile."
+			"description": "At 7:22 AM local time on 4 October 2022, North Korea launched an IRBM which overflew Japan, the first such launch since 2017. According to the South Korean Joint Chiefs of Staff, the missile was detected at 7:23 AM and launched from Mupyong-ri, reaching range of 4500 km and an apogee of 970 km. According to the Japanese government, the missile flew approximately 4600 km with an approximate apogee of 1000 km. The missile prompted the Japanese government to issue an alert to residents of northern Japan using the J-Alert system and a temporary stoppage of trains in the Aomori and Hokkaido regions. The following day, 5 October, a South Korean missile launch failed when a Hyunmoo-2 SRBM crashed shortly after launch. On October 9, North Korea released images confirming that the launch was from the Mupyong-ni Arms Plant. Although the missile's performance resembled that of the Hwasong-12, the pictures indicate that it was, in fact, a new missile. North Korea stated \"In order to cope with the unstable situation of the Korean Peninsula, the Central Military Commission of the Workers' Party of Korea adopted a decision to send more powerful and clear warning to the enemies on October 4 and took a measure to hit the set water area in the Pacific 4500 kilometers across the Japanese Islands with new-type ground-to-ground intermediate-range ballistic missile.\""
 		}, {
 			"date": "2022-10-05",
 			"time": "21:00 (UTC)",
@@ -2391,18 +2391,18 @@
 			"distance": "350",
 			"bearing": 58,
 			"outcome": "success",
-			"description": "Less than 24 hours after the IRBM launch, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the missiles were detected between 6:01 and 6:23 AM local time and launched from the Samsok region of Pyongyang, with one missile flying 350 km with an apogee of 80 km, and the other flying 800 km with an apogee of 60 km. The Japanese government stated that the missiles were launched at 6:00 and 6:15 AM and traveled 350 km (apogee 100 km) and 800 km (apogee 50 km), respectively. The Japanese government also stated the missiles may have flown on an irregular trajectory. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. (1 of 2)"
+			"description": "Less than 24 hours after the IRBM launch, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the missiles were detected between 6:01 and 6:23 AM local time and launched from the Samsok region of Pyongyang, with one missile flying 350 km with an apogee of 80 km, and the other flying 800 km with an apogee of 60 km. The Japanese government stated that the missiles were launched at 6:00 and 6:15 AM and traveled 350 km (apogee 100 km) and 800 km (apogee 50 km), respectively. The Japanese government also stated the missiles may have flown on an irregular trajectory. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. According to North Korea, the launch was a drill for \"super-large multiple rocket launchers and tactical ballistic missiles for verifying the might of functional warheads... conducted in simulation of striking the enemies' main military command facilities.\" (1 of 2)"
 		}, {
 			"date": "2022-10-05",
 			"time": "21:15 (UTC)",
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "samsok",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "800",
 			"bearing": 70,
 			"outcome": "success",
-			"description": "Less than 24 hours after the IRBM launch, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the missiles were detected between 6:01 and 6:23 AM local time and launched from the Samsok region of Pyongyang, with one missile flying 350 km with an apogee of 80 km, and the other flying 800 km with an apogee of 60 km. The Japanese government stated that the missiles were launched at 6:00 and 6:15 AM and traveled 350 km (apogee 100 km) and 800 km (apogee 50 km), respectively. The Japanese government also stated the missiles may have flown on an irregular trajectory. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. (2 of 2)"
+			"description": "Less than 24 hours after the IRBM launch, North Korea launched two SRBMs. The South Korean Joint Chiefs of Staff stated the missiles were detected between 6:01 and 6:23 AM local time and launched from the Samsok region of Pyongyang, with one missile flying 350 km with an apogee of 80 km, and the other flying 800 km with an apogee of 60 km. The Japanese government stated that the missiles were launched at 6:00 and 6:15 AM and traveled 350 km (apogee 100 km) and 800 km (apogee 50 km), respectively. The Japanese government also stated the missiles may have flown on an irregular trajectory. The launch location was subsequently geolocated by analysts using pictures released by North Korea on October 9. According to North Korea, the launch was a drill for \"super-large multiple rocket launchers and tactical ballistic missiles for verifying the might of functional warheads... conducted in simulation of striking the enemies' main military command facilities.\" (2 of 2)"
 		}, {
 			"date": "2022-10-08",
 			"time": "16:47 (UTC)",
@@ -2414,7 +2414,7 @@
 			"distance": "350",
 			"bearing": 70,
 			"outcome": "success",
-			"description": "On October 9 (local time), North Korea launched two KN-25 rockets from a dock in Munchon, on North Korea's east coast. The South Korean Joint Chiefs of Staff stated the missiles were detected between 1:48 and 1:58 AM local time and launched from Munchon, Kangwon Province, with a range of 350 km and an apogee of 90 km. The Japanese government noted that the missiles were launched at 1:47 and 1:53 AM local time with a range of 350 km and an apogee of 100 km. The Japanese government also stated that the missiles may have been launched from the sea. Using images released by North Korea on October 9, analysts geolocated a the launch to a dock in Munchon. (1 of 2)"
+			"description": "On October 9 (local time), North Korea launched two KN-25 rockets from a dock in Munchon, on North Korea's east coast. The South Korean Joint Chiefs of Staff stated the missiles were detected between 1:48 and 1:58 AM local time and launched from Munchon, Kangwon Province, with a range of 350 km and an apogee of 90 km. The Japanese government noted that the missiles were launched at 1:47 and 1:53 AM local time with a range of 350 km and an apogee of 100 km. The Japanese government also stated that the missiles may have been launched from the sea. Using images released by North Korea on October 9, analysts geolocated a the launch to a dock in Munchon. According to North Korea, \"the firing drill of the super-large multiple rocket launchers was waged in simulating the strike of the enemies' main ports at dawn of October 9.\" (1 of 2)"
 		}, {
 			"date": "2022-10-08",
 			"time": "16:53 (UTC)",
@@ -2426,7 +2426,7 @@
 			"distance": "350",
 			"bearing": 70,
 			"outcome": "success",
-			"description": "On October 9 (local time), North Korea launched two KN-25 rockets from a dock in Munchon, on North Korea's east coast. The South Korean Joint Chiefs of Staff stated the missiles were detected between 1:48 and 1:58 AM local time and launched from Munchon, Kangwon Province, with a range of 350 km and an apogee of 90 km. The Japanese government noted that the missiles were launched at 1:47 and 1:53 AM local time with a range of 350 km and an apogee of 100 km. The Japanese government also stated that the missiles may have been launched from the sea. Using images released by North Korea on October 9, analysts geolocated a the launch to a dock in Munchon. (2 of 2)"
+			"description": "On October 9 (local time), North Korea launched two KN-25 rockets from a dock in Munchon, on North Korea's east coast. The South Korean Joint Chiefs of Staff stated the missiles were detected between 1:48 and 1:58 AM local time and launched from Munchon, Kangwon Province, with a range of 350 km and an apogee of 90 km. The Japanese government noted that the missiles were launched at 1:47 and 1:53 AM local time with a range of 350 km and an apogee of 100 km. The Japanese government also stated that the missiles may have been launched from the sea. Using images released by North Korea on October 9, analysts geolocated a the launch to a dock in Munchon. According to North Korea, \"the firing drill of the super-large multiple rocket launchers was waged in simulating the strike of the enemies' main ports at dawn of October 9.\" (2 of 2)"
 		}, {
 			"date": "2022-10-13",
 			"time": "16:47 (UTC)",
@@ -2533,7 +2533,7 @@
 			"distance": "150",
 			"bearing": 90,
 			"outcome": "unknown",
-			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (1 of 3)"
+			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (2 of 3)"
 		}, {
 			"date": "2022-11-01",
 			"time": "23:51 (UTC)",
@@ -2545,7 +2545,7 @@
 			"distance": "150",
 			"bearing": 90,
 			"outcome": "unknown",
-			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (1 of 3)"
+			"description": "According to the South Korean Joint Chiefs of Staff, the next three launches were detected at approximately 8:51 AM local time from the Wonsan area. One of the missiles flew southeast, crossing the inter-Korean maritime border (called the Northern Limit Line or NLL) and landing in South Korean territorial waters. The missile landed 26 km south of the NLL, in an area 57 km east of the South Korean city of Sokcho. This is the first time North Korea has launched a missile across the NLL. The Japanese Ministry of Defense detected at least two missiles at approximately 8:50 AM, with one traveling 150 km east and reaching an apogee of 150 km, and the other (likely the missile that crossed the NLL) traveling 200 km southeast and reaching an apogee of 100 km. Several hours later, South Korea responded, with F-15K and KF-16 aircraft launching 3 SLAM-ER missiles across the NLL into North Korean territorial waters. Following this test, at 9:12 AM, and again at 4:30 PM, North Korea conducted a series of missile launches totaling at least 16 weapons. South Korea identified these as a mix of surface to air missiles (SAMs) and SRBMs, but a subsequent North Korean press release indicated that 23 SAMs were launched. It is possible that SAMs were fired without targets, which appeared on South Korean radars as following a ballistic trajectory. (3 of 3)"
 		}, {
 			"date": "2022-11-02",
 			"time": "22:39 (UTC)",
@@ -2777,7 +2777,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 1,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2789,7 +2789,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 2,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2801,7 +2801,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 3,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2813,7 +2813,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 4,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2825,7 +2825,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 5,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2837,7 +2837,7 @@
 			"date": "2023-03-09",
 			"time": "09:20 (UTC)",
 			"series": 6,
-			"missile": "unnamed-srbm-2022",
+			"missile": "hwasong-11d",
 			"facility": "taesong",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
@@ -2849,7 +2849,7 @@
 			"date": "2023-03-13",
 			"time": "22:41 (UTC)",
 			"series": 1,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "jangyon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
@@ -2861,7 +2861,7 @@
 			"date": "2023-03-13",
 			"time": "22:51 (UTC)",
 			"series": 2,
-			"missile": "kn-23",
+			"missile": "hwasong-11a",
 			"facility": "jangyon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
@@ -2895,37 +2895,37 @@
 			"date": "2023-03-26",
 			"time": "22:47 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "hwasong-11a",
 			"facility": "chunghwa",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "350",
 			"bearing": 56,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On March 27, 2023 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from Chunghwa county between 7:47 AM and 8 AM and traveled 370 kilometers downrange. The Japanese Ministry of Defense stated that the missiles were launched at 7:47 and 7:57 AM, and traveled 350 kilometers, with an apogee of approximately 50 kilometers. According to a North Korean press release, the launches were an \"education demonstration\" carried out by the \"education company\" of the Missile General Bureau. The press release further stated that the test included an examination of the procedures for authenticating a nuclear attack order the launch approval system and an educational demonstration of the standard combat procedure, with the simulated warheads detonating 500 meters above the target. The launch was geolocated by analysts using photographs attached to the press release. (1 of 2)"
 		}, {
 			"date": "2023-03-26",
 			"time": "22:57 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "hwasong-11a",
 			"facility": "chunghwa",
 			"landing": "sea-of-japan",
 			"apogee": "50",
 			"distance": "350",
 			"bearing": 56,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "On March 27, 2023 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from Chunghwa county between 7:47 AM and 8 AM and traveled 370 kilometers downrange. The Japanese Ministry of Defense stated that the missiles were launched at 7:47 and 7:57 AM, and traveled 350 kilometers, with an apogee of approximately 50 kilometers. According to a North Korean press release, the launches were an \"education demonstration\" carried out by the \"education company\" of the Missile General Bureau. The press release further stated that the test included an examination of the procedures for authenticating a nuclear attack order the launch approval system and an educational demonstration of the standard combat procedure, with the simulated warheads detonating 500 meters above the target. The launch was geolocated by analysts using photographs attached to the press release. (2 of 2)"
 		}, {
 			"date": "2023-04-12",
 			"time": "22:22 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": "3000",
 			"distance": "1000",
 			"bearing": 63,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On April 13, 2023 (local time), North Korea launched its first solid-propellant intercontinental ballistic missile, the Hwasong-18. The South Korean Joint Chiefs of Staff stated that the launch was detected from the vicinity of Pyongyang at 7:23 AM and traveled approximately 1000 kilometers downrange on a lofted trajectory. Yonhap initially reported the missile as an \"intermediate- or longer-range ballistic missile\". The Japanese Ministry of Defense stated that the missile was launched at 7:22 am and possibly \"an ICBM-class ballistic missile\" but did not provide trajectory information. The launch initially prompted a J-ALERT for Hokkaido due to concerns the missile might impact in the vicinity of the island. The alert was subsequently cancelled, and the Ministry of Defense stated that the erroneous prediction may have been caused by the timing and location of the missile's stage separation. According to a North Korean press release, the launch was intended to verify the performance of the missile's solid rocket motors, stage separation systems and \"various functional control systems\". The press release gave an unusual description of the trajectory, stating that the first stage flew on a standard trajectory, before firing the second and third stages vertically. Additionally, the speed of the missile was reduced by delaying ignition of upper stages and \"motor reactivation.\" The missile was cold launched from a tube attached to a 9-axle transporter-erector-launcher. The launch site was geolocated by analysts using photographs attached to the press release."
 		}],
 		"year": 2023
 	}]
