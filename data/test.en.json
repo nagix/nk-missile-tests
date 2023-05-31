@@ -2926,6 +2926,17 @@
 			"bearing": 63,
 			"outcome": "success",
 			"description": "On April 13, 2023 (local time), North Korea launched its first solid-propellant intercontinental ballistic missile, the Hwasong-18. The South Korean Joint Chiefs of Staff stated that the launch was detected from the vicinity of Pyongyang at 7:23 AM and traveled approximately 1000 kilometers downrange on a lofted trajectory. Yonhap initially reported the missile as an \"intermediate- or longer-range ballistic missile\". The Japanese Ministry of Defense stated that the missile was launched at 7:22 am and possibly \"an ICBM-class ballistic missile\" but did not provide trajectory information. The launch initially prompted a J-ALERT for Hokkaido due to concerns the missile might impact in the vicinity of the island. The alert was subsequently cancelled, and the Ministry of Defense stated that the erroneous prediction may have been caused by the timing and location of the missile's stage separation. According to a North Korean press release, the launch was intended to verify the performance of the missile's solid rocket motors, stage separation systems and \"various functional control systems\". The press release gave an unusual description of the trajectory, stating that the first stage flew on a standard trajectory, before firing the second and third stages vertically. Additionally, the speed of the missile was reduced by delaying ignition of upper stages and \"motor reactivation.\" The missile was cold launched from a tube attached to a 9-axle transporter-erector-launcher. The launch site was geolocated by analysts using photographs attached to the press release."
+		}, {
+			"date": "2023-05-30",
+			"time": "21:28 (UTC)",
+			"missile": "unknown",
+			"facility": "sohae",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "380",
+			"bearing": 190,
+			"outcome": "failure",
+			"description": ""
 		}],
 		"year": 2023
 	}]
