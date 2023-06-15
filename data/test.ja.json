@@ -2939,6 +2939,30 @@
 			"bearing": 190,
 			"outcome": "failure",
 			"description": ""
+		}, {
+			"date": "2023-06-15",
+			"time": "19:24 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "850",
+			"bearing": 81,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2023-06-15",
+			"time": "19:36 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "900",
+			"bearing": 81,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2023
 	}]
