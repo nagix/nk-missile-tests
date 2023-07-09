@@ -712,6 +712,9 @@ Bar graph on left
 	fill-opacity: 0.5;
 	stroke: none;
 }
+#missileTypeBtns .select-all .check {
+	fill: #ffffff;;
+}
 
 #graphIcon {
 	width: 42px;

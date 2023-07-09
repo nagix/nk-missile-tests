@@ -20,5 +20,6 @@
 	"search": "Search",
 	"success": "Success",
 	"test-outcome": "Test Outcome",
-	"unknown": "Unknown"
+	"unknown": "Unknown",
+	"select-all": "(Select All)"
 }

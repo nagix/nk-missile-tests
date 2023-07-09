@@ -20,5 +20,6 @@
 	"search": "検索",
 	"success": "成功",
 	"test-outcome": "実験結果",
-	"unknown": "不明"
+	"unknown": "不明",
+	"select-all": "(すべて選択)"
 }

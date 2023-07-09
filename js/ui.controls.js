@@ -84,8 +84,9 @@ var d3Graphs = {
 		$("#outcomeBtns .success .label").text(dict['success']);
 		$("#outcomeBtns .failure .label").text(dict['failure']);
 		$("#outcomeBtns .unknown .label").text(dict['unknown']);
+		$(".missileTypeBtn.select-all .label").text(dict['select-all']);
 		for (var i in missileLookup) {
-			$("#missileTypeBtns ." + i + " .label").text(missileLookup[i].name);
+			$(".missileTypeBtn." + i + " .label").text(missileLookup[i].name);
 		}
 		$("#aboutBox .title").text(dict['_abouttitle']);
 		$("#aboutBox .text").html(dict['_about']);
@@ -336,12 +337,28 @@ var d3Graphs = {
 		d3Graphs.updateViz(true);
 	},
 	missileBtnClick: function() {
-		var check = $(this).find('.check');
-		if(check.hasClass('inactive')) {
+		var check = $(this).hasClass('select-all') ?
+			$(".missileTypeBtn:not(.select-all) .check") :
+			$(this).find('.check');
+		if (check.hasClass('inactive')) {
 			check.removeClass('inactive');
 		} else {
 			check.addClass('inactive');
 		}
+
+		var ref = '#checkbutton';
+		var inactiveCount = $(".missileTypeBtn:not(.select-all) .check.inactive").length;
+		check = $(".missileTypeBtn.select-all .check");
+		if (inactiveCount == 0) {
+			check.removeClass('inactive');
+		} else if (inactiveCount == Object.keys(missileLookup).length) {
+			check.addClass('inactive');
+		} else {
+			check.removeClass('inactive');
+			ref = '#partialbutton';
+		}
+		check.find('use').attr('xlink:href', ref);
+
 		d3Graphs.updateViz(true);
 	},
 	hudButtonHandleClick: function() {

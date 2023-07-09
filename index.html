@@ -202,10 +202,14 @@
 		<div id="graphIcon" class="overlayTests"></div>
 		<div id="missileTypeBtns" class="overlayTests">
 			<div class="missileTypeBtnGroup noMapDrag">
-				<div class="missileTypeBtn er-scud">
+				<div class="missileTypeBtn select-all">
 					<div class="box noMapDrag">
 						<svg class="check" height="16" width="16">
 							<defs>
+								<g id="partialbutton">
+									<circle r="8" cy="8" cx="8" style="stroke:none" />
+									<path d="M 3.6,8 L 12.4,8" style="fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round" />
+								</g>
 								<g id="checkbutton">
 									<circle r="8" cy="8" cx="8" style="stroke:none" />
 									<path d="M 3.6801386,8.536309 L 6.9552837,11.971756 L 12.41386,3.9557141" style="fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round" />
@@ -213,6 +217,12 @@
 							</defs>
 							<use xlink:href="#checkbutton" class="noMapDrag" />
 						</svg>
+					</div>
+					<div class="label noMapDrag">(Select All)</div><br class="clear">
+				</div>
+				<div class="missileTypeBtn er-scud">
+					<div class="box noMapDrag">
+						<svg class="check" height="16" width="16"><use xlink:href="#checkbutton" class="noMapDrag" /></svg>
 					</div>
 					<div class="label noMapDrag">ER Scud</div><br class="clear">
 				</div>
