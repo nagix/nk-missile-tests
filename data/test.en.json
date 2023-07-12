@@ -2961,6 +2961,17 @@
 			"bearing": 81,
 			"outcome": "unknown",
 			"description": "2 of 2"
+		}, {
+			"date": "2023-07-12",
+			"time": "00:59 (UTC)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "6500",
+			"distance": "1000",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2023
 	}]
