@@ -51,6 +51,7 @@ var outcomeLookup = {
 
 //	A list of missile colors
 var missileColors = {
+	'cheollima-1': 0xFF7F0E,
 	'er-scud': 0x1F77B4,
 	'hwasong-8': 0xAEC7E8,
 	'hwasong-8-marv': 0xFFBB78,
