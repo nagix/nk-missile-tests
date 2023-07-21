@@ -89,7 +89,8 @@ function buildDataVizGeometries( linearData ){
 			var set = yearBin[s];
 
 			var seriesPostfix = set.series ? ' [' + set.series + ']' : '';
-			set.testName = (set.date + ' ' + missileLookup[set.missile].name + seriesPostfix).toUpperCase();
+			var missile = missileLookup[set.missile];
+			set.testName = (set.date + ' ' + missile.name + seriesPostfix).toUpperCase();
 
 			var facilityName = set.facility;
 			facility = facilityData[facilityName];
@@ -104,9 +105,15 @@ function buildDataVizGeometries( linearData ){
 			}
 
 			var apogee = set.apogee;
+			var maneuver = missile.maneuver;
 			if (apogee === 'unknown' && distance > 0) {
 				// minimum energy trajectory
 				apogee = -0.000013 * distance * distance + 0.26 * distance;
+
+				if (maneuver !== undefined && apogee > 50) {
+					// pullup or glide maneuvering
+					apogee = 50;
+				}
 			}
 			if (isNaN(apogee)) {
 				apogee = 0;
@@ -135,7 +142,11 @@ function buildDataVizGeometries( linearData ){
 			}
 
 			//	visualize this event
-			set.lineGeometry = makeConnectionLineGeometry( facility, set.landingLocation, apogee );
+			if (maneuver === undefined) {
+				set.lineGeometry = makeBallisticCurveGeometry( facility, set.landingLocation, apogee );
+			} else {
+				set.lineGeometry = makePullupCurveGeometry( facility, set.landingLocation, apogee );
+			}
 
 			testData[set.testName] = set;
 
@@ -197,7 +208,7 @@ function getVisualizedMesh( linearData, year, outcomeCategories, missileCategori
 				particleCount *= 4;
 				particleSize *= 2;
 			}
-			for( var rIndex=0; rIndex<points.length-1; rIndex++ ){
+			for( var rIndex=0; rIndex<points.length-1; rIndex+=4 ){
 				for ( var s=0; s < particleCount; s++ ) {
 					var point = points[rIndex];
 					var particle = point.clone();
@@ -287,7 +298,7 @@ function getVisualizedMesh( linearData, year, outcomeCategories, missileCategori
 			var path = particle.path;
 			var moveLength = path.length;
 
-			particle.lerpN += 0.05 * delta / (1000 / 60);
+			particle.lerpN += 0.2 * delta / (1000 / 60);
 			if(particle.lerpN > 1){
 				particle.lerpN = 0;
 				particle.moveIndex = particle.nextIndex;
