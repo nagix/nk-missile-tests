@@ -1934,7 +1934,14 @@
 			"landing": "sea-of-japan",
 			"apogee": 30,
 			"distance": 700,
-			"bearing": 70,
+			"bearing": 75,
+			"glide": [{
+				"distance": 500,
+				"maneuvering-distance": 120,
+				"bearing": 65
+			}, {
+				"distance": 80
+			}],
 			"outcome": "success",
 			"description": "北朝鮮が2022年に初めて行ったミサイル実験。このミサイルは火星8号の新型と見られ、今回は極超音速滑空体ではなく、機動式再突入体(MaRV)を搭載していた。日本の防衛省は、このミサイルが通常の弾道軌道をたどったと仮定して、約500kmの距離を飛行したと発表している。北朝鮮政府は、再突入体が120kmの横方向への機動を含めて700km飛行したと発表した。"
 		}, {
@@ -1945,7 +1952,14 @@
 			"landing": "sea-of-japan",
 			"apogee": 60,
 			"distance": 1000,
-			"bearing": 67,
+			"bearing": 80,
+			"glide": [{
+				"distance": 600,
+				"maneuvering-distance": 240,
+				"bearing": 40
+			}, {
+				"distance": 160
+			}],
 			"outcome": "success",
 			"description": "MaRVを搭載した火星8号の2回目の実験。韓国軍合同参謀本部と日本の防衛省は、弾道軌道を想定して約700km飛行したと発表した。北朝鮮は、ミサイルは1000km飛行し、240kmのらせん状の機動を行ったと発表した。このミサイルの初期軌道は北米航空宇宙防衛司令部(NORAD)を驚かせ、米国西海岸の航空機を15分間地上停止させた。"
 		}, {

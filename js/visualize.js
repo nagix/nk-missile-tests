@@ -1,4 +1,20 @@
-function landingLatLon(lat, lon, bearing, distance) {
+function latLonToPoint(latLon) {
+	var rad = 100;
+
+	var lon = latLon.lon - 90;
+	var lat = latLon.lat;
+	var phi = Math.PI / 2 - lat * Math.PI / 180;
+	var theta = 2 * Math.PI - (lon - 9.9) * Math.PI / 180;
+
+	var point = new THREE.Vector3();
+	point.x = Math.sin(phi) * Math.cos(theta) * rad;
+	point.y = Math.cos(phi) * rad;
+	point.z = Math.sin(phi) * Math.sin(theta) * rad;
+
+	return point;
+}
+
+function destination(lat, lon, bearing, distance) {
 	var a = 6378137.06; // radius at equator
 
 	var phi1 = lat * Math.PI / 180;
@@ -74,7 +90,6 @@ function vincenty(lat, lon, bearing, distance) {
 function buildDataVizGeometries( linearData ){
 
 	var sphereRad = 1;
-	var rad = 100;
 	var loadLayer = document.getElementById('loading');
 
 	for( var i in linearData ){
@@ -119,33 +134,62 @@ function buildDataVizGeometries( linearData ){
 				apogee = 0;
 			}
 
-			var landing = landingLatLon(facility.lat, facility.lon, set.bearing, distance);
-			var lon = landing.lon - 90;
-			var lat = landing.lat;
-			var phi = Math.PI/2 - lat * Math.PI / 180;
-			var theta = 2 * Math.PI - (lon - 9.9) * Math.PI / 180;
+			var waypoints = [];
+			if (maneuver === 'glide' && set.glide) {
+				var latLon = facility;
+				var bearing = set.bearing;
+				for (var i = 0; i < set.glide.length; i++) {
+					var glide = set.glide[i];
+					latLon = destination(latLon.lat, latLon.lon, bearing, glide.distance);
 
-			var lcenter = new THREE.Vector3();
-			lcenter.x = Math.sin(phi) * Math.cos(theta) * rad;
-			lcenter.y = Math.cos(phi) * rad;
-			lcenter.z = Math.sin(phi) * Math.sin(theta) * rad;
+					var waypoint = latLonToPoint(latLon);
+					waypoints.push({
+						distance: glide.distance,
+						center: waypoint
+					});
 
-			set.landingLocation = {
-				name: set.landing,
-				lat: landing.lat,
-				lon: landing.lon,
-				center: lcenter
-			};
+					if (i === set.glide.length - 1) {
+						set.landingLocation = {
+							name: set.landing,
+							lat: latLon.lat,
+							lon: latLon.lon,
+							center: waypoint
+						};
+						break;
+					}
+
+					var theta = Math.abs(glide.bearing - bearing) * Math.PI / 360;
+					var d = glide['maneuvering-distance'] * (theta > 0 ? Math.sin(theta) / theta : 1);
+					latLon = destination(latLon.lat, latLon.lon, (bearing + glide.bearing) / 2, d);
+					bearing = glide.bearing;
+
+					waypoints.push({
+						distance: glide['maneuvering-distance'],
+						center: latLonToPoint(latLon)
+					});
+				}
+			} else {
+				var landing = destination(facility.lat, facility.lon, set.bearing, distance);
+
+				set.landingLocation = {
+					name: set.landing,
+					lat: landing.lat,
+					lon: landing.lon,
+					center: latLonToPoint(landing)
+				};
+			}
 
 			if (distance == 0) {
 				set.markerOnLeft = true;
 			}
 
 			//	visualize this event
-			if (maneuver === undefined) {
-				set.lineGeometry = makeBallisticCurveGeometry( facility, set.landingLocation, apogee );
-			} else {
+			if (maneuver === 'pullup') {
 				set.lineGeometry = makePullupCurveGeometry( facility, set.landingLocation, apogee );
+			} else if (maneuver === 'glide' && set.glide) {
+				set.lineGeometry = makeGlideCurveGeometry( facility, waypoints, apogee );
+			} else {
+				set.lineGeometry = makeBallisticCurveGeometry( facility, set.landingLocation, apogee );
 			}
 
 			testData[set.testName] = set;

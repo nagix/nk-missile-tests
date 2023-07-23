@@ -1932,7 +1932,14 @@
 			"landing": "sea-of-japan",
 			"apogee": 30,
 			"distance": 700,
-			"bearing": 70,
+			"bearing": 75,
+			"glide": [{
+				"distance": 500,
+				"maneuvering-distance": 120,
+				"bearing": 65
+			}, {
+				"distance": 80
+			}],
 			"outcome": "success",
 			"description": "North Korea's first missile test of 2022. The missile appeared to be a new variant of the Hwasong-8, this time with a maneuvering re-entry vehicle (MaRV) rather than a hypersonic glide vehicle. The Japanese Ministry of Defense stated that the missile traveled approximately 500 km, assuming it followed a normal ballistic trajectory. The North Korean government stated that the re-entry vehicle traveled 700 km, including a 120 km lateral maneuver."
 		}, {
@@ -1943,7 +1950,14 @@
 			"landing": "sea-of-japan",
 			"apogee": 60,
 			"distance": 1000,
-			"bearing": 67,
+			"bearing": 80,
+			"glide": [{
+				"distance": 600,
+				"maneuvering-distance": 240,
+				"bearing": 40
+			}, {
+				"distance": 160
+			}],
 			"outcome": "success",
 			"description": "The second test of the MaRV-equipped Hwasong-8. The South Korean Joint Chiefs of Staff and Japanese Ministry of Defense stated that the missile traveled approximately 700 km, assuming a ballistic trajectory. North Korea stated the missile flew 1000 km and conducted a 240 km \"corkscrew\" maneuver. This missile's initial trajectory alarmed North American Aerospace Defense Command (NORAD), resulting in a 15 minute ground stop of aircraft on the US west coast."
 		}, {
