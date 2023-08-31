@@ -2978,11 +2978,11 @@
 		}, {
 			"date": "2023-07-12",
 			"time": "00:59 (UTC)",
-			"missile": "unknown",
+			"missile": "hwasong-18",
 			"facility": "pyongyang",
 			"landing": "sea-of-japan",
-			"apogee": 6500,
-			"distance": 1000,
+			"apogee": 6648,
+			"distance": 1001,
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": ""
@@ -3045,6 +3045,30 @@
 			"bearing": 172,
 			"outcome": "failure",
 			"description": ""
+		}, {
+			"date": "2023-08-30",
+			"time": "14:38 (UTC)",
+			"series": 1,
+			"missile": "hwasong-11b",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2023-08-30",
+			"time": "14:46 (UTC)",
+			"series": 2,
+			"missile": "hwasong-11b",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 400,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2023
 	}]
