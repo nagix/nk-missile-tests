@@ -3071,6 +3071,30 @@
 			"bearing": 61,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2023-09-13",
+			"time": "11:41 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 74,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2023-09-13",
+			"time": "11:51 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 650,
+			"bearing": 74,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2023
 	}]

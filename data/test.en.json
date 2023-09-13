@@ -3069,6 +3069,30 @@
 			"bearing": 61,
 			"outcome": "unknown",
 			"description": "2 of 2"
+		}, {
+			"date": "2023-09-13",
+			"time": "02:41 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 74,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2023-09-13",
+			"time": "02:51 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 650,
+			"bearing": 74,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2023
 	}]
