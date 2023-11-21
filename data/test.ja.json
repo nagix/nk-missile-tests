@@ -3095,6 +3095,17 @@
 			"bearing": 74,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2023-11-21",
+			"time": "22:43 (JST)",
+			"missile": "cheollima-1",
+			"facility": "sohae",
+			"landing": "pacific-ocean",
+			"apogee": 500,
+			"distance": 3000,
+			"bearing": 170,
+			"outcome": "success",
+			"description": ""
 		}],
 		"year": 2023
 	}]
