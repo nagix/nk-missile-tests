@@ -3126,6 +3126,17 @@
 			"bearing": 78,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2023-12-17",
+			"time": "23:24 (UTC)",
+			"missile": "unknown",
+			"facility": "sunan",
+			"landing": "pacific-ocean",
+			"apogee": 6500,
+			"distance": 1000,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2023
 	}]
