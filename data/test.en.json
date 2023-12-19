@@ -2943,49 +2943,49 @@
 		}, {
 			"date": "2023-05-30",
 			"time": "21:28 (UTC)",
-			"missile": "cheollima-1",
+			"missile": "chollima-1",
 			"facility": "sohae",
 			"landing": "yellow-sea",
 			"apogee": "unknown",
 			"distance": 380,
 			"bearing": 190,
 			"outcome": "failure",
-			"description": ""
+			"description": "On May 31, 2023 (local time), North Korea attempted its first space launch since 2016. The South Korean Joint Chiefs of Staff stated that the launch was detected at 6:29 AM, before failing and crashing into the Yellow Sea (also called the West Sea) 200 kilometers west of the South Korean island of Eocheong. The Japanese Ministry of Defense stated that the launch was detected at 6:28 AM before disappearing from radar at 6:35 AM. The launch sparked an alert and sirens in Seoul, and a J-Alert was issued for the Japanese island of Okinawa. North Korea had previously issued a Notice to Air Missions (NOTAM) indicating the expected impact points for the spent stages, and the launch trajectory suggested a polar orbit, common for imaging satellites. A North Korean press release stated that the payload was the Manrikyeong-1 reconnaissance satellite, but the launch vehicle failed during second stage ignition of the new launch vehicle, called the Chollima-1. A photograph attached to the press release showed the Chollima-1 being launched from the Sohae satellite launch station. Debris from the launch vehicle was recovered by the South Korean navy."
 		}, {
 			"date": "2023-06-15",
 			"time": "10:24 (UTC)",
 			"series": 1,
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 850,
 			"bearing": 81,
 			"outcome": "unknown",
-			"description": "1 of 2"
+			"description": "On June 15 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 7:25 and 7:37 PM, but provided no trajectory information. The Japanese Ministry of Defense stated that the missiles were launched at 7:24 and 7:36 PM, flying for 11 minutes and impacting at 7:35 and 7:47 PM, respectively. The missiles flew 850 and 900 kilometers respectively, both reaching an apogee of approximately 50 kilometers. North Korea did not issue a press release directly related to the launches, although the North Korean Ministry of Defense issued a statement criticizing ongoing joint South Korean-US live fire drills. (1 of 2)"
 		}, {
 			"date": "2023-06-15",
 			"time": "10:36 (UTC)",
 			"series": 2,
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 900,
 			"bearing": 81,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "On June 15 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 7:25 and 7:37 PM, but provided no trajectory information. The Japanese Ministry of Defense stated that the missiles were launched at 7:24 and 7:36 PM, flying for 11 minutes and impacting at 7:35 and 7:47 PM, respectively. The missiles flew 850 and 900 kilometers respectively, both reaching an apogee of approximately 50 kilometers. North Korea did not issue a press release directly related to the launches, although the North Korean Ministry of Defense issued a statement criticizing ongoing joint South Korean-US live fire drills. (2 of 2)"
 		}, {
 			"date": "2023-07-12",
 			"time": "00:59 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 6648,
 			"distance": 1001,
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On July 12 (local time), North Korea conducted its second Hwasong-18 launch. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at 10 AM and flew to a range of 1000 kilometers on a lofted angle. The Japanese Ministry of Defense stated that the missile was launched at 9:59 AM and flew for 74 minutes, reaching an apogee of 6,000 kilometers and a range of 1000 kilometers. A North Korean press release referenced the US-South Korean Washington Declaration, and the US decision to deploy an Ohio-class ballistic missile submarine to South Korea. The press release also stated that the missile traveled 1001.2 kilometers and reached a 6648.4 kilometers apogee during a 4491 second flight. Photographs attached to the press release indicated that the missile was launched from the same site as the first Hwasong-18 launch."
 		}, {
 			"date": "2023-07-18",
 			"time": "18:29 (UTC)",
@@ -2997,7 +2997,7 @@
 			"distance": 550,
 			"bearing": 75,
 			"outcome": "unknown",
-			"description": "1 of 2"
+			"description": "On July 19 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 3:30 and 3:46 AM and flew to a range of 550 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:29 and 3:45 AM, traveling 550 and 600 kilometers, respectively, and reaching apogees of 50 kilometers. Although North Korea did not issue a press release directly referencing the launches, the Minister of National Defense issued a statement on July 20 criticizing the inaugural meeting of the US-South Korean Nuclear Consultative Group and the US deployment of an Ohio-class ballistic missile submarine to Pusan. (1 of 2)"
 		}, {
 			"date": "2023-07-18",
 			"time": "18:45 (UTC)",
@@ -3009,66 +3009,66 @@
 			"distance": 600,
 			"bearing": 75,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "On July 19 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 3:30 and 3:46 AM and flew to a range of 550 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:29 and 3:45 AM, traveling 550 and 600 kilometers, respectively, and reaching apogees of 50 kilometers. Although North Korea did not issue a press release directly referencing the launches, the Minister of National Defense issued a statement on July 20 criticizing the inaugural meeting of the US-South Korean Nuclear Consultative Group and the US deployment of an Ohio-class ballistic missile submarine to Pusan. (2 of 2)"
 		}, {
 			"date": "2023-07-24",
 			"time": "14:54 (UTC)",
 			"series": 1,
 			"missile": "unknown",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": 100,
 			"distance": 350,
 			"bearing": 61,
 			"outcome": "unknown",
-			"description": "1 of 2"
+			"description": "On July 24 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 11:55 PM on July 24 and midnight July 25, and flew to a range of 400 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:54 and 11:59 PM, traveling 350 and 400 kilometers, respectively, and reaching apogees of 100 kilometers. North Korea did not issue a press release for the launch, which occurred following the deployment of a second US submarine, the Los Angeles-class attack submarine USS Annapolis, to South Korea. (1 of 2)"
 		}, {
 			"date": "2023-07-24",
 			"time": "14:59 (UTC)",
 			"series": 2,
 			"missile": "unknown",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": 100,
 			"distance": 400,
 			"bearing": 61,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "On July 24 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 11:55 PM on July 24 and midnight July 25, and flew to a range of 400 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:54 and 11:59 PM, traveling 350 and 400 kilometers, respectively, and reaching apogees of 100 kilometers. North Korea did not issue a press release for the launch, which occurred following the deployment of a second US submarine, the Los Angeles-class attack submarine USS Annapolis, to South Korea. (2 of 2)"
 		}, {
 			"date": "2023-08-23",
-			"time": "18:51 (UTC)",
-			"missile": "cheollima-1",
+			"time": "18:50 (UTC)",
+			"missile": "chollima-1",
 			"facility": "sohae",
 			"landing": "pacific-ocean",
 			"apogee": 500,
 			"distance": 2700,
 			"bearing": 172,
 			"outcome": "failure",
-			"description": ""
+			"description": "On August 22, South Korea and Japan issued maritime navigation warnings based on data provided by North Korea, indicating a space launch between August 24 and 31. The South Korean Joint Chiefs of Staff stated that the launch, North Korea's second attempt to launch a satellite in 2023, was detected at 3:50AM from the Tongchang-ri area and assessed to have failed in flight. Japanese Ministry of Defense stated that the rocket was launched at 3:51 AM and separated into multiple pieces in flight. One part fell outside the predicted area in the Yellow Sea, 300 kilometers west of the Korean peninsula at 3:58 AM. The second fell into the East China Sea 350 kilometers west of the Korean peninsula at 3:59 AM. The third piece impacted the in the Pacific Ocean at 4:05 AM. North Korea issued a press release stating that the first and second stages functioned normally, but an error in the third stage's emergency self destruct system destroyed the launch vehicle and payload. The press release indicated that a third launch would be attempted in October."
 		}, {
 			"date": "2023-08-30",
 			"time": "14:38 (UTC)",
 			"series": 1,
 			"missile": "hwasong-11b",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On August 30 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 11:40 PM and 11:50 PM and flew to a range of 360 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:38 and 11:46 PM, traveling 350 and 400 kilometers, respectively, and reaching apogees of 50 kilometers. The launches occurred amid the Ulchi Freedom Shield joint US-South Korean air drills, which included a US B-1B bomber. North Korea issued a press release criticizing the drills and stating that the launches from Pyongyang International Airport were part of a tactical nuclear strike drill against command centers and airfields in South Korea. (1 of 2)"
 		}, {
 			"date": "2023-08-30",
 			"time": "14:46 (UTC)",
 			"series": 2,
 			"missile": "hwasong-11b",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 400,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "On August 30 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 11:40 PM and 11:50 PM and flew to a range of 360 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 11:38 and 11:46 PM, traveling 350 and 400 kilometers, respectively, and reaching apogees of 50 kilometers. The launches occurred amid the Ulchi Freedom Shield joint US-South Korean air drills, which included a US B-1B bomber. North Korea issued a press release criticizing the drills and stating that the launches from Pyongyang International Airport were part of a tactical nuclear strike drill against command centers and airfields in South Korea. (2 of 2)"
 		}, {
 			"date": "2023-09-13",
 			"time": "02:41 (UTC)",
@@ -3080,7 +3080,7 @@
 			"distance": 350,
 			"bearing": 74,
 			"outcome": "unknown",
-			"description": "1 of 2"
+			"description": "On September 13 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 11:43 and 11:53 AM but provided no trajectory data. The Japanese Ministry of Defense stated that the missiles were launched at 11:41 and 11:51 AM, traveling 350 and 650 kilometers, respectively, and reaching apogees of 50 kilometers. North Korea did not issue a press release for the launches, which occurred while Kim Jong Un was in Russia to meet with Vladimir Putin. (1 of 2)"
 		}, {
 			"date": "2023-09-13",
 			"time": "02:51 (UTC)",
@@ -3092,11 +3092,11 @@
 			"distance": 650,
 			"bearing": 74,
 			"outcome": "unknown",
-			"description": "2 of 2"
+			"description": "On September 13 (local time), North Korea launched two short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Sunan area between 11:43 and 11:53 AM but provided no trajectory data. The Japanese Ministry of Defense stated that the missiles were launched at 11:41 and 11:51 AM, traveling 350 and 650 kilometers, respectively, and reaching apogees of 50 kilometers. North Korea did not issue a press release for the launches, which occurred while Kim Jong Un was in Russia to meet with Vladimir Putin. (2 of 2)"
 		}, {
 			"date": "2023-11-21",
 			"time": "13:43 (UTC)",
-			"missile": "cheollima-1",
+			"missile": "chollima-1",
 			"facility": "sohae",
 			"landing": "pacific-ocean",
 			"apogee": 500,
@@ -3129,13 +3129,13 @@
 		}, {
 			"date": "2023-12-17",
 			"time": "23:24 (UTC)",
-			"missile": "unknown",
-			"facility": "sunan",
+			"missile": "hwasong-18",
+			"facility": "samsok-icbm",
 			"landing": "pacific-ocean",
-			"apogee": 6500,
-			"distance": 1000,
+			"apogee": 6518.2,
+			"distance": 1002.3,
 			"bearing": 61,
-			"outcome": "unknown",
+			"outcome": "success",
 			"description": ""
 		}],
 		"year": 2023

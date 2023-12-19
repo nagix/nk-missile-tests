@@ -365,7 +365,7 @@ Bar graph on left
 #barGraph .textLabel {
 	font-size: 13px;
 }
-#barGraph .bar.cheollima-1, #missileTypeBtns .cheollima-1 .check {
+#barGraph .bar.chollima-1, #missileTypeBtns .chollima-1 .check {
 	fill: #FF7F0E;
 }
 #barGraph .bar.er-scud, #missileTypeBtns .er-scud .check {

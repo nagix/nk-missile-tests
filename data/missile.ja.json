@@ -1,5 +1,5 @@
 {
-	"cheollima-1": {"name": "千里馬1", "type": "SLV"},
+	"chollima-1": {"name": "千里馬1", "type": "SLV"},
 	"er-scud": {"name": "スカッドER", "type": "MRBM"},
 	"hwasong-8": {"name": "火星8", "type": "HGV", "maneuver": "glide"},
 	"hwasong-8-marv": {"name": "火星8 MaRV", "type": "MRBM", "maneuver": "glide"},
