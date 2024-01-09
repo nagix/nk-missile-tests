@@ -132,22 +132,11 @@ function start(e) {
 		Detector.addGetWebGLMessage();
 	} else {
 		loadLangCSS(lang);
-		//	ensure the map images are loaded first!!
-		mapOutlineImage = new Image();
-		mapOutlineImage.src = 'images/map_outline.png';
-		mapOutlineImage.onload = function() {
-			loadDictData(function() {
-				document.title = dict['_title'];
-				loadFacilityData(function() {
-					loadMissileData(function() {
-						loadTestData(function() {
-							initScene();
-							animate();
-						});
-					});
-				});
-			});
-		};
+		loadAll(function() {
+			document.title = dict['_title'];
+			initScene();
+			animate();
+		});
 	};
 }
 
