@@ -245,7 +245,7 @@ function initScene() {
 	});
 
 	var atmosphere = new THREE.Mesh(sphere.geometry.clone(), atmosphereMaterial);
-	atmosphere.scale.x = atmosphere.scale.y = atmosphere.scale.z = 1.8;
+	atmosphere.scale.x = atmosphere.scale.y = atmosphere.scale.z = 2.1;
 	rotating.add(atmosphere);
 
 	for( var i in timeBins ){
