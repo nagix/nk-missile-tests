@@ -63,6 +63,18 @@ function loadMissileData( callback ){
 	cxhr.send( null );
 }
 
+function loadSatelliteData(callback) {
+	var cxhr = new XMLHttpRequest();
+	cxhr.open('GET', satelliteFile, true);
+	cxhr.onreadystatechange = function() {
+		if (cxhr.readyState === 4 && cxhr.status === 200) {
+			satelliteData = JSON.parse( cxhr.responseText );
+			callback();
+		}
+	};
+	cxhr.send(null);
+}
+
 function loadDictData(callback) {
 	var cxhr = new XMLHttpRequest();
 	cxhr.open('GET', dictFile, true);
@@ -78,7 +90,7 @@ function loadDictData(callback) {
 function loadAll(callback) {
 	var callbackCount = 0;
 	var finish = function() {
-		if (++callbackCount >= 5) {
+		if (++callbackCount >= 6) {
 			console.log("finished read data file");
 			callback();
 		}
@@ -88,4 +100,5 @@ function loadAll(callback) {
 	loadFacilityData(finish);
 	loadMissileData(finish);
 	loadTestData(finish);
+	loadSatelliteData(finish);
 }

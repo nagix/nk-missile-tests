@@ -1,0 +1,26 @@
+[{
+	"catno": 39026,
+	"name": "Kwangmyongsong-3-2",
+	"launchdate": "2012-12-12",
+	"decaydate": "2023-09-13",
+	"tle": {
+		"first_line": "1 39026U 12072A   12347.09611576 -.00000066  00000-0  00000+0 0    21",
+		"second_line": "2 39026 097.4047 036.0317 0067405 176.3492 277.5861 15.08261084    19"
+	},
+	"description": "Kwangmyongsong 3 was reportedly a North Korean Earth observation satellite an the country's third attempt to orbit a satellite. The satellite reportedly had a launch mass of about 100 kg and a life time of 2 years. The dimensions are 1.4 m × 0.6 m × 0.7 m. Power is provided by body mounted solar cells. The announced orbit is a sun synchronous orbit at an altitude of 500 kilometers. It is claimed to have 3-axis control to point a camera to earth. The satellite will broadcast its remote sensing data in the UHF band and video in the X-band."
+}, {
+	"catno": 41332,
+	"name": "Kwangmyongsong-4",
+	"launchdate": "2016-02-07",
+	"decaydate": "2023-06-30",
+	"tle": {
+		"first_line": "1 41332U 16009A   16038.21829896 -.00000079  00000-0  00000+0 0  9998",
+		"second_line": "2 41332  97.5278  86.6115 0026697 338.3404 145.2384 15.27435642    23"
+	},
+	"description": "A North Korean earth observation satellite built by the National Aerospace Development Administration (NADA). Reportedly the satellite carries some earth observation equipment and has a weight of ~200 kg. Images from TV, allegedly of Kwangmyongsong 4, show a cubic body with two deployable unarticulated solar arrays and two camera appertures on the nadir side."
+}, {
+	"catno": 58400,
+	"name": "Malligyong-1",
+	"launchdate": "2023-11-21",
+	"description": "MALLIGYONG-1 is a North Korean reconnaissance satellite. It is North Korea's first spy satellite and will be used to spy on South Korean and American targets. The mission's first two launch attempts failed, with the third one, known as Malligyong-1 #3, succeeding on 21 November 2023. This was also the first successful flight of North Korea's new launch vehicle, the Chollima-1."
+}]

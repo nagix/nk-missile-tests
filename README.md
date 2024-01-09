@@ -1,6 +1,6 @@
 # nk-missile-tests: North Korea Missile Test Visualization
 
-An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2023.
+An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2023. The real-time positions of North Korea's satellites are also visualized on the globe.
 
 ![Screenshot](https://nagix.github.io/nk-missile-tests/images/screenshot.jpg)
 
@@ -29,11 +29,15 @@ The data for this visualization are sourced from [the CNS North Korea Missile Te
 
 The CNS North Korea Missile Test Database doesn't include the exact landing locations, so we have added bearing information from other sources such as Japan Ministry of Defense, and landing locations are calculated based on locations of launching facilities and distances travelled.
 
+The data of the satellite orbits are sourced from [CelesTrak](https://celestrak.org), which is a web-based service for satellite and space debris tracking.
+
 ## Acknowledgements
 
 nk-missile-tests is largely inspired by [Arms Globe Visualization](https://github.com/dataarts/armsglobe) project by the Google Data Arts Team, and uses the code from it.
 
 The CNS North Korea Missile Test Database is created by the James Martin Center for Nonproliferation Studies for the Nuclear Threat Initiative.
+
+nk-missile-tests is using [orb.js](https://github.com/lizard-isana/orb.js) to calculate the positions of North Korea's satellites. orb.js is made by Isana Kashiwai and licensed under the [MIT license](https://github.com/lizard-isana/orb.js/blob/master/MIT-LICENSE).
 
 ## License
 

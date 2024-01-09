@@ -12,11 +12,13 @@ var dict;
 //	contains a list of facility codes with their matching facility names
 var facilityFile = 'data/facility.' + lang + '.json';
 var missileFile = 'data/missile.' + lang + '.json';
+var satelliteFile = 'data/satellite.' + lang + '.json';
 var dictFile = 'data/dict.' + lang + '.json';
 
 var camera, scene, renderer;
 var camera2s, scene2d;
 
+var baseHue = Math.random();
 var sphere;
 var rotating;
 var visualizationMesh;
@@ -35,6 +37,8 @@ var testData = new Object();
 
 //	contains a list of missile code to missile name for running lookups
 var missileLookup;
+
+var satelliteData;
 
 var yearIndexLookup = {};
 var selectableTests = [];
@@ -231,7 +235,7 @@ function initScene() {
 
 	var wireframeGeo = new THREE.EdgesGeometry(sphere.geometry, 0.3);
 	var wireframeMaterial = new THREE.LineBasicMaterial({
-		color: Math.random() * 0xffffff,
+		color: new THREE.Color().setHSL(baseHue, 1, 0.33),
 		linewidth: 0.5
 	});
 	var wireframe = new THREE.LineSegments(wireframeGeo, wireframeMaterial);
@@ -450,6 +454,7 @@ function animate() {
 	});
 
 	updateMarkers();
+	updateSatellites();
 	render2d();
 
 	lastUpdate = now;

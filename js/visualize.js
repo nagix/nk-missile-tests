@@ -429,6 +429,8 @@ function selectVisualization( linearData, year, tests, outcomeCategories, missil
 		attachMarkerToTest( testName );
 	}
 
+	resetSatellites(year);
+
 	if( previouslySelectedTest !== selectedTest ){
 		if( selectedTest ){
 			var facility = facilityData[selectedTest.facility];
