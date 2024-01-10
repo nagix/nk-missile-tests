@@ -47,7 +47,7 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [34, 16],
+	handleLeftOffset: [38, 20],
 	handleInterval: [31, 16],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,

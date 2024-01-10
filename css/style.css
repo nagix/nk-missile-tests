@@ -525,12 +525,16 @@ Bar graph on left
 }
 #history .timeline #handle {
 	cursor: pointer;
-	width: 36px;
+	width: 21px;
 	height: 36px;
-	background: url('../images/yearHandle.png') 0 0 no-repeat;
 	position: absolute;
 	bottom: 20px;
-	left: 622px;
+}
+#history .timeline #handle-image {
+	width: 36px;
+	height: 36px;
+	margin-left: -4px;
+	background: url('../images/yearHandle.png') 0 0 no-repeat;
 }
 #history .graph {
 	display: none;
@@ -900,10 +904,6 @@ Bar graph on left
 	}
 	#history ul li.narrow.last span {
 		margin-right: -15px;
-	}
-	#history .timeline #handle {
-		background: url('../images/yearHandle.png') 0 0 no-repeat;
-		left: 318px;
 	}
 	#history .labels .outcome {
 		font-size: 16px;
