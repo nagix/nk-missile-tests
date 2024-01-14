@@ -498,30 +498,33 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 33px;
+	margin: 10px 28px;
 	padding: 22px 0 0 0;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 620px;
+	width: 630px;
 	height: 37px;
 	box-sizing: border-box;
 	background: url('../images/timelineBG.svg') center top no-repeat;
 }
 #history ul li {
-	width: 31px;
+	width: 30px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
 	padding-top: 30px;
 	cursor: pointer;
 }
-#history ul li.narrow {
-	display: none;
-}
 #history ul li span {
 	margin-left: -5px;
 	margin-right: -5px;
+}
+#history ul li.first span {
+	margin-left: -18px;
+}
+#history ul li.last span {
+	margin-right: -18px;
 }
 #history .timeline #handle {
 	cursor: pointer;
@@ -885,24 +888,18 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 23px;
+		margin: 10px 25.5px;
 		font-size: 10px;
-		width: 320px;
+		width: 315px;
 		background-image: url('../images/timelineBG_small.svg');
 	}
 	#history ul li {
-		width: 16px;
+		width: 15px;
 	}
-	#history ul li.wide {
-		display: none;
-	}
-	#history ul li.narrow {
-		display: block;
-	}
-	#history ul li.narrow.first span {
+	#history ul li.first span {
 		margin-left: -15px;
 	}
-	#history ul li.narrow.last span {
+	#history ul li.last span {
 		margin-right: -15px;
 	}
 	#history .labels .outcome {

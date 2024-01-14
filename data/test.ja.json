@@ -3141,5 +3141,19 @@
 			"description": ""
 		}],
 		"year": 2023
+	}, {
+		"data": [{
+			"date": "2024-01-14",
+			"time": "14:53 (JST)",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "pacific-ocean",
+			"apogee": 50,
+			"distance": 1000,
+			"bearing": 64,
+			"outcome": "unknown",
+			"description": ""
+		}],
+		"year": 2024
 	}]
 }
