@@ -3103,7 +3103,7 @@
 			"distance": 3000,
 			"bearing": 170,
 			"outcome": "success",
-			"description": ""
+			"description": "On November 21, 2023, North Korea conducted a successful satellite launch. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Tongchang-ri area at around 10:43 PM but provided no trajectory data. The Japanese Ministry of Defense stated that the rocket was launched at 10:43 PM, with the spent first stage impacting the water 350 kilometers west of the Korean peninsula at 10:50 PM and the second stage impacting in the Pacific Ocean approximately 1200 kilometers southwest of Okinotorishima sometime after 10:57 PM. The satellite was placed into a 515 by 494 kilometer orbit with a 97.4 degree inclination. North Korea stated that the rocket, the third launch of the Chollima-1 SLV, carried the Malligyong-1 reconnaissance satellite. The satellite’s sun-synchronous orbit, along with previous North Korean statements, indicate that it has an optical photo-reconnaissance payload. The satellite was assigned the international designator (COSPAR ID) 2023-179A and the NORAD ID 58400. Like previous Chollima-1 launches, the rocket was launched from the Sohae Satellite Launch Center."
 		}, {
 			"date": "2023-11-22",
 			"time": "14:05 (UTC)",
@@ -3114,7 +3114,7 @@
 			"distance": "na",
 			"bearing": 90,
 			"outcome": "failure",
-			"description": ""
+			"description": "The South Korean Joint Chiefs of Staff stated that at 11:05 PM on November 22, 22 minutes after the satellite launch, North Korea launched an unidentified missile that failed shortly after launch. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Sunan area in Pyongyang, but did not provide any trajectory data."
 		}, {
 			"date": "2023-12-17",
 			"time": "13:37 (UTC)",
@@ -3125,18 +3125,18 @@
 			"distance": 570,
 			"bearing": 78,
 			"outcome": "unknown",
-			"description": ""
+			"description": "On December 17, 2023, North Korea launched a short-range ballistic missile. The South Korean Joint Chiefs of Staff stated that the launch was detected from near Pyongyang between at 10:38 PM and flew to a range of 570 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 10:37 PM and flew to a range of 400 kilometers with an apogee of 50 kilometers. The launch followed the second meeting of the US-South Korea Nuclear Consultative Group, and the day after the arrival of the US nuclear submarine USS Missouri to South Korea. While North Korea did not issue a press release directly referencing the launch, the DPRK Ministry of National Defence issued a statement decrying both of these events."
 		}, {
 			"date": "2023-12-17",
 			"time": "23:24 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "samsok-icbm",
+			"facility": "samsok-icbm-2",
 			"landing": "sea-of-japan",
-			"apogee": 6518.2,
-			"distance": 1002.3,
+			"apogee": 6518,
+			"distance": 1002,
 			"bearing": 61,
 			"outcome": "success",
-			"description": ""
+			"description": "On December 18, 2023 (local time), North Korea conducted its third test of the Hwasong-18 ICBM. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at 8:24 AM and flew to a range of 1000 kilometers on a lofted trajectory. The Japanese Ministry of Defense stated that the missile was launched at 8:24 AM and flew to a range of 1000 kilometers with an apogee of over 6000 kilometers. An F-15J from the Japanese Air Self-Defense Forces photographed a possible part of the missile as it descended through the atmosphere. A North Korean press release indicated that the missile flew to a range of 1002.3 kilometers with an apogee of 6518.2 during a 4415 second flight. The press release decried US-South Korean cooperation, including the Nuclear Consultative Group and the USS Missouri’s visit to South Korea and stated that the launch was conducted by the Second Red Flag Company. Images attached to the press release indicated that the missile was launched from a different site close to the previous two Hwasong-18 launches."
 		}],
 		"year": 2023
 	}, {
@@ -3144,19 +3144,19 @@
 			"date": "2024-01-14",
 			"time": "05:53 (UTC)",
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 1000,
 			"bearing": 64,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On January 14, 2024, North Korea conducted its first ballistic missile launch of 2024. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 2:55 PM and flew to a range of 1000 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 2:53 PM and flew to a range of at least 500 kilometers with an apogee of at least 50 kilometers. This discrepancy was likely due to the missile's payload. A North Korean press release indicated that the launch tested a new solid propellant missile carrying a maneuverable hypersonic glide vehicle. A picture included with the press release indicated that the new missile has two stages and was launched from the first Hwasong-18 launch site."
 		}, {
 			"date": "2024-03-17",
 			"time": "22:44 (UTC)",
 			"series": 1,
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
@@ -3168,7 +3168,7 @@
 			"time": "22:44 (JST)",
 			"series": 2,
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
@@ -3180,7 +3180,7 @@
 			"time": "23:21 (JST)",
 			"series": 3,
 			"missile": "unknown",
-			"facility": "pyongyang",
+			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,

@@ -37,6 +37,7 @@
 		"yonpo": {"name": "Yonpo Airport", "lat": 39.78938, "lon": 127.53993},
 		"samsok": {"name": "Samsok", "lat": 39.1268, "lon": 125.9579},
 		"samsok-icbm": {"name": "Samsok ICBM test site", "lat": 39.112, "lon": 125.998},
+		"samsok-icbm-2": {"name": "Samsok ICBM test site #2", "lat": 39.12655, "lon": 125.96453},
 		"sangum-ri": {"name": "Sangum-ri", "lat": 39.141, "lon": 127.616},
 		"sondok": {"name": "Sondok", "lat": 39.743, "lon": 127.499},
 		"sukchon": {"name": "Sukchon", "lat": 39.42, "lon": 125.63},
