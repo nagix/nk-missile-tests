@@ -3160,33 +3160,44 @@
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
-			"bearing": 61,
+			"bearing": 58,
 			"outcome": "unknown",
 			"description": "1 of 3"
 		}, {
 			"date": "2024-03-17",
-			"time": "22:44 (JST)",
+			"time": "22:44 (UTC)",
 			"series": 2,
 			"missile": "unknown",
 			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
-			"bearing": 61,
+			"bearing": 58,
 			"outcome": "unknown",
 			"description": "2 of 3"
 		}, {
 			"date": "2024-03-17",
-			"time": "23:21 (JST)",
+			"time": "23:21 (UTC)",
 			"series": 3,
 			"missile": "unknown",
 			"facility": "samsok-icbm",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
-			"bearing": 61,
+			"bearing": 58,
 			"outcome": "unknown",
 			"description": "3 of 3"
+		}, {
+			"date": "2024-04-01",
+			"time": "21:52 (UTC)",
+			"missile": "unknown",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 100,
+			"distance": 650,
+			"bearing": 60,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2024
 	}]
