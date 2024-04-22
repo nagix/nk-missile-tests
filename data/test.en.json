@@ -1902,14 +1902,14 @@
 		}, {
 			"date": "2021-09-27",
 			"time": "21:40 (UTC)",
-			"missile": "hwasong-8",
+			"missile": "hwasong-12b",
 			"facility": "mupyong-ni",
 			"landing": "sea-of-japan",
 			"apogee": 60,
 			"distance": 200,
 			"bearing": 90,
 			"outcome": "success",
-			"description": "Less than two weeks after the rail-mobile missile launch, North Korea tested a new missile which it calls the Hwasong-8. The missile's payload was claimed to be a hypersonic glide vehicle, mounted on top of what appeared to be a modified Hwasong-12 missile. According to the South Korean Joint Chiefs of Staff, the missile was launched at 9:40PM UTC, reaching an altitude of 60 km and traveling 200 km. It is possible that the 200 km range is for the booster only, and the HGV traveled further, but was not observed by radar. Yonhap noted the trajectory was \"unique.\" This is the first appearance of the Hwasong-8, although Kim Jong-un hinted at the existence of an HGV in January 2021."
+			"description": "Less than two weeks after the rail-mobile missile launch, North Korea tested a new missile which it calls the Hwasong-8. The name of the missile was subsequently reassigned; when Sergei Shoigu visited North Korea and 2023, the missile was called the Hwasong-12B. The missile's payload was claimed to be a hypersonic glide vehicle, mounted on top of what appeared to be a modified Hwasong-12 missile. According to the South Korean Joint Chiefs of Staff, the missile was launched at 9:40PM UTC, reaching an altitude of 60 km and traveling 200 km. It is possible that the 200 km range is for the booster only, and the HGV traveled further, but was not observed by radar. Yonhap noted the trajectory was \"unique.\" This is the first appearance of the Hwasong-8, although Kim Jong-un hinted at the existence of an HGV in January 2021."
 		}, {
 			"date": "2021-10-19",
 			"time": "01:17 (UTC)",
@@ -1927,7 +1927,7 @@
 		"data": [{
 			"date": "2022-01-04",
 			"time": "23:10 (UTC)",
-			"missile": "hwasong-8-marv",
+			"missile": "hwasong-12a",
 			"facility": "mupyong-ni",
 			"landing": "sea-of-japan",
 			"apogee": 30,
@@ -1941,11 +1941,11 @@
 				"distance": 80
 			}],
 			"outcome": "success",
-			"description": "North Korea's first missile test of 2022. The missile appeared to be a new variant of the Hwasong-8, this time with a maneuvering re-entry vehicle (MaRV) rather than a hypersonic glide vehicle. The Japanese Ministry of Defense stated that the missile traveled approximately 500 km, assuming it followed a normal ballistic trajectory. The North Korean government stated that the re-entry vehicle traveled 700 km, including a 120 km lateral maneuver."
+			"description": "North Korea's first missile test of 2022. The missile appeared to be a new variant of the Hwasong-12B (also known as the Hwasong-8), this time with a maneuvering re-entry vehicle (MaRV) rather than a hypersonic glide vehicle. The Japanese Ministry of Defense stated that the missile traveled approximately 500 km, assuming it followed a normal ballistic trajectory. The North Korean government stated that the re-entry vehicle traveled 700 km, including a 120 km lateral maneuver."
 		}, {
 			"date": "2022-01-10",
 			"time": "22:27 (UTC)",
-			"missile": "hwasong-8-marv",
+			"missile": "hwasong-12a",
 			"facility": "mupyong-ni",
 			"landing": "sea-of-japan",
 			"apogee": 60,
@@ -1959,7 +1959,7 @@
 				"distance": 160
 			}],
 			"outcome": "success",
-			"description": "The second test of the MaRV-equipped Hwasong-8. The South Korean Joint Chiefs of Staff and Japanese Ministry of Defense stated that the missile traveled approximately 700 km, assuming a ballistic trajectory. North Korea stated the missile flew 1000 km and conducted a 240 km \"corkscrew\" maneuver. This missile's initial trajectory alarmed North American Aerospace Defense Command (NORAD), resulting in a 15 minute ground stop of aircraft on the US west coast."
+			"description": "The second test of the MaRV-equipped Hwasong-12B. The South Korean Joint Chiefs of Staff and Japanese Ministry of Defense stated that the missile traveled approximately 700 km, assuming a ballistic trajectory. North Korea stated the missile flew 1000 km and conducted a 240 km \"corkscrew\" maneuver. This missile's initial trajectory alarmed North American Aerospace Defense Command (NORAD), resulting in a 15 minute ground stop of aircraft on the US west coast."
 		}, {
 			"date": "2022-01-14",
 			"time": "05:41 (UTC)",
@@ -2933,7 +2933,7 @@
 			"date": "2023-04-12",
 			"time": "22:22 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "samsok-icbm",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 3000,
 			"distance": 1000,
@@ -2979,7 +2979,7 @@
 			"date": "2023-07-12",
 			"time": "00:59 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "samsok-icbm",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 6648,
 			"distance": 1001,
@@ -3130,7 +3130,7 @@
 			"date": "2023-12-17",
 			"time": "23:24 (UTC)",
 			"missile": "hwasong-18",
-			"facility": "samsok-icbm-2",
+			"facility": "samsok-test-2",
 			"landing": "sea-of-japan",
 			"apogee": 6518,
 			"distance": 1002,
@@ -3143,61 +3143,75 @@
 		"data": [{
 			"date": "2024-01-14",
 			"time": "05:53 (UTC)",
-			"missile": "unknown",
-			"facility": "samsok-icbm",
+			"missile": "hwasong-16a",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 1000,
 			"bearing": 64,
+			"glide": [{
+				"distance": 500,
+				"maneuvering-distance": 340,
+				"bearing": 64
+			}, {
+				"distance": 160
+			}],
 			"outcome": "success",
 			"description": "On January 14, 2024, North Korea conducted its first ballistic missile launch of 2024. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 2:55 PM and flew to a range of 1000 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 2:53 PM and flew to a range of at least 500 kilometers with an apogee of at least 50 kilometers. This discrepancy was likely due to the missile's payload. A North Korean press release indicated that the launch tested a new solid propellant missile carrying a maneuverable hypersonic glide vehicle. A picture included with the press release indicated that the new missile has two stages and was launched from the first Hwasong-18 launch site."
 		}, {
 			"date": "2024-03-17",
 			"time": "22:44 (UTC)",
 			"series": 1,
-			"missile": "unknown",
-			"facility": "samsok-icbm",
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
 			"bearing": 58,
-			"outcome": "unknown",
-			"description": "1 of 3"
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (1 of 3)"
 		}, {
 			"date": "2024-03-17",
 			"time": "22:44 (UTC)",
 			"series": 2,
-			"missile": "unknown",
-			"facility": "samsok-icbm",
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
 			"bearing": 58,
-			"outcome": "unknown",
-			"description": "2 of 3"
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (2 of 3)"
 		}, {
 			"date": "2024-03-17",
 			"time": "23:21 (UTC)",
 			"series": 3,
-			"missile": "unknown",
-			"facility": "samsok-icbm",
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 350,
 			"bearing": 58,
-			"outcome": "unknown",
-			"description": "3 of 3"
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (3 of 3)"
 		}, {
 			"date": "2024-04-01",
 			"time": "21:52 (UTC)",
-			"missile": "unknown",
-			"facility": "samsok",
+			"missile": "hwasong-16b",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
-			"apogee": 100,
-			"distance": 650,
+			"apogee": 101,
+			"distance": 1000,
 			"bearing": 60,
-			"outcome": "unknown",
-			"description": ""
+			"glide": [{
+				"distance": 600,
+				"maneuvering-distance": 240,
+				"bearing": 60
+			}, {
+				"distance": 160
+			}],
+			"outcome": "success",
+			"description": "On April 2, 2024 (local time), North Korea tested a ballistic missile. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 6:53 AM and flew to a range of 600 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 6:52 AM and flew to a range of at least 650 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch tested a new variant of the MaRV missile launched on January 14, 2024 with a new payload. The new missile, designated Hwasongpho-16-Na, or Hwasong-16B, carried a hypersonic glide vehicle (HGV). The press release claimed the launch tested the HGV’s pull-up and cross-range maneuver capability. It claimed that the missile flew to a range of 1000 kilometers, with a ballistic apogee of 101.1 kilometers and a post-pull-up maneuver apogee of 72.3 kilometers. Photographs attached to the press release indicated that the solid propellant missile uses a new TEL and launch canister variant, modified to accommodate the size and shape of the HGV."
 		}],
 		"year": 2024
 	}]

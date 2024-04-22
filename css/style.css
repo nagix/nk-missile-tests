@@ -371,12 +371,6 @@ Bar graph on left
 #barGraph .bar.er-scud, #missileTypeBtns .er-scud .check {
 	fill: #1F77B4;
 }
-#barGraph .bar.hwasong-8, #missileTypeBtns .hwasong-8 .check {
-	fill: #AEC7E8;
-}
-#barGraph .bar.hwasong-8-marv, #missileTypeBtns .hwasong-8-marv .check {
-	fill: #FFBB78;
-}
 #barGraph .bar.hwasong-11a, #missileTypeBtns .hwasong-11a .check {
 	fill: #9EDAE5;
 }
@@ -395,11 +389,23 @@ Bar graph on left
 #barGraph .bar.hwasong-12, #missileTypeBtns .hwasong-12 .check {
 	fill: #7F7F7F;
 }
+#barGraph .bar.hwasong-12a, #missileTypeBtns .hwasong-12a .check {
+	fill: #FFBB78;
+}
+#barGraph .bar.hwasong-12b, #missileTypeBtns .hwasong-12b .check {
+	fill: #AEC7E8;
+}
 #barGraph .bar.hwasong-14, #missileTypeBtns .hwasong-14 .check {
 	fill: #BCBD22;
 }
 #barGraph .bar.hwasong-15, #missileTypeBtns .hwasong-15 .check {
 	fill: #17BECF;
+}
+#barGraph .bar.hwasong-16a, #missileTypeBtns .hwasong-16a .check {
+	fill: #1F77B4;
+}
+#barGraph .bar.hwasong-16b, #missileTypeBtns .hwasong-16b .check {
+	fill: #DBDB8D;
 }
 #barGraph .bar.hwasong-17, #missileTypeBtns .hwasong-17 .check {
 	fill: #FF9896;
