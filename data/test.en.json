@@ -3212,6 +3212,17 @@
 			}],
 			"outcome": "success",
 			"description": "On April 2, 2024 (local time), North Korea tested a ballistic missile. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 6:53 AM and flew to a range of 600 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 6:52 AM and flew to a range of at least 650 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch tested a new variant of the MaRV missile launched on January 14, 2024 with a new payload. The new missile, designated Hwasongpho-16-Na, or Hwasong-16B, carried a hypersonic glide vehicle (HGV). The press release claimed the launch tested the HGV’s pull-up and cross-range maneuver capability. It claimed that the missile flew to a range of 1000 kilometers, with a ballistic apogee of 101.1 kilometers and a post-pull-up maneuver apogee of 72.3 kilometers. Photographs attached to the press release indicated that the solid propellant missile uses a new TEL and launch canister variant, modified to accommodate the size and shape of the HGV."
+		}, {
+			"date": "2024-4-22",
+			"time": "06:00 (UTC)",
+			"missile": "unknown",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2024
 	}]
