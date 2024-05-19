@@ -3225,6 +3225,17 @@
 			"bearing": 61,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2024-5-17",
+			"time": "15:10 (UTC)",
+			"missile": "unknown",
+			"facility": "south-wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": 300,
+			"bearing": 45,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2024
 	}]
