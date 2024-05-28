@@ -3227,7 +3227,7 @@
 			"description": ""
 		}, {
 			"date": "2024-5-17",
-			"time": "15:10 (UTC)",
+			"time": "15:10 (JST)",
 			"missile": "unknown",
 			"facility": "south-wonsan",
 			"landing": "sea-of-japan",
@@ -3235,6 +3235,17 @@
 			"distance": 300,
 			"bearing": 45,
 			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2024-5-27",
+			"time": "22:43 (JST)",
+			"missile": "unknown",
+			"facility": "sohae",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 170,
+			"outcome": "failure",
 			"description": ""
 		}],
 		"year": 2024

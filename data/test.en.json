@@ -3234,6 +3234,17 @@
 			"bearing": 45,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2024-5-27",
+			"time": "13:43 (UTC)",
+			"missile": "unknown",
+			"facility": "sohae",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 170,
+			"outcome": "failure",
+			"description": ""
 		}],
 		"year": 2024
 	}]
