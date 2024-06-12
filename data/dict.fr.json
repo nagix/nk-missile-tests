@@ -1,0 +1,23 @@
+{
+	"_abouttitle": "Informations a propos des données",
+	"_about": "Cette visualisation des données à été crée par <a href=\"https://nagix.github.io/\" target=\"_blank\">Akihiko Kusanagi</a>. Les données de cette visualisation sont trouvées sur <a href=\"http://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/\" target=\"_blank\">the CNS North Korea Missile Test Database</a>, qui est la première base de données à enregistrer les essais en vol de tous les missiles lancés par la Corée du Nord capables de livrer une charge utile d'au moins 500 kilogrammes (1102,31 livres) sur une distance d'au moins 300 kilomètres (186,4 miles). La base de données recense les progrès réalisés dans le cadre du programme de missiles de la Corée du Nord en documentant tous ces essais depuis le premier en avril 1984 et sera régulièrement mis à jour au fur et à mesure des événements.<br /><br />Pour plus d'informations et le code, merci de voir sur le <a href=\"https://github.com/nagix/nk-missile-tests\" target=\"_blank\">repositoire GitHub du projet</a>.",
+	"_subtitle": "Une visualisation interactive des essais en vol de tous les missiles lancés par la Corée du Nord de 1984 à 2017",
+	"_title": "Visualisation des tests de missile en Corée du Nord",
+	"about": "A propos",
+	"apogee": "Altitude maximale atteinte",
+	"date": "Date",
+	"description": "Description",
+	"distance-travelled": "Distance traversée",
+	"facility-name": "Nom de l'installation",
+	"failure": "Échec",
+	"landing-location": "Lieu d'atterrissage",
+	"missile-name": "Nom du missile",
+	"missile-type": "Type du missile",
+	"na": "N/A",
+	"pacific-ocean": "Océan Pacifique",
+	"sea-of-japan": "Mer du Japon ou Mer de l'Est",
+	"search": "Recherche",
+	"success": "Succés",
+	"test-outcome": "Résultat d'essai",
+	"unknown": "Inconnu"
+}
