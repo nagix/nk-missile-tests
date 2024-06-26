@@ -3367,6 +3367,17 @@
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2024-6-26",
+			"time": "05:28 (JST)",
+			"missile": "unknown",
+			"facility": "samsok-test",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "250",
+			"bearing": 70,
+			"outcome": "failure",
+			"description": ""
 		}],
 		"year": 2024
 	}]
