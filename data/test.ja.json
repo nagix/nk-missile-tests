@@ -1670,7 +1670,7 @@
 			"description": "この実験が行われたのは、北朝鮮が米国との対話の継続を望んでいるとの声明を発表してわずか数時間後、ジョン・ボルトンが自身の解任をツイッター上で確認する直前のことであった。韓国軍合同参謀本部の報告によれば2発のミサイルが発射・補足され、その後北朝鮮の国営メディアにより画像が公開されたが、それには3発のミサイルが発射された形跡があり、1発の実験は飛行の初期段階で失敗したのではないかとみられている。このため、本実験に関しては3発として記録し、最後の1発を失敗と記録している。失敗した1発の正確な発射時刻は不明である。(3発の実験の内の2発目)"
 		}, {
 			"date": "2019-09-10",
-			"time": "unknnown",
+			"time": "unknown",
 			"series": 3,
 			"missile": "kn-25",
 			"facility": "kaechon",
@@ -3258,7 +3258,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の1発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3270,7 +3270,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の2発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3282,7 +3282,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の3発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3294,7 +3294,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の4発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3306,7 +3306,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の5発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3318,7 +3318,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の6発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3330,7 +3330,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の7発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3342,7 +3342,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の8発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3354,7 +3354,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の9発目"
 		}, {
 			"date": "2024-5-30",
 			"time": "06:13 (JST)",
@@ -3366,7 +3366,7 @@
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": ""
+			"description": "10発の実験の内の10発目"
 		}, {
 			"date": "2024-6-26",
 			"time": "05:28 (JST)",
@@ -3378,6 +3378,30 @@
 			"bearing": 70,
 			"outcome": "failure",
 			"description": ""
+		}, {
+			"date": "2024-7-01",
+			"time": "05:05 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "jangyon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "600",
+			"bearing": 45,
+			"outcome": "success",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2024-7-01",
+			"time": "05:15 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "jangyon",
+			"landing": "na",
+			"apogee": "unknown",
+			"distance": "120",
+			"bearing": 45,
+			"outcome": "failure",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2024
 	}]
