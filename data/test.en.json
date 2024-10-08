@@ -3213,20 +3213,57 @@
 			"outcome": "success",
 			"description": "On April 2, 2024 (local time), North Korea tested a ballistic missile. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 6:53 AM and flew to a range of 600 kilometers. The Japanese Ministry of Defense stated that the missile was launched at 6:52 AM and flew to a range of at least 650 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch tested a new variant of the MaRV missile launched on January 14, 2024 with a new payload. The new missile, designated Hwasongpho-16-Na, or Hwasong-16B, carried a hypersonic glide vehicle (HGV). The press release claimed the launch tested the HGV’s pull-up and cross-range maneuver capability. It claimed that the missile flew to a range of 1000 kilometers, with a ballistic apogee of 101.1 kilometers and a post-pull-up maneuver apogee of 72.3 kilometers. Photographs attached to the press release indicated that the solid propellant missile uses a new TEL and launch canister variant, modified to accommodate the size and shape of the HGV."
 		}, {
-			"date": "2024-4-22",
+			"date": "2024-04-22",
 			"time": "06:00 (UTC)",
-			"missile": "unknown",
+			"series": 1,
+			"missile": "kn-25",
 			"facility": "samsok",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
 			"outcome": "unknown",
-			"description": ""
+			"description": "1 of 4"
 		}, {
-			"date": "2024-5-17",
+			"date": "2024-04-22",
+			"time": "06:00 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "2 of 4"
+		}, {
+			"date": "2024-04-22",
+			"time": "06:00 (UTC)",
+			"series": 3,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "3 of 4"
+		}, {
+			"date": "2024-04-22",
+			"time": "06:00 (UTC)",
+			"series": 4,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "4 of 4"
+		}, {
+			"date": "2024-05-17",
 			"time": "06:10 (UTC)",
-			"missile": "unknown",
+			"missile": "hwasong-11d",
 			"facility": "south-wonsan",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
@@ -3235,7 +3272,7 @@
 			"outcome": "unknown",
 			"description": ""
 		}, {
-			"date": "2024-5-27",
+			"date": "2024-05-27",
 			"time": "13:43 (UTC)",
 			"missile": "unknown",
 			"facility": "sohae",
@@ -3246,127 +3283,223 @@
 			"outcome": "failure",
 			"description": ""
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "1 of 10"
+			"description": "1 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "2 of 10"
+			"description": "2 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 3,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "3 of 10"
+			"description": "3 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 4,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "4 of 10"
+			"description": "4 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 5,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "5 of 10"
+			"description": "5 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 6,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "6 of 10"
+			"description": "6 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 7,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "7 of 10"
+			"description": "7 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 8,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "8 of 10"
+			"description": "8 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 9,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "9 of 10"
+			"description": "9 of 18"
 		}, {
-			"date": "2024-5-29",
+			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 10,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10 of 10"
+			"description": "10 of 18"
 		}, {
-			"date": "2024-6-25",
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 11,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "11 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 12,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "12 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 13,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "13 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 14,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "14 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 15,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "15 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 16,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "16 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 17,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "17 of 18"
+		}, {
+			"date": "2024-05-29",
+			"time": "21:13 (UTC)",
+			"series": 18,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18 of 18"
+		}, {
+			"date": "2024-06-25",
 			"time": "20:28 (UTC)",
 			"missile": "unknown",
 			"facility": "samsok-test",
@@ -3377,7 +3510,7 @@
 			"outcome": "failure",
 			"description": ""
 		}, {
-			"date": "2024-6-30",
+			"date": "2024-06-30",
 			"time": "20:05 (UTC)",
 			"series": 1,
 			"missile": "unknown",
@@ -3389,7 +3522,7 @@
 			"outcome": "success",
 			"description": "1 of 2"
 		}, {
-			"date": "2024-6-30",
+			"date": "2024-06-30",
 			"time": "20:15 (UTC)",
 			"series": 2,
 			"missile": "unknown",
@@ -3401,10 +3534,10 @@
 			"outcome": "failure",
 			"description": "2 of 2"
 		}, {
-			"date": "2024-9-11",
+			"date": "2024-09-11",
 			"time": "22:10 (UTC)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
@@ -3413,15 +3546,39 @@
 			"outcome": "unknown",
 			"description": "1 of 2"
 		}, {
-			"date": "2024-9-11",
+			"date": "2024-09-11",
 			"time": "22:14 (UTC)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
+			"outcome": "unknown",
+			"description": "2 of 2"
+		}, {
+			"date": "2024-09-17",
+			"time": "21:53 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "400",
+			"bearing": 55,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2024-09-17",
+			"time": "22:23 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "400",
+			"bearing": 55,
 			"outcome": "unknown",
 			"description": "2 of 2"
 		}],

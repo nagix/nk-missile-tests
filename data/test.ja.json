@@ -3215,20 +3215,57 @@
 			"outcome": "success",
 			"description": "2024年4月2日(現地時間)、北朝鮮が弾道ミサイルの発射実験を行った。韓国軍合同参謀本部は、発射は午前6時53分ごろ平壌周辺から検知され、射程は600kmに達したと発表した。日本の防衛省は、ミサイルは午前6時52分に発射され、飛距離は少なくとも650km、最高高度は約100kmであったと発表した。北朝鮮のプレスリリースによると、今回の発射は2024年1月14日に発射されたMaRVミサイルの新型で、新たなペイロードを搭載したものをテストしたという。新しいミサイルは「火星砲16ナ(火星16B)」と名付けられ、極超音速滑空体(HGV)を搭載している。プレスリリースによると、今回の発射はHGVのプルアップとクロスレンジの機動能力をテストしたという。ミサイルは1000kmの距離を飛行し、弾道の最高高度は101.1km、プルアップ後の機動の最高高度は72.3kmだったとしている。プレスリリースに添付された写真によると、この固体推進ミサイルは、HGVのサイズと形状に合わせて改良された新しいTELと発射キャニスターを使用している。"
 		}, {
-			"date": "2024-4-22",
+			"date": "2024-04-22",
 			"time": "15:00 (JST)",
-			"missile": "unknown",
+			"series": 1,
+			"missile": "kn-25",
 			"facility": "samsok",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
 			"outcome": "unknown",
-			"description": ""
+			"description": "4発の実験の内の1発目"
 		}, {
-			"date": "2024-5-17",
+			"date": "2024-04-22",
+			"time": "15:00 (JST)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "4発の実験の内の2発目"
+		}, {
+			"date": "2024-04-22",
+			"time": "15:00 (JST)",
+			"series": 3,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "4発の実験の内の3発目"
+		}, {
+			"date": "2024-04-22",
+			"time": "15:00 (JST)",
+			"series": 4,
+			"missile": "kn-25",
+			"facility": "samsok",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 250,
+			"bearing": 61,
+			"outcome": "unknown",
+			"description": "4発の実験の内の4発目"
+		}, {
+			"date": "2024-05-17",
 			"time": "15:10 (JST)",
-			"missile": "unknown",
+			"missile": "hwasong-11d",
 			"facility": "south-wonsan",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
@@ -3237,7 +3274,7 @@
 			"outcome": "unknown",
 			"description": ""
 		}, {
-			"date": "2024-5-27",
+			"date": "2024-05-27",
 			"time": "22:43 (JST)",
 			"missile": "unknown",
 			"facility": "sohae",
@@ -3248,127 +3285,223 @@
 			"outcome": "failure",
 			"description": ""
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の1発目"
+			"description": "18発の実験の内の1発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の2発目"
+			"description": "18発の実験の内の2発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 3,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の3発目"
+			"description": "18発の実験の内の3発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 4,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の4発目"
+			"description": "18発の実験の内の4発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 5,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の5発目"
+			"description": "18発の実験の内の5発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 6,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の6発目"
+			"description": "18発の実験の内の6発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 7,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の7発目"
+			"description": "18発の実験の内の7発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 8,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の8発目"
+			"description": "18発の実験の内の8発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 9,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の9発目"
+			"description": "18発の実験の内の9発目"
 		}, {
-			"date": "2024-5-30",
+			"date": "2024-05-30",
 			"time": "06:13 (JST)",
 			"series": 10,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
 			"outcome": "unknown",
-			"description": "10発の実験の内の10発目"
+			"description": "18発の実験の内の10発目"
 		}, {
-			"date": "2024-6-26",
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 11,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の11発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 12,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の12発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 13,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の13発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 14,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の14発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 15,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の15発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 16,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の16発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 17,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の17発目"
+		}, {
+			"date": "2024-05-30",
+			"time": "06:13 (JST)",
+			"series": 18,
+			"missile": "kn-25",
+			"facility": "sunan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": "18発の実験の内の18発目"
+		}, {
+			"date": "2024-06-26",
 			"time": "05:28 (JST)",
 			"missile": "unknown",
 			"facility": "samsok-test",
@@ -3379,7 +3512,7 @@
 			"outcome": "failure",
 			"description": ""
 		}, {
-			"date": "2024-7-01",
+			"date": "2024-07-01",
 			"time": "05:05 (JST)",
 			"series": 1,
 			"missile": "unknown",
@@ -3391,7 +3524,7 @@
 			"outcome": "success",
 			"description": "2発の実験の内の1発目"
 		}, {
-			"date": "2024-7-01",
+			"date": "2024-07-01",
 			"time": "05:15 (JST)",
 			"series": 2,
 			"missile": "unknown",
@@ -3403,10 +3536,10 @@
 			"outcome": "failure",
 			"description": "2発の実験の内の2発目"
 		}, {
-			"date": "2024-9-12",
+			"date": "2024-09-12",
 			"time": "07:10 (JST)",
 			"series": 1,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
@@ -3415,15 +3548,39 @@
 			"outcome": "unknown",
 			"description": "2発の実験の内の1発目"
 		}, {
-			"date": "2024-9-12",
+			"date": "2024-09-12",
 			"time": "07:14 (JST)",
 			"series": 2,
-			"missile": "unknown",
+			"missile": "kn-25",
 			"facility": "sunan",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2024-09-18",
+			"time": "06:53 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "400",
+			"bearing": 55,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2024-09-18",
+			"time": "07:23 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kaechon",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "400",
+			"bearing": 55,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
 		}],
