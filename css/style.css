@@ -380,6 +380,9 @@ Bar graph on left
 #barGraph .bar.hwasong-11c, #missileTypeBtns .hwasong-11c .check {
 	fill: #98DF8A;
 }
+#barGraph .bar.hwasong-11c-45, #missileTypeBtns .hwasong-11c-45 .check {
+	fill: #FF7F0E;
+}
 #barGraph .bar.hwasong-11d, #missileTypeBtns .hwasong-11d .check {
 	fill: #D62728;
 }
