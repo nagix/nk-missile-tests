@@ -3581,6 +3581,17 @@
 			"bearing": 55,
 			"outcome": "unknown",
 			"description": "2 of 2"
+		}, {
+			"date": "2024-10-30",
+			"time": "22:11 (UTC)",
+			"missile": "unknown",
+			"facility": "samsok-test",
+			"landing": "sea-of-japan",
+			"apogee": "7000",
+			"distance": "1000",
+			"bearing": 62,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2024
 	}]
