@@ -3584,11 +3584,11 @@
 		}, {
 			"date": "2024-10-30",
 			"time": "22:11 (UTC)",
-			"missile": "unknown",
+			"missile": "hwasong-19",
 			"facility": "samsok-test",
 			"landing": "sea-of-japan",
-			"apogee": "7000",
-			"distance": "1000",
+			"apogee": "7687",
+			"distance": "1001",
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": ""

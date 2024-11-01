@@ -72,6 +72,7 @@ var missileColors = {
 	'hwasong-16b': 0xF7B6D2,
 	'hwasong-17': 0xFF9896,
 	'hwasong-18': 0xF7B6D2,
+	'hwasong-19': 0xAEC7E8,
 	'kn-02': 0xC49C94,
 	'kn-25': 0xFF6741,
 	'musudan': 0xAEC7E8,
@@ -252,7 +253,7 @@ function initScene() {
 	});
 
 	var atmosphere = new THREE.Mesh(sphere.geometry.clone(), atmosphereMaterial);
-	atmosphere.scale.x = atmosphere.scale.y = atmosphere.scale.z = 2.1;
+	atmosphere.scale.x = atmosphere.scale.y = atmosphere.scale.z = 2.25;
 	rotating.add(atmosphere);
 
 	for( var i in timeBins ){

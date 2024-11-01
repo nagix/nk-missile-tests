@@ -16,6 +16,7 @@
 	"hwasong-16b": {"name": "Hwasong-16B", "type": "IRBM", "maneuver": "glide"},
 	"hwasong-17": {"name": "Hwasong-17", "type": "ICBM"},
 	"hwasong-18": {"name": "Hwasong-18", "type": "ICBM"},
+	"hwasong-19": {"name": "Hwasong-19", "type": "ICBM"},
 	"kn-02": {"name": "KN-02", "type": "SRBM"},
 	"kn-25": {"name": "KN-25", "type": "SRBM"},
 	"musudan": {"name": "Musudan", "type": "IRBM"},
