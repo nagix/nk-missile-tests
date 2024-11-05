@@ -3592,6 +3592,90 @@
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "1 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "2 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "3 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 4,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "4 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 5,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "5 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 6,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "6 of 7"
+		}, {
+			"date": "2024-11-04",
+			"time": "22:30 (UTC)",
+			"series": 7,
+			"missile": "unknown",
+			"facility": "sariwon",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "400",
+			"bearing": 52,
+			"outcome": "unknown",
+			"description": "7 of 7"
 		}],
 		"year": 2024
 	}]
