@@ -3169,7 +3169,7 @@
 			"distance": 350,
 			"bearing": 58,
 			"outcome": "success",
-			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (1 of 3)"
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (1 of 6)"
 		}, {
 			"date": "2024-03-17",
 			"time": "22:44 (UTC)",
@@ -3181,10 +3181,10 @@
 			"distance": 350,
 			"bearing": 58,
 			"outcome": "success",
-			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (2 of 3)"
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (2 of 6)"
 		}, {
 			"date": "2024-03-17",
-			"time": "23:21 (UTC)",
+			"time": "22:44 (UTC)",
 			"series": 3,
 			"missile": "kn-25",
 			"facility": "samsok-test-3",
@@ -3193,7 +3193,43 @@
 			"distance": 350,
 			"bearing": 58,
 			"outcome": "success",
-			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (3 of 3)"
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (3 of 6)"
+		}, {
+			"date": "2024-03-17",
+			"time": "23:21 (UTC)",
+			"series": 4,
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 58,
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (4 of 6)"
+		}, {
+			"date": "2024-03-17",
+			"time": "23:21 (UTC)",
+			"series": 5,
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 58,
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (5 of 6)"
+		}, {
+			"date": "2024-03-17",
+			"time": "23:21 (UTC)",
+			"series": 6,
+			"missile": "kn-25",
+			"facility": "samsok-test-3",
+			"landing": "sea-of-japan",
+			"apogee": 50,
+			"distance": 350,
+			"bearing": 58,
+			"outcome": "success",
+			"description": "On March 18, 2024 (local time), North Korea launched several short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang area between 7:44 and 8:22 AM and flew to a range of approximately 300 kilometers, adding that \"at least three missiles\" were fired. The Japanese Ministry of Defense stated that three missiles were launched, two at 7:44 AM and one at 8:21 AM, with all three missiles reaching a 50 kilometer apogee and a range of 350 kilometers. The launches took place following the end of the annual US-South Korean Freedom Shield exercise, and amid ongoing North Korean military exercises. A subsequent North Korean press release indicated that the launch consisted of at least two volleys of KN-25 missiles, apparently with six missiles launched in each volley. The launches came several days after the conclusion of the annual joint South Korea-United States Freedom Shield military exercise, and several days after an exercise of North Korean paratroops. (6 of 6)"
 		}, {
 			"date": "2024-04-01",
 			"time": "21:52 (UTC)",
@@ -3217,60 +3253,49 @@
 			"time": "06:00 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
-			"facility": "samsok",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "1 of 4"
+			"outcome": "success",
+			"description": "On April 22 (local time), North Korea launched at least four ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang region at 3:01 PM and flew to a range of 300 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:00 PM and flew to a range of more than 250 kilometers with an apogee of approximately 50 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and four launch vehicles. North Korea stated that this was the first test of the state's nuclear weapon combined management system \"Nuclear Trigger.\" North Korea mentioned a combined US-ROK drill earlier in the month as justification for the test. North Korea further stated that \"The drill was conducted, divided into an actual drill for making units be versed in the procedure and process of switching over to a nuclear counterattack posture at a time when the \"Volcano Alarm\" system, the state's greatest nuclear crisis alarm, is issued and a drill for operating the nuclear counterattack commanding system.\" Open source analysts determined the launch was from near Samsok based on pictures attached to the North Korean press release. (1 of 4)"
 		}, {
 			"date": "2024-04-22",
 			"time": "06:00 (UTC)",
 			"series": 2,
 			"missile": "kn-25",
-			"facility": "samsok",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "2 of 4"
+			"outcome": "success",
+			"description": "On April 22 (local time), North Korea launched at least four ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang region at 3:01 PM and flew to a range of 300 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:00 PM and flew to a range of more than 250 kilometers with an apogee of approximately 50 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and four launch vehicles. North Korea stated that this was the first test of the state's nuclear weapon combined management system \"Nuclear Trigger.\" North Korea mentioned a combined US-ROK drill earlier in the month as justification for the test. North Korea further stated that \"The drill was conducted, divided into an actual drill for making units be versed in the procedure and process of switching over to a nuclear counterattack posture at a time when the \"Volcano Alarm\" system, the state's greatest nuclear crisis alarm, is issued and a drill for operating the nuclear counterattack commanding system.\" Open source analysts determined the launch was from near Samsok based on pictures attached to the North Korean press release. (2 of 4)"
 		}, {
 			"date": "2024-04-22",
 			"time": "06:00 (UTC)",
 			"series": 3,
 			"missile": "kn-25",
-			"facility": "samsok",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "3 of 4"
+			"outcome": "success",
+			"description": "On April 22 (local time), North Korea launched at least four ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang region at 3:01 PM and flew to a range of 300 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:00 PM and flew to a range of more than 250 kilometers with an apogee of approximately 50 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and four launch vehicles. North Korea stated that this was the first test of the state's nuclear weapon combined management system \"Nuclear Trigger.\" North Korea mentioned a combined US-ROK drill earlier in the month as justification for the test. North Korea further stated that \"The drill was conducted, divided into an actual drill for making units be versed in the procedure and process of switching over to a nuclear counterattack posture at a time when the \"Volcano Alarm\" system, the state's greatest nuclear crisis alarm, is issued and a drill for operating the nuclear counterattack commanding system.\" Open source analysts determined the launch was from near Samsok based on pictures attached to the North Korean press release. (3 of 4)"
 		}, {
 			"date": "2024-04-22",
 			"time": "06:00 (UTC)",
 			"series": 4,
 			"missile": "kn-25",
-			"facility": "samsok",
+			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": 50,
 			"distance": 250,
 			"bearing": 61,
-			"outcome": "unknown",
-			"description": "4 of 4"
-		}, {
-			"date": "2024-05-17",
-			"time": "06:10 (UTC)",
-			"missile": "hwasong-11d",
-			"facility": "south-wonsan",
-			"landing": "sea-of-japan",
-			"apogee": "unknown",
-			"distance": 300,
-			"bearing": 45,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On April 22 (local time), North Korea launched at least four ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launches were detected from the Pyongyang region at 3:01 PM and flew to a range of 300 kilometers. The Japanese Ministry of Defense stated that the missiles were launched at 3:00 PM and flew to a range of more than 250 kilometers with an apogee of approximately 50 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and four launch vehicles. North Korea stated that this was the first test of the state's nuclear weapon combined management system \"Nuclear Trigger.\" North Korea mentioned a combined US-ROK drill earlier in the month as justification for the test. North Korea further stated that \"The drill was conducted, divided into an actual drill for making units be versed in the procedure and process of switching over to a nuclear counterattack posture at a time when the \"Volcano Alarm\" system, the state's greatest nuclear crisis alarm, is issued and a drill for operating the nuclear counterattack commanding system.\" Open source analysts determined the launch was from near Samsok based on pictures attached to the North Korean press release. (4 of 4)"
 		}, {
 			"date": "2024-05-27",
 			"time": "13:43 (UTC)",
@@ -3281,223 +3306,223 @@
 			"distance": "unknown",
 			"bearing": 170,
 			"outcome": "failure",
-			"description": ""
+			"description": "On May 27 (local time), North Korea attempted to launch a satellite into orbit, although the launch vehicle failed during the first stage burn. The Japanese Ministry of Defense stated that the launch was detected from the Tongchang-ri area off the northwestern coast of North Korea at around 10:43 PM, but it disappeared over the Yellow Sea a few minutes after the launch, and estimated that no object was put into space. The South Korean Joint Chiefs of Staff stated that they detected the rocket being launched southward over the Yellow Sea from the Tongchang-ri area in the country's northwest at about 10:44 PM, and that this was in North Korea’s plan to launch three satellites into orbit in 2024. A North Korean press release indicated that the launch was of a Malligyong-1-1 reconnaissance satellite aboard “a new-type satellite carrier rocket” that failed during it’s first stage due to \"air blast\" and problems with a new rocket engine using liquid oxygen and petroleum (probably kerosene). If true, this would be North Korea's first engine using cryogenic propellants. The release stated that this came from the Sohae Satellite Launching Ground in Cholsan County of North Phyongan Province. No information was given on the apogee or distance reached."
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "1 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (1 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 2,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "2 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (2 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 3,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "3 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (3 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 4,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "4 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (4 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 5,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "5 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (5 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 6,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "6 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (6 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 7,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "7 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (7 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 8,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "8 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (8 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 9,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "9 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (9 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 10,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "10 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (10 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 11,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "11 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (11 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 12,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "12 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (12 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 13,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "13 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (13 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 14,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "14 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (14 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 15,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "15 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (15 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 16,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "16 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (16 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 17,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "17 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (17 of 18)"
 		}, {
 			"date": "2024-05-29",
 			"time": "21:13 (UTC)",
 			"series": 18,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "pyongyang",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": "18 of 18"
+			"outcome": "success",
+			"description": "On May 30 (local time), North Korea launched at least eighteen ballistic missiles. The South Korean Joint Chiefs of Staff stated that the missiles were fired from Pyongyang's Sunan area at 6:14 AM and flew about 350 kilometers before hitting the East Sea. The JCS initially estimated that at least ten ballistic missiles were launched, believing them to be KN-25 super-large multiple rocket launchers. The Japanese Ministry of Defense stated that the missiles were launched at 6:13 AM and flew to a range of more than 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launch used the KN-25 \"super-large multiple rocket\" and eighteen launch vehicles. The release stated that this firing was a demonstrative act as a message to the South after their \"hideous act of provocation.\" All three sources point to a motivation of retaliation against anti-Pyongyang leaflets sent by activists in South Korea via balloons, to which North Korea responded with hundreds of large balloons carrying trash and fecal matter on Tuesday and Wednesday. North Korea mentioned a secret code order of the Central Military Commission of the Workers' Party of Korea on the firepower mission and that the launch was carried out based on the integrated fire-control system. Pictures attached to the North Korean press release indicate that at least 18 missiles were launched, although it is unclear if all missiles reached the target. Open source analysts determined the launch was from the northern runway of Pyongyang International Airport based on pictures attached to the North Korean press release. (18 of 18)"
 		}, {
 			"date": "2024-06-25",
 			"time": "20:28 (UTC)",
@@ -3505,82 +3530,92 @@
 			"facility": "samsok-test",
 			"landing": "sea-of-japan",
 			"apogee": "100",
-			"distance": "250",
+			"distance": "200",
 			"bearing": 70,
-			"outcome": "failure",
-			"description": ""
+			"outcome": "unknown",
+			"description": "On June 26 (local time), North Korea launched a singular ballistic missile. The South Korean Joint Chiefs of Staff stated that the was launched from the Pyongyang area at approximately 5:30 AM and flew approximately 250 km before failing in flight. The Japanese Ministry of Defense stated that the details were being analyzed, but the missile appeared to reach an apogee of 100 km and a distance of 200 km. The test was described very differently by North and South Korea. Yonhap reported that the South Korean military believed the launch tested a hypersonic missile that failed in flight after traveling 250 km. Yonhap's source further indicated that the launch generated more smoke than usual, indicating the rocket engine encountered combustion issues and/or used solid propellants. A North Korean press release, by contrast, indicated that the test demonstrated the successful separation and control of both multiple independently targetable reentry vehicles (or MIRVs) and decoys, launched using the first stage motor of a solid-propellant IRBM. Curiously, images attached to the North Korean press release show a missile closely resembling the Hwasong-17, so the true nature of the test remains unclear. Open source analysts determined the launch was conducted near a leadership mansion east of Pyongyang, near the location used for the April 2024 KN-25 test."
 		}, {
 			"date": "2024-06-30",
 			"time": "20:05 (UTC)",
-			"series": 1,
-			"missile": "hwasong-11c-45",
+			"missile": "hwasong-11-da-45",
 			"facility": "jangyon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": "600",
 			"bearing": 45,
 			"outcome": "success",
-			"description": "1 of 2"
+			"description": "On July 1, 2024 (local time), North Korea launched two ballistic missiles. The South Korean Joint Chiefs of Staff stated that the first launch was detected at 5:05 a.m. from the Jangyon area in South Hwanghae Province, and flew about 600 kilometers before landing off the coast near Chongjin. The second flight they recorded at 5:15 a.m. only flew for about 120 km before disappearing from the radar. They believe “the second missile may have flown abnormally during the early stage of its flight and that if it exploded in midair, its debris could have fallen inland.” A North Korean press release only reported on the first launch. It indicated that the launch tested a \"new-type tactical ballistic missile\" called the Hwasongpho-11-Da-4.5 (possibly a Hwasong-11C fitted with a heavier 4.5 tonnage conventional warhead). The test was to verify flight stability and hit accuracy at the maximum range of 500 km and minimum range of 90 km. Given this information, it is unclear if the second missile failed in flight. The Japanese Ministry of Defense did not report on these launches. (1 of 2)"
 		}, {
 			"date": "2024-06-30",
 			"time": "20:15 (UTC)",
-			"series": 2,
-			"missile": "hwasong-11c-45",
+			"missile": "unknown",
 			"facility": "jangyon",
 			"landing": "na",
 			"apogee": "unknown",
 			"distance": "120",
 			"bearing": 45,
-			"outcome": "failure",
-			"description": "2 of 2"
+			"outcome": "unknown",
+			"description": "On July 1, 2024 (local time), North Korea launched two ballistic missiles. The South Korean Joint Chiefs of Staff stated that the first launch was detected at 5:05 a.m. from the Jangyon area in South Hwanghae Province, and flew about 600 kilometers before landing off the coast near Chongjin. The second flight they recorded at 5:15 a.m. only flew for about 120 km before disappearing from the radar. They believe “the second missile may have flown abnormally during the early stage of its flight and that if it exploded in midair, its debris could have fallen inland.” A North Korean press release only reported on the first launch. It indicated that the launch tested a \"new-type tactical ballistic missile\" called the Hwasongpho-11-Da-4.5 (possibly a Hwasong-11C fitted with a heavier 4.5 tonnage conventional warhead). The test was to verify flight stability and hit accuracy at the maximum range of 500 km and minimum range of 90 km. Given this information, it is unclear if the second missile failed in flight. The Japanese Ministry of Defense did not report on these launches. (2 of 2)"
 		}, {
 			"date": "2024-09-11",
 			"time": "22:10 (UTC)",
 			"series": 1,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "chunghwa",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
-			"bearing": 62,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"bearing": 56,
+			"outcome": "success",
+			"description": "On September 12, 2024 (local time), North Korea launched multiple short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 7:10 AM and flew to a range of about 360 kilometers before landing in the East Sea. The Japanese Ministry of Defense stated that the missiles launched from between 7:10 and 7:14 AM and flew to a range of at least 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launches tested a new type of transporter-erector-launcher (TEL) for the 600 mm multiple launch rocket (also called the KN-25). It reported that the test verified the new launcher's fully automated firing system. The TEL's improved \"driving system\" (probably a reference to the vehicle's powertrain and drivetrain) was also tested Open source analysts determined the launch was up the road from the Chunghwa County test on March 27, 2023 based on pictures attached to the North Korean press release. The pictures indicated that at least three missiles were launched. (1 of 3)"
+		}, {
+			"date": "2024-09-11",
+			"time": "22:12 (UTC)",
+			"series": 2,
+			"missile": "kn-25",
+			"facility": "chunghwa",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "350",
+			"bearing": 56,
+			"outcome": "success",
+			"description": "On September 12, 2024 (local time), North Korea launched multiple short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 7:10 AM and flew to a range of about 360 kilometers before landing in the East Sea. The Japanese Ministry of Defense stated that the missiles launched from between 7:10 and 7:14 AM and flew to a range of at least 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launches tested a new type of transporter-erector-launcher (TEL) for the 600 mm multiple launch rocket (also called the KN-25). It reported that the test verified the new launcher's fully automated firing system. The TEL's improved \"driving system\" (probably a reference to the vehicle's powertrain and drivetrain) was also tested Open source analysts determined the launch was up the road from the Chunghwa County test on March 27, 2023 based on pictures attached to the North Korean press release. The pictures indicated that at least three missiles were launched. (2 of 3)"
 		}, {
 			"date": "2024-09-11",
 			"time": "22:14 (UTC)",
-			"series": 2,
+			"series": 3,
 			"missile": "kn-25",
-			"facility": "sunan",
+			"facility": "chunghwa",
 			"landing": "sea-of-japan",
 			"apogee": "100",
 			"distance": "350",
-			"bearing": 62,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"bearing": 56,
+			"outcome": "success",
+			"description": "On September 12, 2024 (local time), North Korea launched multiple short-range ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launch was detected from the Pyongyang area at about 7:10 AM and flew to a range of about 360 kilometers before landing in the East Sea. The Japanese Ministry of Defense stated that the missiles launched from between 7:10 and 7:14 AM and flew to a range of at least 350 kilometers with an apogee of approximately 100 kilometers. A North Korean press release indicated that the launches tested a new type of transporter-erector-launcher (TEL) for the 600 mm multiple launch rocket (also called the KN-25). It reported that the test verified the new launcher's fully automated firing system. The TEL's improved \"driving system\" (probably a reference to the vehicle's powertrain and drivetrain) was also tested Open source analysts determined the launch was up the road from the Chunghwa County test on March 27, 2023 based on pictures attached to the North Korean press release. The pictures indicated that at least three missiles were launched. (3 of 3)"
 		}, {
 			"date": "2024-09-17",
 			"time": "21:53 (UTC)",
 			"series": 1,
-			"missile": "hwasong-11c-45",
+			"missile": "hwasong-11-da-45",
 			"facility": "kaechon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": "400",
 			"bearing": 55,
-			"outcome": "unknown",
-			"description": "1 of 2"
+			"outcome": "success",
+			"description": "On September 18, 2024 (local time), North Korea launched at least two ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launch was detected at 6:50 AM from the Kaechon area in South Pyongan Province, north of Pyongyang, and flew about 400 kilometers. The Japanese Ministry of Defense stated that the launches were detected from inland areas of North Korea at around 6:53 AM and 7:23 AM but did not provide trajectory information. A North Korean press release indicated that the launches tested the Hwasongpho-11-Da-4.5. North Korea stated that the test of the ballistic missile was to verify the accuracy of a hit at a medium range of 320 km. While it was not explicit how many ballistic missiles were launched, photographs suggest the number was at least two. A strategic cruise missile was also tested during this event. (1 of 2)"
 		}, {
 			"date": "2024-09-17",
 			"time": "22:23 (UTC)",
 			"series": 2,
-			"missile": "hwasong-11c-45",
+			"missile": "hwasong-11-da-45",
 			"facility": "kaechon",
 			"landing": "sea-of-japan",
 			"apogee": "unknown",
 			"distance": "400",
 			"bearing": 55,
-			"outcome": "unknown",
-			"description": "2 of 2"
+			"outcome": "success",
+			"description": "On September 18, 2024 (local time), North Korea launched at least two ballistic missiles. The South Korean Joint Chiefs of Staff stated that the launch was detected at 6:50 AM from the Kaechon area in South Pyongan Province, north of Pyongyang, and flew about 400 kilometers. The Japanese Ministry of Defense stated that the launches were detected from inland areas of North Korea at around 6:53 AM and 7:23 AM but did not provide trajectory information. A North Korean press release indicated that the launches tested the Hwasongpho-11-Da-4.5. North Korea stated that the test of the ballistic missile was to verify the accuracy of a hit at a medium range of 320 km. While it was not explicit how many ballistic missiles were launched, photographs suggest the number was at least two. A strategic cruise missile was also tested during this event. (2 of 2)"
 		}, {
 			"date": "2024-10-30",
 			"time": "22:11 (UTC)",
