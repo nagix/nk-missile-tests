@@ -3625,12 +3625,11 @@
 			"apogee": "7687",
 			"distance": "1001",
 			"bearing": 62,
-			"outcome": "unknown",
-			"description": ""
+			"outcome": "success",
+			"description": "On October 31, 2024 (local time), North Korea tested a new ICBM. The South Korean Joint Chiefs of Staff stated that the launch was detected at 7:10 AM from the Pyongyang area, and flew on a lofted trajectory to a range of 1000 km. The Japanese Ministry of Defense stated that the launch was detected from near Pyongyang 7:11 AM, reaching an apogee of over 7000 km and a range of 1000 km, with a flight time of 86 minutes, making it the longest and highest flight of any North Korean missile. North Korean press releases stated that the test used a new missile, the Hwasong-19. This is a solid propellant missile, significantly larger than the Hwasong-18. This raises the possibility that the new missile may carry MIRVs, although the success of North Korea's previous MIRV test earlier in 2024 is unclear. Pictures attached to the press release indicated that the missile was launched from the same site used for Hwasong-18 tests, near Samsok."
 		}, {
 			"date": "2024-11-04",
 			"time": "22:30 (UTC)",
-			"series": 1,
 			"missile": "unknown",
 			"facility": "sariwon",
 			"landing": "sea-of-japan",
@@ -3638,79 +3637,7 @@
 			"distance": "400",
 			"bearing": 52,
 			"outcome": "unknown",
-			"description": "1 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 2,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "2 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 3,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "3 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 4,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "4 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 5,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "5 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 6,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "6 of 7"
-		}, {
-			"date": "2024-11-04",
-			"time": "22:30 (UTC)",
-			"series": 7,
-			"missile": "unknown",
-			"facility": "sariwon",
-			"landing": "sea-of-japan",
-			"apogee": "100",
-			"distance": "400",
-			"bearing": 52,
-			"outcome": "unknown",
-			"description": "7 of 7"
+			"description": "On November 5, 2024 (local time), North Korea launched several SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected at about 7:30 AM from the Sariwon area of North Hwanghae province, and flew about 400 kilometers. The Japanese Ministry of Defense stated that the launches were detected from near the west coast of North Korea between 7:30 AM and 7:39 AM and flew to a range of 400 km with an apogee of 100 km. Neither source stated how many missiles were launched, and North Korea did not issue a press release for the launch, which took place the same day as the US Presidential election."
 		}],
 		"year": 2024
 	}]
