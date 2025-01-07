@@ -1,6 +1,6 @@
 # nk-missile-tests: North Korea Missile Test Visualization
 
-An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2024. The real-time positions of North Korea's satellites are also visualized on the globe.
+An interactive visualization of flight tests of all missiles launched by North Korea from 1984 to 2025. The real-time positions of North Korea's satellites are also visualized on the globe.
 
 ![Screenshot](https://nagix.github.io/nk-missile-tests/images/screenshot.jpg)
 

@@ -3640,5 +3640,19 @@
 			"description": "On November 5, 2024 (local time), North Korea launched several SRBMs. The South Korean Joint Chiefs of Staff stated that the launches were detected at about 7:30 AM from the Sariwon area of North Hwanghae province, and flew about 400 kilometers. The Japanese Ministry of Defense stated that the launches were detected from near the west coast of North Korea between 7:30 AM and 7:39 AM and flew to a range of 400 km with an apogee of 100 km. Neither source stated how many missiles were launched, and North Korea did not issue a press release for the launch, which took place the same day as the US Presidential election."
 		}],
 		"year": 2024
+	}, {
+		"data": [{
+			"date": "2025-01-06",
+			"time": "03:01 (UTC)",
+			"missile": "unknown",
+			"facility": "east-pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "1100",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": ""
+		}],
+		"year": 2025
 	}]
 }
