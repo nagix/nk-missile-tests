@@ -3652,6 +3652,30 @@
 			"bearing": 58,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2025-01-14",
+			"time": "00:30 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "kanggye",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "250",
+			"bearing": 95,
+			"outcome": "unknown",
+			"description": ""
+		}, {
+			"date": "2025-01-14",
+			"time": "00:30 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "kanggye",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "250",
+			"bearing": 95,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2025
 	}]
