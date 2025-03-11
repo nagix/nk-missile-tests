@@ -3665,7 +3665,7 @@
 			"distance": "250",
 			"bearing": 95,
 			"outcome": "unknown",
-			"description": ""
+			"description": "2発の実験の内の1発目"
 		}, {
 			"date": "2025-01-14",
 			"time": "09:30 (JST)",
@@ -3677,7 +3677,31 @@
 			"distance": "250",
 			"bearing": 95,
 			"outcome": "unknown",
-			"description": ""
+			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2025-03-10",
+			"time": "13:50 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2025-03-10",
+			"time": "13:50 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "hwangju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2025
 	}]
