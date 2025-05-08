@@ -3700,6 +3700,28 @@
 			"bearing": 90,
 			"outcome": "unknown",
 			"description": "2 of 2"
+		}, {
+			"date": "2025-05-07",
+			"time": "23:10 (UTC)",
+			"missile": "unknown",
+			"facility": "south-wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "800",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2025-05-08",
+			"time": "00:20 (UTC)",
+			"missile": "unknown",
+			"facility": "south-wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "800",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2025
 	}]

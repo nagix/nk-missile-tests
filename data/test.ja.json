@@ -3702,6 +3702,30 @@
 			"bearing": 90,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2025-05-08",
+			"time": "08:10 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "south-wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "800",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2025-05-08",
+			"time": "09:20 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "south-wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "100",
+			"distance": "800",
+			"bearing": 65,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2025
 	}]
