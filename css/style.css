@@ -510,18 +510,18 @@ Bar graph on left
 }
 #history ul {
 	list-style-type: none;
-	margin: 10px 24px;
+	margin: 10px 32.5px;
 	padding: 22px 0 0 0;
 	color: white;
 	font-size: 12px;
 	font-family: 'Roboto';
-	width: 638px;
+	width: 621px;
 	height: 37px;
 	box-sizing: border-box;
 	background: url('../images/timelineBG.svg') center top no-repeat;
 }
 #history ul li {
-	width: 29px;
+	width: 27px;
 	float: left;
 	text-align: center;
 	margin-top: -30px;
@@ -900,13 +900,13 @@ Bar graph on left
 		width: 210px;
 	}
 	#history ul {
-		margin: 10px 18px;
+		margin: 10px 22px;
 		font-size: 10px;
-		width: 330px;
+		width: 322px;
 		background-image: url('../images/timelineBG_small.svg');
 	}
 	#history ul li {
-		width: 15px;
+		width: 14px;
 	}
 	#history ul li.first span {
 		margin-left: -15px;

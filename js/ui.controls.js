@@ -33,9 +33,9 @@ var d3Graphs = {
 	barGraphBottomPadding: 75,
 	histogramWidth: [686, 366],
 	histogramHeight: 160,
-	histogramBarWidth: [23, 13],
-	histogramLeftPadding: [24, 18],
-	histogramRightPadding: [24, 18],
+	histogramBarWidth: [21, 12],
+	histogramLeftPadding: [32.5, 22],
+	histogramRightPadding: [32.5, 22],
 	histogramVertPadding: 20,
 	barGraphSVG: d3.select("#wrapper").append("svg").attr('id','barGraph'),
 	histogramSVG: null,
@@ -47,8 +47,8 @@ var d3Graphs = {
 	inited: false,
 	hudButtonsOpen: false,
 	histogramOpen: false,
-	handleLeftOffset: [27.5, 14.5],
-	handleInterval: [29, 15],
+	handleLeftOffset: [35, 18],
+	handleInterval: [27, 14],
 	missileTypeBtnsOpen: false,
 	windowResizeTimeout: -1,
 	histogramAbsMax: 0,
@@ -58,7 +58,7 @@ var d3Graphs = {
 	previousUnknownLabelTranslateY: -1,
 	tiltBtnInterval: -1,
 	zoomBtnInterval: -1,
-	selectedYearIndex: 21,
+	selectedYearIndex: 22,
 
 
 	setTest: function(test) {
