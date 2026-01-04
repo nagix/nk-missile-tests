@@ -3750,6 +3750,17 @@
 			"bearing": 40,
 			"outcome": "unknown",
 			"description": "2発の実験の内の2発目"
+		}, {
+			"date": "2025-11-07",
+			"time": "12:34 (JST)",
+			"missile": "unknown",
+			"facility": "taegwan",
+			"landing": "sea-of-japan",
+			"apogee": "50",
+			"distance": "450",
+			"bearing": 85,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2025
 	}]
