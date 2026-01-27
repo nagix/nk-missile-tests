@@ -54,6 +54,7 @@
 		"sariwon": {"name": "Sariwon", "lat": 38.507239, "lon": 125.758802},
 		"east-pyongyang": {"name": "East Pyongyang", "lat": 39.191389, "lon": 125.956944},
 		"kanggye": {"name": "Kanggye", "lat": 40.968, "lon": 126.599},
-		"taegwan": {"name": "Taegwan County", "lat": 40.209, "lon": 125.204}
+		"taegwan": {"name": "Taegwan County", "lat": 40.209, "lon": 125.204},
+		"ryokpo": {"name": "Ryokpo", "lat": 38.873, "lon": 125.932}
 	}
 }
