@@ -3814,7 +3814,7 @@
 			"description": "2発の実験の内の2発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 1,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3826,7 +3826,7 @@
 			"description": "12発の実験の内の1発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 2,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3838,7 +3838,7 @@
 			"description": "12発の実験の内の2発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 3,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3850,7 +3850,7 @@
 			"description": "12発の実験の内の3発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 4,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3862,7 +3862,7 @@
 			"description": "12発の実験の内の4発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 5,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3874,7 +3874,7 @@
 			"description": "12発の実験の内の5発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 6,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3886,7 +3886,7 @@
 			"description": "12発の実験の内の6発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 7,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3898,7 +3898,7 @@
 			"description": "12発の実験の内の7発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 8,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3910,7 +3910,7 @@
 			"description": "12発の実験の内の8発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 9,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3922,7 +3922,7 @@
 			"description": "12発の実験の内の9発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 10,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3934,7 +3934,7 @@
 			"description": "12発の実験の内の10発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 11,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3946,7 +3946,7 @@
 			"description": "12発の実験の内の11発目"
 		}, {
 			"date": "2026-03-14",
-			"time": "13:24 (UTC)",
+			"time": "13:24 (JST)",
 			"series": 12,
 			"missile": "kn-25",
 			"facility": "pyongyang",
@@ -3956,6 +3956,53 @@
 			"bearing": 62,
 			"outcome": "unknown",
 			"description": "12発の実験の内の12発目"
+		}, {
+			"date": "2026-04-07",
+			"time": "unknown",
+			"missile": "unknown",
+			"facility": "pyongyang",
+			"landing": "unknown",
+			"apogee": "unknown",
+			"distance": "unknown",
+			"bearing": 90,
+			"outcome": "failure",
+			"description": ""
+		}, {
+			"date": "2026-04-08",
+			"time": "08:50 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "240",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": "3発の実験の内の1発目"
+		}, {
+			"date": "2026-04-08",
+			"time": "08:50 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "240",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": "3発の実験の内の2発目"
+		}, {
+			"date": "2026-04-08",
+			"time": "14:23 (JST)",
+			"series": 3,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "60",
+			"distance": "700",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": "3発の実験の内の3発目"
 		}],
 		"year": 2026
 	}]
