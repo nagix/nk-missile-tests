@@ -4072,6 +4072,17 @@
 			"bearing": 58,
 			"outcome": "unknown",
 			"description": "5 of 5"
+		}, {
+			"date": "2026-05-26",
+			"time": "04:00 (UTC)",
+			"missile": "unknown",
+			"facility": "chongju",
+			"landing": "yellow-sea",
+			"apogee": "unknown",
+			"distance": "80",
+			"bearing": -150,
+			"outcome": "unknown",
+			"description": ""
 		}],
 		"year": 2026
 	}]
