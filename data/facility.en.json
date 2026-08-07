@@ -56,6 +56,7 @@
 		"kanggye": {"name": "Kanggye", "lat": 40.968, "lon": 126.599},
 		"taegwan": {"name": "Taegwan County", "lat": 40.209, "lon": 125.204},
 		"ryokpo": {"name": "Ryokpo", "lat": 38.873, "lon": 125.932},
-		"chongju": {"name": "Chongju", "lat": 39.697, "lon": 125.206}
+		"chongju": {"name": "Chongju", "lat": 39.697, "lon": 125.206},
+		"ragwon": {"name": "Ragwon County", "lat": 39.9, "lon": 127.875}
 	}
 }
