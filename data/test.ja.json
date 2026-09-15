@@ -4238,6 +4238,30 @@
 			"bearing": 60,
 			"outcome": "unknown",
 			"description": "10発の実験の内の10発目"
+		}, {
+			"date": "2026-09-12",
+			"time": "05:20 (JST)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "250",
+			"bearing": 46,
+			"outcome": "unknown",
+			"description": "2発の実験の内の1発目"
+		}, {
+			"date": "2026-09-12",
+			"time": "05:20 (JST)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "wonsan",
+			"landing": "sea-of-japan",
+			"apogee": "unknown",
+			"distance": "250",
+			"bearing": 46,
+			"outcome": "unknown",
+			"description": "2発の実験の内の2発目"
 		}],
 		"year": 2026
 	}]
