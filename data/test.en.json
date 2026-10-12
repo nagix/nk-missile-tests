@@ -4295,6 +4295,30 @@
 			"bearing": 58,
 			"outcome": "unknown",
 			"description": ""
+		}, {
+			"date": "2026-10-12",
+			"time": "00:19 (UTC)",
+			"series": 1,
+			"missile": "unknown",
+			"facility": "east-pyongyang",
+			"landing": "north-korea",
+			"apogee": "20",
+			"distance": "220",
+			"bearing": 58,
+			"outcome": "unknown",
+			"description": "1 of 2"
+		}, {
+			"date": "2026-10-12",
+			"time": "00:36 (UTC)",
+			"series": 2,
+			"missile": "unknown",
+			"facility": "east-pyongyang",
+			"landing": "sea-of-japan",
+			"apogee": "70",
+			"distance": "910",
+			"bearing": 66,
+			"outcome": "unknown",
+			"description": "2 of 2"
 		}],
 		"year": 2026
 	}]
